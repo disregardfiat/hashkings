@@ -1,0 +1,27 @@
+{
+  "name": "hashkings",
+  "version": "0.0.1",
+  "description": "gamified staking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "dlux",
+    "steem",
+    "qwoyn",
+    "haskkings"
+  ],
+  "author": "disregardfiat",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dsteem": "^0.11.2",
+    "express": "^4.16.4",
+    "ipfs-api": "^26.1.2",
+    "steem": "^0.7.3",
+    "steem-state": "^1.2.0",
+    "steem-transact": "^1.0.2",
+  }
+}

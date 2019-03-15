@@ -43,6 +43,16 @@ app.get('/u/:user', (req, res, next) => {
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state = {
     stats: {
+        dust: 25,
+        time: 31159798,
+        offsets: {
+            a: 9600,
+            b: 21600,
+            c: 0,
+            d: 19200,
+            e: 20400,
+            f: 7200
+        },
         bu: '',
         bi: 0,
         prices: {
@@ -96,15 +106,9 @@ var state = {
         },
         refund: [],
         lands: {
-            a {},
-            b {},
-            c {},
-            d {},
-            e {},
-            f {},
-            t {},
             forSale: []
         },
+        land: {},
         users: {
             "a1-shroom-spores": {
                 addrs: ['a1'],
@@ -357,25 +361,17 @@ function startWith(sh) {
 function startApp() {
     processor = steemState(client, steem, startingBlock, 10, prefix);
 
-    /*
 
-      processor.on('gift', function(json, from) {
-        if (state.user[from].seeds.length){console.log(`${from} doesn't own seeds`)}
-        else {
-          var seedObj='',i=0
-          for(i;i<state.user[from].seeds.length;i++){if(state.user[from].seeds[i].id==json.memo.id)seedObj=JSON.parse(JSON.stringify(state.user[from].seeds[i]));break;}
-          if(!seedObj){console.log('Seed not found')}else{
-    	if(!state.user[json.memo.to])state.user[json.memo.to]={nurs:[],plants[],inv:[],locs:[],seeds[]}
-    	state.user[json.memo.to].push(state.user[from].seeds.splice(i,1))
-          }
-        }
-      });
-      */
     processor.onBlock(function(num, block) {
-        const qb = `q${num}`
-        const qf = `q${num + 28800}`
-        for (var i = 0; i < state.q[qb].length; i++) {
-
+        const sun = num - state.stats.time % 28800
+        var td = []
+        for (var o in state.stats.offsets) {
+            if (sun - state.stats.offsets[o] < 1200 && sun - state.stats.offsets[o] >= 0) {
+                td.push(`${o}${(sun-state.stats.offsets[o]*4)}`, `${o}${(sun-state.stats.offsets[o]*4)-1}`, `${o}${(sun-state.stats.offsets[o]*4)-2}`, `${o}${(sun-state.stats.offsets[o]*4)-3}`)
+            }
+        }
+        for (var i = 0; i < td.length; i++) {
+            daily(td[i])
         }
         if (state.refund.length && state.bal.b > 0) {
             bot[state.refund[0][0]].call(state.refund[0][1], state.refund[0][2], state.refund[0][3], state.refund[0
@@ -388,7 +384,7 @@ function startApp() {
         }
 
         if (num % 1000 === 0) {
-            //ipfssavestate
+            ipfsSaveState(num, ipfs.Buffer.from(state))
         }
         if (num % 28800 === 0) {
             var d = parseInt(state.bal.c / 4)
@@ -437,11 +433,16 @@ function startApp() {
             plantnames = ''
         for (var i = 0; i < plants.length; i++) {
             if (state.land[plants[i]].owner == from) {
-                state.land[plants[i]].care.push([processor.getCurrentBlockNumber(), 'watered']);
+                state.land[plants[i]].care.unshift([processor.getCurrentBlockNumber(), 'watered']);
                 plantnames += `${plants[i]} `
             }
         }
         console.log(`${from} watered ${plantnames}`)
+    });
+
+    processor.on('adjust', function(json, from) {
+        if (from == 'hashkings' && json.dust > 1) state.stats.dust = json.dust
+        if (from == 'hashkings' && json.time > 1) state.stats.time = json.time
     });
 
     processor.on('plant', function(json, from) {
@@ -467,7 +468,7 @@ function startApp() {
                 state.land[addr].care = []
                 state.land[addr].aff = []
                 state.land[addr].planted = processor.getCurrentBlockNumber()
-                state.land[addr].stage = 0
+                state.land[addr].stage = 1
                 state.land[addr].substage = 0
                 state.land[addr].traits = seed.traits || []
                 state.land[addr].terps = seed.terps || {}
@@ -543,29 +544,7 @@ function startApp() {
             }
         }
     });
-/*
-stats:{
-    prices:{
-      listed:{
-	a:20000,
-	b:20000,
-	c:20000,
-	d:20000,
-	e:20000,
-	f:20000,
-	t:20000,
-	rseed:750,
-	mseed:1500,
-	tseed:3000,
-      },
-      purchase:{
-	land:19500
-      }
-    },
-    supply:{
-      land:{a:4153,b:4162,c:4165,d:4169,e:4191,f:4195,g:0,t:4200,counter:[0,0]}
-    },
-*/
+
 function exit() {
     console.log('Exiting...');
     processor.stop(function() {
@@ -580,6 +559,7 @@ function ipfsSaveState(blocknum, hashable) {
     ipfs.add(hashable, (err, IpFsHash) => {
         if (!err) {
             state.stats.bu = IpFsHash[0].hash
+            state.stats.bi = blocknum
             console.log(current + `:Saved:  ${IpFsHash[0].hash}`)
             transactor.json(config.username, config.active, 'report', {
                 hash: state.stats.bu,
@@ -635,8 +615,27 @@ var bot = {
     }
 }
 
-function saveState(callback) {
-    var currentBlock = processor.getCurrentBlockNumber();
-    fs.writeFileSync(stateStoreFile, JSON.stringify([currentBlock, state]));
-    callback();
+function daily(addr) {
+    if (state.land[addr]) {
+        for (var i = 0; i < state.land[addr].care.length; i++) {
+            if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {
+                if (state.land[addr].substage < 14 && state.land[addr].stage > 0) state.land[addr].substage++
+                if (state.land[addr].substage == 14) {
+                    state.land[addr].substage = 0;
+                    state.land[addr].stage++
+                }
+                if (state.land[addr].stage == 5 && state.land[addr].substage == 0) state.land[addr].sex = state.land.length % 1
+                if (state.land[addr].stage == 9 && state.land[addr].substage == 13) {
+                    state.land[addr].aff.push([processor.getCurrentBlockNumber(), 'over']);
+                    state.land[addr].substage = 12
+                }
+                for (var j = 0; j < state.land[addr].aff.length; j++) {
+                    if (state.land[addr].aff[j][0] > processor.getCurrentBlockNumber() - 86400 && state.land[addr].aff[j][1] == 'over') {
+                        state.land[addr].stage = -1;
+                        break;
+                    }
+                }
+            }
+        }
+    }
 }

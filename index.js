@@ -66,7 +66,7 @@ var state = {
       strains:['hk','afg','lkg','mis','lb','kbr','aca','swz','kmj','dp','mal','pam','cg','ach','tha','cht']
     },
   },
-  bal:{r:0,c:0,b:0},
+  bal:{r:0,c:0,b:0,p:0},
   refund:[],
   lands:{forSale:[]},
   land:{},
@@ -178,6 +178,17 @@ processor.on('water', function(json, from) {
     console.log(`${from} watered ${plantnames}`)
   });
 
+processor.on('redeem', function(json, from) {
+  if(state.users[from].v > 0){
+    state.users[from].v--
+    let type = json.type || ''
+    if (state.stats.supply.strains.indexOf(type)<0)type = state.stats.supply.strains[state.users.length%state.stats.supply.strains.length]
+    var xp = 2250
+    var seed = {strain:type,xp:xp}
+    state.users[from].seeds.push(seed)
+  }
+});
+
 processor.on('adjust', function(json, from) {
     if(from == 'hashkings' && json.dust > 1)state.stats.dust = json.dust
     if(from == 'hashkings' && json.time > 1)state.stats.time = json.time
@@ -225,7 +236,7 @@ processor.onOperation('transfer_to_vesting', function(json){
 	  state.bal.c += c
 	  state.bal.b += amount - c
 	  console.log(`${from} purchased ${addr}`)
-	} else if (want=='rseed'||want=='mseed'||want=='tseed'){
+	} else if (want=='rseed'&&amount==state.stats.prices.listed.seed.reg||want=='mseed'&&amount==state.stats.prices.listed.seed.mid||want=='tseed'&&amount==state.stats.prices.listed.seed.top){
 	  if (state.stats.supply.strains.indexOf(type)<0)type = state.stats.supply.strains[state.users.length%state.stats.supply.strains.length]
 	  var xp = 1
 	  if(want=='mseed')xp=750

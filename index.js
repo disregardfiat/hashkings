@@ -244,18 +244,21 @@ processor.onOperation('transfer_to_vesting', function(json){
 	  state.bal.c += c
 	  state.bal.b += amount - c
 	  console.log(`${json.from} purchased ${addr}`)
-	} else if (want=='rseed'&&amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
+	} else if (want=='rseed' && amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
+		console.log('seeds?')
 	  if (state.stats.supply.strains.indexOf(type)<0)type = state.stats.supply.strains[state.users.length%state.stats.supply.strains.length]
 	  var xp = 1
 	  if(want=='mseed')xp=750
 	  if(want=='tseed')xp=2250
 	  var seed = {strain:type,xp:xp}
+	  console.log(seed)
 	  state.users[json.from].seeds.push(seed)
 	  const c = parseInt(amount*0.025)
 	  state.bal.c += c
 	  state.bal.b += amount - c
 	  console.log(`${json.from} purchased ${addr}`)
 	} else {
+		console.log('refund fun')
 	  state.bal.r += amount
 	  state.refund.push(['xfer',json.from,amount,'We don\'t know what you wanted... have your STEEM back'])
 	  console.log(`${json.from} sent a weird transfer...refund?`)

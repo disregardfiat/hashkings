@@ -176,7 +176,7 @@ function startApp() {
     }
   });
 processor.on('water', function(json, from) {
-    let plants = JSON.parse(json.plants),plantnames=''
+    let plants = json.plants ,plantnames=''
     for (var i = 0;i < plants.length;i++){
       if(state.land[plants[i]].owner==from){state.land[plants[i]].care.unshift([processor.getCurrentBlockNumber(),'watered']);plantnames +=`${plants[i]} `}
     }

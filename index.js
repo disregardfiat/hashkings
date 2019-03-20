@@ -244,7 +244,7 @@ processor.onOperation('transfer_to_vesting', function(json){
 	  state.bal.c += c
 	  state.bal.b += amount - c
 	  console.log(`${json.from} purchased ${addr}`)
-	} else if (want=='rseed'&&amount==state.stats.prices.listed.seed.reg||want=='mseed'&&amount==state.stats.prices.listed.seed.mid||want=='tseed'&&amount==state.stats.prices.listed.seed.top){
+	} else if (want=='rseed'&&amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
 	  if (state.stats.supply.strains.indexOf(type)<0)type = state.stats.supply.strains[state.users.length%state.stats.supply.strains.length]
 	  var xp = 1
 	  if(want=='mseed')xp=750

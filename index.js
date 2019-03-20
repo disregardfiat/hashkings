@@ -206,17 +206,17 @@ processor.on('adjust', function(json, from) {
 	if (index>=0 && seed){
 	  if(!state.land[json.addr]){
 	    const parcel = {owner:from, strain: seed.strain, xp:seed.xp,care:[],aff:[],planted:processor.getCurrentBlockNumber(),stage:0,substage:0,traits:seed.traits,terps:seed.terps}
-	    state.land[addr]=parcel
+	    state.land[json.addr]=parcel
 	  } else if (state.land[json.addr].stage < 0) {
-	    state.land[addr].strain = seed.strain
-	    state.land[addr].xp = seed.xp
-	    state.land[addr].care = []
-	    state.land[addr].aff =[]
-	    state.land[addr].planted = processor.getCurrentBlockNumber()
-	    state.land[addr].stage = 1
-	    state.land[addr].substage = 0
-	    state.land[addr].traits = seed.traits || []
-	    state.land[addr].terps = seed.terps || {}
+	    state.land[json.addr].strain = seed.strain
+	    state.land[json.addr].xp = seed.xp
+	    state.land[json.addr].care = []
+	    state.land[json.addr].aff =[]
+	    state.land[json.addr].planted = processor.getCurrentBlockNumber()
+	    state.land[json.addr].stage = 1
+	    state.land[json.addr].substage = 0
+	    state.land[json.addr].traits = seed.traits || []
+	    state.land[json.addr].terps = seed.terps || {}
 	  } else {state.users[from].seeds.push(seed);console.lol(`${from} can't plant that.`)}
 	} else if (seed){state.users[from].seeds.push(seed);console.lol(`${from} doesn't own that land`)}
     	else {console.log(`${from} did a thing with a plant?`)}

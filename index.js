@@ -226,9 +226,11 @@ processor.onOperation('transfer_to_vesting', function(json){
 });
   processor.onOperation('transfer', function(json){
     if (json.to == username && json.amount.split(' ')[1] == 'STEEM'){
+	    console.log('I got this')
       if (!state.users[json.from])state.user[json.from]={addrs:[],seeds:[],inv:[],stats:[],v:0}
       const amount = parseInt(parseFloat(json.amount) * 1000)
       var memo=JSON.parse(json.memo)
+      console.log(`this is for you:`, memo, json.memo)
       var want = memo.buying , type = memo.type
       if(state.stats.prices.listed[want]==amount){
 	if(state.stats.supply.land[want]){

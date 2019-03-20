@@ -231,7 +231,7 @@ processor.onOperation('transfer_to_vesting', function(json){
       const amount = parseInt(parseFloat(json.amount) * 1000)
       var want = json.memo.split(" ")[0] || json.memo , type = json.memo.split(" ")[1] || ''
       console.log(want,type)
-      if(state.stats.prices.listed[want]==amount){
+      if(state.stats.prices.listed[want]==amount  || want=='rseed' && amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
 	      console.log('this far')
 	if(state.stats.supply.land[want]){
 		console.log('even further')
@@ -263,6 +263,11 @@ processor.onOperation('transfer_to_vesting', function(json){
 	  state.refund.push(['xfer',json.from,amount,'We don\'t know what you wanted... have your STEEM back'])
 	  console.log(`${json.from} sent a weird transfer...refund?`)
 	}
+      } else {
+      console.log('refund fun')
+	  state.bal.r += amount
+	  state.refund.push(['xfer',json.from,amount,'We don\'t know what you wanted... have your STEEM back'])
+	  console.log(`${json.from} sent a weird transfer...refund?`)
       }
     } else if (json.from == username){
       const amount = parseInt(parseFloat(json.amount) * 1000)

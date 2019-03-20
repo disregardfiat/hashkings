@@ -232,8 +232,11 @@ processor.onOperation('transfer_to_vesting', function(json){
       var memo=JSON.parse(json.memo)
       console.log(`this is for you:`, memo, json.memo)
       var want = memo.buying , type = memo.type
+      console.log(want,type)
       if(state.stats.prices.listed[want]==amount){
+	      console.log('this far')
 	if(state.stats.supply.land[want]){
+		console.log('even further')
 	  state.stats.supply.land[want]--
 	  const sel = `${want}c`
 	  const num = state.stats.supply.land[sel]++

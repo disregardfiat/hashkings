@@ -204,8 +204,9 @@ processor.on('adjust', function(json, from) {
 	var seed = ''
 	if(state.users[from].seeds[json.seed])seed = state.users[from].seeds.splice(json.seed,1)
 	if (index>=0 && seed){
+		console.log({seed})
 	  if(!state.land[json.addr]){
-	    const parcel = {owner:from, strain: seed.strain, xp:seed.xp,care:[],aff:[],planted:processor.getCurrentBlockNumber(),stage:0,substage:0,traits:seed.traits,terps:seed.terps}
+	    const parcel = {owner:from, strain: seed.strain, xp:seed.xp,care:[],aff:[],planted:processor.getCurrentBlockNumber(),stage:1,substage:0,traits:seed.traits,terps:seed.terps}
 	    state.land[json.addr]=parcel
 	  } else if (state.land[json.addr].stage < 0) {
 	    state.land[json.addr].strain = seed.strain

@@ -256,7 +256,7 @@ processor.onOperation('transfer_to_vesting', function(json){
 	  const c = parseInt(amount*0.025)
 	  state.bal.c += c
 	  state.bal.b += amount - c
-	  console.log(`${json.from} purchased ${addr}`)
+	  console.log(`${json.from} purchased ${seed.strain}`)
 	} else {
 		console.log('refund fun')
 	  state.bal.r += amount

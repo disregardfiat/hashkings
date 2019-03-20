@@ -229,7 +229,7 @@ processor.onOperation('transfer_to_vesting', function(json){
 	    console.log('I got this')
       if (!state.users[json.from])state.user[json.from]={addrs:[],seeds:[],inv:[],stats:[],v:0}
       const amount = parseInt(parseFloat(json.amount) * 1000)
-      var want = memo.split(" ")[0] , type = memo.split(" ")[1] || ''
+      var want = memo.split(" ")[0] || memo , type = memo.split(" ")[1] || ''
       console.log(want,type)
       if(state.stats.prices.listed[want]==amount){
 	      console.log('this far')

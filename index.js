@@ -195,8 +195,8 @@ processor.on('redeem', function(json, from) {
 });
 
 processor.on('adjust', function(json, from) {
-    if(from == 'hashkings' && json.dust > 1)state.stats.dust = json.dust
-    if(from == 'hashkings' && json.time > 1)state.stats.time = json.time
+    if(from == username && json.dust > 1)state.stats.dust = json.dust
+    if(from == username && json.time > 1)state.stats.time = json.time
   });
 
   processor.on('plant', function(json, from) {
@@ -222,10 +222,10 @@ processor.on('adjust', function(json, from) {
     	else {console.log(`${from} did a thing with a plant?`)}
   });
 processor.onOperation('transfer_to_vesting', function(json){
-	if(json.to == 'hashkings' && json.from =='hashkings'){const amount = parseInt(parseFloat(json.amount*1000));state.bal.b -= amount;state.bal.p+=amount}
+	if(json.to == username && json.from == username){const amount = parseInt(parseFloat(json.amount*1000));state.bal.b -= amount;state.bal.p+=amount}
 });
   processor.onOperation('transfer', function(json){
-    if (json.to == 'hashkings' && json.amount.split(' ')[1] == 'STEEM'){
+    if (json.to == username && json.amount.split(' ')[1] == 'STEEM'){
       if (!state.users[json.from])state.user[json.from]={addrs:[],seeds:[],inv:[],stats:[],v:0}
       const amount = parseInt(parseFloat(json.amount) * 1000)
       var memo=JSON.parse(json.memo)
@@ -258,7 +258,7 @@ processor.onOperation('transfer_to_vesting', function(json){
 	  console.log(`${from} sent a weird transfer...refund?`)
 	}
       }
-    } else if (json.from == 'hashkings'){
+    } else if (json.from == username){
       const amount = parseInt(parseFloat(json.amount) * 1000)
       for (var i = 0;i<state.refund.length;i++){if(state.refund[i][1] == json.to && state.refund[i][2] == amount)state.refund.splice(i,1);state.bal.r-=amount;console.log(`${json.to} refunded successfully`);break;}
     }
@@ -321,7 +321,7 @@ function ipfsSaveState(blocknum, hashable) {
 };
 var bot ={
 xfer: function(amount,to,memo,callback){
-	const data = {amount:`(amount/1000).toFixed(3) STEEM`,from:'hashkings',to:to,memo:JSON.stringify(memo)}
+	const data = {amount:`(amount/1000).toFixed(3) STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
     var x = client.transfer(data, key)
 	x.then(callback(x));
 },
@@ -329,7 +329,7 @@ power:function(amount,toa,callback){
 const op = [
         'transfer_to_vesting',
         {
-            from: 'hashkings',
+            from: username,
             to: toa,
             amount: `${(amount/1000).toFixed(3)} STEEM`,
         },

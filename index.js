@@ -202,7 +202,7 @@ processor.on('adjust', function(json, from) {
   processor.on('plant', function(json, from) {
 	const index = state.users[from].addrs.indexOf(json.addr)
 	var seed = ''
-	if(state.users[from].seeds[json.seed])seed = state.users[from].seeds.splice(json.seed,1)
+	if(state.users[from].seeds[json.seed])seed = state.users[from].seeds.splice(json.seed,1)[0]
 	if (index>=0 && seed){
 		console.log({seed})
 	  if(!state.land[json.addr]){

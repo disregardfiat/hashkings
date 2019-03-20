@@ -21,6 +21,11 @@ app.get('/stats', (req, res, next) => {
   res.send(JSON.stringify(state.stats, null, 3))
 });
 
+app.get('/', (req, res, next) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(state, null, 3))
+});
+
 app.get('/refunds', (req, res, next) => {
   res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify({refunds:state.refund,bal:state.bal}, null, 3))

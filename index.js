@@ -333,9 +333,17 @@ function ipfsSaveState(blocknum, hashable) {
 };
 var bot ={
 xfer: function(amount,to,memo,callback){
-	const data = {amount:`$[parseFloat(amount/1000).toFixed(3)} STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
-    var x = client.broadcast.transfer(data, key)
-	x.then(callback(x));
+	let callback = cb || function (e,r){console.log(e,r)}
+	const float = parseFloat(amount/1000).toFixed(3)
+	const data = {amount:`$[float.toFixed(3)} STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
+    	client.broadcast.transfer(data, key).then(
+        function(result) {
+            callback(0,result)
+        },
+        function(error) {
+            callback(error,0)
+        }
+    );
 },
 power:function(amount,toa,callback){
 const op = [

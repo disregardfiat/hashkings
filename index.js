@@ -71,7 +71,7 @@ var state = {
       strains:['hk','afg','lkg','mis','lb','kbr','aca','swz','kmj','dp','mal','pam','cg','ach','tha','cht']
     },
   },
-  bal:{r:0,c:0,b:0,p:0},
+  bal:{r:0,c:0,b:0,p:40503},
   refund:[],
   lands:{forSale:[]},
   land:{},

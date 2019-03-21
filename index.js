@@ -167,14 +167,14 @@ function startApp() {
       var d = parseInt(state.bal.c/4)
       state.bal.r += state.bal.c
       state.refund.push(['xfer','disregardfiat',d,'Dev Cut'])
-      state.refund.push(['xfer','qwoyn-partners',d,'Partners Cut'])
-      state.refund.push(['xfer','qwoyn-wf',d,'Warchest'])
+      state.refund.push(['xfer','qwoyn-fund',d,'Partners Cut'])
+      state.refund.push(['xfer','qwoyn-chest',d,'Warchest'])
       state.bal.c -= d*3
       state.refund.push(['xfer','qwoyn',state.bal.c,'Producer Cut'])
       state.bal.c = 0
       if (state.bal.d > state.bal.b){state.bal.d -= state.bal.b;state.bal.b=0}
       else if(state.bal.d <= state.bal.b){state.bal.b -= state.bal.d;state.bal.d=0}
-      state.refund.push(['power','hashkings',state.bal.b,'Producer Cut'])
+      state.refund.push(['power',username,state.bal.b,'Power to the people!'])
     }
   });
 processor.on('water', function(json, from) {

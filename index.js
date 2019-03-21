@@ -110,7 +110,7 @@ var state = {
 }
 var startingBlock = ENV.STARTINGBLOCK || 31152000;     //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings';//account with all the SP
-const key = ENV.KEY; //active key for account
+const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 
 const prefix = ENV.PREFIX || 'qwoyn_';
 const clientURL = ENV.APIURL || 'https://api.steemit.com'

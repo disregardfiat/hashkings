@@ -146,7 +146,8 @@ function startApp() {
     const sun = num - state.stats.time % 28800
     var td = []
     for(var o in state.stats.offsets){if(sun-state.stats.offsets[o]<1200&&sun-state.stats.offsets[o]>=0){td.push(`${o}${(sun-state.stats.offsets[o]*4)}`,`${o}${(sun-state.stats.offsets[o]*4)-1}`,`${o}${(sun-state.stats.offsets[o]*4)-2}`,`${o}${(sun-state.stats.offsets[o]*4)-3}`)}}
-    for (var i = 0;i<td.length;i++){
+    console.log(td)
+	 for (var i = 0;i<td.length;i++){
       daily(td[i])
     }
     if(num % 111 === 0 && state.refund.length && state.bal.b > 0 && processor.isStreaming() || processor.isStreaming() && state.refund.length > 60){
@@ -228,8 +229,8 @@ processor.on('adjust', function(json, from) {
 	    state.land[json.addr].substage = 0
 	    state.land[json.addr].traits = seed.traits || []
 	    state.land[json.addr].terps = seed.terps || {}
-	  } else {state.users[from].seeds.push(seed);console.lol(`${from} can't plant that.`)}
-	} else if (seed){state.users[from].seeds.push(seed);console.lol(`${from} doesn't own that land`)}
+	  } else {state.users[from].seeds.push(seed);console.log(`${from} can't plant that.`)}
+	} else if (seed){state.users[from].seeds.push(seed);console.log(`${from} doesn't own that land`)}
     	else {console.log(`${from} did a thing with a plant?`)}
   });
 processor.onOperation('transfer_to_vesting', function(json){

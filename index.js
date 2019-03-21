@@ -150,8 +150,8 @@ function startApp() {
       daily(td[i])
     }
     if(num % 111 === 0 && state.refund.length && state.bal.b > 0){
-	if(state.refund[0].length == 4)bot[state.refund[0][0]].call(state.refund[0][1],state.refund[0][2],state.refund[0][3])
-	if(state.refund[0].length == 3)bot[state.refund[0][0]].call(state.refund[0][1],state.refund[0][2])
+	if(state.refund[0].length == 4)bot[state.refund[0][0]].call(this,state.refund[0][1],state.refund[0][2],state.refund[0][3])
+	if(state.refund[0].length == 3)bot[state.refund[0][0]].call(this,state.refund[0][1],state.refund[0][2])
     }
     if(num % 100 === 0 && !processor.isStreaming()) {
       client.database.getDynamicGlobalProperties().then(function(result) {

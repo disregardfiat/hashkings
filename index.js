@@ -334,7 +334,7 @@ function ipfsSaveState(blocknum, hashable) {
 var bot ={
 xfer: function(amount,to,memo,callback){
 	const data = {amount:`(amount/1000).toFixed(3) STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
-    var x = client.transfer(data, key)
+    var x = client.broadcast.transfer(data, key)
 	x.then(callback(x));
 },
 power:function(amount,toa,callback){

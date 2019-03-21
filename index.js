@@ -149,7 +149,7 @@ function startApp() {
     for (var i = 0;i<td.length;i++){
       daily(td[i])
     }
-    if(state.refund.length && state.bal.b > 0){
+    if(num % 111 === 0 && state.refund.length && state.bal.b > 0){
 	bot[state.refund[0][0]].call(state.refund[0][1],state.refund[0][2],state.refund[0][3],state.refund[0][4])
     }
     if(num % 100 === 0 && !processor.isStreaming()) {
@@ -333,7 +333,7 @@ function ipfsSaveState(blocknum, hashable) {
 };
 var bot ={
 xfer: function(amount,to,memo,callback){
-	const data = {amount:`(amount/1000).toFixed(3) STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
+	const data = {amount:`$[parseFloat(amount/1000).toFixed(3)} STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
     var x = client.broadcast.transfer(data, key)
 	x.then(callback(x));
 },
@@ -343,7 +343,7 @@ const op = [
         {
             from: username,
             to: toa,
-            amount: `${(amount/1000).toFixed(3)} STEEM`,
+            amount: `${parseFloat(amount/1000).toFixed(3)} STEEM`,
         },
     ];
     client.broadcast.sendOperations([op], key).then(

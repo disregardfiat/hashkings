@@ -184,6 +184,14 @@ processor.on('water', function(json, from) {
     }
     console.log(`${from} watered ${plantnames}`)
   });
+	
+processor.on('return', function(json, from) {
+    let lands = json.lands ,landnames=''
+    for (var i = 0;i < lands.length;i++){
+      if(state.land[lands[i]].owner==from){delete state.land[lands[i]];state.lands.forSale.push(lands[i]);state.refund.push(['xfer',from,state.stats.prices.purchase.land,`Returned ${lands[i]}`]);plantnames +=`${plants[i]} `}
+    }
+    console.log(`${from} returned ${landnames}`)
+  });
 
 processor.on('redeem', function(json, from) {
   if(state.users[from].v > 0){

@@ -334,17 +334,16 @@ function ipfsSaveState(blocknum, hashable) {
   })
 };
 var bot ={
-xfer: function(toa,amount,memo,cb){
-	let callback = cb || function (e,r){console.log(e,r)}
+xfer: function(toa,amount,memo){
 	const float = parseFloat(amount/1000).toFixed(3)
 	const data = {amount: `${float} STEEM`, from:username, to: toa, memo:memo}
 	console.log(data,key)
-    	client.broadcast.transfer(data, `${key}`).then(
+    	client.broadcast.transfer(data, key).then(
         function(result) {
-            callback(0,result)
+            console.log(result)
         },
         function(error) {
-            callback(error,0)
+            console.log(error)
         }
     );
 },
@@ -359,10 +358,10 @@ const op = [
     ];
     client.broadcast.sendOperations([op], key).then(
         function(result) {
-            callback(0,result)
+            console.log(result)
         },
         function(error) {
-            callback(error,0)
+            console.log(error)
         }
     );
 }

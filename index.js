@@ -149,9 +149,10 @@ function startApp() {
     for (var i = 0;i<td.length;i++){
       daily(td[i])
     }
-    if(num % 111 === 0 && state.refund.length && state.bal.b > 0){
+    if(num % 111 === 0 && state.refund.length && state.bal.b > 0 && processor.isStreaming() || processor.isStreaming() && state.refund.length > 60){
 	if(state.refund[0].length == 4)bot[state.refund[0][0]].call(this,state.refund[0][1],state.refund[0][2],state.refund[0][3])
 	if(state.refund[0].length == 3)bot[state.refund[0][0]].call(this,state.refund[0][1],state.refund[0][2])
+	state.refund.push(state.refund.shift())
     }
     if(num % 100 === 0 && !processor.isStreaming()) {
       client.database.getDynamicGlobalProperties().then(function(result) {
@@ -163,7 +164,6 @@ function startApp() {
       //ipfsSaveState(num, ipfs.Buffer.from(state))
     }
     if(num % 28800 === 0){
-	    console.log(key)
       var d = parseInt(state.bal.c/4)
       state.bal.r += state.bal.c
       state.refund.push(['xfer','disregardfiat',d,'Dev Cut'])
@@ -368,6 +368,7 @@ const op = [
 }
 
 function daily(addr) {
+	console.log(addr)
   if(state.land[addr]){
     for(var i = 0;i<state.land[addr].care.length;i++){if(state.land[addr].care[i][0]>processor.getCurrentBlockNumber()-28800 && state.land[addr].care[i][1]=='watered'){
 	if(state.land[addr].substage < 14 && state.land[addr].stage>0)state.land[addr].substage++

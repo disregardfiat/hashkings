@@ -336,8 +336,8 @@ var bot ={
 xfer: function(amount,toa,memo,cb){
 	let callback = cb || function (e,r){console.log(e,r)}
 	const float = parseFloat(amount/1000).toFixed(3)
-	const data = {amount: `${float} STEEM`, from:username, to: toa, memo:`${memo}`}
-    	client.broadcast.transfer(data, `${key}`).then(
+	const data = ['transfer',{amount: `${float} STEEM`, from:username, to: toa, memo:`${memo}`}]
+    	client.broadcast.sendOperations(data, `${key}`).then(
         function(result) {
             callback(0,result)
         },

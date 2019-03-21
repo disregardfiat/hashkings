@@ -162,6 +162,7 @@ function startApp() {
       //ipfsSaveState(num, ipfs.Buffer.from(state))
     }
     if(num % 28800 === 0){
+	    console.log(key)
       var d = parseInt(state.bal.c/4)
       state.bal.r += state.bal.c
       state.refund.push(['xfer','disregardfiat',d,'Dev Cut'])
@@ -336,7 +337,7 @@ xfer: function(amount,toa,memo,cb){
 	let callback = cb || function (e,r){console.log(e,r)}
 	const float = parseFloat(amount/1000).toFixed(3)
 	const data = {amount: `${float} STEEM`, from:username, to: toa, memo:`${memo}`}
-    	client.broadcast.transfer(data, key).then(
+    	client.broadcast.transfer(data, `${key}`).then(
         function(result) {
             callback(0,result)
         },

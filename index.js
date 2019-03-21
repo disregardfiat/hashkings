@@ -332,10 +332,10 @@ function ipfsSaveState(blocknum, hashable) {
   })
 };
 var bot ={
-xfer: function(amount,to,memo,callback){
+xfer: function(amount,to,memo,cb){
 	let callback = cb || function (e,r){console.log(e,r)}
-	const float = parseFloat(amount/1000).toFixed(3)
-	const data = {amount:`$[float.toFixed(3)} STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
+	const float = parseFloat(amount/1000)
+	const data = {amount: float.toFixed(3) + ` STEEM`,from:username,to:to,memo:JSON.stringify(memo)}
     	client.broadcast.transfer(data, key).then(
         function(result) {
             callback(0,result)

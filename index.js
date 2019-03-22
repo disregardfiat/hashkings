@@ -39,7 +39,7 @@ app.get('/u/:user', (req, res, next) => {
 
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state = {
-  delegations:[];
+  delegations:[],
   stats:{
     vs:2001,
     dust:25,

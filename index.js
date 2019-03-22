@@ -39,7 +39,9 @@ app.get('/u/:user', (req, res, next) => {
 
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state = {
+  delegations:[];
   stats:{
+    vs:2001,
     dust:25,
     time:31159798,
     offsets:{a:9600,b:21600,c:0,d:19200,e:20400,f:7200},
@@ -236,28 +238,77 @@ processor.on('adjust', function(json, from) {
 processor.onOperation('transfer_to_vesting', function(json){
 	if(json.to == username && json.from == username){const amount = parseInt(parseFloat(json.amount*1000));state.bal.b -= amount;state.bal.p+=amount}
 });
+processor.onOperation('delegate_vesting_shares', function(json,from){//grab posts to reward
+    const vests = parseInt(parseFloat(json.vesting_shares)*1000000)
+    var record = ''
+    if (!state.users[json.delegator])state.user[json.delegator]={addrs:[],seeds:[],inv:[],stats:[],v:0,a:0,u:0}
+    var availible = parseInt(vests/(state.stats.sv*state.stats.prices.listed.a/1000)),used = 0;
+    if (json.delegatee == 'hashkings' && vests){
+      for (var i = 0; i < state.delegations.length;i++){
+        if (state.delegations[i].delegator == json.delegator){
+          record = state.delegations.splice(i,1)
+          break;
+        }
+      }
+	
+	if(record){
+	  if(record.vests < vests){availible = availible-record.used;used = record.used}
+	  else {
+	    if (record.used > availible){
+		var j = record.used - availible
+		for(var i = state.users[json.delegator].addrs.length - j;i<state.users[json.delegator].addrs.length;i++)
+		{delete state.land[state.users[json.delegator].addrs[i]];state.lands.forSale.push(state.users[json.delegator].addrs[i])
+		used = availible
+		availible = 0
+	    } else {
+	      availible = availible-record.used
+	      used = record.used
+	    }
+	  }	
+	}
+        state.delegations.push({delegator:json.delegator,vests,availible,used})
+        console.log(current + `:${json.delegator} has delegated ${vests} vests to @dlux-io`)
+    } else if (json.delegatee == 'dlux-io' && !vests){
+      for (var i = 0; i < state.delegations.length;i++){
+        if (state.delegations[i].delegator == json.delegator){
+          state.delegations.splice(i,1)
+          break;
+        }
+      }
+      console.log(current + `:${json.delegator} has removed delegation to @dlux-io`)
+    }
+  });
   processor.onOperation('transfer', function(json){
     if (json.to == username && json.amount.split(' ')[1] == 'STEEM'){
-	    console.log('I got this')
-      if (!state.users[json.from])state.user[json.from]={addrs:[],seeds:[],inv:[],stats:[],v:0}
+      if (!state.users[json.from])state.user[json.from]={addrs:[],seeds:[],inv:[],stats:[],v:0,a:0,u:0}
       const amount = parseInt(parseFloat(json.amount) * 1000)
       var want = json.memo.split(" ")[0] || json.memo , type = json.memo.split(" ")[1] || ''
-      console.log(want,type)
-      if(state.stats.prices.listed[want]==amount  || want=='rseed' && amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
-	      console.log('this far')
+      if(state.stats.prices.listed[want]==amount || amount == 500 && type == 'manage' && state.stats.prices.listed[want]|| want=='rseed' && amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
 	if(state.stats.supply.land[want]){
-		console.log('even further')
+	  var allowed = false
+	  if(amount == 500 && type == 'manage' ) {
+		state.bal.c += amount;
+		for(var i = 0;i<state.delegators.length;i++){
+			if(json.delegator == state.delegators[i].delegator && state.delegators[i].availible){
+				state.delegators[i].availible--;
+				state.delegators[i].used++;
+				allowed = true
+				break;}}					       
+					       }
+	  else{  
+	  const c = parseInt(amount*0.025)
+	  state.bal.c += c
+	  state.bal.b += amount - c
+		  allowed = true
+	    }
+	  if (allowed){
 	  state.stats.supply.land[want]--
 	  const sel = `${want}c`
 	  const num = state.stats.supply.land[sel]++
 	  var addr = `${want}${num}`	
 	  state.users[json.from].addrs.push(addr)
-	  const c = parseInt(amount*0.025)
-	  state.bal.c += c
-	  state.bal.b += amount - c
-	  console.log(`${json.from} purchased ${addr}`)
+	  console.log(`${json.from} purchased ${addr}`)} else {state.refund.push(['xfer',json.from,amount,'Managing Land?...Maybe have your STEEM back'])}
 	} else if (want=='rseed' && amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
-		console.log('seeds?')
 	  if (state.stats.supply.strains.indexOf(type)<0)type = state.stats.supply.strains[state.users.length%state.stats.supply.strains.length]
 	  var xp = 1
 	  if(want=='mseed')xp=750

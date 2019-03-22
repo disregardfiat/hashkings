@@ -255,9 +255,9 @@ processor.onOperation('delegate_vesting_shares', function(json,from){//grab post
 	  if(record.vests < vests){availible = availible-record.used;used = record.used}
 	  else {
 	    if (record.used > availible){
-		var j = record.used - availible
+		var j = record.used - availible;
 		for(var i = state.users[json.delegator].addrs.length - j;i<state.users[json.delegator].addrs.length;i++)
-		{delete state.land[state.users[json.delegator].addrs[i]];state.lands.forSale.push(state.users[json.delegator].addrs[i])
+		{delete state.land[state.users[json.delegator].addrs[i]];state.lands.forSale.push(state.users[json.delegator].addrs[i])}
 		used = availible
 		availible = 0
 	    } else {

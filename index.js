@@ -240,7 +240,7 @@ processor.onOperation('transfer_to_vesting', function(json){
 processor.onOperation('delegate_vesting_shares', function(json,from){//grab posts to reward
     const vests = parseInt(parseFloat(json.vesting_shares)*1000000)
     var record = ''
-    if (!state.users[json.delegator])state.user[json.delegator]={addrs:[],seeds:[],inv:[],stats:[],v:0,a:0,u:0}
+    if (!state.users[json.delegator] && json.delegatee == 'hashkings')state.users[json.delegator]={addrs:[],seeds:[],inv:[],stats:[],v:0,a:0,u:0}
     var availible = parseInt(vests/(state.stats.sv*state.stats.prices.listed.a/1000)),used = 0;
     if (json.delegatee == 'hashkings' && vests){
       for (var i = 0; i < state.delegations.length;i++){
@@ -266,7 +266,7 @@ processor.onOperation('delegate_vesting_shares', function(json,from){//grab post
 	  }	
 	}
         state.delegations.push({delegator:json.delegator,vests,availible,used})
-        console.log(current + `:${json.delegator} has delegated ${vests} vests to @dlux-io`)
+        console.log(current + `:${json.delegator} has delegated and earned ${availible} lands for @hashkings`)
     } else if (json.delegatee == 'dlux-io' && !vests){
       for (var i = 0; i < state.delegations.length;i++){
         if (state.delegations[i].delegator == json.delegator){
@@ -274,7 +274,7 @@ processor.onOperation('delegate_vesting_shares', function(json,from){//grab post
           break;
         }
       }
-      console.log(current + `:${json.delegator} has removed delegation to @dlux-io`)
+      console.log(current + `:${json.delegator} has removed delegation to @hashkings`)
     }
   });
   processor.onOperation('transfer', function(json){

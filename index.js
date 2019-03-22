@@ -147,7 +147,7 @@ function startApp() {
  processor.onBlock(function(num, block) {
     const sun = num - state.stats.time % 28800
     var td = []
-    for(var o in state.stats.offsets){if(sun-state.stats.offsets[o]<1200&&sun-state.stats.offsets[o]>=0){td.push(`${o}${(sun-state.stats.offsets[o]*4)}`,`${o}${(sun-state.stats.offsets[o]*4)-1}`,`${o}${(sun-state.stats.offsets[o]*4)-2}`,`${o}${(sun-state.stats.offsets[o]*4)-3}`);console.log(td)}}
+    for(var o in state.stats.offsets){console.log(sun-state.stats.offsets[o]);if(sun-state.stats.offsets[o]<1200&&sun-state.stats.offsets[o]>=0){td.push(`${o}${(sun-state.stats.offsets[o]*4)}`,`${o}${(sun-state.stats.offsets[o]*4)-1}`,`${o}${(sun-state.stats.offsets[o]*4)-2}`,`${o}${(sun-state.stats.offsets[o]*4)-3}`);console.log(td)}}
 	 for (var i = 0;i<td.length;i++){
       daily(td[i])
     }

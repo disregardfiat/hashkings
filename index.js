@@ -71,7 +71,7 @@ var state = {
       }
     },
     supply:{
-      land:{a:4153,ac:47,b:4162,bc:38,c:4165,cc:35,d:4169,dc:31,e:4191,ec:9,f:4195,fc:5,g:0,gc:0,t:420000,tc:0,counter:0},
+      land:{a:4153,ac:48,b:4162,bc:39,c:4165,cc:36,d:4169,dc:32,e:4191,ec:10,f:4195,fc:6,g:0,gc:0,t:420000,tc:1,counter:0},
       strains:['hk','afg','lkg','mis','lb','kbr','aca','swz','kmj','dp','mal','pam','cg','ach','tha','cht']
     },
   },

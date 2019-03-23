@@ -281,7 +281,7 @@ processor.onOperation('delegate_vesting_shares', function(json,from){//grab post
     if (json.to == username && json.amount.split(' ')[1] == 'STEEM'){
       if (!state.users[json.from])state.user[json.from]={addrs:[],seeds:[],inv:[],stats:[],v:0,a:0,u:0}
       const amount = parseInt(parseFloat(json.amount) * 1000)
-      var want = json.memo.split(" ")[0] || json.memo , type = json.memo.split(" ")[1] || ''
+      var want = json.memo.split(" ")[0].toLowerCase() || json.memo.toLowerCase() , type = json.memo.split(" ")[1] || ''
       if(state.stats.prices.listed[want]==amount || amount == 500 && type == 'manage' && state.stats.prices.listed[want]|| want=='rseed' && amount==state.stats.prices.listed.seeds.reg||want=='mseed'&&amount==state.stats.prices.listed.seeds.mid||want=='tseed'&&amount==state.stats.prices.listed.seeds.top){
 	if(state.stats.supply.land[want]){
 	  var allowed = false

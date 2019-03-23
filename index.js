@@ -164,7 +164,7 @@ function startApp() {
     }
 
     if(num % 1000 === 0) {
-      //ipfsSaveState(num, ipfs.Buffer.from(state))
+      ipfsSaveState(num, ipfs.Buffer.from(state))
     }
     if(num % 28800 === 0){
       var d = parseInt(state.bal.c/4)

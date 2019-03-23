@@ -9,6 +9,7 @@ const IPFS = require('ipfs-api');
 const ipfs = new IPFS({ host: 'ipfs.infura.io', port: 5001, protocol: 'https'});
 const app = express()
 const port = ENV.PORT || 3000;
+
 app.use(cors())
 app.get('/p/:addr', (req, res, next) => {
   let addr = req.params.addr
@@ -380,16 +381,11 @@ function ipfsSaveState(blocknum, hashable) {
         if(err) {
           console.error(err, `\nMost likely your ACCOUNT and KEY variables are not set!`);
         } else {
-          console.log(current + `:Sent State report and published ${plasma.hashLastIBlock} for ${plasma.hashBlock}`)
+          console.log(blocknum + `:Sent State report and published ${state.stats.bu} for ${state.stats.bi}`)
         }
     })
     } else {
-      console.log({cycle}, 'IPFS Error', err)
-      cycleipfs(cycle++)
-      if (cycle >= 25){
-        cycle = 0;
-        return;
-      }
+      console.log('IPFS Error', err)
     }
   })
 };

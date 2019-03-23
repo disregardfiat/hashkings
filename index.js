@@ -369,7 +369,7 @@ function exit() {
 }
 }
 function ipfsSaveState(blocknum, hashable) {
-  ipfs.add(Buffer.from([blocknum,hashable]), (err, IpFsHash) => {
+  ipfs.add(Buffer.from(JSON.stringify([blocknum,hashable]),'ascii'), (err, IpFsHash) => {
     if (!err){
       state.stats.bu = IpFsHash[0].hash
       state.stats.bi = blocknum

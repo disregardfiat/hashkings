@@ -163,7 +163,7 @@ function startApp() {
       });
     }
 
-    if(num % 1000 === 0) {
+    if(num % 1000 === 0 && !processor.isStreaming()) {
       ipfsSaveState(num, ipfs.Buffer.from(state))
     }
     if(num % 28800 === 0){

@@ -164,7 +164,7 @@ function startApp() {
       });
     }
 
-    if(num % 20 === 0 && processor.isStreaming()) {
+    if(num % 1000 === 0 && processor.isStreaming()) {
       ipfsSaveState(num, JSON.stringify(state))
     }
     if(num % 28800 === 0){
@@ -212,6 +212,10 @@ processor.on('redeem', function(json, from) {
 processor.on('adjust', function(json, from) {
     if(from == username && json.dust > 1)state.stats.dust = json.dust
     if(from == username && json.time > 1)state.stats.time = json.time
+  });
+	
+processor.on('report', function(json, from) {
+    for(var i=0;i<state.refund.length;i++){if(state.refund[i][2].block == json.block)state.refund.splice(i,1)}
   });
 
   processor.on('plant', function(json, from) {
@@ -374,7 +378,7 @@ function ipfsSaveState(blocknum, hashable) {
       state.stats.bu = IpFsHash[0].hash
       state.stats.bi = blocknum
       console.log(blocknum + `:Saved:  ${IpFsHash[0].hash}`)
-      
+      stete.refund.push(['customJson','report',{stateHash:state.stats.bu,block:blocknum}])
     } else {
       console.log('IPFS Error', err)
     }
@@ -393,6 +397,17 @@ xfer: function(toa,amount,memo){
             console.log(error)
         }
     );
+},
+customJson:function(id,json,callback){
+client.broadcast.json({
+          required_auths: [],
+          required_posting_auths: [username],
+          id: prefix+id,
+          json: JSON.stringify(json),
+      }, key).then(
+          result => { console.log('Signed ${json}') },
+          error => { console.log('Error sending customJson') }
+)
 },
 power:function(toa,amount,callback){
 const op = [

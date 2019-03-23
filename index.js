@@ -163,7 +163,7 @@ function startApp() {
       });
     }
 
-    if(num % 1000 === 0 && !processor.isStreaming()) {
+    if(num % 1000 === 0 && processor.isStreaming()) {
       ipfsSaveState(num, JSON.stringify(state))
     }
     if(num % 28800 === 0){
@@ -371,7 +371,7 @@ function ipfsSaveState(blocknum, hashable) {
     if (!err){
       state.stats.bu = IpFsHash[0].hash
       state.stats.bi = blocknum
-      console.log(current + `:Saved:  ${IpFsHash[0].hash}`)
+      console.log(blocknum + `:Saved:  ${IpFsHash[0].hash}`)
       transactor.json(username, key, 'report', {
         hash: state.stats.bu,
         block: state.stats.bi,

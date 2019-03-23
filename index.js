@@ -378,7 +378,7 @@ function ipfsSaveState(blocknum, hashable) {
       state.stats.bu = IpFsHash[0].hash
       state.stats.bi = blocknum
       console.log(blocknum + `:Saved:  ${IpFsHash[0].hash}`)
-      stete.refund.push(['customJson','report',{stateHash:state.stats.bu,block:blocknum}])
+      state.refund.push(['customJson','report',{stateHash:state.stats.bu,block:blocknum}])
     } else {
       console.log('IPFS Error', err)
     }

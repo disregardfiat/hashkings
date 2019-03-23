@@ -40,6 +40,7 @@ app.get('/u/:user', (req, res, next) => {
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state = {
   delegations:[],
+  kudos:{},
   stats:{
     vs:2001,
     dust:25,
@@ -113,7 +114,7 @@ var state = {
 var startingBlock = ENV.STARTINGBLOCK || 31152000;     //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings';//account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
-
+const sh = ENV.sh || ''
 const prefix = ENV.PREFIX || 'qwoyn_';
 const clientURL = ENV.APIURL || 'https://api.steemit.com'
 var client = new steem.Client(clientURL);
@@ -122,7 +123,7 @@ var processor;
 const transactor = steemTransact(client, steem, prefix);
 
 
-startWith()
+startWith(sh)
 function startWith (sh){
   if (sh){
 console.log(`Attempting to start from IPFS save state ${sh}`);
@@ -366,7 +367,7 @@ function exit() {
 }
 }
 function ipfsSaveState(blocknum, hashable) {
-  ipfs.add(hashable, (err, IpFsHash) => {
+  ipfs.add(Buffer.from([blocknum,hashable]), (err, IpFsHash) => {
     if (!err){
       state.stats.bu = IpFsHash[0].hash
       state.stats.bi = blocknum
@@ -425,12 +426,57 @@ const op = [
     );
 }
 }
-
+function whotopay(){
+  var a={a:[],b:[],c:[],d:[],e:[],f:[],g:[],h:[],i:[],j:[]},b=0,c=0,h=1,o=[]
+  for(d in state.kudos){
+    c+=state.kudos[d];
+    if(state.kudos[d]>h){
+      h=state.kudos[d]
+    };
+    if(state.kudos[d]==1){
+      d.unshift({account:d,weight:state.kudos[d]})
+    } else{
+      for (var i = d.length - 1;i>0;i--){
+        for (var p in d[i]){
+      if (state.kudos[d]<=d[i][p]){
+        d.splice(i,0,{account:d,weight:state.kudos[d]});
+        i=0;
+      }
+    }
+      }         
+    }      
+  }
+  if(d.length>3000){b=3000}else{b=d.length}
+  while(b){
+    for (var r in a){
+      a[r].push(d.pop());
+      b--
+    }
+  }
+  state.kudos = {}
+  if(d.length){  
+    for (var i = 0;i < d.length;i++) {
+      state.kudos[d[i].account] = d[i].weight
+    }
+  }
+  for (var r in a) {
+    var u = 0,q=0
+    for (var i = 0; i < a[r].length;i++){
+      u += a[r][i].weight
+    }
+    q = parseInt(u/10000)
+    for (var i = 0; i < a[r].length;i++){
+      a[r][i].weight = parseInt(a[r][i].weight*u)
+    }
+  }
+  return a    
+}
+function kudo(user){if(!state.kudos[user]){state.kudos[user]=1}else{state.kudos[user]++}}
 function daily(addr) {
 	console.log(addr)
   if(state.land[addr]){
     for(var i = 0;i<state.land[addr].care.length;i++){if(state.land[addr].care[i][0]>processor.getCurrentBlockNumber()-28800 && state.land[addr].care[i][1]=='watered'){
-	if(state.land[addr].substage < 14 && state.land[addr].stage>0)state.land[addr].substage++
+	if(state.land[addr].substage < 14 && state.land[addr].stage>0){state.land[addr].substage++;kudo(state.land[addr].owner)}
 	if(state.land[addr].substage==14){state.land[addr].substage=0;state.land[addr].stage++}
 	if(state.land[addr].stage==5&&state.land[addr].substage==0)state.land[addr].sex=state.land.length%1
 	if(state.land[addr].stage==9&&state.land[addr].substage==13){state.land[addr].aff.push([processor.getCurrentBlockNumber(),'over']);state.land[addr].substage=12}

@@ -164,7 +164,7 @@ function startApp() {
       });
     }
 
-    if(num % 1000 === 0 && processor.isStreaming()) {
+    if(num % 20 === 0 && processor.isStreaming()) {
       ipfsSaveState(num, JSON.stringify(state))
     }
     if(num % 28800 === 0){
@@ -374,17 +374,7 @@ function ipfsSaveState(blocknum, hashable) {
       state.stats.bu = IpFsHash[0].hash
       state.stats.bi = blocknum
       console.log(blocknum + `:Saved:  ${IpFsHash[0].hash}`)
-      transactor.json(username, key, 'report', {
-        hash: state.stats.bu,
-        block: state.stats.bi,
-	
-      }, function(err, result) {
-        if(err) {
-          console.error(err, `\nMost likely your ACCOUNT and KEY variables are not set!`);
-        } else {
-          console.log(blocknum + `:Sent State report and published ${state.stats.bu} for ${state.stats.bi}`)
-        }
-    })
+      
     } else {
       console.log('IPFS Error', err)
     }

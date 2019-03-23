@@ -170,7 +170,7 @@ function startApp() {
     if(num % 28800 === 0){
       var d = parseInt(state.bal.c/4)
       state.bal.r += state.bal.c
-      state.refund.push(['xfer','disregardfiat',d,'Dev Cut'])
+      if(d){state.refund.push(['xfer','disregardfiat',d,'Dev Cut'])
       state.refund.push(['xfer','qwoyn-fund',d,'Partners Cut'])
       state.refund.push(['xfer','qwoyn-chest',d,'Warchest'])
       state.bal.c -= d*3
@@ -179,6 +179,7 @@ function startApp() {
       if (state.bal.d > state.bal.b){state.bal.d -= state.bal.b;state.bal.b=0}
       else if(state.bal.d <= state.bal.b){state.bal.b -= state.bal.d;state.bal.d=0}
       state.refund.push(['power',username,state.bal.b,'Power to the people!'])
+	   }
     }
   });
 processor.on('water', function(json, from) {

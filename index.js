@@ -343,7 +343,7 @@ processor.onOperation('delegate_vesting_shares', function(json,from){//grab post
 	  state.refund.push(['xfer',json.from,amount,'We don\'t know what you wanted... have your STEEM back'])
 	  console.log(`${json.from} sent a weird transfer...refund?`)
 	}
-      } else {
+      } else if (amount > 10) {
       console.log('refund fun')
 	  state.bal.r += amount
 	  state.refund.push(['xfer',json.from,amount,'We don\'t know what you wanted... have your STEEM back'])
@@ -351,7 +351,7 @@ processor.onOperation('delegate_vesting_shares', function(json,from){//grab post
       }
     } else if (json.from == username){
       const amount = parseInt(parseFloat(json.amount) * 1000)
-      for (var i = 0;i<state.refund.length;i++){if(state.refund[i][1] == json.to && state.refund[i][2] == amount)state.refund.splice(i,1);state.bal.r-=amount;console.log(`${json.to} refunded successfully`);break;}
+      for (var i = 0;i<state.refund.length;i++){if(state.refund[i][1] == json.to && state.refund[i][2] == amount){state.refund.splice(i,1);state.bal.r-=amount;console.log(`${json.to} refunded successfully`);break;}}
     }
   });
   processor.onStreamingStart(function() {

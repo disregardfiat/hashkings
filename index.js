@@ -243,7 +243,8 @@ processor.on('report', function(json, from) {
   });
 processor.onOperation('transfer_to_vesting', function(json){
 	if(json.to == username && json.from == username){
-		const amount = parseInt(parseFloat(json.amount*1000))
+		const amount = parseInt(parseFloat(json.amount)*1000)
+		console.log(amount,'to vesting')
 		state.bal.b -= amount
 		state.bal.p += amount
 	}

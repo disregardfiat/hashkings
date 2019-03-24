@@ -247,6 +247,12 @@ processor.onOperation('transfer_to_vesting', function(json){
 		console.log(amount,'to vesting')
 		state.bal.b -= amount
 		state.bal.p += amount
+		for (var i = 0;i<state.refund.length;i++){
+			if(state.refund[i][1] == json.to && state.refund[i][2] == amount){
+			state.refund.splice(i,1);
+			console.log(`${json.to} powered up ${amount}`);
+			break;}
+		}
 	}
 });
 processor.onOperation('delegate_vesting_shares', function(json,from){//grab posts to reward

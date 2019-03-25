@@ -650,7 +650,7 @@ function startApp() {
             } else if (amount > 10) {
                 console.log('refund fun')
                 state.bal.r += amount
-                state.refund.push(['xfer', json.from, amount, 'We don\'t know what you wanted... have your STEEM back'])
+                state.refund.push(['xfer', json.from, amount, 'Sorry, this account only accepts in game transactions.'])
                 console.log(`${json.from} sent a weird transfer...refund?`)
             }
         } else if (json.from == username) {

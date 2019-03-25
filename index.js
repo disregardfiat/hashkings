@@ -384,6 +384,7 @@ function startApp() {
         if (num % 50 === 0 && state.refund.length && processor.isStreaming() || processor.isStreaming() && state.refund.length > 60) {
             if (state.refund[0].length == 4) bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2], state.refund[0][3])
             if (state.refund[0].length == 3) bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2])
+            if (state.refund[0].length == 2) bot[state.refund[0][0]].call(this, state.refund[0][1])
             state.refund.push(state.refund.shift())
         }
         if (num % 100 === 0 && !processor.isStreaming()) {
@@ -765,6 +766,16 @@ var bot = {
                 console.log(error)
             }
         );
+    },
+    sendOp: function(op) {
+        client.broadcast.sendOperations(op, key).then(
+            function(result) {
+                console.log(result)
+            },
+            function(error) {
+                console.log(error)
+            }
+        );
     }
 }
 
@@ -853,6 +864,7 @@ function daily(addr) {
     if (state.land[addr]) {
         for (var i = 0; i < state.land[addr].care.length; i++) {
             if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {
+                state.land[addr].care[i].push('c')
                 if (state.land[addr].substage < 14 && state.land[addr].stage > 0) {
                     state.land[addr].substage++;
                     kudo(state.land[addr].owner)

@@ -444,14 +444,13 @@ function startApp() {
     });
 
     processor.on('redeem', function(json, from) {
-        if (state.users[from].v > 0) {
+        if (state.users[from])if (state.users[from].v && state.users[from].v > 0) {
             state.users[from].v--
             let type = json.type || ''
             if (state.stats.supply.strains.indexOf(type) < 0) type = state.stats.supply.strains[state.users.length % state.stats.supply.strains.length]
-            var xp = 2250
             var seed = {
                 strain: type,
-                xp: xp
+                xp: 2250
             }
             state.users[from].seeds.push(seed)
         }

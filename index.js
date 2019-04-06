@@ -375,7 +375,6 @@ function startApp() {
         for (var o in state.stats.offsets) {
             if (sun - state.stats.offsets[o] < 1200 && sun - state.stats.offsets[o] > 0) {
                 td.push(`${o}${((sun-state.stats.offsets[o])*4)}`, `${o}${((sun-state.stats.offsets[o])*4)-1}`, `${o}${((sun-state.stats.offsets[o])*4)-2}`, `${o}${((sun-state.stats.offsets[o])*4)-3}`);
-                console.log(td)
             }
         }
         for (var i = 0; i < td.length; i++) {
@@ -851,6 +850,7 @@ function whotopay() {
 }
 
 function kudo(user) {
+    console.log('Kudos: ` + user)
     if (!state.kudos[user]) {
         state.kudos[user] = 1
     } else {
@@ -859,7 +859,6 @@ function kudo(user) {
 }
 
 function daily(addr) {
-    console.log(addr)
     if (state.land[addr]) {
         for (var i = 0; i < state.land[addr].care.length; i++) {
             if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {

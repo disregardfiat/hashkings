@@ -850,7 +850,7 @@ function whotopay() {
 }
 
 function kudo(user) {
-    console.log('Kudos: ` + user)
+    console.log('Kudos: ' + user)
     if (!state.kudos[user]) {
         state.kudos[user] = 1
     } else {

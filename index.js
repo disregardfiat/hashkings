@@ -571,7 +571,7 @@ function startApp() {
                 availible,
                 used
             })
-            console.log(current + `:${json.delegator} has delegated and earned ${availible} lands for @hashkings`)
+            console.log(processor.getCurrentBlockNumber() + `:${json.delegator} has delegated and earned ${availible} lands for @hashkings`)
         } else if (json.delegatee == username && !vests) {
             for (var i = 0; i < state.delegations.length; i++) {
                 if (state.delegations[i].delegator == json.delegator) {

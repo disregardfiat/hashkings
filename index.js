@@ -536,7 +536,7 @@ function startApp() {
             a: 0,
             u: 0
         }
-        var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs + 2) * 1000)),
+        var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs + 5) * 1000)),
             used = 0;
         if (json.delegatee == 'hashkings' && vests) {
             for (var i = 0; i < state.delegations.length; i++) {
@@ -603,10 +603,10 @@ function startApp() {
                     var allowed = false
                     if (amount == 500 && type == 'manage') {
                         state.bal.c += amount;
-                        for (var i = 0; i < state.delegators.length; i++) {
-                            if (json.delegator == state.delegators[i].delegator && state.delegators[i].availible) {
-                                state.delegators[i].availible--;
-                                state.delegators[i].used++;
+                        for (var i = 0; i < state.delegations.length; i++) {
+                            if (json.delegator == state.delegation[i].delegator && state.delegation[i].availible) {
+                                state.delegation[i].availible--;
+                                state.delegation[i].used++;
                                 allowed = true
                                 break;
                             }

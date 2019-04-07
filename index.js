@@ -581,7 +581,7 @@ function startApp() {
                     break;
                 }
             }
-            console.log(current + `:${json.delegator} has removed delegation to @hashkings`)
+            console.log(processor.getCurrentBlockNumber() + `:${json.delegator} has removed delegation to @hashkings`)
         }
     });
     processor.onOperation('transfer', function(json) {

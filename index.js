@@ -602,11 +602,12 @@ function startApp() {
                 if (state.stats.supply.land[want]) {
                     var allowed = false
                     if (amount == 500 && type == 'manage') {
+                        console.log(`${json.from} is managing`)
                         state.bal.c += amount;
                         for (var i = 0; i < state.delegations.length; i++) {
                             if (json.delegator == state.delegations[i].delegator && state.delegations[i].availible) {
-                                state.delegation[i].availible--;
-                                state.delegation[i].used++;
+                                state.delegations[i].availible--;
+                                state.delegations[i].used++;
                                 allowed = true
                                 break;
                             }

@@ -442,17 +442,17 @@ function startApp() {
         console.log(`${from} returned ${landnames}`)
     });
 
-    processor.on('redeem', function(json, from) {
-        console.log(`${from} ${json}`)
-        if (state.users[from]){if (state.users[from].v && state.users[from].v > 0) {
-            state.users[from].v--
-            let type = json.type || ''
+    processor.on('redeem', function(j, f) {
+        console.log(`${f} ${j}`)
+        if (state.users[f]){if (state.users[f].v && state.users[f].v > 0) {
+            state.users[f].v--
+            let type = j.type || ''
             if (state.stats.supply.strains.indexOf(type) < 0) type = state.stats.supply.strains[state.users.length % state.stats.supply.strains.length]
             var seed = {
                 strain: type,
                 xp: 2250
             }
-            state.users[from].seeds.push(seed)
+            state.users[f].seeds.push(seed)
         }}
     });
 

@@ -443,7 +443,7 @@ function startApp() {
     });
 
     processor.on('redeem', function(json, from) {
-        console.log(`${from} redeeming?`)
+        console.log(`${from} ${json}`)
         if (state.users[from]){if (state.users[from].v && state.users[from].v > 0) {
             state.users[from].v--
             let type = json.type || ''

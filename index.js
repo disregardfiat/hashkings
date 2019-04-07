@@ -536,7 +536,7 @@ function startApp() {
             a: 0,
             u: 0
         }
-        var availible = parseInt(vests / (state.stats.sv * state.stats.prices.listed.a / 1000)),
+        var availible = parseInt(vests / (state.stats.vs * state.stats.prices.listed.a / 1000)),
             used = 0;
         if (json.delegatee == 'hashkings' && vests) {
             for (var i = 0; i < state.delegations.length; i++) {
@@ -564,6 +564,8 @@ function startApp() {
                         used = record.used
                     }
                 }
+            } else {
+            
             }
             state.delegations.push({
                 delegator: json.delegator,

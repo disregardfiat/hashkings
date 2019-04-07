@@ -603,11 +603,11 @@ function startApp() {
                     var allowed = false
                     if (amount == 500 && type == 'manage') {
                         console.log(`${json.from} is managing`)
-                        state.bal.c += amount;
                         for (var i = 0; i < state.delegations.length; i++) {
-                            if (json.delegator == state.delegations[i].delegator && state.delegations[i].availible) {
+                            if (json.from == state.delegations[i].delegator && state.delegations[i].availible) {
                                 state.delegations[i].availible--;
                                 state.delegations[i].used++;
+                                state.bal.c += amount;
                                 allowed = true
                                 break;
                             }

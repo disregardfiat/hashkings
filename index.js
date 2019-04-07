@@ -564,9 +564,9 @@ function startApp() {
                         used = record.used
                     }
                 }
-            } else {
-            
             }
+            state.users[json.delegator].a = availible
+            state.users[json.delegator].u = used
             state.delegations.push({
                 delegator: json.delegator,
                 vests,

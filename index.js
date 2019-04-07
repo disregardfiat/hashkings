@@ -862,13 +862,19 @@ function kudo(user) {
 }
 
 function daily(addr) {
+    var grown = false
     if (state.land[addr]) {
         for (var i = 0; i < state.land[addr].care.length; i++) {
             if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {
-                state.land[addr].care[i].push('c')
-                if (state.land[addr].substage < 14 && state.land[addr].stage > 0) {
-                    state.land[addr].substage++;
-                    kudo(state.land[addr].owner)
+                if(!grown)state.land[addr].care[i].push('c')
+                if (state.land[addr].substage < 14 && state.land[addr].stage > 0 && !grown) {
+                    if(!grown){
+                        state.land[addr].substage++;
+                        grown = true;
+                        kudo(state.land[addr].owner)
+                    } else {
+                        state.land[addr].aff.push([processor.getCurrentBlockNumber(), 'too wet']);   
+                    }
                 }
                 if (state.land[addr].substage == 14) {
                     state.land[addr].substage = 0;

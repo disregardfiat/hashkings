@@ -47,292 +47,718 @@ app.get('/u/:user', (req, res, next) => {
 
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state = {
-    delegations: [],
-    kudos: {},
-    stats: {
-        vs: 2001,
-        dust: 25,
-        time: 31159798,
-        offsets: {
-            a: 9600,
-            b: 21600,
-            c: 0,
-            d: 19200,
-            e: 20400,
-            f: 7200
-        },
-        bu: '',
-        bi: 0,
-        prices: {
-            listed: {
-                a: 20000,
-                b: 20000,
-                c: 20000,
-                d: 20000,
-                e: 20000,
-                f: 20000,
-                t: 20000,
-                seeds: {
-                    reg: 750,
-                    mid: 1500,
-                    top: 3000
-                },
-                supplies: {
-
-                }
+   "delegations": [
+      {
+         "delegator": "jonyoudyer",
+         "vests": 39980749568,
+         "availible": 0,
+         "used": 1
+      }
+   ],
+   "kudos": {
+      "qwoyn": 6
+   },
+   "stats": {
+      "vs": 1997,
+      "dust": 25,
+      "time": 31159798,
+      "offsets": {
+         "a": 9600,
+         "b": 21600,
+         "c": 0,
+         "d": 19200,
+         "e": 20400,
+         "f": 7200
+      },
+      "bu": "QmYbfqERnt8b5zDuMdk2sLBg5m6148E7STnN5dG1i9xY6d",
+      "bi": 31851000,
+      "prices": {
+         "listed": {
+            "a": 20000,
+            "b": 20000,
+            "c": 20000,
+            "d": 20000,
+            "e": 20000,
+            "f": 20000,
+            "t": 20000,
+            "seeds": {
+               "reg": 750,
+               "mid": 1500,
+               "top": 3000
             },
-            purchase: {
-                land: 19500
+            "supplies": {}
+         },
+         "purchase": {
+            "land": 19500
+         }
+      },
+      "supply": {
+         "land": {
+            "a": 4152,
+            "ac": 49,
+            "b": 4162,
+            "bc": 39,
+            "c": 4164,
+            "cc": 37,
+            "d": 4169,
+            "dc": 32,
+            "e": 4188,
+            "ec": 13,
+            "f": 4194,
+            "fc": 7,
+            "g": 0,
+            "gc": 0,
+            "t": 420000,
+            "tc": 1,
+            "counter": 0
+         },
+         "strains": [
+            "hk",
+            "afg",
+            "lkg",
+            "mis",
+            "lb",
+            "kbr",
+            "aca",
+            "swz",
+            "kmj",
+            "dp",
+            "mal",
+            "pam",
+            "cg",
+            "ach",
+            "tha",
+            "cht"
+         ]
+      }
+   },
+   "bal": {
+      "r": 0,
+      "c": 0,
+      "b": 0,
+      "p": 127278
+   },
+   "refund": [],
+   "lands": {
+      "forSale": []
+   },
+   "land": {
+      "a10": {
+         "owner": "qwoyn",
+         "strain": "kbr",
+         "xp": 2250,
+         "care": [
+            [
+               31846989,
+               "watered",
+               "c"
+            ],
+            [
+               31816312,
+               "watered",
+               "c"
+            ],
+            [
+               31815632,
+               "watered",
+               "c"
+            ],
+            [
+               31789626,
+               "watered",
+               "c"
+            ],
+            [
+               31763213,
+               "watered",
+               "c"
+            ],
+            [
+               31713786,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31713776,
+         "stage": 1,
+         "substage": 6
+      },
+      "a2": {
+         "owner": "jonyoudyer",
+         "strain": "mis",
+         "xp": 2250,
+         "care": [],
+         "aff": [],
+         "planted": 31853281,
+         "stage": 1,
+         "substage": 0
+      }
+   },
+   "users": {
+      "a1-shroom-spores": {
+         "addrs": [
+            "a1"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "shinedojo": {
+         "addrs": [
+            "e1"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "jonyoudyer": {
+         "addrs": [
+            "a2",
+            "a3",
+            "e11"
+         ],
+         "seeds": [
+            {
+               "strain": "swz",
+               "xp": 2250
+            },
+            {
+               "strain": "swz",
+               "xp": 2250
             }
-        },
-        supply: {
-            land: {
-                a: 4153,
-                ac: 48,
-                b: 4162,
-                bc: 39,
-                c: 4165,
-                cc: 36,
-                d: 4169,
-                dc: 32,
-                e: 4191,
-                ec: 10,
-                f: 4195,
-                fc: 6,
-                g: 0,
-                gc: 0,
-                t: 420000,
-                tc: 1,
-                counter: 0
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 1,
+         "u": 0
+      },
+      "em3di": {
+         "addrs": [
+            "e2"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "timetraveljesus": {
+         "addrs": [
+            "a4",
+            "e3"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 2
+      },
+      "onlyzul": {
+         "addrs": [
+            "a5",
+            "d1",
+            "d2",
+            "e5"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 4
+      },
+      "besancia": {
+         "addrs": [
+            "a6"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "prettynicevideo": {
+         "addrs": [
+            "a7",
+            "a8",
+            "e6",
+            "f1"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 6
+      },
+      "ghosthunter1": {
+         "addrs": [
+            "a9",
+            "b1",
+            "e7"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 3
+      },
+      "qwoyn": {
+         "addrs": [
+            "a10"
+         ],
+         "seeds": [
+            {
+               "strain": "dp",
+               "xp": 2250
             },
-            strains: ['hk', 'afg', 'lkg', 'mis', 'lb', 'kbr', 'aca', 'swz', 'kmj', 'dp', 'mal', 'pam', 'cg', 'ach', 'tha', 'cht']
-        },
-    },
-    bal: {
-        r: 0,
-        c: 0,
-        b: 0,
-        p: 40503
-    },
-    refund: [],
-    lands: {
-        forSale: []
-    },
-    land: {},
-    users: {
-        "a1-shroom-spores": {
-            addrs: ['a1'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "shinedojo": {
-            addrs: ['e1'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "jonyoudyer": {
-            addrs: ['a2', 'a3'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 2
-        },
-        "em3di": {
-            addrs: ['e2'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "timetraveljesus": {
-            addrs: ['a4', 'e3'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 2
-        },
-        "onlyzul": {
-            addrs: ['a5', 'd1', 'd2', 'e5'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 4
-        },
-        "besancia": {
-            addrs: ['a6'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "prettynicevideo": {
-            addrs: ['a7', 'a8', 'e6', 'f1'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 6
-        },
-        "ghosthunter1": {
-            addrs: ['a9', 'b1', 'e7'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 3
-        },
-        "qwoyn": {
-            addrs: ['a10'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "disregardfiat": {
-            addrs: ['e8'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "bluntsmasha": {
-            addrs: ['a11', 'b2', 'c1', 'f2'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 4
-        },
-        "tryp": {
-            addrs: ['a12', 'a13', 'a14', 'c3', 'c4'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 5
-        },
-        "highroadseeds": {
-            addrs: ['c5', 'c6'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 2
-        },
-        "mrkhuffins": {
-            addrs: ['a15', 'b3', 'c7', 'd3'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 4
-        },
-        "allcapsonezero": {
-            addrs: ['b4'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "nelsius": {
-            addrs: ['a16'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "luegenbaron": {
-            addrs: ['b5'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "ngc": {
-            addrs: ['a17', 'a18', 'a19', 'a20', 'a21', 'a22', 'a23', 'a24', 'a25', 'a26', 'a27', 'a28', 'a29', 'a30', 'a31', 'a32', 'a33', 'a34', 'a35', 'a36', 'a37', 'a38', 'a39', 'a40', 'a41', 'a42', 'b6', 'b7', 'b8', 'b9', 'b10', 'b11', 'b12', 'b13', 'b14', 'b15', 'b16', 'b17', 'b18', 'b19', 'b20', 'b21', 'b22', 'b23', 'b24', 'b25', 'b26', 'b27', 'b28', 'b29', 'b30', 'b31', 'c8', 'c9', 'c10', 'c11', 'c12', 'c13', 'c14', 'c15', 'c16', 'c17', 'c18', 'c19', 'c20', 'c21', 'c22', 'c23', 'c24', 'c25', 'c26', 'c27', 'c28', 'c29', 'c30', 'c31', 'c32', 'c33', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19', 'd20', 'd21', 'd22', 'd23', 'd24', 'd25', 'd26', 'd27', 'd28', 'd29'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 120
-        },
-        "sooflauschig": {
-            addrs: ['b32'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "pangoli": {
-            addrs: ['b33'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "fracasgrimm": {
-            addrs: ['b34'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "gregorypatrick": {
-            addrs: ['a43'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "markegiles": {
-            addrs: ['a44', 'b35', 'c34', 'd30'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 4
-        },
-        "cowboyblazerfan": {
-            addrs: ['a45'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "movingman": {
-            addrs: ['a46'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "dantrevino": {
-            addrs: ['b36'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        },
-        "eldun": {
-            addrs: ['b37', 'f3'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 3
-        },
-        "napoleon2702": {
-            addrs: ['a47', 'b38', 'c35', 'd31', 'e9', 'f4'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 6
-        },
-        "geekpowered": {
-            addrs: ['f5'],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 1
-        }
-    }
+            {
+               "strain": "lb",
+               "xp": 2250
+            },
+            {
+               "strain": "hk",
+               "xp": 2250
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "disregardfiat": {
+         "addrs": [
+            "e8"
+         ],
+         "seeds": [
+            {
+               "strain": "cht",
+               "xp": 2250
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+       "azuremoon":{
+         "addrs": [
+            "e12"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "bluntsmasha": {
+         "addrs": [
+            "a11",
+            "b2",
+            "c1",
+            "f2"
+         ],
+         "seeds": [
+            {
+               "strain": "hk",
+               "xp": 2250
+            },
+            {
+               "strain": "lb",
+               "xp": 2250
+            },
+            {
+               "strain": "afg",
+               "xp": 2250
+            },
+            {
+               "strain": "aca",
+               "xp": 2250
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "tryp": {
+         "addrs": [
+            "a12",
+            "a13",
+            "a14",
+            "c3",
+            "c4"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 5
+      },
+      "highroadseeds": {
+         "addrs": [
+            "c5",
+            "c6"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 2
+      },
+      "mrkhuffins": {
+         "addrs": [
+            "a15",
+            "b3",
+            "c7",
+            "d3"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 4
+      },
+      "allcapsonezero": {
+         "addrs": [
+            "b4"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "nelsius": {
+         "addrs": [
+            "a16"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "luegenbaron": {
+         "addrs": [
+            "b5"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "ngc": {
+         "addrs": [
+            "a17",
+            "a18",
+            "a19",
+            "a20",
+            "a21",
+            "a22",
+            "a23",
+            "a24",
+            "a25",
+            "a26",
+            "a27",
+            "a28",
+            "a29",
+            "a30",
+            "a31",
+            "a32",
+            "a33",
+            "a34",
+            "a35",
+            "a36",
+            "a37",
+            "a38",
+            "a39",
+            "a40",
+            "a41",
+            "a42",
+            "b6",
+            "b7",
+            "b8",
+            "b9",
+            "b10",
+            "b11",
+            "b12",
+            "b13",
+            "b14",
+            "b15",
+            "b16",
+            "b17",
+            "b18",
+            "b19",
+            "b20",
+            "b21",
+            "b22",
+            "b23",
+            "b24",
+            "b25",
+            "b26",
+            "b27",
+            "b28",
+            "b29",
+            "b30",
+            "b31",
+            "c8",
+            "c9",
+            "c10",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17",
+            "c18",
+            "c19",
+            "c20",
+            "c21",
+            "c22",
+            "c23",
+            "c24",
+            "c25",
+            "c26",
+            "c27",
+            "c28",
+            "c29",
+            "c30",
+            "c31",
+            "c32",
+            "c33",
+            "d4",
+            "d5",
+            "d6",
+            "d7",
+            "d8",
+            "d9",
+            "d10",
+            "d11",
+            "d12",
+            "d13",
+            "d14",
+            "d15",
+            "d16",
+            "d17",
+            "d18",
+            "d19",
+            "d20",
+            "d21",
+            "d22",
+            "d23",
+            "d24",
+            "d25",
+            "d26",
+            "d27",
+            "d28",
+            "d29"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 120
+      },
+      "sooflauschig": {
+         "addrs": [
+            "b32"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "pangoli": {
+         "addrs": [
+            "b33"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "fracasgrimm": {
+         "addrs": [
+            "b34"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "gregorypatrick": {
+         "addrs": [
+            "a43"
+         ],
+         "seeds": [
+            {
+               "strain": "afg",
+               "xp": 2250
+            },
+            {
+               "strain": "hk",
+               "xp": 2250
+            },
+            {
+               "strain": "dp",
+               "xp": 2250
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "markegiles": {
+         "addrs": [
+            "a44",
+            "b35",
+            "c34",
+            "d30",
+            "e10"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 4
+      },
+      "cowboyblazerfan": {
+         "addrs": [
+            "a45"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "movingman": {
+         "addrs": [
+            "a46"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "dantrevino": {
+         "addrs": [
+            "b36"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "eldun": {
+         "addrs": [
+            "b37",
+            "f3"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 3
+      },
+      "napoleon2702": {
+         "addrs": [
+            "a47",
+            "b38",
+            "c35",
+            "d31",
+            "e9",
+            "f4"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 6
+      },
+      "geekpowered": {
+         "addrs": [
+            "f5"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 1
+      },
+      "greenhouseradio": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "eirik": {
+         "addrs": [
+            "c36"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "onthewayout": {
+         "addrs": [
+            "f6"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "californiacrypto": {
+         "addrs": [
+            "a48"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "smartsteem": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "booster": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "steemvotesio": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "steemlike": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "blocktrades": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 2,
+         "u": 0
+      }
+   }
 }
-var startingBlock = ENV.STARTINGBLOCK || 31152000; //GENESIS BLOCK
+var startingBlock = ENV.STARTINGBLOCK || 31871532 ; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 const sh = ENV.sh || ''
@@ -540,7 +966,7 @@ function startApp() {
             a: 0,
             u: 0
         }
-        var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs - 5) * 1000)),
+        var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
             used = 0;
         if (json.delegatee == 'hashkings' && vests) {
             for (var i = 0; i < state.delegations.length; i++) {

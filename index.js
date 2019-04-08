@@ -466,6 +466,9 @@ function startApp() {
             if (state.refund[i][2].block == json.block) state.refund.splice(i, 1)
         }
     });
+    processor.on('grant', function(json, from) {
+        if(from=='hashkings'){state.users[json.to].v = 1}
+    });
 
     processor.on('plant', function(json, from) {
         const index = state.users[from].addrs.indexOf(json.addr)

@@ -1463,7 +1463,7 @@ var bot = {
                 console.log(error)
             }
         );
-    }
+    },
     power: function(toa, amount, callback) {
         const op = [
             'transfer_to_vesting',

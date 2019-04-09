@@ -1100,11 +1100,10 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
         }
-    });
     if (num % 28800 === 300) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
-    
+    });
     
     processor.on('water', function(json, from) {
         let plants = json.plants,

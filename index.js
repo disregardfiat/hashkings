@@ -846,10 +846,12 @@ function startApp() {
         let plants = json.plants,
             plantnames = ''
         for (var i = 0; i < plants.length; i++) {
+            try {
             if (state.land[plants[i]].owner == from) {
                 state.land[plants[i]].care.unshift([processor.getCurrentBlockNumber(), 'watered']);
                 plantnames += `${plants[i]} `
             }
+            } catch (e){console.log(`${from} can't water what is not theirs`)}
         }
         console.log(`${from} watered ${plantnames}`)
     });

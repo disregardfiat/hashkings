@@ -821,6 +821,243 @@ function startApp() {
         if (num % 1000 === 0 && processor.isStreaming()) {
             ipfsSaveState(num, JSON.stringify(state))
         }
+        if (num % 28800 === 2880) {
+        var body = `It's a nice day in Jamaica`
+            if (state.news.e.length > 0){body = state.news.e[0];state.news.e.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Almanac | Jamaica | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 3180) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        
+    if (num % 28800 === 3660) {
+        var body = `It's a nice day in Central America`
+            if (state.news.d.length > 0){body = state.news.d[0];state.news.d.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Almanac | Central America | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 3960) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        if (num % 28800 === 5440) {
+        var body = `It's a nice day in Mexico`
+            if (state.news.f.length > 0){body = state.news.f[0];state.news.f.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Almanac | Central America | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 5740) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        if (num % 28800 === 12000) {
+        var body = `It's a nice day in Asia`
+            if (state.news.c.length > 0){body = state.news.c[0];state.news.c.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Almanac | Asia | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 12300) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        
+        if (num % 28800 === 15000) {
+        var body = `It's a nice day in Afganistan`
+            if (state.news.a.length > 0){body = state.news.a[0];state.news.a.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Almanac | Afganistan | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 15300) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        if (num % 28800 === 10000) {
+        var body = `Testing Hashkings Automated features 10`
+            if (state.news.g.length > 0){body = state.news.g[0];state.news.g.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Automated | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 10300) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        if (num % 28800 === 20000) {
+        var body = `Testing Hashkings Automated features 20`
+            if (state.news.h.length > 0){body = state.news.h[0];state.news.h.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Automated | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 20300) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        if (num % 28800 === 25000) {
+        var body = `Testing Hashkings Automated features 25`
+            if (state.news.i.length > 0){body = state.news.i[0];state.news.i.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Automated | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+        if (num % 28800 === 25300) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        if (num % 28800 === 22000) {
+        var body = `It's a nice day in Afganistan 22`
+            if (state.news.t.length > 0){body = state.news.t[0];state.news.t.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Automated | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
+    }
+    if (num % 28800 === 22300) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+        
         if (num % 28800 === 0) {
             var d = parseInt(state.bal.c / 4)
             state.bal.r += state.bal.c
@@ -840,8 +1077,35 @@ function startApp() {
                 }
                 state.refund.push(['power', username, state.bal.b, 'Power to the people!'])
             }
+            state.payday = whotopay()
+            var body = `It's a nice day in Africa`
+            if (state.news.b.length > 0){body = state.news.b[0];state.news.b.shift();}
+            state.refund.push(['sign',[["comment", 
+                                 {"parent_author": "", 
+                                  "parent_permlink": 'hashkings', 
+                                  "author": username, 
+                                  "permlink": 'h'+num, 
+                                  "title": `Almanac | Africa | ${num}`, 
+                                  "body": body,
+                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                ["comment_options", 
+                                 {"author": username, 
+                                  "permlink": 'h'+num, 
+                                  "max_accepted_payout": "1000000.000 SBD", 
+                                  "percent_steem_dollars": 10000, 
+                                  "allow_votes": true, 
+                                  "allow_curation_rewards": true, 
+                                  "extensions": 
+                                  [[0, 
+                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.payday.shift()
         }
     });
+    if (num % 28800 === 300) {
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    }
+    
+    
     processor.on('water', function(json, from) {
         let plants = json.plants,
             plantnames = ''
@@ -1182,6 +1446,16 @@ var bot = {
             }
         )
     },
+    sign: function(op, callback) {
+        client.broadcast.sendOperations(op, key).then(
+            function(result) {
+                console.log(result)
+            },
+            function(error) {
+                console.log(error)
+            }
+        );
+    }
     power: function(toa, amount, callback) {
         const op = [
             'transfer_to_vesting',

@@ -821,7 +821,7 @@ function startApp() {
         if (num % 1000 === 0 && processor.isStreaming()) {
             ipfsSaveState(num, JSON.stringify(state))
         }
-        if (num % 28800 === 2880) {
+        if (num % 28800 === 2880 && state.payday) {
         var body = `It's a nice day in Jamaica`
             if (state.news.e.length > 0){body = state.news.e[0];state.news.e.shift();}
             state.refund.push(['sign',[["comment", 
@@ -831,7 +831,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Almanac | Jamaica | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -844,11 +844,11 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 3180) {
+        if (num % 28800 === 3180 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
         
-    if (num % 28800 === 3660) {
+    if (num % 28800 === 3660 && state.payday) {
         var body = `It's a nice day in Central America`
             if (state.news.d.length > 0){body = state.news.d[0];state.news.d.shift();}
             state.refund.push(['sign',[["comment", 
@@ -858,7 +858,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Almanac | Central America | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -871,10 +871,10 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 3960) {
+        if (num % 28800 === 3960 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
-        if (num % 28800 === 5440) {
+        if (num % 28800 === 5440 && state.payday) {
         var body = `It's a nice day in Mexico`
             if (state.news.f.length > 0){body = state.news.f[0];state.news.f.shift();}
             state.refund.push(['sign',[["comment", 
@@ -884,7 +884,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Almanac | Central America | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -897,10 +897,10 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 5740) {
+        if (num % 28800 === 5740 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
-        if (num % 28800 === 12000) {
+        if (num % 28800 === 12000 && state.payday) {
         var body = `It's a nice day in Asia`
             if (state.news.c.length > 0){body = state.news.c[0];state.news.c.shift();}
             state.refund.push(['sign',[["comment", 
@@ -910,7 +910,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Almanac | Asia | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -923,11 +923,11 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 12300) {
+        if (num % 28800 === 12300 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
         
-        if (num % 28800 === 15000) {
+        if (num % 28800 === 15000 && state.payday) {
         var body = `It's a nice day in Afganistan`
             if (state.news.a.length > 0){body = state.news.a[0];state.news.a.shift();}
             state.refund.push(['sign',[["comment", 
@@ -937,7 +937,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Almanac | Afganistan | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -950,10 +950,10 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 15300) {
+        if (num % 28800 === 15300 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
-        if (num % 28800 === 10000) {
+        if (num % 28800 === 10000 && state.payday) {
         var body = `Testing Hashkings Automated features 10`
             if (state.news.g.length > 0){body = state.news.g[0];state.news.g.shift();}
             state.refund.push(['sign',[["comment", 
@@ -963,7 +963,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Automated | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -976,10 +976,10 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 10300) {
+        if (num % 28800 === 10300 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
-        if (num % 28800 === 20000) {
+        if (num % 28800 === 20000 && state.payday) {
         var body = `Testing Hashkings Automated features 20`
             if (state.news.h.length > 0){body = state.news.h[0];state.news.h.shift();}
             state.refund.push(['sign',[["comment", 
@@ -989,7 +989,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Automated | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -1002,10 +1002,10 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 20300) {
+        if (num % 28800 === 20300 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
-        if (num % 28800 === 25000) {
+        if (num % 28800 === 25000 && state.payday) {
         var body = `Testing Hashkings Automated features 25`
             if (state.news.i.length > 0){body = state.news.i[0];state.news.i.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1015,7 +1015,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Automated | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -1028,10 +1028,10 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 25300) {
+        if (num % 28800 === 25300 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
-        if (num % 28800 === 22000) {
+        if (num % 28800 === 22000 && state.payday) {
         var body = `It's a nice day in Afganistan 22`
             if (state.news.t.length > 0){body = state.news.t[0];state.news.t.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1041,7 +1041,7 @@ function startApp() {
                                   "permlink": 'h'+num, 
                                   "title": `Automated | ${num}`, 
                                   "body": body,
-                                  "json_metadata": JSON.stringify({tags:['hashkings']})], 
+                                  "json_metadata": JSON.stringify({tags:["hashkings"]})], 
                                 ["comment_options", 
                                  {"author": username, 
                                   "permlink": 'h'+num, 
@@ -1054,7 +1054,7 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-    if (num % 28800 === 22300) {
+    if (num % 28800 === 22300 && state.payday) {
     state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
     }
         
@@ -1160,6 +1160,14 @@ function startApp() {
     });
     processor.on('grant', function(json, from) {
         if(from=='hashkings'){state.users[json.to].v = 1}
+    });
+    processor.on('news', function(json, from) {
+        if(from=='hashkings'){
+            if(!state.news){
+                state.news = {a:[],b:[],c:[],d:[],f:[],g:[],h:[],i:[],t:[]}
+            }
+            state.news[json.queue].push(json.body)
+         }
     });
 
     processor.on('plant', function(json, from) {

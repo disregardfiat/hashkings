@@ -1542,10 +1542,12 @@ function whotopay() {
     } else {
         b = o.length
     }
+    console.log(b)
     while (b) {
         for (var r in a) {
             a[r].push(o.pop());
             b--
+            console.log('B"+b)
         }
     }
     console.log(a)

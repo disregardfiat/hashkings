@@ -845,7 +845,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 3180 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         
     if (num % 28800 === 3660 && state.payday) {
@@ -872,7 +872,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 3960 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 5440 && state.payday) {
         var body = `It's a nice day in Mexico`
@@ -898,7 +898,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 5740 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 12000 && state.payday) {
         var body = `It's a nice day in Asia`
@@ -924,7 +924,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 12300 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,:weight":10000}]]])
     }
         
         if (num % 28800 === 15000 && state.payday) {
@@ -951,7 +951,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 15300 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 10000 && state.payday) {
         var body = `Testing Hashkings Automated features 10`
@@ -977,7 +977,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 10300 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 20000 && state.payday) {
         var body = `Testing Hashkings Automated features 20`
@@ -1003,7 +1003,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 20300 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 25000 && state.payday) {
         var body = `Testing Hashkings Automated features 25`
@@ -1029,7 +1029,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 25300 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 22000 && state.payday) {
         var body = `It's a nice day in Afganistan 22`
@@ -1055,7 +1055,7 @@ function startApp() {
             state.payday.shift()
     }
     if (num % 28800 === 22300 && state.payday) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         
         if (num % 28800 === 0) {
@@ -1102,7 +1102,8 @@ function startApp() {
             console.log('Pushed a post')
         }
     if (num % 28800 === 300) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
+        console.log("?")
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
     });
     

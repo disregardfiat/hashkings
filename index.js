@@ -1232,6 +1232,7 @@ function startApp() {
     processor.onOperation('comment_options', function(json) {
         for(var i = 0;state.refund.length;i++){
             if(state.refund[i][0]=='sign'){
+                console.log({state.refund[i]})
                 if(state.refund[i][0][0]=='comment'){
                     if (json.author == username && json.permlink == state.refund[i][1][1].permlink && state.refund[i][1][1] == 'comment') {
                         state.refund.splice(i,1)
@@ -1243,7 +1244,8 @@ function startApp() {
     processor.onOperation('vote', function(json) {
         for(var i = 0;state.refund.length;i++){
             if(state.refund[i][0]=='sign'){
-                if(state.refund[i][0][0]=='vote'){
+                console.log({state.refund[i]})
+                if(state.refund[i][1][0]=='vote'){
                     if (json.author == username && json.permlink == state.refund[i][1][1].permlink && state.refund[i][1][1] == 'vote') {
                         state.refund.splice(i,1)
                     }

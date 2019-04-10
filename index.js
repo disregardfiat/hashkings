@@ -1521,16 +1521,18 @@ function whotopay() {
                 weight: parseInt(state.kudos[d])
             })
         } else {
+            if(!o.length){o.unshift({
+                account: d,
+                weight: parseInt(state.kudos[d])
+            })}
             for (var i = o.length - 1; i > 0; i--) {
-                for (var p = 0;p<i;p++) {
-                    if (state.kudos[d] <= o[i][p]) {
+                    if (state.kudos[d] <= o[i].weight ||(state.kudos[d] > o[i].weight && i == o.length)) {
                         o.splice(i, 0, {
                             account: d,
                             weight: parseInt(state.kudos[d])
                         });
                         i = 0;
                     }
-                }
             }
         }
     }

@@ -1516,15 +1516,15 @@ function whotopay() {
             h = state.kudos[d]
         };
         if (state.kudos[d] == 1) {
-            d.unshift({
+            o.unshift({
                 account: d,
                 weight: state.kudos[d]
             })
         } else {
-            for (var i = d.length - 1; i > 0; i--) {
-                for (var p in d[i]) {
-                    if (state.kudos[d] <= d[i][p]) {
-                        d.splice(i, 0, {
+            for (var i = o.length - 1; i > 0; i--) {
+                for (var p = 0;p<i;p++) {
+                    if (state.kudos[d] <= o[i][p]) {
+                        o.splice(i, 0, {
                             account: d,
                             weight: state.kudos[d]
                         });
@@ -1534,10 +1534,10 @@ function whotopay() {
             }
         }
     }
-    if (d.length > 3000) {
+    if (o.length > 3000) {
         b = 3000
     } else {
-        b = d.length
+        b = o.length
     }
     while (b) {
         for (var r in a) {
@@ -1546,9 +1546,9 @@ function whotopay() {
         }
     }
     state.kudos = {}
-    if (d.length) {
-        for (var i = 0; i < d.length; i++) {
-            state.kudos[d[i].account] = d[i].weight
+    if (o.length) {
+        for (var i = 0; i < o.length; i++) {
+            state.kudos[o[i].account] = o[i].weight
         }
     }
     for (var r in a) {

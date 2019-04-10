@@ -1541,7 +1541,7 @@ function whotopay() {
     }
     while (b) {
         for (var r in a) {
-            a[r].push(d.pop());
+            a[r].push(o.pop());
             b--
         }
     }

@@ -1099,7 +1099,7 @@ function startApp() {
                                   [[0, 
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
-            console.log('Pushed a post')
+            console.log({state})
         }
     if (num % 28800 === 300) {
         console.log("?")

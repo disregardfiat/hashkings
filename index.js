@@ -1564,8 +1564,12 @@ function whotopay() {
         }
         q = parseInt(u / 10000)
         for (var i = 0; i < a[r].length; i++) {
-            a[r][i].weight = parseInt(a[r][i].weight * u)
+            a[r][i].weight = parseInt(a[r][i].weight * q)
         }
+    }
+    o = []
+    for (var i in a){
+        o.push(a[i])
     }
     console.log(a)
     return a

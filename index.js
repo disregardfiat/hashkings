@@ -1099,9 +1099,10 @@ function startApp() {
                                   [[0, 
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
+            console.log('Pushed a post')
         }
     if (num % 28800 === 300) {
-    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,weight:10000}]]])
+    state.refund.push(['sign',[['vote',{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
     });
     
@@ -1550,13 +1551,11 @@ function whotopay() {
             }
         }
     }
-    console.log(o)
     if (o.length > 3000) {
         b = 3000
     } else {
         b = o.length
     }
-    console.log(b)
     while (b) {
         for (var r in a) {
             a[r].push(o.pop());
@@ -1564,21 +1563,17 @@ function whotopay() {
             if(!b)break;
         }
     }
-    console.log(a)
     state.kudos = {}
         for (var i = 0; i < o.length; i++) {
             state.kudos[o[i].account] = parseInt(o[i].weight)
         }
-    console.log(state.kudos)
     for (var r in a) {
         var u = 0,
             q = 0
         for (var i = 0; i < a[r].length; i++) {
             u = parseInt(u) + parseInt(a[r][i].weight)
         }
-        console.log('u'+u)
         q = parseInt(10000/u)
-        console.log('q:'+q)
         for (var i = 0; i < a[r].length; i++) {
             a[r][i].weight = parseInt(parseInt(a[r][i].weight) * q)
         }
@@ -1587,7 +1582,7 @@ function whotopay() {
     for (var i in a){
         o.push(a[i])
     }
-    console.log(o)
+    console.log('payday:'+o)
     return o
 }
 

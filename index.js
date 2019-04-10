@@ -1534,6 +1534,7 @@ function whotopay() {
             }
         }
     }
+    console.log(o)
     if (o.length > 3000) {
         b = 3000
     } else {
@@ -1545,10 +1546,12 @@ function whotopay() {
             b--
         }
     }
+    console.log(a)
     state.kudos = {}
         for (var i = 0; i < o.length; i++) {
             state.kudos[o[i].account] = parseInt(o[i].weight)
         }
+    console.log(state.kudos)
     for (var r in a) {
         var u = 0,
             q = 0
@@ -1560,6 +1563,7 @@ function whotopay() {
             a[r][i].weight = parseInt(a[r][i].weight * u)
         }
     }
+    console.log(a)
     return a
 }
 

@@ -1048,7 +1048,7 @@ var state = {
       []
    ]
 }
-var startingBlock = ENV.STARTINGBLOCK || 31909000 ; //GENESIS BLOCK
+var startingBlock = ENV.STARTINGBLOCK || 31914703 ; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 const sh = ENV.sh || ''

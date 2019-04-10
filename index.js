@@ -1469,6 +1469,7 @@ var bot = {
         )
     },
     sign: function(op, callback) {
+        console.log('attempting'+op[0])
         client.broadcast.sendOperations(op, key).then(
             function(result) {
                 console.log(result)

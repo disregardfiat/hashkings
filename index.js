@@ -1571,8 +1571,8 @@ function whotopay() {
     for (var i in a){
         o.push(a[i])
     }
-    console.log(a)
-    return a
+    console.log(o)
+    return o
 }
 
 function kudo(user) {

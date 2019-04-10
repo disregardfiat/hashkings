@@ -1233,7 +1233,7 @@ function startApp() {
         for(var i = 0;i<state.refund.length;i++){
             if(state.refund[i][0]=='sign'){
                 if(state.refund[i][1][0][0]=='comment'){
-                    if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][1] == 'comment') {
+                    if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][0] == 'comment') {
                         state.refund.splice(i,1)
                     }
                 }
@@ -1244,7 +1244,7 @@ function startApp() {
         for(var i = 0;i<state.refund.length;i++){
             if(state.refund[i][0]=='sign'){
                 if(state.refund[i][1][0][0]=='vote'){
-                    if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][1] == 'vote') {
+                    if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][0] == 'vote') {
                         state.refund.splice(i,1)
                     }
                 }

@@ -53,11 +53,33 @@ var state = {
          "vests": 39980749568,
          "availible": 0,
          "used": 1
+      },
+      {
+         "delegator": "pugqueen",
+         "vests": 39976125874,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "mondoshawan",
+         "vests": 39975980553,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "stephanus",
+         "vests": 39974588563,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "inthenow",
+         "vests": 39974577206,
+         "availible": 0,
+         "used": 1
       }
    ],
-   "kudos": {
-      "qwoyn": 6
-   },
+   "kudos": {},
    "stats": {
       "vs": 1997,
       "dust": 25,
@@ -70,8 +92,8 @@ var state = {
          "e": 20400,
          "f": 7200
       },
-      "bu": "QmYbfqERnt8b5zDuMdk2sLBg5m6148E7STnN5dG1i9xY6d",
-      "bi": 31851000,
+      "bu": "QmVc8STX9efPcuC74PsVJok2nWEawAnxfY9XYPxaQBEDxk",
+      "bi": 31909000,
       "prices": {
          "listed": {
             "a": 20000,
@@ -94,16 +116,16 @@ var state = {
       },
       "supply": {
          "land": {
-            "a": 4152,
-            "ac": 49,
-            "b": 4162,
-            "bc": 39,
+            "a": 4151,
+            "ac": 50,
+            "b": 4161,
+            "bc": 40,
             "c": 4164,
             "cc": 37,
             "d": 4169,
             "dc": 32,
-            "e": 4188,
-            "ec": 13,
+            "e": 4186,
+            "ec": 15,
             "f": 4194,
             "fc": 7,
             "g": 0,
@@ -136,9 +158,10 @@ var state = {
       "r": 0,
       "c": 0,
       "b": 0,
-      "p": 127278
+      "p": 138978
    },
-   "refund": [],
+   "refund": [
+   ],
    "lands": {
       "forSale": []
    },
@@ -148,6 +171,11 @@ var state = {
          "strain": "kbr",
          "xp": 2250,
          "care": [
+            [
+               31874759,
+               "watered",
+               "c"
+            ],
             [
                31846989,
                "watered",
@@ -182,15 +210,208 @@ var state = {
          "aff": [],
          "planted": 31713776,
          "stage": 1,
-         "substage": 6
+         "substage": 7
       },
       "a2": {
          "owner": "jonyoudyer",
          "strain": "mis",
          "xp": 2250,
-         "care": [],
+         "care": [
+            [
+               31901661,
+               "watered"
+            ],
+            [
+               31872829,
+               "watered",
+               "c"
+            ]
+         ],
          "aff": [],
          "planted": 31853281,
+         "stage": 1,
+         "substage": 1
+      },
+      "b34": {
+         "owner": "fracasgrimm",
+         "strain": "kbr",
+         "xp": 2250,
+         "care": [
+            [
+               31901978,
+               "watered"
+            ],
+            [
+               31885962,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31885890,
+         "stage": 1,
+         "substage": 1
+      },
+      "e13": {
+         "owner": "pugqueen",
+         "strain": "cg",
+         "xp": 2250,
+         "care": [
+            [
+               31906070,
+               "watered"
+            ],
+            [
+               31886232,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31886216,
+         "stage": 1,
+         "substage": 1
+      },
+      "e14": {
+         "owner": "mondoshawan",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               31900342,
+               "watered"
+            ],
+            [
+               31887742,
+               "watered",
+               "c"
+            ],
+            [
+               31887741,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 31887728,
+         "stage": 1,
+         "substage": 1
+      },
+      "a43": {
+         "owner": "gregorypatrick",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               31900194,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 31900185,
+         "stage": 1,
+         "substage": 0
+      },
+      "a7": {
+         "owner": "prettynicevideo",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               31903067,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 31903005,
+         "stage": 1,
+         "substage": 0
+      },
+      "b39": {
+         "owner": "stephanus",
+         "strain": "swz",
+         "xp": 2250,
+         "care": [
+            [
+               31905303,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 31905253,
+         "stage": 1,
+         "substage": 0
+      },
+      "a49": {
+         "owner": "inthenow",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               31905966,
+               "watered"
+            ],
+            [
+               31905633,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 31905556,
+         "stage": 1,
+         "substage": 0
+      },
+      "a9": {
+         "owner": "ghosthunter1",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [
+            [
+               31906043,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 31905642,
+         "stage": 1,
+         "substage": 0
+      },
+      "a11": {
+         "owner": "bluntsmasha",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [],
+         "aff": [],
+         "planted": 31911522,
+         "stage": 1,
+         "substage": 0
+      },
+      "b2": {
+         "owner": "bluntsmasha",
+         "strain": "lb",
+         "xp": 2250,
+         "care": [],
+         "aff": [],
+         "planted": 31911985,
+         "stage": 1,
+         "substage": 0
+      },
+      "c1": {
+         "owner": "bluntsmasha",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [],
+         "aff": [],
+         "planted": 31911995,
+         "stage": 1,
+         "substage": 0
+      },
+      "f2": {
+         "owner": "bluntsmasha",
+         "strain": "aca",
+         "xp": 2250,
+         "care": [],
+         "aff": [],
+         "planted": 31912004,
          "stage": 1,
          "substage": 0
       }
@@ -286,7 +507,7 @@ var state = {
          "seeds": [],
          "inv": [],
          "stats": [],
-         "v": 6
+         "v": 5
       },
       "ghosthunter1": {
          "addrs": [
@@ -297,7 +518,7 @@ var state = {
          "seeds": [],
          "inv": [],
          "stats": [],
-         "v": 3
+         "v": 2
       },
       "qwoyn": {
          "addrs": [
@@ -335,7 +556,7 @@ var state = {
          "stats": [],
          "v": 0
       },
-       "azuremoon":{
+      "azuremoon": {
          "addrs": [
             "e12"
          ],
@@ -351,24 +572,7 @@ var state = {
             "c1",
             "f2"
          ],
-         "seeds": [
-            {
-               "strain": "hk",
-               "xp": 2250
-            },
-            {
-               "strain": "lb",
-               "xp": 2250
-            },
-            {
-               "strain": "afg",
-               "xp": 2250
-            },
-            {
-               "strain": "aca",
-               "xp": 2250
-            }
-         ],
+         "seeds": [],
          "inv": [],
          "stats": [],
          "v": 0
@@ -391,10 +595,19 @@ var state = {
             "c5",
             "c6"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "dp",
+               "xp": 2250
+            },
+            {
+               "strain": "aca",
+               "xp": 2250
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 2
+         "v": 0
       },
       "mrkhuffins": {
          "addrs": [
@@ -572,17 +785,13 @@ var state = {
          "seeds": [],
          "inv": [],
          "stats": [],
-         "v": 1
+         "v": 0
       },
       "gregorypatrick": {
          "addrs": [
             "a43"
          ],
          "seeds": [
-            {
-               "strain": "afg",
-               "xp": 2250
-            },
             {
                "strain": "hk",
                "xp": 2250
@@ -755,10 +964,91 @@ var state = {
          "v": 0,
          "a": 2,
          "u": 0
+      },
+      "pugqueen": {
+         "addrs": [
+            "e13"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 1,
+         "u": 0
+      },
+      "mondoshawan": {
+         "addrs": [
+            "e14"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 1,
+         "u": 0
+      },
+      "stephanus": {
+         "addrs": [
+            "b39"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 1,
+         "u": 0
+      },
+      "inthenow": {
+         "addrs": [
+            "a49"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 1,
+         "u": 0
       }
-   }
+   },
+   "news": {
+      "a": [],
+      "b": [],
+      "c": [],
+      "d": [],
+      "f": [],
+      "g": [],
+      "h": [],
+      "i": [],
+      "t": []
+   },
+   "payday": [
+      [
+         {
+            "account": "mondoshawan",
+            "weight": 10000
+         }
+      ],
+      [
+         {
+            "account": "pugqueen",
+            "weight": 10000
+         }
+      ],
+      [
+         {
+            "account": "fracasgrimm",
+            "weight": 10000
+         }
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+   ]
 }
-var startingBlock = ENV.STARTINGBLOCK || 31871532 ; //GENESIS BLOCK
+var startingBlock = ENV.STARTINGBLOCK || 31909000 ; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 const sh = ENV.sh || ''
@@ -822,6 +1112,7 @@ function startApp() {
             ipfsSaveState(num, JSON.stringify(state))
         }
         if (num % 28800 === 2880 && state.payday) {
+            console.log("?"+num)
         var body = `It's a nice day in Jamaica`
             if (state.news.e.length > 0){body = state.news.e[0];state.news.e.shift();}
             state.refund.push(['sign',[["comment", 
@@ -845,10 +1136,12 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 3180 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         
     if (num % 28800 === 3660 && state.payday) {
+        console.log("?"+num)
         var body = `It's a nice day in Central America`
             if (state.news.d.length > 0){body = state.news.d[0];state.news.d.shift();}
             state.refund.push(['sign',[["comment", 
@@ -872,9 +1165,12 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 3960 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 5440 && state.payday) {
+            
+            console.log("?"+num)
         var body = `It's a nice day in Mexico`
             if (state.news.f.length > 0){body = state.news.f[0];state.news.f.shift();}
             state.refund.push(['sign',[["comment", 
@@ -898,9 +1194,11 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 5740 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 12000 && state.payday) {
+            console.log("?"+num)
         var body = `It's a nice day in Asia`
             if (state.news.c.length > 0){body = state.news.c[0];state.news.c.shift();}
             state.refund.push(['sign',[["comment", 
@@ -924,10 +1222,12 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 12300 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         
         if (num % 28800 === 15000 && state.payday) {
+            console.log("?"+num)
         var body = `It's a nice day in Afganistan`
             if (state.news.a.length > 0){body = state.news.a[0];state.news.a.shift();}
             state.refund.push(['sign',[["comment", 
@@ -951,9 +1251,11 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 15300 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 10000 && state.payday) {
+            console.log("?"+num)
         var body = `Testing Hashkings Automated features 10`
             if (state.news.g.length > 0){body = state.news.g[0];state.news.g.shift();}
             state.refund.push(['sign',[["comment", 
@@ -977,9 +1279,11 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 10300 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 20000 && state.payday) {
+            console.log("?"+num)
         var body = `Testing Hashkings Automated features 20`
             if (state.news.h.length > 0){body = state.news.h[0];state.news.h.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1003,9 +1307,11 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 20300 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 25000 && state.payday) {
+            console.log("?"+num)
         var body = `Testing Hashkings Automated features 25`
             if (state.news.i.length > 0){body = state.news.i[0];state.news.i.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1029,9 +1335,11 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 25300 && state.payday) {
+            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 22000 && state.payday) {
+            console.log("?"+num)
         var body = `It's a nice day in Afganistan 22`
             if (state.news.t.length > 0){body = state.news.t[0];state.news.t.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1055,6 +1363,7 @@ function startApp() {
             state.payday.shift()
     }
     if (num % 28800 === 22300 && state.payday) {
+        console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         
@@ -1102,7 +1411,7 @@ function startApp() {
             console.log({state})
         }
     if (num % 28800 === 300) {
-        console.log("?")
+        console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
     });

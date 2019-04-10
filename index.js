@@ -1511,14 +1511,14 @@ function whotopay() {
         h = 1,
         o = []
     for (d in state.kudos) {
-        c += state.kudos[d];
+        c = parseInt(c) + parseInt(state.kudos[d])
         if (state.kudos[d] > h) {
             h = state.kudos[d]
         };
         if (state.kudos[d] == 1) {
             o.unshift({
                 account: d,
-                weight: state.kudos[d]
+                weight: parseInt(state.kudos[d])
             })
         } else {
             for (var i = o.length - 1; i > 0; i--) {
@@ -1526,7 +1526,7 @@ function whotopay() {
                     if (state.kudos[d] <= o[i][p]) {
                         o.splice(i, 0, {
                             account: d,
-                            weight: state.kudos[d]
+                            weight: parseInt(state.kudos[d])
                         });
                         i = 0;
                     }
@@ -1546,16 +1546,14 @@ function whotopay() {
         }
     }
     state.kudos = {}
-    if (o.length) {
         for (var i = 0; i < o.length; i++) {
-            state.kudos[o[i].account] = o[i].weight
+            state.kudos[o[i].account] = parseInt(o[i].weight)
         }
-    }
     for (var r in a) {
         var u = 0,
             q = 0
         for (var i = 0; i < a[r].length; i++) {
-            u += a[r][i].weight
+            u = parseInt(u) + parseInt(a[r][i].weight)
         }
         q = parseInt(u / 10000)
         for (var i = 0; i < a[r].length; i++) {

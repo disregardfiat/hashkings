@@ -924,7 +924,7 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 12300 && state.payday) {
-    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,:weight":10000}]]])
+    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,:"weight":10000}]]])
     }
         
         if (num % 28800 === 15000 && state.payday) {

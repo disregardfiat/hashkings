@@ -1227,6 +1227,20 @@ function startApp() {
             }
         }
     });
+    processor.onOperation('comment_options', function(json) {
+        for(var i = 0;state.refund.length;i++){
+            if (json.author == username && json.permlink == state.refund[i][1].permlink && state.refund[i][0] == 'comment') {
+                state.refund.splice(i,1)
+            }
+        }
+    });
+    processor.onOperation('vote', function(json) {
+        for(var i = 0;state.refund.length;i++){
+            if (json.author == username && json.permlink == state.refund[i][1].permlink && state.refund[i][0] == 'vote') {
+                state.refund.splice(i,1)
+            }
+        }
+    });
     processor.onOperation('delegate_vesting_shares', function(json, from) { //grab posts to reward
         const vests = parseInt(parseFloat(json.vesting_shares) * 1000000)
         var record = ''
@@ -1563,7 +1577,7 @@ function whotopay() {
             u = parseInt(u) + parseInt(a[r][i].weight)
         }
         console.log('u'+u)
-        q = parseInt(u / 10000)
+        q = parseInt(10000/u)
         console.log('q:'+q)
         for (var i = 0; i < a[r].length; i++) {
             a[r][i].weight = parseInt(parseInt(a[r][i].weight) * q)

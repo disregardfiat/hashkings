@@ -1562,9 +1562,11 @@ function whotopay() {
         for (var i = 0; i < a[r].length; i++) {
             u = parseInt(u) + parseInt(a[r][i].weight)
         }
+        console.log('u'+u)
         q = parseInt(u / 10000)
+        console.log('q:'+q)
         for (var i = 0; i < a[r].length; i++) {
-            a[r][i].weight = parseInt(a[r][i].weight) * q
+            a[r][i].weight = parseInt(parseInt(a[r][i].weight) * q)
         }
     }
     o = []

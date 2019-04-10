@@ -1230,7 +1230,7 @@ function startApp() {
         }
     });
     processor.onOperation('comment_options', function(json) {
-        for(var i = 0;state.refund.length;i++){
+        for(var i = 0;i<state.refund.length;i++){
             if(state.refund[i][0]=='sign'){
                 if(state.refund[i][1][0][0]=='comment'){
                     if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][1] == 'comment') {
@@ -1241,7 +1241,7 @@ function startApp() {
         }
     });
     processor.onOperation('vote', function(json) {
-        for(var i = 0;state.refund.length;i++){
+        for(var i = 0;i<state.refund.length;i++){
             if(state.refund[i][0]=='sign'){
                 if(state.refund[i][1][0][0]=='vote'){
                     if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][1] == 'vote') {

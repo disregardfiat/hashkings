@@ -1373,9 +1373,12 @@ function startApp() {
             if (d) {
                 state.refund.push(['xfer', 'disregardfiat', d, 'Dev Cut'])
                 state.refund.push(['xfer', 'qwoyn-fund', d, 'Partners Cut'])
-                state.refund.push(['xfer', 'qwoyn-chest', d, 'Warchest'])
+                state.refund.push(['xfer', 'qwoyn', d, 'Warchest'])
                 state.bal.c -= d * 3
-                state.refund.push(['xfer', 'qwoyn', state.bal.c, 'Producer Cut'])
+                d = parseInt(state.bal / 5)
+                state.refund.push(['xfer', 'jrawsthorne', d, 'Partner Cut'])
+                state.bal.c -= d
+                state.refund.push(['xfer', 'qwoyn-chest', state.bal.c, 'Producer Cut'])
                 state.bal.c = 0
                 if (state.bal.d > state.bal.b) {
                     state.bal.d -= state.bal.b;

@@ -24,7 +24,7 @@ app.get('/a/:user', (req, res, next) => {
     let user = req.params.user, arr = []
     res.setHeader('Content-Type', 'application/json');
     if(state.users[user]){
-        for (var i = 0 ; i , state.users[user].addrs.length ; i++){
+        for (var i = 0 ; i < state.users[user].addrs.length ; i++){
             arr.push(state.users[user].addrs[i])
         }
     }

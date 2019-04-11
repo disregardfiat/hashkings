@@ -29,7 +29,7 @@ app.get('/a/:user', (req, res, next) => {
         }
     }
     for ( var i = 0 ; i < arr.length ; i++){
-        const insert = state.land[arr[i]]
+        const insert = state.lands[arr[i]]
         arr.splice(i,1,insert)
     }
     res.send(JSON.stringify(arr, null, 3))

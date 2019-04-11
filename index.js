@@ -30,10 +30,12 @@ app.get('/a/:user', (req, res, next) => {
     }
     for ( var i = 0 ; i < arr.length ; i++){
         var insert = state.land[arr[i]]
-        insert.id = arr[i]
-        if(insert.care.length>3){insert.care.splice(3,insert.care.length-3)}
-        if(insert.aff.length>3){insert.aff.splice(3,insert.aff.length-3)}
-        if(insert)arr.splice(i,1,insert)
+        if(insert){
+            insert.id = arr[i]
+            if(insert.care.length>3){insert.care.splice(3,insert.care.length-3)}
+            if(insert.aff.length>3){insert.aff.splice(3,insert.aff.length-3)}
+            arr.splice(i,1,insert)
+        }
     }
     res.send(JSON.stringify(arr, null, 3))
 });

@@ -31,6 +31,8 @@ app.get('/a/:user', (req, res, next) => {
     for ( var i = 0 ; i < arr.length ; i++){
         var insert = state.land[arr[i]]
         insert.id = arr[i]
+        if(insert.care.length>3){insert.care.splice(3,insert.care.length-3)}
+        if(insert.aff.length>3){insert.aff.splice(3,insert.aff.length-3)}
         if(insert)arr.splice(i,1,insert)
     }
     res.send(JSON.stringify(arr, null, 3))
@@ -1683,6 +1685,11 @@ function startApp() {
             index = state.users[from].addrs.indexOf(json.addr)
             for (var i = 0;i < state.users[from].seeds.length; i++){
                 if(state.users[from].seeds[i].strain = json.seed){seed=state.users[from].seeds.splice(i, 1);break;}
+            }
+        } catch (e) {}
+        if (!seed){
+            try {
+                seed=state.users[from].seeds.splice(0, 1)
             }
         } catch (e) {}
         if (index >= 0 && seed) {

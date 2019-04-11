@@ -1690,8 +1690,8 @@ function startApp() {
         if (!seed){
             try {
                 seed=state.users[from].seeds.splice(0, 1)
-            }
-        } catch (e) {}
+            }catch (e) {}
+        } 
         if (index >= 0 && seed) {
             console.log({
                 seed

@@ -28,8 +28,10 @@ app.get('/a/:user', (req, res, next) => {
             arr.push(state.users[user].addrs[i])
         }
     }
+    console.log(arr)
     for ( var i = 0 ; i < arr.length ; i++){
         const insert = state.lands[arr[i]]
+        console.log(insert)
         arr.splice(i,1,insert)
     }
     res.send(JSON.stringify(arr, null, 3))

@@ -81,12 +81,6 @@ var state = {
          "used": 1
       },
       {
-         "delegator": "mondoshawan",
-         "vests": 39975980553,
-         "availible": 0,
-         "used": 1
-      },
-      {
          "delegator": "stephanus",
          "vests": 39974588563,
          "availible": 0,
@@ -97,17 +91,48 @@ var state = {
          "vests": 39974577206,
          "availible": 0,
          "used": 1
+      },
+      {
+         "delegator": "fracasgrimm",
+         "vests": 39969572242,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "qwoyn-fund",
+         "vests": 39969265471,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "mondoshawan",
+         "vests": 79938134591,
+         "availible": 0,
+         "used": 2
+      },
+      {
+         "delegator": "luegenbaron",
+         "vests": 79937710499,
+         "availible": 1,
+         "used": 1
       }
    ],
    "kudos": {
       "bluntsmasha": 2,
+      "qwoyn-fund": 1,
       "jonyoudyer": 1,
       "prettynicevideo": 1,
       "qwoyn": 1,
       "ghosthunter1": 1,
+      "ngc": 1,
       "gregorypatrick": 1,
       "californiacrypto": 1,
-      "mondoshawan": 1
+      "disregardfiat": 1,
+      "luegenbaron": 2,
+      "mondoshawan": 2,
+      "pugqueen": 1,
+      "fracasgrimm": 1,
+      "stephanus": 1
    },
    "stats": {
       "vs": 1997,
@@ -121,8 +146,8 @@ var state = {
          "e": 20400,
          "f": 7200
       },
-      "bu": "QmeeSxBx5EEoosNKeUi4JTnUMukxrZSyge8jTVeV7MFmsK",
-      "bi": 31958000,
+      "bu": "QmabZDfUvCXeNtseTMTSM6vPCz9KbBQnkoXpc7T5tuQFmW",
+      "bi": 31990000,
       "prices": {
          "listed": {
             "a": 20000,
@@ -147,16 +172,16 @@ var state = {
          "land": {
             "a": 4151,
             "ac": 50,
-            "b": 4161,
-            "bc": 40,
-            "c": 4164,
-            "cc": 37,
+            "b": 4159,
+            "bc": 42,
+            "c": 4163,
+            "cc": 38,
             "d": 4169,
             "dc": 32,
-            "e": 4186,
-            "ec": 15,
-            "f": 4194,
-            "fc": 7,
+            "e": 4184,
+            "ec": 17,
+            "f": 4193,
+            "fc": 8,
             "g": 0,
             "gc": 0,
             "t": 420000,
@@ -184,13 +209,12 @@ var state = {
       }
    },
    "bal": {
-      "r": 21,
-      "c": 0,
-      "b": 0,
+      "r": -479,
+      "c": 3149,
+      "b": 5851,
       "p": 141903
    },
-   "refund": [
-   ],
+   "refund": [],
    "lands": {
       "forSale": []
    },
@@ -201,6 +225,15 @@ var state = {
          "xp": 2250,
          "care": [
             [
+               31987400,
+               "watered"
+            ],
+            [
+               31958717,
+               "watered",
+               "c"
+            ],
+            [
                31958716,
                "watered"
             ],
@@ -208,57 +241,24 @@ var state = {
                31941511,
                "watered",
                "c"
-            ],
-            [
-               31929468,
-               "watered"
-            ],
-            [
-               31874759,
-               "watered",
-               "c"
-            ],
-            [
-               31846989,
-               "watered",
-               "c"
-            ],
-            [
-               31816312,
-               "watered",
-               "c"
-            ],
-            [
-               31815632,
-               "watered",
-               "c"
-            ],
-            [
-               31789626,
-               "watered",
-               "c"
-            ],
-            [
-               31763213,
-               "watered",
-               "c"
-            ],
-            [
-               31713786,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
          "planted": 31713776,
          "stage": 1,
-         "substage": 8
+         "substage": 9,
+         "id": "a10"
       },
       "a2": {
          "owner": "jonyoudyer",
          "strain": "mis",
          "xp": 2250,
          "care": [
+            [
+               31959632,
+               "watered",
+               "c"
+            ],
             [
                31930218,
                "watered",
@@ -268,17 +268,13 @@ var state = {
                31901661,
                "watered",
                "c"
-            ],
-            [
-               31872829,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
          "planted": 31853281,
          "stage": 1,
-         "substage": 3
+         "substage": 4,
+         "id": "a2"
       },
       "b34": {
          "owner": "fracasgrimm",
@@ -286,16 +282,17 @@ var state = {
          "xp": 2250,
          "care": [
             [
-               31936407,
-               "watered"
-            ],
-            [
-               31901978,
+               31966430,
                "watered",
                "c"
             ],
             [
-               31885962,
+               31936407,
+               "watered",
+               "c"
+            ],
+            [
+               31901978,
                "watered",
                "c"
             ]
@@ -303,7 +300,8 @@ var state = {
          "aff": [],
          "planted": 31885890,
          "stage": 1,
-         "substage": 2
+         "substage": 4,
+         "id": "b34"
       },
       "e13": {
          "owner": "pugqueen",
@@ -311,30 +309,35 @@ var state = {
          "xp": 2250,
          "care": [
             [
-               31958737,
+               31987421,
                "watered"
             ],
             [
-               31906070,
+               31974787,
                "watered",
                "c"
             ],
             [
-               31886232,
-               "watered",
-               "c"
+               31971974,
+               "watered"
             ]
          ],
          "aff": [],
          "planted": 31886216,
          "stage": 1,
-         "substage": 2
+         "substage": 3,
+         "id": "e13"
       },
       "e14": {
          "owner": "mondoshawan",
          "strain": "hk",
          "xp": 2250,
          "care": [
+            [
+               31982745,
+               "watered",
+               "c"
+            ],
             [
                31953848,
                "watered",
@@ -344,25 +347,13 @@ var state = {
                31925485,
                "watered",
                "c"
-            ],
-            [
-               31900342,
-               "watered"
-            ],
-            [
-               31887742,
-               "watered",
-               "c"
-            ],
-            [
-               31887741,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 31887728,
          "stage": 1,
-         "substage": 3
+         "substage": 4,
+         "id": "e14"
       },
       "a43": {
          "owner": "gregorypatrick",
@@ -370,8 +361,13 @@ var state = {
          "xp": 2250,
          "care": [
             [
-               31957272,
+               31985953,
                "watered"
+            ],
+            [
+               31957272,
+               "watered",
+               "c"
             ],
             [
                31929103,
@@ -387,13 +383,18 @@ var state = {
          "aff": [],
          "planted": 31900185,
          "stage": 1,
-         "substage": 2
+         "substage": 3
       },
       "a7": {
          "owner": "prettynicevideo",
          "strain": "afg",
          "xp": 2250,
          "care": [
+            [
+               31962985,
+               "watered",
+               "c"
+            ],
             [
                31936791,
                "watered",
@@ -408,7 +409,8 @@ var state = {
          "aff": [],
          "planted": 31903005,
          "stage": 1,
-         "substage": 2
+         "substage": 3,
+         "id": "a7"
       },
       "b39": {
          "owner": "stephanus",
@@ -416,8 +418,14 @@ var state = {
          "xp": 2250,
          "care": [
             [
+               31967150,
+               "watered",
+               "c"
+            ],
+            [
                31953686,
-               "watered"
+               "watered",
+               "c"
             ],
             [
                31905303,
@@ -428,7 +436,7 @@ var state = {
          "aff": [],
          "planted": 31905253,
          "stage": 1,
-         "substage": 1
+         "substage": 3
       },
       "a49": {
          "owner": "inthenow",
@@ -456,12 +464,16 @@ var state = {
          "xp": 2250,
          "care": [
             [
-               31934193,
+               31990174,
+               "watered"
+            ],
+            [
+               31960875,
                "watered",
                "c"
             ],
             [
-               31906043,
+               31934193,
                "watered",
                "c"
             ]
@@ -469,7 +481,8 @@ var state = {
          "aff": [],
          "planted": 31905642,
          "stage": 1,
-         "substage": 2
+         "substage": 3,
+         "id": "a9"
       },
       "a11": {
          "owner": "bluntsmasha",
@@ -478,7 +491,8 @@ var state = {
          "care": [
             [
                31956037,
-               "watered"
+               "watered",
+               "c"
             ],
             [
                31936220,
@@ -489,7 +503,7 @@ var state = {
          "aff": [],
          "planted": 31911522,
          "stage": 1,
-         "substage": 1
+         "substage": 2
       },
       "b2": {
          "owner": "bluntsmasha",
@@ -498,7 +512,8 @@ var state = {
          "care": [
             [
                31956044,
-               "watered"
+               "watered",
+               "c"
             ],
             [
                31936226,
@@ -508,7 +523,7 @@ var state = {
          "aff": [],
          "planted": 31911985,
          "stage": 1,
-         "substage": 0
+         "substage": 1
       },
       "c1": {
          "owner": "bluntsmasha",
@@ -517,7 +532,8 @@ var state = {
          "care": [
             [
                31956052,
-               "watered"
+               "watered",
+               "c"
             ],
             [
                31936232,
@@ -528,7 +544,7 @@ var state = {
          "aff": [],
          "planted": 31911995,
          "stage": 1,
-         "substage": 1
+         "substage": 2
       },
       "f2": {
          "owner": "bluntsmasha",
@@ -537,7 +553,8 @@ var state = {
          "care": [
             [
                31956059,
-               "watered"
+               "watered",
+               "c"
             ],
             [
                31936238,
@@ -548,7 +565,7 @@ var state = {
          "aff": [],
          "planted": 31912004,
          "stage": 1,
-         "substage": 1
+         "substage": 2
       },
       "b32": {
          "owner": "sooflauschig",
@@ -556,53 +573,76 @@ var state = {
          "xp": 2250,
          "care": [
             [
-               31958097,
+               31988651,
                "watered"
+            ],
+            [
+               31958097,
+               "watered",
+               "c"
             ],
             [
                31929983,
                "watered",
                "c"
-            ],
-            [
-               31929981,
-               "watered"
-            ],
-            [
-               31929977,
-               "watered"
-            ],
-            [
-               31929976,
-               "watered"
-            ],
-            [
-               31929972,
-               "watered"
-            ],
-            [
-               31929963,
-               "watered"
-            ],
-            [
-               31929956,
-               "watered"
-            ],
-            [
-               31929955,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 31929923,
          "stage": 1,
-         "substage": 1
+         "substage": 2,
+         "id": "b32"
       },
       "a48": {
          "owner": "californiacrypto",
          "strain": "afg",
          "xp": 2250,
          "care": [
+            [
+               31990196,
+               "watered"
+            ],
+            [
+               31961958,
+               "watered",
+               "c"
+            ],
+            [
+               31961898,
+               "watered"
+            ],
+            [
+               31961872,
+               "watered"
+            ],
+            [
+               31961855,
+               "watered"
+            ],
+            [
+               31961834,
+               "watered"
+            ],
+            [
+               31961831,
+               "watered"
+            ],
+            [
+               31961823,
+               "watered"
+            ],
+            [
+               31961819,
+               "watered"
+            ],
+            [
+               31961816,
+               "watered"
+            ],
+            [
+               31961813,
+               "watered"
+            ],
             [
                31932962,
                "watered",
@@ -611,6 +651,125 @@ var state = {
          ],
          "aff": [],
          "planted": 31932911,
+         "stage": 1,
+         "substage": 2
+      },
+      "b5": {
+         "owner": "luegenbaron",
+         "strain": "aca",
+         "xp": 2250,
+         "care": [
+            [
+               31985867,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31968004,
+         "stage": 1,
+         "substage": 1,
+         "id": "b5"
+      },
+      "e8": {
+         "owner": "disregardfiat",
+         "strain": "cht",
+         "xp": 2250,
+         "care": [
+            [
+               31969946,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31968022,
+         "stage": 1,
+         "substage": 1,
+         "id": "e8"
+      },
+      "a17": {
+         "owner": "ngc",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               31968692,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31968683,
+         "stage": 1,
+         "substage": 1
+      },
+      "f7": {
+         "owner": "qwoyn-fund",
+         "strain": 0,
+         "xp": 2250,
+         "care": [
+            [
+               31987415,
+               "watered"
+            ],
+            [
+               31972397,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31972387,
+         "stage": 1,
+         "substage": 1,
+         "id": "f7"
+      },
+      "b41": {
+         "owner": "mondoshawan",
+         "strain": "mis",
+         "xp": 750,
+         "care": [
+            [
+               31982749,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31978223,
+         "stage": 1,
+         "substage": 1,
+         "id": "b41"
+      },
+      "c37": {
+         "owner": "luegenbaron",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               31985875,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 31985840,
+         "stage": 1,
+         "substage": 0
+      },
+      "e16": {
+         "owner": "luegenbaron",
+         "strain": "kbr",
+         "xp": 2250,
+         "care": [
+            [
+               31985880,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 31985846,
          "stage": 1,
          "substage": 1
       }
@@ -714,10 +873,19 @@ var state = {
             "b1",
             "e7"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "kbr",
+               "xp": 2250
+            },
+            {
+               "strain": "cg",
+               "xp": 2250
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 2
+         "v": 0
       },
       "qwoyn": {
          "addrs": [
@@ -745,12 +913,7 @@ var state = {
          "addrs": [
             "e8"
          ],
-         "seeds": [
-            {
-               "strain": "cht",
-               "xp": 2250
-            }
-         ],
+         "seeds": [],
          "inv": [],
          "stats": [],
          "v": 0
@@ -840,12 +1003,16 @@ var state = {
       },
       "luegenbaron": {
          "addrs": [
-            "b5"
+            "b5",
+            "c37",
+            "e16"
          ],
          "seeds": [],
          "inv": [],
          "stats": [],
-         "v": 1
+         "v": 0,
+         "a": 1,
+         "u": 0
       },
       "ngc": {
          "addrs": [
@@ -954,10 +1121,63 @@ var state = {
             "d28",
             "d29"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "afg",
+               "xp": 2250
+            },
+            {
+               "strain": "lkg",
+               "xp": 2250
+            },
+            {
+               "strain": "cg",
+               "xp": 2250
+            },
+            {
+               "strain": "mis",
+               "xp": 2250
+            },
+            {
+               "strain": "lb",
+               "xp": 2250
+            },
+            {
+               "strain": "kbr",
+               "xp": 2250
+            },
+            {
+               "strain": "aca",
+               "xp": 2250
+            },
+            {
+               "strain": "swz",
+               "xp": 2250
+            },
+            {
+               "strain": "kmj",
+               "xp": 2250
+            },
+            {
+               "strain": "dp",
+               "xp": 2250
+            },
+            {
+               "strain": "mal",
+               "xp": 2250
+            },
+            {
+               "strain": "pam",
+               "xp": 2250
+            },
+            {
+               "strain": "cg",
+               "xp": 2250
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 120
+         "v": 106
       },
       "sooflauschig": {
          "addrs": [
@@ -979,12 +1199,20 @@ var state = {
       },
       "fracasgrimm": {
          "addrs": [
-            "b34"
+            "b34",
+            "b40"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "ag",
+               "xp": 750
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 0
+         "v": 0,
+         "a": 1,
+         "u": 0
       },
       "gregorypatrick": {
          "addrs": [
@@ -1177,7 +1405,9 @@ var state = {
       },
       "mondoshawan": {
          "addrs": [
-            "e14"
+            "e14",
+            "e15",
+            "b41"
          ],
          "seeds": [],
          "inv": [],
@@ -1207,6 +1437,22 @@ var state = {
          "v": 0,
          "a": 1,
          "u": 0
+      },
+      "qwoyn-fund": {
+         "addrs": [
+            "f7"
+         ],
+         "seeds": [
+            {
+               "strain": "aca",
+               "xp": 2250
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 1,
+         "u": 0
       }
    },
    "news": {
@@ -1218,36 +1464,19 @@ var state = {
       "g": [],
       "h": [],
       "i": [],
-      "t": []
+      "t": [],
+      "e": []
    },
    "payday": [
-      [
-         {
-            "account": "pugqueen",
-            "weight": 10000
-         }
-      ],
-      [
-         {
-            "account": "sooflauschig",
-            "weight": 10000
-         }
-      ],
       [
          {
             "account": "fracasgrimm",
             "weight": 10000
          }
-      ],
-      [
-         {
-            "account": "stephanus",
-            "weight": 10000
-         }
       ]
    ]
 }
-var startingBlock = ENV.STARTINGBLOCK || 31958500 ; //GENESIS BLOCK
+var startingBlock = ENV.STARTINGBLOCK || 31990367 ; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 const sh = ENV.sh || ''

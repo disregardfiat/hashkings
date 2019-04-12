@@ -1725,16 +1725,15 @@ function startApp() {
                 state.land[json.addr].terps = seed.terps || {}
             } else {
                 console.log(seed)
-                state.users[from].seeds.unshift(seed);
+                state.users[from].seeds.unshift(seed[0]);
                 console.log(`${from} can't plant that.`)
                 console.log(state.users[from].seeds)
             }
         } else if (seed) {
-            state.users[from].seeds.unshift(seed);
+            state.users[from].seeds.unshift(seed[0]);
             console.log(`${from} doesn't own that land`)
         } else {
             console.log(`${from} did a thing with a plant?`)
-        }
     });
     processor.onOperation('transfer_to_vesting', function(json) {
         if (json.to == username && json.from == username) {

@@ -2092,7 +2092,7 @@ function startApp() {
                         state.refund.push(['xfer', json.from, amount, 'Managing Land?...Maybe have your STEEM back'])
                     }
                 } else if (want == 'rseed' && amount == state.stats.prices.listed.seeds.reg || want == 'mseed' && amount == state.stats.prices.listed.seeds.mid || want == 'tseed' && amount == state.stats.prices.listed.seeds.top) {
-                    if (state.stats.supply.strains.indexOf(type) < 0) type = state.stats.supply.strains[state.users.length % state.stats.supply.strains.length]
+                    if (state.stats.supply.strains.indexOf(type) < 0){ type = state.stats.supply.strains[state.users.length % (state.stats.supply.strains.length -1)]}
                     var xp = 1
                     if (want == 'mseed') xp = 750
                     if (want == 'tseed') xp = 2250

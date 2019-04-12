@@ -1700,6 +1700,7 @@ function startApp() {
                 seed
             })
             if (!state.land[json.addr]) {
+                console.log('planted on empty')
                 const parcel = {
                     owner: from,
                     strain: seed.strain,
@@ -1714,6 +1715,7 @@ function startApp() {
                 }
                 state.land[json.addr] = parcel
             } else if (state.land[json.addr].stage < 0) {
+                console.log('planted on dead')
                 state.land[json.addr].strain = seed.strain
                 state.land[json.addr].xp = seed.xp
                 state.land[json.addr].care = []
@@ -1724,11 +1726,13 @@ function startApp() {
                 state.land[json.addr].traits = seed.traits || []
                 state.land[json.addr].terps = seed.terps || {}
             } else {
-                state.users[from].seeds.push(seed);
+                console.log(seed)
+                state.users[from].seeds.unshift(seed);
                 console.log(`${from} can't plant that.`)
+                console.log(state.users[from].seeds)
             }
         } else if (seed) {
-            state.users[from].seeds.push(seed);
+            state.users[from].seeds.unshift(seed);
             console.log(`${from} doesn't own that land`)
         } else {
             console.log(`${from} did a thing with a plant?`)

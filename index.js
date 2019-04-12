@@ -1791,12 +1791,13 @@ function startApp() {
         var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
             used = 0;
         if (record && json.delegatee == username) {
+                const use = record.used || 0
                 if (record.vests < vests) {
-                    availible = parseInt(availible) - parseInt(record.used);
-                    used = parseInt(record.used)
+                    availible = parseInt(availible) - parseInt(use);
+                    used = parseInt(use)
                 } else {
-                    if (record.used > availible) {
-                        var j = parseInt(record.used) - parseInt(availible);
+                    if (use > availible) {
+                        var j = parseInt(use) - parseInt(availible);
                         for (var i = state.users[json.delegator].addrs.length - j; i < state.users[json.delegator].addrs.length; i++) {
                             delete state.land[state.users[json.delegator].addrs[i]];
                             state.lands.forSale.push(state.users[json.delegator].addrs[i])
@@ -1804,8 +1805,8 @@ function startApp() {
                         used = parseInt(availible)
                         availible = 0
                     } else {
-                        availible = parseInt(availible) - parseInt(record.used)
-                        used = parseInt(record.used)
+                        availible = parseInt(availible) - parseInt(use)
+                        used = parseInt(use)
                     }
                 }
             state.delegations.push({

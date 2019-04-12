@@ -1302,6 +1302,7 @@ function startApp() {
             state.refund.push(state.refund.shift())
         }
         if (num % 100 === 0 && !processor.isStreaming()) {
+            if(!state.news.e)state.news.e=[]
             client.database.getDynamicGlobalProperties().then(function(result) {
                 console.log('At block', num, 'with', result.head_block_number - num, 'left until real-time.')
             });
@@ -1692,7 +1693,7 @@ function startApp() {
         } catch (e) {}
         if (!seed){
             try {
-                seed=state.users[from].seeds.splice(0, 1)
+                if(state.users[from].seeds.length)seed=state.users[from].seeds.splice(0, 1)
             }catch (e) {}
         }
         console.log(index,seed,from)

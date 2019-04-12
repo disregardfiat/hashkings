@@ -29,6 +29,7 @@ app.get('/a/:user', (req, res, next) => {
         }
     }
     for ( var i = 0 ; i < arr.length ; i++){
+        insert = ''
         var insert = state.land[arr[i]]
         if(insert){
             insert.id = arr[i]

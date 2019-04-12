@@ -1687,12 +1687,12 @@ function startApp() {
         try{
             index = state.users[from].addrs.indexOf(json.addr)
             for (var i = 0;i < state.users[from].seeds.length; i++){
-                if(state.users[from].seeds[i].strain = json.seed){seed=state.users[from].seeds.splice(i, 1);break;}
+                if(state.users[from].seeds[i].strain = json.seed){seed=state.users[from].seeds.splice(i, 1)[0];break;}
             }
         } catch (e) {}
         if (!seed){
             try {
-                seed=state.users[from].seeds.splice(0, 1)
+                seed=state.users[from].seeds.splice(0, 1)[0]
             }catch (e) {}
         }
         console.log(index,seed,from)
@@ -1725,12 +1725,12 @@ function startApp() {
                 state.land[json.addr].terps = seed.terps || {}
             } else {
                 console.log(seed)
-                state.users[from].seeds.unshift(seed[0]);
+                state.users[from].seeds.unshift(seed);
                 console.log(`${from} can't plant that.`)
                 console.log(state.users[from].seeds)
             }
         } else if (seed) {
-            state.users[from].seeds.unshift(seed[0]);
+            state.users[from].seeds.unshift(seed);
             console.log(`${from} doesn't own that land`)
         } else {
             console.log(`${from} did a thing with a plant?`)

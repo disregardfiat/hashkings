@@ -1694,11 +1694,9 @@ function startApp() {
             try {
                 seed=state.users[from].seeds.splice(0, 1)
             }catch (e) {}
-        } 
+        }
+        console.log(index,seed,from)
         if (index >= 0 && seed) {
-            console.log({
-                seed
-            })
             if (!state.land[json.addr]) {
                 console.log('planted on empty')
                 const parcel = {

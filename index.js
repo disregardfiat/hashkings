@@ -1687,12 +1687,12 @@ function startApp() {
         try{
             index = state.users[from].addrs.indexOf(json.addr)
             for (var i = 0;i < state.users[from].seeds.length; i++){
-                if(state.users[from].seeds[i].strain = json.seed){seed=state.users[from].seeds[i].splice(i, 1);break;}
+                if(state.users[from].seeds[i].strain = json.seed){seed=state.users[from].seeds.splice(i, 1);break;}
             }
         } catch (e) {}
         if (!seed){
             try {
-                seed=state.users[from].seeds[0].splice(0, 1)[0]
+                seed=state.users[from].seeds.splice(0, 1)
             }catch (e) {}
         }
         console.log(index,seed,from)

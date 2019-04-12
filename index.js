@@ -1790,7 +1790,7 @@ function startApp() {
         }
         var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
             used = 0;
-        if (record) {
+        if (record && json.delegatee == username) {
                 if (record.vests < vests) {
                     availible = parseInt(availible) - parseInt(record.used);
                     used = parseInt(record.used)
@@ -1808,13 +1808,13 @@ function startApp() {
                         used = parseInt(record.used)
                     }
                 }
-            }
-        state.delegations.push({
+            state.delegations.push({
                 delegator: json.delegator,
                 vests,
                 availible,
                 used
             })
+            }
     });
     processor.onOperation('transfer', function(json) {
         if (json.to == username && json.amount.split(' ')[1] == 'STEEM') {

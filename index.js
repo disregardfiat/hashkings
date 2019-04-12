@@ -1204,7 +1204,7 @@ var state = {
          ],
          "seeds": [
             {
-               "strain": "ag",
+               "strain": "aca",
                "xp": 750
             }
          ],

@@ -1800,6 +1800,7 @@ function startApp() {
                         var j = parseInt(use) - parseInt(availible);
                         for (var i = state.users[json.delegator].addrs.length - j; i < state.users[json.delegator].addrs.length; i++) {
                             delete state.land[state.users[json.delegator].addrs[i]];
+                            state.users[json.delegator].addrs.pop()
                             state.lands.forSale.push(state.users[json.delegator].addrs[i])
                         }
                         used = parseInt(availible)

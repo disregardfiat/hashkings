@@ -1775,62 +1775,46 @@ function startApp() {
     processor.onOperation('delegate_vesting_shares', function(json, from) { //grab posts to reward
         const vests = parseInt(parseFloat(json.vesting_shares) * 1000000)
         var record = ''
-        if (!state.users[json.delegator] && json.delegatee == username) state.users[json.delegator] = {
-            addrs: [],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 0,
-            a: 0,
-            u: 0
-        }
-        var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
-            used = 0;
-        if (json.delegatee == 'hashkings' && vests) {
-            for (var i = 0; i < state.delegations.length; i++) {
+        for (var i = 0; i < state.delegations.length; i++) {
                 if (state.delegations[i].delegator == json.delegator) {
                     record = state.delegations.splice(i, 1)
                     break;
                 }
             }
-
-            if (record) {
+        if (!state.users[json.delegator] && json.delegatee == username) state.users[json.delegator] = {
+            addrs: [],
+            seeds: [],
+            inv: [],
+            stats: [],
+            v: 0
+        }
+        var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
+            used = 0;
+        if (record) {
                 if (record.vests < vests) {
-                    availible = availible - record.used;
-                    used = record.used
+                    availible = parseInt(availible) - parseInt(record.used);
+                    used = parseInt(record.used)
                 } else {
                     if (record.used > availible) {
-                        var j = record.used - availible;
+                        var j = parseInt(record.used) - parseInt(availible);
                         for (var i = state.users[json.delegator].addrs.length - j; i < state.users[json.delegator].addrs.length; i++) {
                             delete state.land[state.users[json.delegator].addrs[i]];
                             state.lands.forSale.push(state.users[json.delegator].addrs[i])
                         }
-                        used = availible
+                        used = parseInt(availible)
                         availible = 0
                     } else {
-                        availible = availible - record.used
-                        used = record.used
+                        availible = parseInt(availible) - parseInt(record.used)
+                        used = parseInt(record.used)
                     }
                 }
             }
-            state.users[json.delegator].a = availible
-            state.users[json.delegator].u = used
-            state.delegations.push({
+        state.delegations.push({
                 delegator: json.delegator,
                 vests,
                 availible,
                 used
             })
-            console.log(processor.getCurrentBlockNumber() + `:${json.delegator} has delegated and earned ${availible} lands for @hashkings`)
-        } else if (json.delegatee == username && !vests) {
-            for (var i = 0; i < state.delegations.length; i++) {
-                if (state.delegations[i].delegator == json.delegator) {
-                    state.delegations.splice(i, 1)
-                    break;
-                }
-            }
-            console.log(processor.getCurrentBlockNumber() + `:${json.delegator} has removed delegation to @hashkings`)
-        }
     });
     processor.onOperation('transfer', function(json) {
         if (json.to == username && json.amount.split(' ')[1] == 'STEEM') {

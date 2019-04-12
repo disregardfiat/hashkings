@@ -1701,8 +1701,8 @@ function startApp() {
                 console.log('planted on empty')
                 const parcel = {
                     owner: from,
-                    strain: seed.strain,
-                    xp: seed.xp,
+                    strain: seed[0].strain,
+                    xp: seed[0].xp,
                     care: [],
                     aff: [],
                     planted: processor.getCurrentBlockNumber(),
@@ -1724,11 +1724,11 @@ function startApp() {
                 state.land[json.addr].traits = seed.traits || []
                 state.land[json.addr].terps = seed.terps || {}
             } else {
-                state.users[from].seeds.unshift(seed);
+                state.users[from].seeds.unshift(seed[0]);
                 console.log(`${from} can't plant that.`)
             }
         } else if (seed) {
-            state.users[from].seeds.unshift(seed);
+            state.users[from].seeds.unshift(seed[0]);
             console.log(`${from} doesn't own that land`)
         } else {
             console.log(`${from} did a thing with a plant?`)

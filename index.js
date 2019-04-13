@@ -2337,10 +2337,21 @@ function whotopay() {
     return o
 }
 
-function sortExtentions(array, key) {
-    return array.sort(function(a, b) {
-        return a[key] - b[key];
-    });
+function sortExtentions(a, key) {
+    var b=[],c=[]
+    for(i=0;i<a.length;i++){
+        b.push(a[i][key])
+    }
+    b = b.sort()
+    for(i=0;i<a.length;i++){
+        if(a[i][key]=b[0]){
+            c.unshift(a[i])
+            b.shift()
+            i=0
+            if(c.length==a.length)break;
+        }
+    }
+    return c
 }
 
 function kudo(user) {

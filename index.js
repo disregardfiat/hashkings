@@ -1815,18 +1815,11 @@ function startApp() {
                 state.refund.push(['xfer', 'qwoyn-fund', d, 'Partners Cut'])
                 state.refund.push(['xfer', 'qwoyn', d, 'Warchest'])
                 state.bal.c -= d * 3
-                d = parseInt(state.bal / 5)
+                d = parseInt(state.bal.c / 5)
                 state.refund.push(['xfer', 'jrawsthorne', d, 'Partner Cut'])
                 state.bal.c -= d
                 state.refund.push(['xfer', 'qwoyn-chest', state.bal.c, 'Producer Cut'])
                 state.bal.c = 0
-                if (state.bal.d > state.bal.b) {
-                    state.bal.d -= state.bal.b;
-                    state.bal.b = 0
-                } else if (state.bal.d <= state.bal.b) {
-                    state.bal.b -= state.bal.d;
-                    state.bal.d = 0
-                }
                 state.refund.push(['power', username, state.bal.b, 'Power to the people!'])
             }
             state.payday = whotopay()

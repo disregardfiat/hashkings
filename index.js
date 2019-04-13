@@ -1542,6 +1542,8 @@ function startApp() {
         }
         if (num % 28800 === 2880 && state.payday) {
             console.log("?"+num)
+            
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Jamaica`
             if (state.news.e.length > 0){body = state.news.e[0];state.news.e.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1571,6 +1573,7 @@ function startApp() {
         
     if (num % 28800 === 3660 && state.payday) {
         console.log("?"+num)
+        state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Central America`
             if (state.news.d.length > 0){body = state.news.d[0];state.news.d.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1600,6 +1603,7 @@ function startApp() {
         if (num % 28800 === 5440 && state.payday) {
             
             console.log("?"+num)
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Mexico`
             if (state.news.f.length > 0){body = state.news.f[0];state.news.f.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1628,6 +1632,7 @@ function startApp() {
     }
         if (num % 28800 === 12000 && state.payday) {
             console.log("?"+num)
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Asia`
             if (state.news.c.length > 0){body = state.news.c[0];state.news.c.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1657,6 +1662,7 @@ function startApp() {
         
         if (num % 28800 === 15000 && state.payday) {
             console.log("?"+num)
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Afganistan`
             if (state.news.a.length > 0){body = state.news.a[0];state.news.a.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1685,6 +1691,7 @@ function startApp() {
     }
         if (num % 28800 === 10000 && state.payday) {
             console.log("?"+num)
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `Testing Hashkings Automated features 10`
             if (state.news.g.length > 0){body = state.news.g[0];state.news.g.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1713,6 +1720,7 @@ function startApp() {
     }
         if (num % 28800 === 20000 && state.payday) {
             console.log("?"+num)
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `Testing Hashkings Automated features 20`
             if (state.news.h.length > 0){body = state.news.h[0];state.news.h.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1741,6 +1749,8 @@ function startApp() {
     }
         if (num % 28800 === 25000 && state.payday) {
             console.log("?"+num)
+            
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `Testing Hashkings Automated features 25`
             if (state.news.i.length > 0){body = state.news.i[0];state.news.i.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1769,6 +1779,7 @@ function startApp() {
     }
         if (num % 28800 === 22000 && state.payday) {
             console.log("?"+num)
+            state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Afganistan 22`
             if (state.news.t.length > 0){body = state.news.t[0];state.news.t.shift();}
             state.refund.push(['sign',[["comment", 
@@ -1819,6 +1830,7 @@ function startApp() {
                 state.refund.push(['power', username, state.bal.b, 'Power to the people!'])
             }
             state.payday = whotopay()
+            state.payday[0] = sortExtentions(state.payday[0],'account')
             var body = `It's a nice day in Africa`
             if (state.news.b.length > 0){body = state.news.b[0];state.news.b.shift();}
             state.refund.push(['sign',[["comment", 
@@ -2330,6 +2342,12 @@ function whotopay() {
     }
     console.log('payday:'+o)
     return o
+}
+
+function sortExtentions(array, key) {
+    return array.sort(function(a, b) {
+        return b[key] - a[key];
+    });
 }
 
 function kudo(user) {

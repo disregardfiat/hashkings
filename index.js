@@ -2339,7 +2339,7 @@ function whotopay() {
 
 function sortExtentions(array, key) {
     return array.sort(function(a, b) {
-        return b[key] - a[key];
+        return a[key] - b[key];
     });
 }
 

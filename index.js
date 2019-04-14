@@ -1538,6 +1538,7 @@ function startApp() {
         }
 
         if (num % 1000 === 0 && processor.isStreaming()) {
+            if(!state.blacklist)state.blacklist={}
             ipfsSaveState(num, JSON.stringify(state))
         }
         if (num % 28800 === 2880 && state.payday) {
@@ -2054,7 +2055,13 @@ function startApp() {
     });
     processor.onOperation('transfer', function(json) {
         if (json.to == username && json.amount.split(' ')[1] == 'STEEM') {
-            if (!state.users[json.from]) state.users[json.from] = {
+            fetch(`http://blacklist.usesteem.com/user/${json.from}`)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(myJson) {
+                if(myJson.blacklisted.length == 0){
+                    if (!state.users[json.from]) state.users[json.from] = {
                 addrs: [],
                 seeds: [],
                 inv: [],
@@ -2123,6 +2130,20 @@ function startApp() {
                 state.refund.push(['xfer', json.from, amount, 'Sorry, this account only accepts in game transactions.'])
                 console.log(`${json.from} sent a weird transfer...refund?`)
             }
+                } else {
+                    if (state.blacklist[json.from]){
+                        var users = parseInt(amount/2),
+                            ops = parseInt(amount - users)
+                        state.balance.b += users
+                        state.bal.c += ops
+                    } else {
+                        state.bal.r += amount
+                        state.refund.push(['xfer', json.from, amount, 'This account is on the global blacklist. You may remove your delegation, any further transfers will be treated as donations.'])
+                        state.blacklist[json.from] = true
+                        console.log(`${json.from} blacklisted`)
+                }
+            })
+            
         } else if (json.from == username) {
             const amount = parseInt(parseFloat(json.amount) * 1000)
             for (var i = 0; i < state.refund.length; i++) {

@@ -2141,6 +2141,7 @@ function startApp() {
                         state.refund.push(['xfer', json.from, amount, 'This account is on the global blacklist. You may remove your delegation, any further transfers will be treated as donations.'])
                         state.blacklist[json.from] = true
                         console.log(`${json.from} blacklisted`)
+                    }
                 }
             })
             

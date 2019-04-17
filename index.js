@@ -5,6 +5,7 @@ var fs = require('fs');
 const cors = require('cors');
 const express = require('express')
 const ENV = process.env;
+const maxEx = process.max_extentions || 8
 const IPFS = require('ipfs-api');
 const ipfs = new IPFS({
     host: 'ipfs.infura.io',
@@ -2007,52 +2008,54 @@ function startApp() {
             }
         }
     });
-    processor.onOperation('delegate_vesting_shares', function(json, from) { //grab posts to reward
-        const vests = parseInt(parseFloat(json.vesting_shares) * 1000000)
-        var record = ''
-        for (var i = 0; i < state.delegations.length; i++) {
-                if (state.delegations[i].delegator == json.delegator) {
-                    record = state.delegations.splice(i, 1)
-                    break;
-                }
-            }
-        if (!state.users[json.delegator] && json.delegatee == username) state.users[json.delegator] = {
-            addrs: [],
-            seeds: [],
-            inv: [],
-            stats: [],
-            v: 0
+processor.onOperation('delegate_vesting_shares', function(json, from) { //grab posts to reward
+  const vests = parseInt(parseFloat(json.vesting_shares) * 1000000)
+  var record = ''
+  if(json.delegatee == username){
+    for (var i = 0; i < state.delegations.length; i++) {
+      if (state.delegations[i].delegator == json.delegator) {
+        record = state.delegations.splice(i, 1)
+        break;
+      }
+    }
+    if (!state.users[json.delegator] && json.delegatee == username && !record) state.users[json.delegator] = {
+      addrs: [],
+      seeds: [],
+      inv: [],
+      stats: [],
+      v: 0
+    }
+    var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
+    used = 0;
+    if (record) {
+      const use = record.used || 0
+      if (record.vests < vests) {
+        availible = parseInt(availible) - parseInt(use);
+        used = parseInt(use)
+      } else {
+        if (use > availible) {
+          var j = parseInt(use) - parseInt(availible);
+          for (var i = state.users[json.delegator].addrs.length - j; i < state.users[json.delegator].addrs.length; i++) {
+            delete state.land[state.users[json.delegator].addrs[i]];
+            state.users[json.delegator].addrs.pop()
+            state.lands.forSale.push(state.users[json.delegator].addrs[i])
+          }
+          used = parseInt(availible)
+          availible = 0
+        } else {
+          availible = parseInt(availible) - parseInt(use)
+          used = parseInt(use)
         }
-        var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
-            used = 0;
-        if (record && json.delegatee == username) {
-                const use = record.used || 0
-                if (record.vests < vests) {
-                    availible = parseInt(availible) - parseInt(use);
-                    used = parseInt(use)
-                } else {
-                    if (use > availible) {
-                        var j = parseInt(use) - parseInt(availible);
-                        for (var i = state.users[json.delegator].addrs.length - j; i < state.users[json.delegator].addrs.length; i++) {
-                            delete state.land[state.users[json.delegator].addrs[i]];
-                            state.users[json.delegator].addrs.pop()
-                            state.lands.forSale.push(state.users[json.delegator].addrs[i])
-                        }
-                        used = parseInt(availible)
-                        availible = 0
-                    } else {
-                        availible = parseInt(availible) - parseInt(use)
-                        used = parseInt(use)
-                    }
-                }
-            state.delegations.push({
-                delegator: json.delegator,
-                vests,
-                availible,
-                used
-            })
-            }
-    });
+      }
+      state.delegations.push({
+        delegator: json.delegator,
+        vests,
+        availible,
+        used
+      })
+    }
+  }
+});
     processor.onOperation('transfer', function(json) {
         if (json.to == username && json.amount.split(' ')[1] == 'STEEM') {
             fetch(`http://blacklist.usesteem.com/user/${json.from}`)
@@ -2324,8 +2327,8 @@ function whotopay() {
             }
         }
     }
-    if (o.length > 3000) {
-        b = 3000
+    if (o.length > (maxEx * 10)) {
+        b = (maxEx * 10)
     } else {
         b = o.length
     }

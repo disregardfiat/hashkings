@@ -66,6 +66,19 @@ app.get('/u/:user', (req, res, next) => {
     res.send(JSON.stringify(state.users[user], null, 3))
 });
 
+app.get('/delegation/:user', (req, res, next) => {
+    let user = req.params.user
+    var op = {}
+    for(i=0;i<state.delegations.length;i++){
+        if(state.delegations[i].delegator == user){
+            op = state.delegations[i]
+            break;
+        }
+    }
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(op, null, 3))
+});
+
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state = {
    "delegations": [

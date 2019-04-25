@@ -353,7 +353,7 @@ function startApp() {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
-        if (num % 28800 === 25000 && state.payday) {
+        if (num % 28800 === 25000 && state.payday.length) {
             console.log("?"+num)
             
             state.payday[0] = sortExtentions(state.payday[0],'account')

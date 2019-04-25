@@ -145,6 +145,7 @@ modules.export = {
          "strain": "kbr",
          "xp": 2250,
          "care": [
+            [
                32308486,
                "watered",
                "c"

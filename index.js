@@ -622,7 +622,8 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
         break;
       }
     }
-    if (!state.users[json.delegator] && json.delegatee == username && !record) state.users[json.delegator] = {
+      console.log(json.delegatee, vests,record)
+    if (!state.users[json.delegator] && json.delegatee == username && record != '') state.users[json.delegator] = {
       addrs: [],
       seeds: [],
       inv: [],

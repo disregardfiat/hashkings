@@ -56,7 +56,7 @@ modules.export = {
       "stephanus": 1
    },
    "stats": {
-      "vs": 1950
+      "vs": 1950,
       "dust": 25,
       "time": 31159798,
       "offsets": {

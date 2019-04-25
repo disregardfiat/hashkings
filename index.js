@@ -1586,7 +1586,7 @@ function startApp() {
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         
-    if (num % 28800 === 3660 && state.payday) {
+    if (num % 28800 === 3660 && state.payday && state.payday.length) {
         console.log("?"+num)
         state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Central America`
@@ -1611,7 +1611,7 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 3960 && state.payday) {
+        if (num % 28800 === 3960 && state.payday && state.payday.length) {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
@@ -1641,7 +1641,7 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 5740 && state.payday) {
+        if (num % 28800 === 5740 && state.payday && state.payday.length) {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
@@ -1670,7 +1670,7 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 12300 && state.payday) {
+        if (num % 28800 === 12300 && state.payday && state.payday.length) {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
@@ -1700,7 +1700,7 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 15300 && state.payday) {
+        if (num % 28800 === 15300 && state.payday && state.payday.length) {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
@@ -1729,7 +1729,7 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 10300 && state.payday) {
+        if (num % 28800 === 10300 && state.payday && state.payday.length) {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
@@ -1758,7 +1758,7 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 20300 && state.payday) {
+        if (num % 28800 === 20300 && state.payday && state.payday.length) {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
@@ -1788,11 +1788,11 @@ function startApp() {
                                     {"beneficiaries":state.payday[0]}]]}]] ])
             state.payday.shift()
     }
-        if (num % 28800 === 25300 && state.payday) {
+        if (num % 28800 === 25300 && state.payday && state.payday.length) {
             console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
-        if (num % 28800 === 22000 && state.payday) {
+        if (num % 28800 === 22000 && state.payday && state.payday.length) {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `It's a nice day in Afganistan 22`

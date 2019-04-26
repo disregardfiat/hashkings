@@ -652,13 +652,13 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
           used = parseInt(use)
         }
       }
+      }
       state.delegations.push({
         delegator: json.delegator,
         vests,
         availible,
         used
       })
-    }
   }
 });
     processor.onOperation('transfer', function(json) {

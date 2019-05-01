@@ -44,7 +44,10 @@ app.get('/a/:user', (req, res, next) => {
 
 app.get('/stats', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(state.stats, null, 3))
+    Object.keys(state.users).length
+    var ret = state.stats
+    ret.gardeners = Object.keys(state.users).length
+    res.send(JSON.stringify(ret, null, 3))
 });
 
 app.get('/', (req, res, next) => {

@@ -839,6 +839,7 @@ var bot = {
         );
     },
     customJson: function(id, json, callback) {
+        if(json.block > processor.getCurrentBlockNumber() - 1000){
         client.broadcast.json({
             required_auths: [],
             required_posting_auths: [username],
@@ -851,7 +852,7 @@ var bot = {
             error => {
                 console.log('Error sending customJson')
             }
-        )
+        )} else {state.refund.splice(0,1)}
     },
     sign: function(op, callback) {
         console.log('attempting'+op[0])

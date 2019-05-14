@@ -25,35 +25,84 @@ module.exports = {
          "used": 1
       },
       {
-         "delegator": "mondoshawan",
-         "vests": 79938134591,
-         "availible": 0,
-         "used": 2
-      },
-      {
          "delegator": "luegenbaron",
          "vests": 79937710499,
          "availible": 1,
          "used": 1
       },
       {
-         "delegator": "jonyoudyer",
-         "vests": 39956605376,
+         "delegator": "buckydurddle",
+         "vests": 39928672533,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "jrawsthorne",
+         "vests": 79856690072,
          "availible": 1,
+         "used": 1
+      },
+      {
+         "delegator": "jonyoudyer",
+         "vests": 79845574959,
+         "availible": 0,
+         "used": 2
+      },
+      {
+         "delegator": "mondoshawan",
+         "vests": 119764506608,
+         "availible": 2,
+         "used": 1
+      },
+      {
+         "delegator": "movingman",
+         "vests": 199606471417,
+         "availible": 5,
          "used": 0
+      },
+      {
+         "delegator": "ecoinstar",
+         "vests": 39906696569,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "choosefreedom",
+         "vests": 39906513585,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "romiferns",
+         "vests": 39902157902,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "mulletwang",
+         "vests": 798032035767,
+         "availible": 4,
+         "used": 16
+      },
+      {
+         "delegator": "abrockman",
+         "vests": 199489451297,
+         "availible": 3,
+         "used": 2
       }
    ],
    "kudos": {
+      "prettynicevideo": 2,
       "qwoyn-fund": 1,
+      "abrockman": 5,
+      "choosefreedom": 1,
+      "jonyoudyer": 5,
       "qwoyn": 1,
-      "ghosthunter1": 1,
-      "gregorypatrick": 1,
-      "californiacrypto": 1,
-      "inthenow": 1,
-      "mondoshawan": 2,
+      "ecoinstar": 1,
+      "luegenbaron": 2,
+      "mondoshawan": 3,
       "pugqueen": 1,
-      "sooflauschig": 1,
-      "stephanus": 1
+      "sooflauschig": 1
    },
    "stats": {
       "vs": 1950,
@@ -67,8 +116,8 @@ module.exports = {
          "e": 20400,
          "f": 7200
       },
-      "bu": "QmbXcVkXYHAfXkoYA45m7XZ7p49SQAonyQc9egoVYL6bfA",
-      "bi": 32274000,
+      "bu": "QmYigKWprZdGgtPjyEwEesgZxsNAZ9dmETSDWrFhxKnraL",
+      "bi": 32910000,
       "prices": {
          "listed": {
             "a": 20000,
@@ -91,18 +140,18 @@ module.exports = {
       },
       "supply": {
          "land": {
-            "a": 4151,
-            "ac": 50,
-            "b": 4159,
-            "bc": 42,
-            "c": 4163,
-            "cc": 38,
-            "d": 4169,
-            "dc": 32,
-            "e": 4184,
-            "ec": 17,
-            "f": 4193,
-            "fc": 8,
+            "a": 4149,
+            "ac": 52,
+            "b": 4156,
+            "bc": 47,
+            "c": 4159,
+            "cc": 42,
+            "d": 4166,
+            "dc": 35,
+            "e": 4170,
+            "ec": 31,
+            "f": 4188,
+            "fc": 13,
             "g": 0,
             "gc": 0,
             "t": 420000,
@@ -127,15 +176,621 @@ module.exports = {
             "tha",
             "cht"
          ]
-      }
+      },
+      "gardeners": 52
    },
    "bal": {
       "r": 0,
       "c": 0,
       "b": 0,
-      "p": 150679
+      "p": 239164
    },
-   "refund":[],
+   "refund": [
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32767600",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32655400",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "customJson",
+         "report",
+         {
+            "stateHash": "QmPXcTRX7AXvj5JDuRGnDfEFAiM43pYNwCx5Z1nHeD9g8b",
+            "block": 32908000
+         }
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32703000",
+                  "title": "Almanac | Afganistan | 32703000",
+                  "body": "It's a nice day in Afganistan",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32703000",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32684200",
+                  "title": "Automated | 32684200",
+                  "body": "Testing Hashkings Automated features 25",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32684200",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32652400",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32770600",
+                  "title": "Automated | 32770600",
+                  "body": "Testing Hashkings Automated features 25",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32770600",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32700000",
+                  "title": "Almanac | Asia | 32700000",
+                  "body": "It's a nice day in Asia",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32700000",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32655400",
+                  "title": "Automated | 32655400",
+                  "body": "Testing Hashkings Automated features 25",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32655400",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32708000",
+                  "title": "Automated | 32708000",
+                  "body": "Testing Hashkings Automated features 20",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32708000",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32770600",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "customJson",
+         "report",
+         {
+            "stateHash": "QmQPokVmgEiFhujUebmavA6a4Ee9oRuDvLqLrcRtxKj7cY",
+            "block": 32909000
+         }
+      ],
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32710000",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32713000",
+                  "title": "Automated | 32713000",
+                  "body": "Testing Hashkings Automated features 25",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32713000",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32713000",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32904600",
+                  "title": "Almanac | Afganistan | 32904600",
+                  "body": "It's a nice day in Afganistan",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32904600",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32909600",
+                  "title": "Automated | 32909600",
+                  "body": "Testing Hashkings Automated features 20",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32909600",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32741800",
+                  "title": "Automated | 32741800",
+                  "body": "Testing Hashkings Automated features 25",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32741800",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32796400",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32799400",
+                  "title": "Automated | 32799400",
+                  "body": "Testing Hashkings Automated features 25",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32799400",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "vote",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32799400",
+                  "voter": "hashkings",
+                  "weight": 10000
+               }
+            ]
+         ]
+      ],
+      [
+         "customJson",
+         "report",
+         {
+            "stateHash": "QmYigKWprZdGgtPjyEwEesgZxsNAZ9dmETSDWrFhxKnraL",
+            "block": 32910000
+         }
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32760600",
+                  "title": "Almanac | Afganistan | 32760600",
+                  "body": "It's a nice day in Afganistan",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32760600",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ],
+      [
+         "sign",
+         [
+            [
+               "comment",
+               {
+                  "parent_author": "",
+                  "parent_permlink": "hashkings",
+                  "author": "hashkings",
+                  "permlink": "h32765600",
+                  "title": "Automated | 32765600",
+                  "body": "Testing Hashkings Automated features 20",
+                  "json_metadata": "{\"tags\":[\"hashkings\"]}"
+               }
+            ],
+            [
+               "comment_options",
+               {
+                  "author": "hashkings",
+                  "permlink": "h32765600",
+                  "max_accepted_payout": "1000000.000 SBD",
+                  "percent_steem_dollars": 10000,
+                  "allow_votes": true,
+                  "allow_curation_rewards": true,
+                  "extensions": [
+                     [
+                        0,
+                        {
+                           "beneficiaries": []
+                        }
+                     ]
+                  ]
+               }
+            ]
+         ]
+      ]
+   ],
    "lands": {
       "forSale": []
    },
@@ -146,64 +801,29 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32308486,
+               32887849,
                "watered",
                "c"
             ],
             [
-               32287497,
+               32853243,
                "watered",
                "c"
             ],
             [
-               32196163,
+               32820339,
                "watered",
                "c"
             ],
             [
-               32167656,
-               "watered",
-               "c"
-            ],
-            [
-               32114463,
-               "watered",
-               "c"
-            ],
-            [
-               32082371,
-               "watered",
-               "c"
-            ],
-            [
-               32062995,
+               32818927,
                "watered"
-            ],
-            [
-               32044351,
-               "watered",
-               "c"
-            ],
-            [
-               32017109,
-               "watered",
-               "c"
-            ],
-            [
-               31987400,
-               "watered",
-               "c"
-            ],
-            [
-               31958717,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
          "planted": 31713776,
-         "stage": 2,
-         "substage": 4,
+         "stage": 3,
+         "substage": 8,
          "id": "a10"
       },
       "a2": {
@@ -212,65 +832,25 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32287716,
+               32891873,
                "watered",
                "c"
             ],
             [
-               32259893,
+               32857226,
                "watered",
                "c"
             ],
             [
-               32229261,
-               "watered",
-               "c"
-            ],
-            [
-               32188198,
-               "watered",
-               "c"
-            ],
-            [
-               32139605,
-               "watered",
-               "c"
-            ],
-            [
-               32110304,
-               "watered",
-               "c"
-            ],
-            [
-               32083498,
-               "watered",
-               "c"
-            ],
-            [
-               32044654,
-               "watered",
-               "c"
-            ],
-            [
-               32020129,
-               "watered",
-               "c"
-            ],
-            [
-               31959632,
-               "watered",
-               "c"
-            ],
-            [
-               31930218,
+               32834637,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31853281,
-         "stage": 1,
-         "substage": 13,
+         "stage": 3,
+         "substage": 4,
          "id": "a2"
       },
       "b34": {
@@ -311,50 +891,29 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32308497,
+               32887831,
                "watered",
                "c"
             ],
             [
-               32287511,
+               32853255,
                "watered",
                "c"
             ],
             [
-               32114474,
+               32819807,
                "watered",
                "c"
             ],
             [
-               32082388,
-               "watered",
-               "c"
-            ],
-            [
-               32044359,
-               "watered",
-               "c"
-            ],
-            [
-               32017103,
-               "watered",
-               "c"
-            ],
-            [
-               31987421,
-               "watered",
-               "c"
-            ],
-            [
-               31974787,
-               "watered",
-               "c"
+               32798363,
+               "watered"
             ]
          ],
          "aff": [],
          "planted": 31886216,
-         "stage": 1,
-         "substage": 10,
+         "stage": 2,
+         "substage": 12,
          "id": "e13"
       },
       "e14": {
@@ -363,80 +922,25 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32328686,
+               32900523,
                "watered",
                "c"
             ],
             [
-               32299000,
+               32865062,
                "watered",
                "c"
             ],
             [
-               32269768,
-               "watered",
-               "c"
-            ],
-            [
-               32242772,
-               "watered",
-               "c"
-            ],
-            [
-               32211943,
-               "watered",
-               "c"
-            ],
-            [
-               32183140,
-               "watered",
-               "c"
-            ],
-            [
-               32154614,
-               "watered",
-               "c"
-            ],
-            [
-               32127090,
-               "watered",
-               "c"
-            ],
-            [
-               32097253,
-               "watered",
-               "c"
-            ],
-            [
-               32068617,
-               "watered",
-               "c"
-            ],
-            [
-               32038999,
-               "watered",
-               "c"
-            ],
-            [
-               32010727,
-               "watered",
-               "c"
-            ],
-            [
-               31982745,
-               "watered",
-               "c"
-            ],
-            [
-               31953848,
+               32810998,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31887728,
-         "stage": 2,
-         "substage": 2,
+         "stage": 3,
+         "substage": 6,
          "id": "e14"
       },
       "a43": {
@@ -445,8 +949,67 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
+               32762603,
+               "watered",
+               "c"
+            ],
+            [
+               32676420,
+               "watered",
+               "c"
+            ],
+            [
+               32533655,
+               "watered",
+               "c"
+            ],
+            [
+               32476558,
+               "watered",
+               "c"
+            ],
+            [
+               32445973,
+               "watered",
+               "c"
+            ],
+            [
+               32418016,
+               "watered",
+               "c"
+            ],
+            [
+               32391773,
+               "watered",
+               "c"
+            ],
+            [
+               32363111,
+               "watered",
+               "c"
+            ],
+            [
                32333337,
+               "watered",
+               "c"
+            ],
+            [
+               32302967,
+               "watered",
+               "c"
+            ],
+            [
+               32302946,
                "watered"
+            ],
+            [
+               32302941,
+               "watered"
+            ],
+            [
+               32333337,
+               "watered",
+               "c"
             ],
             [
                32302967,
@@ -485,7 +1048,7 @@ module.exports = {
          "aff": [],
          "planted": 31900185,
          "stage": 2,
-         "substage": 0,
+         "substage": 11,
          "id": "a43"
       },
       "a7": {
@@ -494,83 +1057,29 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32285512,
+               32888154,
                "watered",
                "c"
             ],
             [
-               32253900,
+               32824451,
                "watered",
                "c"
             ],
             [
-               32248701,
+               32824439,
                "watered"
             ],
             [
-               32192564,
-               "watered",
-               "c"
-            ],
-            [
-               32168310,
-               "watered",
-               "c"
-            ],
-            [
-               32162328,
-               "watered"
-            ],
-            [
-               32143128,
-               "watered",
-               "c"
-            ],
-            [
-               32103508,
-               "watered",
-               "c"
-            ],
-            [
-               32077036,
-               "watered",
-               "c"
-            ],
-            [
-               32048037,
-               "watered",
-               "c"
-            ],
-            [
-               32016314,
-               "watered",
-               "c"
-            ],
-            [
-               31991463,
-               "watered",
-               "c"
-            ],
-            [
-               31962985,
-               "watered",
-               "c"
-            ],
-            [
-               31936791,
-               "watered",
-               "c"
-            ],
-            [
-               31903067,
+               32796189,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31903005,
-         "stage": 1,
-         "substage": 13,
+         "stage": 3,
+         "substage": 2,
          "id": "a7"
       },
       "b39": {
@@ -578,6 +1087,26 @@ module.exports = {
          "strain": "swz",
          "xp": 2250,
          "care": [
+            [
+               32395975,
+               "watered",
+               "c"
+            ],
+            [
+               32332533,
+               "watered",
+               "c"
+            ],
+            [
+               32302259,
+               "watered",
+               "c"
+            ],
+            [
+               32274137,
+               "watered",
+               "c"
+            ],
             [
                32332533,
                "watered",
@@ -641,8 +1170,8 @@ module.exports = {
          ],
          "aff": [],
          "planted": 31905253,
-         "stage": 1,
-         "substage": 12
+         "stage": 2,
+         "substage": 2
       },
       "a49": {
          "owner": "inthenow",
@@ -650,65 +1179,30 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32313590,
+               32769598,
                "watered",
                "c"
             ],
             [
-               32284796,
+               32687130,
                "watered",
                "c"
             ],
             [
-               32223047,
+               32601993,
                "watered",
                "c"
             ],
             [
-               32192781,
-               "watered",
-               "c"
-            ],
-            [
-               32137371,
-               "watered",
-               "c"
-            ],
-            [
-               32107412,
-               "watered",
-               "c"
-            ],
-            [
-               32080042,
-               "watered",
-               "c"
-            ],
-            [
-               32049193,
-               "watered",
-               "c"
-            ],
-            [
-               32022263,
-               "watered",
-               "c"
-            ],
-            [
-               31991063,
-               "watered",
-               "c"
-            ],
-            [
-               31905966,
+               32566745,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31905556,
-         "stage": 1,
-         "substage": 11,
+         "stage": 2,
+         "substage": 7,
          "id": "a49"
       },
       "a9": {
@@ -717,73 +1211,39 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32335868,
-               "watered"
-            ],
-            [
-               32305742,
+               32796342,
                "watered",
                "c"
             ],
             [
-               32276488,
+               32737428,
                "watered",
                "c"
             ],
             [
-               32249535,
+               32680443,
                "watered",
                "c"
             ],
             [
-               32222651,
+               32650298,
                "watered",
                "c"
             ],
             [
-               32192497,
+               32610882,
                "watered",
                "c"
             ],
             [
-               32161771,
-               "watered",
-               "c"
-            ],
-            [
-               32132800,
-               "watered",
-               "c"
-            ],
-            [
-               32102612,
-               "watered",
-               "c"
-            ],
-            [
-               32074376,
-               "watered",
-               "c"
-            ],
-            [
-               32045368,
-               "watered",
-               "c"
-            ],
-            [
-               32016925,
-               "watered",
-               "c"
-            ],
-            [
-               31990174,
+               32569110,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31905642,
-         "stage": 2,
+         "stage": 3,
          "substage": 1,
          "id": "a9"
       },
@@ -793,40 +1253,41 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32140623,
+               32857516,
                "watered",
                "c"
             ],
             [
-               32069762,
+               32805193,
                "watered",
                "c"
             ],
             [
-               32022698,
+               32773633,
                "watered",
                "c"
             ],
             [
-               31993043,
+               32733301,
                "watered",
                "c"
             ],
             [
-               31956037,
+               32629647,
                "watered",
                "c"
             ],
             [
-               31936220,
+               32600388,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31911522,
-         "stage": 1,
-         "substage": 6
+         "stage": 2,
+         "substage": 1,
+         "id": "a11"
       },
       "b2": {
          "owner": "bluntsmasha",
@@ -834,39 +1295,41 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32140630,
+               32857522,
                "watered",
                "c"
             ],
             [
-               32069776,
+               32805198,
                "watered",
                "c"
             ],
             [
-               32022714,
+               32773639,
                "watered",
                "c"
             ],
             [
-               31993050,
+               32733304,
                "watered",
                "c"
             ],
             [
-               31956044,
+               32629650,
                "watered",
                "c"
             ],
             [
-               31936226,
-               "watered"
+               32600384,
+               "watered",
+               "c"
             ]
          ],
          "aff": [],
          "planted": 31911985,
-         "stage": 1,
-         "substage": 5
+         "stage": 2,
+         "substage": 0,
+         "id": "b2"
       },
       "c1": {
          "owner": "bluntsmasha",
@@ -874,44 +1337,45 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32140635,
+               32857529,
                "watered",
                "c"
             ],
             [
-               32069787,
-               "watered",
-               "c"
-            ],
-            [
-               32022732,
-               "watered",
-               "c"
-            ],
-            [
-               32022724,
+               32857525,
                "watered"
             ],
             [
-               31993092,
+               32805201,
                "watered",
                "c"
             ],
             [
-               31956052,
+               32773644,
                "watered",
                "c"
             ],
             [
-               31936232,
+               32733307,
+               "watered",
+               "c"
+            ],
+            [
+               32629653,
+               "watered",
+               "c"
+            ],
+            [
+               32600392,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31911995,
-         "stage": 1,
-         "substage": 6
+         "stage": 2,
+         "substage": 1,
+         "id": "c1"
       },
       "f2": {
          "owner": "bluntsmasha",
@@ -919,40 +1383,36 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32140643,
+               32805204,
                "watered",
                "c"
             ],
             [
-               32069800,
+               32773648,
                "watered",
                "c"
             ],
             [
-               32022743,
+               32733312,
                "watered",
                "c"
             ],
             [
-               31993098,
+               32629656,
                "watered",
                "c"
             ],
             [
-               31956059,
-               "watered",
-               "c"
-            ],
-            [
-               31936238,
+               32600399,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31912004,
-         "stage": 1,
-         "substage": 6
+         "stage": 2,
+         "substage": 0,
+         "id": "f2"
       },
       "b32": {
          "owner": "sooflauschig",
@@ -960,74 +1420,30 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32326479,
+               32899598,
                "watered",
                "c"
             ],
             [
-               32292992,
+               32871244,
                "watered",
                "c"
             ],
             [
-               32267040,
+               32847847,
                "watered",
                "c"
             ],
             [
-               32237919,
-               "watered",
-               "c"
-            ],
-            [
-               32207187,
-               "watered",
-               "c"
-            ],
-            [
-               32179233,
-               "watered",
-               "c"
-            ],
-            [
-               32150367,
-               "watered",
-               "c"
-            ],
-            [
-               32121591,
-               "watered",
-               "c"
-            ],
-            [
-               32093116,
-               "watered",
-               "c"
-            ],
-            [
-               32063465,
-               "watered",
-               "c"
-            ],
-            [
-               32041960,
-               "watered",
-               "c"
-            ],
-            [
-               32024014,
-               "watered"
-            ],
-            [
-               31988651,
+               32812671,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31929923,
-         "stage": 2,
-         "substage": 0,
+         "stage": 3,
+         "substage": 8,
          "id": "b32"
       },
       "a48": {
@@ -1035,6 +1451,71 @@ module.exports = {
          "strain": "afg",
          "xp": 2250,
          "care": [
+            [
+               32689447,
+               "watered",
+               "c"
+            ],
+            [
+               32626090,
+               "watered",
+               "c"
+            ],
+            [
+               32604187,
+               "watered",
+               "c"
+            ],
+            [
+               32571316,
+               "watered",
+               "c"
+            ],
+            [
+               32542352,
+               "watered",
+               "c"
+            ],
+            [
+               32514808,
+               "watered",
+               "c"
+            ],
+            [
+               32451911,
+               "watered",
+               "c"
+            ],
+            [
+               32423855,
+               "watered",
+               "c"
+            ],
+            [
+               32392546,
+               "watered",
+               "c"
+            ],
+            [
+               32364694,
+               "watered",
+               "c"
+            ],
+            [
+               32337328,
+               "watered",
+               "c"
+            ],
+            [
+               32308249,
+               "watered",
+               "c"
+            ],
+            [
+               32276761,
+               "watered",
+               "c"
+            ],
             [
                32337328,
                "watered"
@@ -1143,8 +1624,8 @@ module.exports = {
          ],
          "aff": [],
          "planted": 31932911,
-         "stage": 1,
-         "substage": 13
+         "stage": 2,
+         "substage": 12
       },
       "b5": {
          "owner": "luegenbaron",
@@ -1152,44 +1633,28 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32302107,
+               32905475,
                "watered",
                "c"
             ],
             [
-               32272337,
+               32881308,
+               "watered"
+            ],
+            [
+               32852370,
                "watered",
                "c"
             ],
             [
-               32243848,
-               "watered",
-               "c"
-            ],
-            [
-               32211259,
-               "watered",
-               "c"
-            ],
-            [
-               32164397,
-               "watered",
-               "c"
-            ],
-            [
-               32076482,
-               "watered",
-               "c"
-            ],
-            [
-               32046366,
+               32792412,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31968004,
-         "stage": 1,
+         "stage": 2,
          "substage": 9,
          "id": "b5"
       },
@@ -1198,6 +1663,11 @@ module.exports = {
          "strain": "cht",
          "xp": 2250,
          "care": [
+            [
+               32574349,
+               "watered",
+               "c"
+            ],
             [
                32087481,
                "watered",
@@ -1212,17 +1682,12 @@ module.exports = {
                31991717,
                "watered",
                "c"
-            ],
-            [
-               31969946,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
          "planted": 31968022,
          "stage": 1,
-         "substage": 4,
+         "substage": 5,
          "id": "e8"
       },
       "a17": {
@@ -1248,45 +1713,30 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32308491,
+               32887855,
                "watered",
                "c"
             ],
             [
-               32287504,
+               32853248,
                "watered",
                "c"
             ],
             [
-               32114468,
+               32819800,
                "watered",
                "c"
             ],
             [
-               32082378,
-               "watered",
-               "c"
-            ],
-            [
-               32044365,
-               "watered",
-               "c"
-            ],
-            [
-               31987415,
-               "watered",
-               "c"
-            ],
-            [
-               31972397,
+               32798358,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31972387,
-         "stage": 1,
-         "substage": 7,
+         "stage": 2,
+         "substage": 10,
          "id": "f7"
       },
       "b41": {
@@ -1295,75 +1745,25 @@ module.exports = {
          "xp": 750,
          "care": [
             [
-               32328689,
+               32900529,
                "watered",
                "c"
             ],
             [
-               32299004,
+               32865069,
                "watered",
                "c"
             ],
             [
-               32269770,
-               "watered",
-               "c"
-            ],
-            [
-               32242775,
-               "watered",
-               "c"
-            ],
-            [
-               32211947,
-               "watered",
-               "c"
-            ],
-            [
-               32183143,
-               "watered",
-               "c"
-            ],
-            [
-               32154619,
-               "watered",
-               "c"
-            ],
-            [
-               32127093,
-               "watered",
-               "c"
-            ],
-            [
-               32097256,
-               "watered",
-               "c"
-            ],
-            [
-               32068620,
-               "watered",
-               "c"
-            ],
-            [
-               32039002,
-               "watered",
-               "c"
-            ],
-            [
-               32010729,
-               "watered",
-               "c"
-            ],
-            [
-               31982749,
+               32811005,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31978223,
-         "stage": 1,
-         "substage": 13,
+         "stage": 3,
+         "substage": 3,
          "id": "b41"
       },
       "c37": {
@@ -1372,45 +1772,29 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32302113,
+               32905477,
+               "watered"
+            ],
+            [
+               32881310,
                "watered",
                "c"
             ],
             [
-               32272353,
+               32852372,
                "watered",
                "c"
             ],
             [
-               32243853,
-               "watered",
-               "c"
-            ],
-            [
-               32211262,
-               "watered",
-               "c"
-            ],
-            [
-               32164403,
-               "watered",
-               "c"
-            ],
-            [
-               32076486,
-               "watered",
-               "c"
-            ],
-            [
-               32046370,
+               32792414,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31985840,
-         "stage": 1,
-         "substage": 9,
+         "stage": 2,
+         "substage": 11,
          "id": "c37"
       },
       "e16": {
@@ -1419,44 +1803,28 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32302128,
+               32905479,
                "watered",
                "c"
             ],
             [
-               32272360,
+               32881312,
+               "watered"
+            ],
+            [
+               32852374,
                "watered",
                "c"
             ],
             [
-               32243857,
-               "watered",
-               "c"
-            ],
-            [
-               32211266,
-               "watered",
-               "c"
-            ],
-            [
-               32164408,
-               "watered",
-               "c"
-            ],
-            [
-               32076490,
-               "watered",
-               "c"
-            ],
-            [
-               32046374,
+               32792416,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31985846,
-         "stage": 1,
+         "stage": 2,
          "substage": 9,
          "id": "e16"
       },
@@ -1466,50 +1834,25 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32287726,
+               32891879,
                "watered",
                "c"
             ],
             [
-               32259897,
+               32857230,
                "watered",
                "c"
             ],
             [
-               32229264,
-               "watered",
-               "c"
-            ],
-            [
-               32188201,
-               "watered",
-               "c"
-            ],
-            [
-               32139608,
-               "watered",
-               "c"
-            ],
-            [
-               32110307,
-               "watered",
-               "c"
-            ],
-            [
-               32083532,
-               "watered",
-               "c"
-            ],
-            [
-               32044672,
+               32834639,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32020193,
-         "stage": 1,
-         "substage": 8,
+         "stage": 3,
+         "substage": 0,
          "id": "e11"
       },
       "e15": {
@@ -1518,14 +1861,820 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               32333647,
-               "watered"
+               32900526,
+               "watered",
+               "c"
+            ],
+            [
+               32865066,
+               "watered",
+               "c"
+            ],
+            [
+               32811001,
+               "watered",
+               "c"
             ]
          ],
          "aff": [],
          "planted": 32275386,
          "stage": 1,
-         "substage": 0
+         "substage": 12,
+         "id": "e15"
+      },
+      "e17": {
+         "owner": "buckydurddle",
+         "strain": "hk",
+         "xp": 1,
+         "care": [
+            [
+               32501527,
+               "watered",
+               "c"
+            ],
+            [
+               32481368,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 32481352,
+         "stage": 1,
+         "substage": 1
+      },
+      "b42": {
+         "owner": "jonyoudyer",
+         "strain": "swz",
+         "xp": 2250,
+         "care": [
+            [
+               32891885,
+               "watered",
+               "c"
+            ],
+            [
+               32857235,
+               "watered",
+               "c"
+            ],
+            [
+               32834644,
+               "watered",
+               "c"
+            ],
+            [
+               32802786,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32547991,
+         "stage": 1,
+         "substage": 12,
+         "id": "b42"
+      },
+      "a3": {
+         "owner": "jonyoudyer",
+         "strain": "hk",
+         "xp": 750,
+         "care": [
+            [
+               32891876,
+               "watered",
+               "c"
+            ],
+            [
+               32857228,
+               "watered",
+               "c"
+            ],
+            [
+               32803024,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32547995,
+         "stage": 1,
+         "substage": 3,
+         "id": "a3"
+      },
+      "f9": {
+         "owner": "jonyoudyer",
+         "strain": "aca",
+         "xp": 1,
+         "care": [
+            [
+               32891882,
+               "watered",
+               "c"
+            ],
+            [
+               32857233,
+               "watered",
+               "c"
+            ],
+            [
+               32834642,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32547999,
+         "stage": 1,
+         "substage": 12,
+         "id": "f9"
+      },
+      "f1": {
+         "owner": "prettynicevideo",
+         "strain": "cg",
+         "xp": 2250,
+         "care": [
+            [
+               32888156,
+               "watered",
+               "c"
+            ],
+            [
+               32824453,
+               "watered",
+               "c"
+            ],
+            [
+               32796197,
+               "watered",
+               "c"
+            ],
+            [
+               32767090,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32550195,
+         "stage": 1,
+         "substage": 9,
+         "id": "f1"
+      },
+      "a46": {
+         "owner": "movingman",
+         "strain": "mis",
+         "xp": 2250,
+         "care": [
+            [
+               32620730,
+               "watered",
+               "c"
+            ],
+            [
+               32566110,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32565834,
+         "stage": 1,
+         "substage": 2,
+         "id": "a46"
+      },
+      "a15": {
+         "owner": "mrkhuffins",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               32577455,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32577329,
+         "stage": 1,
+         "substage": 1,
+         "id": "a15"
+      },
+      "b3": {
+         "owner": "mrkhuffins",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [
+            [
+               32577476,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32577449,
+         "stage": 1,
+         "substage": 1,
+         "id": "b3"
+      },
+      "d3": {
+         "owner": "mrkhuffins",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [],
+         "aff": [],
+         "planted": 32577489,
+         "stage": 1,
+         "substage": 0,
+         "id": "d3"
+      },
+      "c38": {
+         "owner": "mondoshawan",
+         "strain": "kmj",
+         "xp": 2250,
+         "care": [
+            [
+               32900534,
+               "watered"
+            ],
+            [
+               32865071,
+               "watered",
+               "c"
+            ],
+            [
+               32779303,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32679733,
+         "stage": 1,
+         "substage": 6,
+         "id": "c38"
+      },
+      "d32": {
+         "owner": "ecoinstar",
+         "strain": "cg",
+         "xp": 2250,
+         "care": [
+            [
+               32889667,
+               "watered",
+               "c"
+            ],
+            [
+               32877056,
+               "watered",
+               "c"
+            ],
+            [
+               32848313,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32745119,
+         "stage": 1,
+         "substage": 6,
+         "id": "d32"
+      },
+      "a50": {
+         "owner": "abrockman",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               32890938,
+               "watered",
+               "c"
+            ],
+            [
+               32851841,
+               "watered",
+               "c"
+            ],
+            [
+               32815580,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32776720,
+         "stage": 1,
+         "substage": 5,
+         "id": "a50"
+      },
+      "c39": {
+         "owner": "abrockman",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               32890946,
+               "watered"
+            ],
+            [
+               32851849,
+               "watered",
+               "c"
+            ],
+            [
+               32815589,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32794139,
+         "stage": 1,
+         "substage": 3,
+         "id": "c39"
+      },
+      "d33": {
+         "owner": "abrockman",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [
+            [
+               32890953,
+               "watered",
+               "c"
+            ],
+            [
+               32851853,
+               "watered",
+               "c"
+            ],
+            [
+               32815593,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32794152,
+         "stage": 1,
+         "substage": 3,
+         "id": "d33"
+      },
+      "b43": {
+         "owner": "abrockman",
+         "strain": "lb",
+         "xp": 2250,
+         "care": [
+            [
+               32890943,
+               "watered",
+               "c"
+            ],
+            [
+               32851844,
+               "watered",
+               "c"
+            ],
+            [
+               32815585,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32794161,
+         "stage": 1,
+         "substage": 3,
+         "id": "b43"
+      },
+      "c40": {
+         "owner": "romiferns",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [
+            [
+               32889552,
+               "watered"
+            ],
+            [
+               32857146,
+               "watered",
+               "c"
+            ],
+            [
+               32828350,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32800914,
+         "stage": 1,
+         "substage": 3,
+         "id": "c40"
+      },
+      "a51": {
+         "owner": "mulletwang",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               32850741,
+               "watered",
+               "c"
+            ],
+            [
+               32848456,
+               "watered"
+            ],
+            [
+               32822437,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32806810,
+         "stage": 1,
+         "substage": 2,
+         "id": "a51"
+      },
+      "b44": {
+         "owner": "mulletwang",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [
+            [
+               32850744,
+               "watered",
+               "c"
+            ],
+            [
+               32848458,
+               "watered"
+            ],
+            [
+               32822439,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32816915,
+         "stage": 1,
+         "substage": 2,
+         "id": "b44"
+      },
+      "e18": {
+         "owner": "mulletwang",
+         "strain": "lb",
+         "xp": 2250,
+         "care": [
+            [
+               32850758,
+               "watered",
+               "c"
+            ],
+            [
+               32849376,
+               "watered",
+               "c"
+            ],
+            [
+               32848542,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 32817079,
+         "stage": 1,
+         "substage": 3,
+         "id": "e18"
+      },
+      "c41": {
+         "owner": "mulletwang",
+         "strain": "cht",
+         "xp": 2250,
+         "care": [
+            [
+               32850746,
+               "watered",
+               "c"
+            ],
+            [
+               32848460,
+               "watered"
+            ],
+            [
+               32822465,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32817085,
+         "stage": 1,
+         "substage": 2,
+         "id": "c41"
+      },
+      "d34": {
+         "owner": "mulletwang",
+         "strain": "aca",
+         "xp": 2250,
+         "care": [
+            [
+               32850749,
+               "watered",
+               "c"
+            ],
+            [
+               32848463,
+               "watered",
+               "c"
+            ],
+            [
+               32822445,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 32817096,
+         "stage": 1,
+         "substage": 3,
+         "id": "d34"
+      },
+      "f10": {
+         "owner": "mulletwang",
+         "strain": "ach",
+         "xp": 2250,
+         "care": [
+            [
+               32850754,
+               "watered",
+               "c"
+            ],
+            [
+               32848544,
+               "watered"
+            ],
+            [
+               32822448,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32817164,
+         "stage": 1,
+         "substage": 2,
+         "id": "f10"
+      },
+      "a1": {
+         "owner": "a1-shroom-spores",
+         "strain": "swz",
+         "xp": 2250,
+         "care": [
+            [
+               32821714,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32821622,
+         "stage": 1,
+         "substage": 1
+      },
+      "f11": {
+         "owner": "choosefreedom",
+         "strain": "lb",
+         "xp": 750,
+         "care": [
+            [
+               32889040,
+               "watered",
+               "c"
+            ],
+            [
+               32862483,
+               "watered",
+               "c"
+            ],
+            [
+               32829923,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32829855,
+         "stage": 1,
+         "substage": 3,
+         "id": "f11"
+      },
+      "e19": {
+         "owner": "mulletwang",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               32850714,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32849320,
+         "stage": 1,
+         "substage": 1,
+         "id": "e19"
+      },
+      "e20": {
+         "owner": "mulletwang",
+         "strain": "pam",
+         "xp": 2250,
+         "care": [
+            [
+               32850717,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32849363,
+         "stage": 1,
+         "substage": 1,
+         "id": "e20"
+      },
+      "e21": {
+         "owner": "mulletwang",
+         "strain": "swz",
+         "xp": 2250,
+         "care": [
+            [
+               32850719,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32849393,
+         "stage": 1,
+         "substage": 1,
+         "id": "e21"
+      },
+      "e22": {
+         "owner": "mulletwang",
+         "strain": "tha",
+         "xp": 2250,
+         "care": [
+            [
+               32850722,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32849501,
+         "stage": 1,
+         "substage": 1,
+         "id": "e22"
+      },
+      "e23": {
+         "owner": "mulletwang",
+         "strain": "pam",
+         "xp": 2250,
+         "care": [
+            [
+               32850725,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32849545,
+         "stage": 1,
+         "substage": 1,
+         "id": "e23"
+      },
+      "e24": {
+         "owner": "mulletwang",
+         "strain": "tha",
+         "xp": 2250,
+         "care": [
+            [
+               32850728,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32849739,
+         "stage": 1,
+         "substage": 1,
+         "id": "e24"
+      },
+      "e25": {
+         "owner": "mulletwang",
+         "strain": "kmj",
+         "xp": 2250,
+         "care": [
+            [
+               32850732,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32850514,
+         "stage": 1,
+         "substage": 1,
+         "id": "e25"
+      },
+      "e26": {
+         "owner": "mulletwang",
+         "strain": "pam",
+         "xp": 2250,
+         "care": [
+            [
+               32850734,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32850522,
+         "stage": 1,
+         "substage": 1,
+         "id": "e26"
+      },
+      "e27": {
+         "owner": "mulletwang",
+         "strain": "pam",
+         "xp": 2250,
+         "care": [
+            [
+               32850736,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32850680,
+         "stage": 1,
+         "substage": 1,
+         "id": "e27"
+      },
+      "e28": {
+         "owner": "mulletwang",
+         "strain": "tha",
+         "xp": 2250,
+         "care": [
+            [
+               32850738,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32850688,
+         "stage": 1,
+         "substage": 1,
+         "id": "e28"
+      },
+      "e29": {
+         "owner": "abrockman",
+         "strain": "cht",
+         "xp": 2250,
+         "care": [
+            [
+               32890956,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32884641,
+         "stage": 1,
+         "substage": 1,
+         "id": "e29"
+      },
+      "f12": {
+         "owner": "abrockman",
+         "strain": "ach",
+         "xp": 2250,
+         "care": [
+            [
+               32890962,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 32890932,
+         "stage": 1,
+         "substage": 1,
+         "id": "f12"
       }
    },
    "users": {
@@ -1536,7 +2685,7 @@ module.exports = {
          "seeds": [],
          "inv": [],
          "stats": [],
-         "v": 1
+         "v": 0
       },
       "shinedojo": {
          "addrs": [
@@ -1551,14 +2700,11 @@ module.exports = {
          "addrs": [
             "a2",
             "a3",
-            "e11"
+            "e11",
+            "f9",
+            "b42"
          ],
-         "seeds": [
-            {
-               "strain": "swz",
-               "xp": 2250
-            }
-         ],
+         "seeds": [],
          "inv": [],
          "stats": [],
          "v": 0,
@@ -1612,10 +2758,27 @@ module.exports = {
             "e6",
             "f1"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "afg",
+               "xp": 2250
+            },
+            {
+               "strain": "cg",
+               "xp": 2250
+            },
+            {
+               "strain": "hk",
+               "xp": 2250
+            },
+            {
+               "strain": "pam",
+               "xp": 2250
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 5
+         "v": 0
       },
       "ghosthunter1": {
          "addrs": [
@@ -1684,10 +2847,26 @@ module.exports = {
             "c1",
             "f2"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "aca",
+               "xp": 750
+           }
+         ],
          "inv": [],
          "stats": [],
          "v": 0
+      },
+      "thehermitmonk":{
+         "addrs": [
+            "b45",
+            "b46",
+            "e30"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 3
       },
       "tryp": {
          "addrs": [
@@ -2011,7 +3190,7 @@ module.exports = {
          "seeds": [],
          "inv": [],
          "stats": [],
-         "v": 1
+         "v": 0
       },
       "dantrevino": {
          "addrs": [
@@ -2157,7 +3336,8 @@ module.exports = {
          "addrs": [
             "e14",
             "e15",
-            "b41"
+            "b41",
+            "c38"
          ],
          "seeds": [],
          "inv": [],
@@ -2205,7 +3385,88 @@ module.exports = {
          "u": 0
       },
       "jrawsthorne": {
-         "addrs": [],
+         "addrs": [
+            "f8"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "buckydurddle": {
+         "addrs": [
+            "e17"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "ecoinstar": {
+         "addrs": [
+            "d32"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "choosefreedom": {
+         "addrs": [
+            "f11"
+         ],
+         "seeds": [
+            {
+               "strain": "pam",
+               "xp": 1
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "abrockman": {
+         "addrs": [
+            "a50",
+            "b43",
+            "c39",
+            "d33",
+            "e29",
+            "f12"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "romiferns": {
+         "addrs": [
+            "c40"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "mulletwang": {
+         "addrs": [
+            "a51",
+            "b44",
+            "c41",
+            "d34",
+            "e18",
+            "f10",
+            "e19",
+            "e20",
+            "e21",
+            "e22",
+            "e23",
+            "e24",
+            "e25",
+            "e26",
+            "e27",
+            "e28"
+         ],
          "seeds": [],
          "inv": [],
          "stats": [],
@@ -2224,6 +3485,9 @@ module.exports = {
       "t": [],
       "e": []
    },
-   "payday": [],
+   "payday": [
+      [],
+      []
+   ],
    "blacklist": {}
 }

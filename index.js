@@ -154,8 +154,13 @@ function startApp() {
             console.log("?"+num)
             
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `It's a nice day in Jamaica`
-            if (state.news.e.length > 0){body = state.news.e[0];state.news.e.shift();}
+            var body = `## Jamaica Growers Daily News\n`
+            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.e.length > 0){
+                body = body + state.news.e[0] + footer ;state.news.e.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -184,8 +189,13 @@ function startApp() {
     if (num % 28800 === 3660 && state.payday && state.payday[0].length) {
         console.log("?"+num)
         state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `It's a nice day in Central America`
-            if (state.news.d.length > 0){body = state.news.d[0];state.news.d.shift();}
+            var body = `## Central America Growers Daily News\n`
+            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.d.length > 0){
+                body = body + state.news.d[0] + footer ;state.news.d.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -214,8 +224,13 @@ function startApp() {
             
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `It's a nice day in Mexico`
-            if (state.news.f.length > 0){body = state.news.f[0];state.news.f.shift();}
+            var body = `## Mexico Growers Daily News\n`
+            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.f.length > 0){
+                body = body + state.news.f[0] + footer ;state.news.f.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -243,8 +258,13 @@ function startApp() {
         if (num % 28800 === 12000 && state.payday) {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `It's a nice day in Asia`
-            if (state.news.c.length > 0){body = state.news.c[0];state.news.c.shift();}
+            var body = `## Asia Growers Daily News\n`
+            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.c.length > 0){
+                body = body + state.news.c[0] + footer ;state.news.c.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -273,8 +293,13 @@ function startApp() {
         if (num % 28800 === 15000) {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `It's a nice day in Afganistan`
-            if (state.news.a.length > 0){body = state.news.a[0];state.news.a.shift();}
+        var body = `## Afganistan Growers Daily News\n`
+        var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.a.length > 0){
+                body = body + state.news.a[0] + footer ;state.news.a.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your Afganistan Garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -302,8 +327,13 @@ function startApp() {
         if (num % 28800 === 10000 && state.payday) {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `Testing Hashkings Automated features 10`
-            if (state.news.g.length > 0){body = state.news.g[0];state.news.g.shift();}
+        var body = `## G-Series Automaton\n`
+        var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.g.length > 0){
+                body = body + state.news.g[0] + footer ;state.news.g.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -331,8 +361,13 @@ function startApp() {
         if (num % 28800 === 20000 && state.payday.length) {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `Testing Hashkings Automated features 20`
-            if (state.news.h.length > 0){body = state.news.h[0];state.news.h.shift();}
+        var body = `## Upcoming daily overall economy reports\n`
+        var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.h.length > 0){
+                body = body + state.news.h[0] + footer ;state.news.h.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -361,8 +396,13 @@ function startApp() {
             console.log("?"+num)
             
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `Testing Hashkings Automated features 25`
-            if (state.news.i.length > 0){body = state.news.i[0];state.news.i.shift();}
+        var body = `## Information Feed\n`
+            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.i.length > 0){
+                body = body + state.news.i[0] + footer ;state.news.i.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -390,8 +430,13 @@ function startApp() {
         if (num % 28800 === 22000 && state.payday[0].length) {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `It's a nice day in Afganistan 22`
-            if (state.news.t.length > 0){body = state.news.t[0];state.news.t.shift();}
+        var body = `## Tent Growers Coming Soon\n`
+            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            if (state.news.t.length > 0){
+                body = body + state.news.t[0] + footer ;state.news.t.shift();
+            } else {
+                body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+            }
             state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 
@@ -435,8 +480,37 @@ function startApp() {
             state.payday = whotopay()
             if(state.payday[0].length){
                 state.payday[0] = sortExtentions(state.payday[0],'account')
-                var body = `It's a nice day in Africa`
-                if (state.news.b.length > 0){body = state.news.b[0];state.news.b.shift();}
+                var body = `## Africa Growers Daily News\n`
+                var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+                    if (state.news.b.length > 0){
+                        body = body + state.news.b[0] + footer ;state.news.b.shift();
+                    } else {
+                        body = body + `Did you know the African Continent has some of the best Sativa Landraces on the planet?  From Swazi Gold to Durban Poison these tall Cannabis plants include wonderful lemon terpines that offer a nice uplifting high.
+
+Even though Cannabis is illegal in many parts of Africa it is still prominent throughout the continent with South Africa, Algeria, Nigeria and the Congo leading the way in Cannabis production.
+
+![swz.png](https://files.steempeak.com/file/steempeak/hashkings/Z2WtzWRO-swz.png)
+South Africa, specifically Swaziland is known for its Swazi Gold.. According to Leafly this strain is know for its "sweet, citrus flavor and fast-acting effects. Designed to withstand the harsh conditions of its mountainous homeland"
+
+---
+
+![durban.png](https://files.steempeak.com/file/steempeak/hashkings/Av1Kz44T-durban.png)
+Another fan favorite which grows on the southern coast of Africa is Durban Poison. Leafly describes this plant as, "the perfect strain to help you stay productive through a busy day, when exploring the outdoors, or to lend a spark of creativity." We agree with them and absolutely recommend this strain which we have seen grown outdoor to over 10 Feet in height.
+
+---
+
+![kmj.png](https://files.steempeak.com/file/steempeak/hashkings/hPRQeSPX-kmj.png)
+You may have heard of the tallest mountain in Africa but have you heard of this monster Sativa?  Kilimanjaro, as the name suggests, this strain grows in the mountains of Tanzania and is described, according to leafly, as the “elephant stomper”. Visit our [seedbank](https://www.qwoyn.io/#/market/seedbank) and get yourself this African Sativa today.
+
+---
+
+![mal.png](https://files.steempeak.com/file/steempeak/hashkings/Jidk0AM5-mal.png)
+One of the most famous Strains in our list of Seeds is the Malawi. This strain grows in Southeastern Africa and is perfect for making hash. Leafly describes it as, a strain that takes 120 days to finish flowering and "produces long and resin-coated buds"
+
+![weed_divider.png](https://files.steempeak.com/file/steempeak/hashkings/RVcc2WGY-weed_divider.png)
+
+#### This guide should help you decide the perfect strain for your African Garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
+                    }
                 state.refund.push(['sign',[["comment", 
                                  {"parent_author": "", 
                                   "parent_permlink": 'hashkings', 

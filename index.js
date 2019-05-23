@@ -106,7 +106,7 @@ function startWith(sh) {
                 var data = file.toString()
                 startingBlock = data[0]
                 state = JSON.parse(data[1]);
-                console.log(state, startingBlock)
+                console.log(state, startingBlock, 'here')
                 startApp();
             } else {
                 startApp()

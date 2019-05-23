@@ -104,7 +104,7 @@ function startWith(sh) {
         ipfs.cat(sh, (err, file) => {
             if (!err) {
                 console.log(file.toString())
-                var data = JSON.parse(file.toString())
+                var data = file.toString()
                 startingBlock = data[0]
                 state = data[1];
                 startApp();

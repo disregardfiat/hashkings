@@ -105,7 +105,7 @@ function startWith(sh) {
             if (!err) {
                 var data = JSON.parse(file)
                 startingBlock = data[0]
-                state = JSON.parse(data[1]);
+                state = data[1];
                 startApp();
             } else {
                 startApp()

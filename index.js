@@ -105,7 +105,6 @@ function startWith(sh) {
             if (!err) {
                 startingBlock = file[0]
                 state = JSON.parse(file[1]);
-                if (data[0] < 32600000)state.refund = []
                 startApp();
             } else {
                 startApp()

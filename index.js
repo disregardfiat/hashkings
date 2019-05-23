@@ -103,8 +103,8 @@ function startWith(sh) {
         console.log(`Attempting to start from IPFS save state ${sh}`);
         ipfs.cat(sh, (err, file) => {
             if (!err) {
-                startingBlock = file[0]
-                state = JSON.parse(file[1]);
+                startingBlock = JSON.parse(file)[0]
+                state = JSON.parse(file)[1];
                 startApp();
             } else {
                 startApp()

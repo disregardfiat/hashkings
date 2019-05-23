@@ -136,7 +136,16 @@ function startApp() {
         if (num % 125 === 0 && state.refund.length && processor.isStreaming() || processor.isStreaming() && state.refund.length > 60) {
             if (state.refund[0].length == 4) bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2], state.refund[0][3])
             if (state.refund[0].length == 3) bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2])
-            if (state.refund[0].length == 2) bot[state.refund[0][0]].call(this, state.refund[0][1])
+            if (state.refund[0].length == 2) {
+                var op = true, bens = false
+                try {
+                    if (state.refund[1][1] == 'comment_options') op = false
+                    if (state.refund[1][1].extentions[0][1].beneficiaries.length) bens = true
+                } catch (e) {}
+                if(op || bens){bot[state.refund[0][0]].call(this, state.refund[0][1])} else {
+                    state.refund.shift()
+                }
+            }
             state.refund.push(state.refund.shift())
         }
         if (num % 100 === 0 && !processor.isStreaming()) {
@@ -461,7 +470,9 @@ function startApp() {
         console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
-        
+        if (num % 28800 === 28750) {
+            state.payday = whotopay()
+        }
         if (num % 28800 === 0) {
             var d = parseInt(state.bal.c / 4)
             state.bal.r += state.bal.c
@@ -477,7 +488,6 @@ function startApp() {
                 state.bal.c = 0
                 state.refund.push(['power', username, state.bal.b, 'Power to the people!'])
             }
-            state.payday = whotopay()
             if(state.payday[0].length){
                 state.payday[0] = sortExtentions(state.payday[0],'account')
                 var body = `## Africa Growers Daily News\n`
@@ -936,6 +946,7 @@ var bot = {
             },
             function(error) {
                 console.log(error)
+                state.refund.pop()
             }
         );
     },
@@ -981,33 +992,33 @@ function whotopay() {
             h: [],
             i: [],
             j: []
-        },
-        b = 0,
-        c = 0,
-        h = 1,
-        o = []
-    for (d in state.kudos) {
-        c = parseInt(c) + parseInt(state.kudos[d])
-        if (state.kudos[d] > h) {
+        }, // 10 arrays for bennies
+        b = 0, // counter
+        c = 0, // counter
+        h = 1, // top value
+        o = [] // temp array
+    for (d in state.kudos) { 
+        c = parseInt(c) + parseInt(state.kudos[d]) // total kudos
+        if (state.kudos[d] > h) { // top kudos(for sorting)
             h = state.kudos[d]
         };
-        if (state.kudos[d] == 1) {
+        if (state.kudos[d] == 1) { // for sorting , unshift 1 assuming most will be 1
             o.unshift({
                 account: d,
-                weight: parseInt(state.kudos[d])
+                weight: 1
             })
         } else {
-            if(!o.length){o.unshift({
+            if(!o.length){o.unshift({ //if nothing to sort, unshift into array
                 account: d,
                 weight: parseInt(state.kudos[d])
             })}
-            for (var i = o.length - 1; i > 0; i--) {
+            for (var i = o.length - 1; i > 0; i--) { // insert sort
                     if (state.kudos[d] <= o[i].weight ||(state.kudos[d] > o[i].weight && i == o.length)) {
                         o.splice(i, 0, {
                             account: d,
                             weight: parseInt(state.kudos[d])
                         });
-                        i = 0;
+                        break;
                     }
             }
         }
@@ -1017,18 +1028,18 @@ function whotopay() {
     } else {
         b = o.length
     }
-    while (b) {
+    while (b) { // assign bennies to posts, top kudos down
         for (var r in a) {
             a[r].push(o.pop());
             b--
             if(!b)break;
         }
     }
-    state.kudos = {}
+    state.kudos = {} //put back bennies over the max extentions limit
         for (var i = 0; i < o.length; i++) {
             state.kudos[o[i].account] = parseInt(o[i].weight)
         }
-    for (var r in a) {
+    for (var r in a) { //weight the 8 accounts in 10000 
         var u = 0,
             q = 0
         for (var i = 0; i < a[r].length; i++) {

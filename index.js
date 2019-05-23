@@ -107,7 +107,7 @@ function startWith(sh) {
                 startingBlock = data[0]
                 state = JSON.parse(data[1]);
                 console.log(state, startingBlock, 'here')
-                startApp();
+                //startApp();
             } else {
                 startApp()
                 console.log(`${sh} failed to load, Replaying from genesis.\nYou may want to set the env var engineCrank`)

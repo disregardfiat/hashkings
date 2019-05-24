@@ -1014,8 +1014,14 @@ function whotopay() {
                 weight: parseInt(state.kudos[d])
             })}
             for (var i = o.length - 1; i > 0; i--) { // insert sort
-                    if (state.kudos[d] <= o[i].weight ||(state.kudos[d] > o[i].weight && i == o.length)) {
+                    if (state.kudos[d] <= o[i].weight) {
                         o.splice(i, 0, {
+                            account: d,
+                            weight: parseInt(state.kudos[d])
+                        });
+                        break;
+                    } else if (state.kudos[d] > o[o.length-1].weight) {
+                        o.push({
                             account: d,
                             weight: parseInt(state.kudos[d])
                         });

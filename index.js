@@ -14,7 +14,7 @@ const ipfs = new IPFS({
 });
 const app = express()
 const port = ENV.PORT || 3000;
-const wKey = ENV.wkey
+const wkey = ENV.wkey
 
 app.use(cors())
 app.get('/p/:addr', (req, res, next) => {

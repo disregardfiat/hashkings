@@ -132,7 +132,7 @@ function startApp() {
                 td.push(`${o}${((sun-state.stats.offsets[o])*4)}`, `${o}${((sun-state.stats.offsets[o])*4)-1}`, `${o}${((sun-state.stats.offsets[o])*4)-2}`, `${o}${((sun-state.stats.offsets[o])*4)-3}`);
             }
             if (sun - state.stats.offsets[o] == 1200) {
-               popWeather(o).then((r)=>{autoPoster(o,num)}).catch((e)=>{console.log(e)})
+               popWeather(o).then((r)=>{console.log(r);autoPoster(r,num)}).catch((e)=>{console.log(e)})
             }
             if (sun - state.stats.offsets[o] == 1500) {
                state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
@@ -873,6 +873,7 @@ function popWeather (loc){
                 winds: s,
                 windd: d
             }
+            resolve(loc)
         }).catch(e=>{
             reject(e)
         })
@@ -885,9 +886,9 @@ function autoPoster (loc, num) {
     if (state.news[loc].length > 0){
         body = body + state.news[loc][0];state.news[loc].shift();
     }
-    body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)}_C. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${state.stats.env[loc].weather.winds} M/s. `
-    if (state.stats.env[loc].weather.precip){body = body + `Models predict ${state.stats.env[loc].weather.precip}mm of rain. `}
-    body = body + `Relative humidity will be around ${state.stats.env[loc].weather.humidity}% and a low of ${state.stats.env[loc].weather.low}_C overnight.\n` + footer
+    body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)}_C. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${parseFloat(state.stats.env[loc].weather.winds).toFixed(1)} M/s. `
+    if (state.stats.env[loc].weather.precip){body = body + `Models predict ${parseFloat(state.stats.env[loc].weather.precip).toFixed(2)}mm of rain. `}
+    body = body + `Relative humidity will be around ${state.stats.env[loc].weather.humidity}% and a low of ${parseFloat(state.stats.env[loc].weather.low - 272.15).toFixed(1)}_C overnight.\n` + footer
     var ops = [["comment",
                          {"parent_author": "",
                           "parent_permlink": 'hashkings',

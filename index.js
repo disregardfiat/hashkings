@@ -134,6 +134,7 @@ function startApp() {
             if (sun - state.stats.offsets[o] == 1200) {
                popWeather(o)
                .then(function(e,r){
+                   console.log(r)
                     autoPoster(r,num)
                })
             }
@@ -846,7 +847,7 @@ function popWeather (loc){
         .then(function(r) {
             var tmin=400,tmax=0,tave=0,precip=0,h=0,p=[],c=[],w={s:0,d:0},s=[],d=r.list[0].wind.deg
             for(i=0;i<8;i++){
-                tave += parseInt(parseFloat(r.list[i].temp)*100)
+                tave += parseInt(parseFloat(r.list[i].main.temp)*100)
                 if(r.list[i].main.temp > tmax){tmax = r.list[i].main.temp}
                 if(r.list[i].main.temp < tmin){tmin = r.list[i].main.temp}
                 h = r.list[i].main.humidity

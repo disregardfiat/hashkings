@@ -877,7 +877,7 @@ function popWeather (loc){
 }
 
 function autoPoster (loc, num) {
-    var body = `# ${state.stats.env[loc].name} Growers Daily News\n`
+    var body = `# ${state.stats.env[loc].name} Growers Daily News\n`, bens = ''
     var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
     if (state.news[loc].length > 0){
         body = body + state.news[loc][0];state.news[loc].shift();
@@ -885,17 +885,17 @@ function autoPoster (loc, num) {
     body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)}} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)}_C. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${state.stats.env[loc].weather.winds} M/s. `
     if (state.stats.env[loc].weather.precip){body = body + `Models predict ${state.stats.env[loc].weather.precip}mm of rain. `}
     body = body + `Relative humidity will be around ${state.stats.env[loc].weather.humidity}% and a low of ${state.stats.env[loc].weather.low}_C overnight.\n` + footer
-    state.refund.push(['sign',[["comment",
+    var ops = [["comment",
                          {"parent_author": "",
                           "parent_permlink": 'hashkings',
                           "author": username,
                           "permlink": 'h'+num,
                           "title": `Hashkings Almanac for ${state.stats.env[loc].name} | ${num}`,
                           "body": body,
-                          "json_metadata": JSON.stringify({tags:["hashkings"]})}])
+                          "json_metadata": JSON.stringify({tags:["hashkings"]})}]]
     if(state.payday.length){
         state.payday[0] = sortExtentions(state.payday[0],'account')
-        state.refund.push(["comment_options",
+        bens = ["comment_options",
                          {"author": username,
                           "permlink": 'h'+num,
                           "max_accepted_payout": "1000000.000 SBD",
@@ -904,9 +904,11 @@ function autoPoster (loc, num) {
                           "allow_curation_rewards": true,
                           "extensions":
                           [[0,
-                            {"beneficiaries":state.payday[0]}]]}]] ])
+                            {"beneficiaries":state.payday[0]}]]}]
+        ops.push(bens)
         state.payday.shift()
     }
+    state.refund.push(['sign',ops])
 }
 
 function cloudy(per){

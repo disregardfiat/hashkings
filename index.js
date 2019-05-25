@@ -817,7 +817,7 @@ function whotopay() {
 }
 
 function sortExtentions(a, key) {
-    var b=[],c=[]
+    var b=[],c=[0]
     for(i=0;i<a.length;i++){
         b.push(a[i][key])
     }

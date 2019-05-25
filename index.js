@@ -840,6 +840,7 @@ function kudo(user) {
 
 function popWeather (loc){
     return new Promise((resolve, reject) => {
+        const carry = loc
         fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${state.stats.env[loc].lat}&lon=${state.stats.env[loc].lon}&APPID=${wkey}`)
         .then(function(response) {
             return response.json();
@@ -869,7 +870,7 @@ function popWeather (loc){
                 winds: s,
                 windd: d
             }
-            resolve(loc)
+            resolve(carry)
         }).catch(e=>{
             reject(e)
         })

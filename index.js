@@ -134,7 +134,7 @@ function startApp() {
             if (sun - state.stats.offsets[o] == 1200) {
                popWeather(o)
                .then(function(e,r){
-                    autoPoster(o,num)
+                    autoPoster(r,num)
                })
             }
             if (sun - state.stats.offsets[o] == 1500) {
@@ -850,7 +850,7 @@ function popWeather (loc){
                 if(r.list[i].main.temp > tmax){tmax = r.list[i].main.temp}
                 if(r.list[i].main.temp < tmin){tmin = r.list[i].main.temp}
                 h = r.list[i].main.humidity
-                c = parseFloat(c) + parseFloat(r.list[i].clouds.all)
+                c = parseInt(c + parseInt(r.list[i].clouds.all))
                 if(r.list[i].rain){
                     precip = parseFloat(precip) + parseFloat(r.list[i].rain['3h'])
                 }
@@ -858,7 +858,6 @@ function popWeather (loc){
             }
             tave = parseFloat(tave/800).toFixed(1)
             c = parseInt(c/8)
-            s = parseInt(s/8)
             state.stats.env[loc].weather = {
                 high: tmax,
                 low: tmin,
@@ -869,7 +868,7 @@ function popWeather (loc){
                 winds: s,
                 windd: d
             }
-            resolve(state.stats.env[loc].weather)
+            resolve(loc)
         }).catch(e=>{
             reject(e)
         })
@@ -882,7 +881,7 @@ function autoPoster (loc, num) {
     if (state.news[loc].length > 0){
         body = body + state.news[loc][0];state.news[loc].shift();
     }
-    body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)}} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)}_C. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${state.stats.env[loc].weather.winds} M/s. `
+    body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)}_C. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${state.stats.env[loc].weather.winds} M/s. `
     if (state.stats.env[loc].weather.precip){body = body + `Models predict ${state.stats.env[loc].weather.precip}mm of rain. `}
     body = body + `Relative humidity will be around ${state.stats.env[loc].weather.humidity}% and a low of ${state.stats.env[loc].weather.low}_C overnight.\n` + footer
     var ops = [["comment",

@@ -846,20 +846,17 @@ function popWeather (loc){
         .then(function(r) {
             var tmin=400,tmax=0,tave=0,precip=0,h=0,p=[],c=[],w={s:0,d:0},s=[],d=r.list[0].wind.deg
             for(i=0;i<8;i++){
-                tave += parseInt(r.list[i].temp*100)
-                if(r.list[i].temp > tmax){tmax = r.list[i].temp}
-                if(r.list[i].temp < tmin){tmin = r.list[i].temp}
-                h = h + r.list[i].humidity
-                c = c + r.list[i].clouds.all
+                tave += parseInt(parseFloat(r.list[i].temp)*100)
+                if(r.list[i].main.temp > tmax){tmax = r.list[i].main.temp}
+                if(r.list[i].main.temp < tmin){tmin = r.list[i].main.temp}
+                h = r.list[i].main.humidity
+                c = parseFloat(c) + parseFloat(r.list[i].clouds.all)
                 if(r.list[i].rain){
-                    p.push(r.list[i].rain['3h'])
+                    precip = parseFloat(precip) + parseFloat(r.list[i].rain['3h'])
                 }
-                s = s + r.list[i].wind.speed
+                s = r.list[i].wind.speed
             }
             tave = parseFloat(tave/800).toFixed(1)
-            for(i=0;i<p.length;i++){precip = precip + parseFloat(p[i]*1000)}
-            precip = parseFloat(precip/(p.length * 1000).toFixed(2))
-            h = parseInt(h/8)
             c = parseInt(c/8)
             s = parseInt(s/8)
             state.stats.env[loc].weather = {
@@ -880,7 +877,6 @@ function popWeather (loc){
 }
 
 function autoPoster (loc, num) {
-    state.payday[0] = sortExtentions(state.payday[0],'account')
     var body = `# ${state.stats.env[loc].name} Growers Daily News\n`
     var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
     if (state.news[loc].length > 0){
@@ -896,8 +892,10 @@ function autoPoster (loc, num) {
                           "permlink": 'h'+num,
                           "title": `Hashkings Almanac for ${state.stats.env[loc].name} | ${num}`,
                           "body": body,
-                          "json_metadata": JSON.stringify({tags:["hashkings"]})}],
-                        ["comment_options",
+                          "json_metadata": JSON.stringify({tags:["hashkings"]})}])
+    if(state.payday.length){
+        state.payday[0] = sortExtentions(state.payday[0],'account')
+        state.refund.push(["comment_options",
                          {"author": username,
                           "permlink": 'h'+num,
                           "max_accepted_payout": "1000000.000 SBD",
@@ -907,7 +905,8 @@ function autoPoster (loc, num) {
                           "extensions":
                           [[0,
                             {"beneficiaries":state.payday[0]}]]}]] ])
-    state.payday.shift()
+        state.payday.shift()
+    }
 }
 
 function cloudy(per){

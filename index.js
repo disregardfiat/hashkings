@@ -132,7 +132,7 @@ function startApp() {
                 td.push(`${o}${((sun-state.stats.offsets[o])*4)}`, `${o}${((sun-state.stats.offsets[o])*4)-1}`, `${o}${((sun-state.stats.offsets[o])*4)-2}`, `${o}${((sun-state.stats.offsets[o])*4)-3}`);
             }
             if (sun - state.stats.offsets[o] == 1200) {
-               popWeather(0).then((r)=>{autoPoster(o,num)}).catch((e)=>{console.log(e)})
+               popWeather(o).then((r)=>{autoPoster(o,num)}).catch((e)=>{console.log(e)})
             }
             if (sun - state.stats.offsets[o] == 1500) {
                state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
@@ -836,7 +836,6 @@ function kudo(user) {
 
 function popWeather (loc){
     return new Promise((resolve, reject) => {
-        const carry = loc
         fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${state.stats.env[loc].lat}&lon=${state.stats.env[loc].lon}&APPID=${wkey}`)
         .then(function(response) {
             return response.json();
@@ -866,7 +865,6 @@ function popWeather (loc){
                 winds: s,
                 windd: d
             }
-            resolve(carry)
         }).catch(e=>{
             reject(e)
         })

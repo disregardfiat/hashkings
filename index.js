@@ -451,7 +451,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
   if(json.delegatee == username){
     for (var i = 0; i < state.delegations.length; i++) {
       if (state.delegations[i].delegator == json.delegator) {
-        record = state.delegations.splice(i, 1)
+        record = state.delegations.splice(i, 1)[0]
         break;
       }
     }

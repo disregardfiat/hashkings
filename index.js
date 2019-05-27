@@ -347,12 +347,27 @@ function startApp() {
     processor.on('grant', function(json, from) {
         if(from=='hashkings'){state.users[json.to].v = 1}
     });
+    
+    processor.on('news', function(json, from) {
+        if(from=='hashkings'){
+            if(!state.news){
+                state.news = {a:[],b:[],c:[],d:[],f:[],g:[],h:[],i:[],t:[]}
+            }
+            state.news[json.queue].push(json.body)
+         }
+    });
+
     processor.on('give_seed', function(json, from) {
         var seed=''
         if(json.to && json.to.length > 2){
           try{
               for (var i = 0;i < state.users[from].seeds.length; i++){
-                  if(state.users[from].seeds[i].strain = json.seed){
+                  if (json.qual){
+                    if(state.users[from].seeds[i].strain == json.seed && state.users[from].seeds[i].xp == json.qual){
+                      seed=state.users[from].seeds.splice(i, 1)[0]
+                      break
+                    }
+                  } else if(state.users[from].seeds[i].strain == json.seed){
                     seed=state.users[from].seeds.splice(i, 1)[0]
                     break
                   }
@@ -376,26 +391,17 @@ function startApp() {
           }
         }
     });
-    processor.on('news', function(json, from) {
-        if(from=='hashkings'){
-            if(!state.news){
-                state.news = {a:[],b:[],c:[],d:[],f:[],g:[],h:[],i:[],t:[]}
-            }
-            state.news[json.queue].push(json.body)
-         }
-    });
-
     processor.on('plant', function(json, from) {
         var index, seed=''
         try{
             index = state.users[from].addrs.indexOf(json.addr)
             for (var i = 0;i < state.users[from].seeds.length; i++){
-                if(state.users[from].seeds[i].strain = json.seed){seed=state.users[from].seeds.splice(i, 1);break;}
+                if(state.users[from].seeds[i].strain == json.seed){seed=state.users[from].seeds.splice(i, 1)[0];break;}
             }
         } catch (e) {}
         if (!seed){
             try {
-                if(state.users[from].seeds.length)seed=state.users[from].seeds.splice(0, 1)
+                if(state.users[from].seeds.length)seed == state.users[from].seeds.splice(0, 1)[0]
             }catch (e) {}
         }
         console.log(index,seed,from)
@@ -404,8 +410,8 @@ function startApp() {
                 console.log('planted on empty')
                 const parcel = {
                     owner: from,
-                    strain: seed[0].strain,
-                    xp: seed[0].xp,
+                    strain: seed.strain,
+                    xp: seed.xp,
                     care: [],
                     aff: [],
                     planted: processor.getCurrentBlockNumber(),
@@ -427,11 +433,11 @@ function startApp() {
                 state.land[json.addr].traits = seed.traits || []
                 state.land[json.addr].terps = seed.terps || {}
             } else {
-                state.users[from].seeds.unshift(seed[0]);
+                state.users[from].seeds.unshift(seed);
                 console.log(`${from} can't plant that.`)
             }
         } else if (seed) {
-            state.users[from].seeds.unshift(seed[0]);
+            state.users[from].seeds.unshift(seed);
             console.log(`${from} doesn't own that land`)
         } else {
             console.log(`${from} did a thing with a plant?`)

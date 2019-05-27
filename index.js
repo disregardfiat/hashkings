@@ -863,7 +863,6 @@ function sortExtentions(a, key) {
         if(a[i][key]==b[0]){
             c.push(a[i])
             b.shift()
-            i=0
             if(c.length==a.length)break;
         }
       }

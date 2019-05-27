@@ -855,18 +855,14 @@ function sortExtentions(a, key) {
     for(i=0;i<a.length;i++){
         b.push(a[i][key])
     }
-    console.log(b)
     b = b.sort()
-    console.log(b)
     while (c.length < a.length){
-      for(i=0;i<b.length;i++){
-        if(a[i][key]==b[0]){
+      for(i=0;i<a.length;i++){
+        if(a[i][key] == b[0]){
             c.push(a[i])
             b.shift()
-            break;
         }
       }
-      console.log(c.length, a.length, b)
     }
     return c
 }

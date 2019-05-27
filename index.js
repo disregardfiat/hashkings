@@ -849,8 +849,6 @@ function whotopay() {
     }
     console.log('payday:'+o)
     return o
-}
-
 function sortExtentions(a, key) {
     var b=[],c=[]
     for(i=0;i<a.length;i++){
@@ -867,7 +865,7 @@ function sortExtentions(a, key) {
             break;
         }
       }
-      console.log(c.length, a.length)
+      console.log(c.length, a.length, b)
     }
     return c
 }

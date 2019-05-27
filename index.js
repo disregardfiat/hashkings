@@ -849,6 +849,7 @@ function whotopay() {
     }
     console.log('payday:'+o)
     return o
+}
 function sortExtentions(a, key) {
     var b=[],c=[]
     for(i=0;i<a.length;i++){
@@ -869,7 +870,6 @@ function sortExtentions(a, key) {
     }
     return c
 }
-
 function kudo(user) {
     console.log('Kudos: ' + user)
     if (!state.kudos[user]) {

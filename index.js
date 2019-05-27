@@ -347,6 +347,35 @@ function startApp() {
     processor.on('grant', function(json, from) {
         if(from=='hashkings'){state.users[json.to].v = 1}
     });
+    processor.on('give_seed', function(json, from) {
+        var seed=''
+        if(json.to && json.to.length > 2){
+          try{
+              for (var i = 0;i < state.users[from].seeds.length; i++){
+                  if(state.users[from].seeds[i].strain = json.seed){
+                    seed=state.users[from].seeds.splice(i, 1)[0]
+                    break
+                  }
+              }
+          } catch (e) {}
+          if (seed) {
+              if (!state.users[json.to]) {
+                state.users[json.to] = {
+                  addrs: [],
+                  seeds: [seed],
+                  inv: [],
+                  stats: [],
+                  v: 0
+                }
+              } else {
+                  state.users[json.to].seeds.push(seed)
+              }
+              console.log(`${from} sent a ${seed.xp} xp ${seed.strain} to ${json.to}`)
+          } else {
+              console.log(`${from} doesn't own that seed`)
+          }
+        }
+    });
     processor.on('news', function(json, from) {
         if(from=='hashkings'){
             if(!state.news){

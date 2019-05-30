@@ -15,6 +15,8 @@ const ipfs = new IPFS({
 const app = express()
 const port = ENV.PORT || 3000;
 const wkey = ENV.wkey
+const skey = ENV.skey
+const streamname = ENV.streamname
 
 app.use(cors())
 app.get('/p/:addr', (req, res, next) => {
@@ -135,7 +137,7 @@ function startApp() {
                popWeather(o).then((r)=>{console.log(r);autoPoster(r,num)}).catch((e)=>{console.log(e)})
             }
             if (sun - state.stats.offsets[o] == 1500) {
-               state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
+               state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
             }
         }
         for (var i = 0; i < td.length; i++) {
@@ -178,16 +180,16 @@ function startApp() {
             } else {
                 body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
             }
-            state.refund.push(['sign',[["comment",
+            state.refund.push(['ssign',[["comment",
                                  {"parent_author": "",
                                   "parent_permlink": 'hashkings',
-                                  "author": username,
+                                  "author": streamname,
                                   "permlink": 'h'+num,
                                   "title": `Automated | ${num}`,
                                   "body": body,
                                   "json_metadata": JSON.stringify({tags:["hashkings"]})}],
                                 ["comment_options",
-                                 {"author": username,
+                                 {"author": streamname,
                                   "permlink": 'h'+num,
                                   "max_accepted_payout": "1000000.000 SBD",
                                   "percent_steem_dollars": 10000,
@@ -200,7 +202,7 @@ function startApp() {
     }
         if (num % 28800 === 20300 && state.payday && state.payday[0].length) {
             console.log("?"+num)
-            state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
+            state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
         }
         if (num % 28800 === 25000 && state.payday.length) {
             console.log("?"+num)
@@ -213,16 +215,16 @@ function startApp() {
             } else {
                 body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
             }
-            state.refund.push(['sign',[["comment",
+            state.refund.push(['ssign',[["comment",
                                  {"parent_author": "",
                                   "parent_permlink": 'hashkings',
-                                  "author": username,
+                                  "author": streamname,
                                   "permlink": 'h'+num,
                                   "title": `Automated | ${num}`,
                                   "body": body,
                                   "json_metadata": JSON.stringify({tags:["hashkings"]})}],
                                 ["comment_options",
-                                 {"author": username,
+                                 {"author": streamname,
                                   "permlink": 'h'+num,
                                   "max_accepted_payout": "1000000.000 SBD",
                                   "percent_steem_dollars": 10000,
@@ -235,7 +237,7 @@ function startApp() {
     }
         if (num % 28800 === 25300 && state.payday && state.payday.length) {
             console.log("?"+num)
-    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
+    state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 22000 && state.payday[0].length) {
             console.log("?"+num)
@@ -247,16 +249,16 @@ function startApp() {
             } else {
                 body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
             }
-            state.refund.push(['sign',[["comment",
+            state.refund.push(['ssign',[["comment",
                                  {"parent_author": "",
                                   "parent_permlink": 'hashkings',
-                                  "author": username,
+                                  "author": streamname,
                                   "permlink": 'h'+num,
                                   "title": `Automated | ${num}`,
                                   "body": body,
                                   "json_metadata": JSON.stringify({tags:["hashkings"]})}],
                                 ["comment_options",
-                                 {"author": username,
+                                 {"author": streamname,
                                   "permlink": 'h'+num,
                                   "max_accepted_payout": "1000000.000 SBD",
                                   "percent_steem_dollars": 10000,
@@ -269,7 +271,7 @@ function startApp() {
     }
     if (num % 28800 === 22300) {
         console.log("?"+num)
-    state.refund.push(['sign',[["vote",{"author":username,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
+    state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 28750) {
             state.payday = whotopay()
@@ -460,9 +462,9 @@ function startApp() {
     });
     processor.onOperation('comment_options', function(json) {
         for(var i = 0;i<state.refund.length;i++){
-            if(state.refund[i][0]=='sign'){
+            if(state.refund[i][0]=='ssign'){
                 if(state.refund[i][1][0][0]=='comment'){
-                    if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][0] == 'comment') {
+                    if (json.author == streamname && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][0] == 'comment') {
                         state.refund.splice(i,1)
                     }
                 }
@@ -473,7 +475,7 @@ function startApp() {
         for(var i = 0;i<state.refund.length;i++){
             if(state.refund[i][0]=='sign'){
                 if(state.refund[i][1][0][0]=='vote'){
-                    if (json.author == username && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][0] == 'vote') {
+                    if (json.author == streamname && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][0] == 'vote') {
                         state.refund.splice(i,1)
                     }
                 }
@@ -729,6 +731,18 @@ var bot = {
             }
         );
     },
+    ssign: function(op, callback) {
+        console.log('attempting'+op[0])
+        client.broadcast.sendOperations(op, skey).then(
+            function(result) {
+                console.log(result)
+            },
+            function(error) {
+                console.log(error)
+                state.refund.pop()
+            }
+        );
+    },
     power: function(toa, amount, callback) {
         const op = [
             'transfer_to_vesting',
@@ -925,7 +939,7 @@ function autoPoster (loc, num) {
     var ops = [["comment",
                          {"parent_author": "",
                           "parent_permlink": 'hashkings',
-                          "author": username,
+                          "author": streamname,
                           "permlink": 'h'+num,
                           "title": `Hashkings Almanac for ${state.stats.env[loc].name} | ${num}`,
                           "body": body,
@@ -933,7 +947,7 @@ function autoPoster (loc, num) {
     if(state.payday.length){
         state.payday[0] = sortExtentions(state.payday[0],'account')
         bens = ["comment_options",
-                         {"author": username,
+                         {"author": streamname,
                           "permlink": 'h'+num,
                           "max_accepted_payout": "1000000.000 SBD",
                           "percent_steem_dollars": 10000,
@@ -945,7 +959,7 @@ function autoPoster (loc, num) {
         ops.push(bens)
         state.payday.shift()
     }
-    state.refund.push(['sign',ops])
+    state.refund.push(['ssign',ops])
 }
 
 function cloudy(per){

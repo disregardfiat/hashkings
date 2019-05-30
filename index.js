@@ -15,7 +15,7 @@ const ipfs = new IPFS({
 const app = express()
 const port = ENV.PORT || 3000;
 const wkey = ENV.wkey
-const skey = ENV.skey
+const skey = steem.PrivateKey.from(ENV.skey)
 const streamname = ENV.streamname
 
 app.use(cors())

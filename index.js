@@ -117,7 +117,6 @@ function startWith(sh) {
             }
         });
     } else {
-        startingBlock = 34144878
         state = init
         startApp()
     }

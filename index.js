@@ -332,7 +332,7 @@ function startApp() {
             if (state.stats.supply.strains.indexOf(type) < 0) type = state.stats.supply.strains[state.users.length % state.stats.supply.strains.length]
             var seed = {
                 strain: type,
-                xp: 2250
+                xp: 1000
             }
             state.users[f].seeds.push(seed)
         }}
@@ -586,8 +586,8 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                 } else if (want == 'rseed' && amount == state.stats.prices.listed.seeds.reg || want == 'mseed' && amount == state.stats.prices.listed.seeds.mid || want == 'tseed' && amount == state.stats.prices.listed.seeds.top) {
                     if (state.stats.supply.strains.indexOf(type) < 0){ type = state.stats.supply.strains[state.users.length % (state.stats.supply.strains.length -1)]}
                     var xp = 1
-                    if (want == 'mseed') xp = 750
-                    if (want == 'tseed') xp = 2250
+                    if (want == 'mseed') xp = 250
+                    if (want == 'tseed') xp = 1000
                     var seed = {
                         strain: type,
                         xp: xp

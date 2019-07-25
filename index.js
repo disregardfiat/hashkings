@@ -1058,7 +1058,7 @@ function daily(addr) {
                         break;
                     }}}
               if (state.land[addr].care[i][1] == 'harvested'){
-                if (!harvested){
+                if (!harvested && state.land[addr].stage > 7){
                   harvested = true
                   kudo(state.land[addr].owner)
                   const seed = {

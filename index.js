@@ -296,6 +296,20 @@ function startApp() {
     }
   })
 
+    processor.on('harvest', function(json, from) {
+        let plants = json.plants,
+            plantnames = ''
+        for (var i = 0; i < plants.length; i++) {
+            try {
+            if (state.land[plants[i]].owner == from) {
+                state.land[plants[i]].care.unshift([processor.getCurrentBlockNumber(), 'harvested']);
+                plantnames += `${plants[i]} `
+            }
+            } catch (e){console.log(`${from} can't harvest what is not theirs`)}
+        }
+        console.log(`${from} harvested ${plantnames}`)
+    });
+    
     processor.on('water', function(json, from) {
         let plants = json.plants,
             plantnames = ''
@@ -1015,7 +1029,7 @@ function metWind(deg){
 }
 
 function daily(addr) {
-    var grown = false
+    var grown = false, harvested = false
     if (state.land[addr]) {
         for (var i = 0; i < state.land[addr].care.length; i++) {
             if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {
@@ -1042,4 +1056,30 @@ function daily(addr) {
                     if (state.land[addr].aff[j][0] > processor.getCurrentBlockNumber() - 86400 && state.land[addr].aff[j][1] == 'over') {
                         state.land[addr].stage = -1;
                         break;
-                    }}}}}}
+                    }}}
+              if (state.land[addr].care[i][1] == 'harvested'){
+                if (!harvested){
+                  harvested = true
+                  kudo(state.land[addr].owner)
+                  const seed = {
+                      strain: state.land[addr].strain,
+                      xp: state.land[addr].xp,
+                      traits: ['beta']
+                  }
+                  state.users[state.land[addr].owner].seeds.push(seed)
+                  const parcel = {
+                      owner: state.land[addr].owner,
+                      strain: '',
+                      xp: 0,
+                      care: [[processor.getCurrentBlockNumber(),'']],
+                      aff: [],
+                      stage: -1,
+                      substage: 0,
+                      traits: [],
+                      terps: []
+                  }
+                  state.land[addr] = parcel
+                }
+                
+              }
+                  }}}

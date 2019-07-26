@@ -959,7 +959,7 @@ function autoPoster (loc, num) {
                           "permlink": 'h'+num,
                           "title": `Hashkings Almanac for ${state.stats.env[loc].name} | ${num}`,
                           "body": body,
-                          "json_metadata": JSON.stringify({tags:["weedcash","hashkings"]})}]]
+                          "json_metadata": JSON.stringify({tags:["hashkings"]})}]]
     if(state.payday.length){
         state.payday[0] = sortExtentions(state.payday[0],'account')
         bens = ["comment_options",

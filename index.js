@@ -175,8 +175,33 @@ function startApp() {
         if (num % 28800 === 20000 && state.payday.length) {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `## Upcoming daily overall economy reports\n`
-        var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+        var body = `## Daily Reports (coming soon)\n`
+        var footer = `\n><center><h1>Hashkings Official Links</h1>
+        \n[Hashkings Web App](https://www.hashkings.app)
+        \n[Hashkings Discord](https://discord.gg/QW6tWF9)
+        \n[Hashkings STEEM Account](https://steempeak.com/@hashkings)
+        </center>
+
+        \n<center>![divider.png](https://smoke.io/imageupload_data/ee12bc223b16e8b3b16671dc95795f597b986400)</center>
+
+        ---
+        \n<center><h1>STEEM Community Showcase</h1></center>
+
+        ---
+        ---
+        \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
+
+        \n@prettynicevideo
+        \n@rawpride
+        \n@jonyoudyer (@canna-curate founder) 
+        \n@bluntsmasha
+        \n@qwoyn
+
+        \n<a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg">
+        \n***@canna-curate | The #1 Cannabis Curation Trail on STEEM***
+
+        \n---
+        \n***Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!***`
             if (state.news.h.length > 0){
                 body = body + state.news.h[0] + footer ;state.news.h.shift();
             } else {

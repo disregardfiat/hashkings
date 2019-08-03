@@ -235,31 +235,62 @@ function startApp() {
             console.log("?"+num)
 
             state.payday[0] = sortExtentions(state.payday[0],'account')
-        var body = `## Information Feed\n`
-            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            var body = `## Information Feed\n`
+            var footer = `\n><center><h1>Hashkings Official Links</h1>
+            \n[Hashkings Web App](https://www.hashkings.app)
+            \n[Hashkings Discord](https://discord.gg/QW6tWF9)
+            \n[Hashkings STEEM Account](https://steempeak.com/@hashkings)
+            </center>
+    
+            \n<center>![divider.png](https://smoke.io/imageupload_data/ee12bc223b16e8b3b16671dc95795f597b986400)</center>
+    
+            ---
+            \n<center><h1>STEEM Community Showcase</h1></center>
+    
+            ---
+            ---
+            \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
+    
+            \n@prettynicevideo
+            \n@rawpride
+            \n@jonyoudyer (@canna-curate founder) 
+            \n@bluntsmasha
+            \n@qwoyn
+    
+            \n<a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg">
+            \n***@canna-curate | The #1 Cannabis Curation Trail on STEEM***
+    
+            \n---
+            \n***Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!***`
             if (state.news.i.length > 0){
                 body = body + state.news.i[0] + footer ;state.news.i.shift();
             } else {
                 body = body + `\n#### This guide should help you decide the perfect strain for your garden on Planet Hashkings. The place to grow virtual cannabis on the blockchain!` + footer
             }
-            state.refund.push(['ssign',[["comment",
-                                 {"parent_author": "",
-                                  "parent_permlink": 'hashkings',
-                                  "author": streamname,
-                                  "permlink": 'h'+num,
-                                  "title": `Automated | ${num}`,
-                                  "body": body,
-                                  "json_metadata": JSON.stringify({tags:["hashkings"]})}],
-                                ["comment_options",
-                                 {"author": streamname,
-                                  "permlink": 'h'+num,
-                                  "max_accepted_payout": "1000000.000 SBD",
-                                  "percent_steem_dollars": 10000,
-                                  "allow_votes": true,
-                                  "allow_curation_rewards": true,
-                                  "extensions":
-                                  [[0,
-                                    {"beneficiaries":state.payday[0]}]]}]] ])
+            state.refund.push(
+                              ['ssign',
+                                [
+                                 ["comment",
+                                  {
+                                      "parent_author": "",
+                                      "parent_permlink": 'hashkings',
+                                      "author": streamname,
+                                      "permlink": 'h'+num,
+                                      "title": `Farmers Guide | ${num}`,
+                                      "body": body,
+                                      "json_metadata": JSON.stringify({tags:["hashkings"]})
+                                   }
+                                  ],
+                                    ["comment_options",
+                                      {
+                                          "author": streamname,
+                                          "permlink": 'h'+num,
+                                          "max_accepted_payout": "1000000.000 SBD",
+                                          "percent_steem_dollars": 10000,
+                                          "allow_votes": true,
+                                          "allow_curation_rewards": true,
+                                          "extensions":
+                                        [[0,{"beneficiaries":state.payday[0]}]]}]]])
             state.payday.shift()
     }
         if (num % 28800 === 25300 && state.payday && state.payday.length) {
@@ -270,7 +301,32 @@ function startApp() {
             console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `## Tent Growers Coming Soon\n`
-            var footer = `\n[Visit us today](https://www.qwoyn.io) to get growing and earning on the Steem Blockchain with the push of a button!`
+            var footer = `\n><center><h1>Hashkings Official Links</h1>
+            \n[Hashkings Web App](https://www.hashkings.app)
+            \n[Hashkings Discord](https://discord.gg/QW6tWF9)
+            \n[Hashkings STEEM Account](https://steempeak.com/@hashkings)
+            </center>
+    
+            \n<center>![divider.png](https://smoke.io/imageupload_data/ee12bc223b16e8b3b16671dc95795f597b986400)</center>
+    
+            ---
+            \n<center><h1>STEEM Community Showcase</h1></center>
+    
+            ---
+            ---
+            \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
+    
+            \n@prettynicevideo
+            \n@rawpride
+            \n@jonyoudyer (@canna-curate founder) 
+            \n@bluntsmasha
+            \n@qwoyn
+    
+            \n<a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg">
+            \n***@canna-curate | The #1 Cannabis Curation Trail on STEEM***
+    
+            \n---
+            \n***Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!***`
             if (state.news.t.length > 0){
                 body = body + state.news.t[0] + footer ;state.news.t.shift();
             } else {
@@ -281,7 +337,7 @@ function startApp() {
                                   "parent_permlink": 'hashkings',
                                   "author": streamname,
                                   "permlink": 'h'+num,
-                                  "title": `Automated | ${num}`,
+                                  "title": `Farmers Guide | ${num}`,
                                   "body": body,
                                   "json_metadata": JSON.stringify({tags:["hashkings"]})}],
                                 ["comment_options",
@@ -483,7 +539,7 @@ function startApp() {
             state.users[from].seeds.unshift(seed);
             console.log(`${from} doesn't own that land`)
         } else {
-            console.log(`${from} did a thing with a plant?`)
+            console.log(`${from} did something unexpected with a plant!`)
         }
     });
     processor.onOperation('transfer_to_vesting', function(json) {

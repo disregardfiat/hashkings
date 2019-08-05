@@ -263,7 +263,7 @@ function startApp() {
 \n
 \n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
 \n
-\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, @Canna-Curate.\n
+\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
 \n---
 \n---`
         var footer = `\n<center><h1>Hashkings Official Links</h1></center>
@@ -280,17 +280,11 @@ function startApp() {
         \n---
         \n       
         \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
-        \n       
-        \n@prettynicevideo       
-        \n@rawpride        
-        \n@jonyoudyer (@canna-curate founder)         
-        \n@bluntsmasha       
-        \n@qwoyn
         \n
         \n<center>
         <a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg"></center>
         \n
-        \n***@canna-curate | The #1 Cannabis Curation Trail on STEEM***
+        \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
         \n
         \n---
         \n---
@@ -420,7 +414,7 @@ function startApp() {
 \n
 d supply** once they are gone the only way to purchase them is on an exchange. 
 \n
-\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, @Canna-Curate.\n
+\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
 \n---
 \n---`
             var footer = `\n<center><h1>Hashkings Official Links</h1></center>
@@ -437,17 +431,11 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             \n---
             \n       
             \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
-            \n       
-            \n@prettynicevideo       
-            \n@rawpride        
-            \n@jonyoudyer (@canna-curate founder)         
-            \n@bluntsmasha       
-            \n@qwoyn
             \n
             \n<center>
             <a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg"></center>
             \n
-            \n***@canna-curate | The #1 Cannabis Curation Trail on STEEM***
+            \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
             \n
             \n---
             \n---
@@ -581,7 +569,7 @@ d supply** once they are gone the only way to purchase them is on an exchange.
 \n
 \n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
 \n
-\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, @Canna-Curate.\n
+\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
 \n---
 \n---`
             var footer = `\n<center><h1>Hashkings Official Links</h1></center>
@@ -598,17 +586,11 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             \n---
             \n       
             \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
-            \n       
-            \n@prettynicevideo       
-            \n@rawpride        
-            \n@jonyoudyer (@canna-curate founder)         
-            \n@bluntsmasha       
-            \n@qwoyn
             \n
             \n<center>
             <a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg"></center>
             \n
-            \n***@canna-curate | The #1 Cannabis Curation Trail on STEEM***
+            \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
             \n
             \n---
             \n---
@@ -1331,14 +1313,8 @@ function autoPoster (loc, num) {
     ---
     \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
 
-    \n@prettynicevideo
-    \n@rawpride
-    \n@jonyoudyer (@canna-curate founder) 
-    \n@bluntsmasha
-    \n@qwoyn
-
     \n<a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg">
-    \n***@canna-curate | The #1 Cannabis Curation Trail on STEEM***
+    \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
 
     \n---
     \n***Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!***`

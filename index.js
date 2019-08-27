@@ -1,5 +1,5 @@
 var steem = require('dsteem');
-var steemjs = require('steem-js');
+var steemjs = require('steem');
 var steemState = require('steem-state');
 var steemTransact = require('steem-transact');
 var fs = require('fs');

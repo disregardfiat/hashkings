@@ -1,4 +1,5 @@
 var steem = require('dsteem');
+var steemjs = require('steem-js');
 var steemState = require('steem-state');
 var steemTransact = require('steem-transact');
 var fs = require('fs');
@@ -96,24 +97,38 @@ const prefix = ENV.PREFIX || 'qwoyn_';
 const clientURL = ENV.APIURL || 'https://api.steemit.com'
 var client = new steem.Client(clientURL);
 var processor;
-
+var recents = []
 const transactor = steemTransact(client, steem, prefix);
 
-
+steemb.api.getAccountHistory(username, -1, 100, function(err, result) {
+  if (err){
+    console.log(err)
+    startWith(sh)
+  } else {
+    let ebus = result.filter( tx => tx[1].op[1].id === 'qwoyn_report' )
+    for(i=ebus.length -1;i>=0;i--){
+      if(JSON.parse(ebus[i][1].op[1].json).stateHash !== null)recents.push(JSON.parse(ebus[i][1].op[1].json).stateHash)
+    }
+    const mostRecent = recents.shift()
+    console.log(mostRecent)
+    startWith(mostRecent)
+  }
+});
 startWith(sh)
 
-function startWith(sh) {
-    if (sh) {
-        console.log(`Attempting to start from IPFS save state ${sh}`);
-        ipfs.cat(sh, (err, file) => {
+function startWith(hash) {
+    if (hash) {
+        console.log(`Attempting to start from IPFS save state ${hash}`);
+        ipfs.cat(hash, (err, file) => {
             if (!err) {
                 var data = JSON.parse(file.toString())
                 startingBlock = data[0]
                 state = JSON.parse(data[1]);
                 startApp();
             } else {
-                startApp()
-                console.log(`${sh} failed to load, Replaying from genesis.\nYou may want to set the env var engineCrank`)
+                const mostRecent = recents.shift()
+                console.log('Attempting start from:'+mostRecent)
+                startWith(mostRecent)
             }
         });
     } else {

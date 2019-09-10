@@ -26,6 +26,10 @@ app.get('/p/:addr', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(state.land[addr], null, 3))
 });
+app.get('/logs', (req, res, next) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(state.cs, null, 3))
+});
 app.get('/a/:user', (req, res, next) => {
     let user = req.params.user, arr = []
     res.setHeader('Content-Type', 'application/json');
@@ -137,6 +141,9 @@ function startWith(hash) {
 }
 
 function startApp() {
+  if(state.cs == null) {
+    state.cs = {}
+  }
     processor = steemState(client, steem, startingBlock, 10, prefix);
 
 
@@ -187,7 +194,11 @@ function startApp() {
         }
 
         if (num % 28800 === 20000 && state.payday.length) {
-            console.log("?"+num)
+            for (var item in state.cs){
+              if(item.split(':')[0] < num - 28800){
+                delete state.cs[item]
+              }
+            }
             state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `\nhttps://i.imgur.com/jTxih7O.png
 \n
@@ -333,11 +344,9 @@ function startApp() {
             state.payday.shift()
     }
         if (num % 28800 === 20300 && state.payday && state.payday[0].length) {
-            console.log("?"+num)
             state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
         }
         if (num % 28800 === 25000 && state.payday.length) {
-            console.log("?"+num)
 
             state.payday[0] = sortExtentions(state.payday[0],'account')
             var body = `\nhttps://i.imgur.com/jTxih7O.png
@@ -490,11 +499,9 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             state.payday.shift()
     }
         if (num % 28800 === 25300 && state.payday && state.payday.length) {
-            console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 22000 && state.payday[0].length) {
-            console.log("?"+num)
             state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `\nhttps://i.imgur.com/jTxih7O.png\n
 \n<center><h1>What is Kief?</h1></center>
@@ -639,7 +646,6 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             state.payday.shift()
     }
     if (num % 28800 === 22300) {
-        console.log("?"+num)
     state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
     }
         if (num % 28800 === 28750) {
@@ -672,9 +678,11 @@ d supply** once they are gone the only way to purchase them is on an exchange.
                 state.land[plants[i]].care.unshift([processor.getCurrentBlockNumber(), 'harvested']);
                 plantnames += `${plants[i]} `
             }
-            } catch (e){console.log(`${from} can't harvest what is not theirs`)}
+            } catch (e){
+              state.cs[`${json.block_num}:${from}`] = `${from} can't harvest what is not theirs`
+            }
         }
-        console.log(`${from} harvested ${plantnames}`)
+        state.cs[`${json.block_num}:${from}`] = `${from} harvested ${plantnames}`
     });
     
     processor.on('water', function(json, from) {
@@ -686,9 +694,11 @@ d supply** once they are gone the only way to purchase them is on an exchange.
                 state.land[plants[i]].care.unshift([processor.getCurrentBlockNumber(), 'watered']);
                 plantnames += `${plants[i]} `
             }
-            } catch (e){console.log(`${from} can't water what is not theirs`)}
+            } catch (e){
+              state.cs[`${json.block_num}:${from}`] = `${from} can't water what is not theirs`
+            }
         }
-        console.log(`${from} watered ${plantnames}`)
+        state.cs[`${json.block_num}:${from}`] = `${from} watered ${plantnames}`
     });
 /*
     processor.on('return', function(json, from) {
@@ -706,7 +716,7 @@ d supply** once they are gone the only way to purchase them is on an exchange.
     });
 */
     processor.on('redeem', function(j, f) {
-        console.log(`${f} ${j}`)
+        state.cs[`${json.block_num}:${f}`] = `Redeem Op:${f} -> ${j}`
         if (state.users[f]){if (state.users[f].v && state.users[f].v > 0) {
             state.users[f].v--
             let type = j.type || ''
@@ -770,9 +780,9 @@ d supply** once they are gone the only way to purchase them is on an exchange.
               } else {
                   state.users[json.to].seeds.push(seed)
               }
-              console.log(`${from} sent a ${seed.xp} xp ${seed.strain} to ${json.to}`)
+              state.cs[`${json.block_num}:${from}`] = `${from} sent a ${seed.xp} xp ${seed.strain} to ${json.to}`
           } else {
-              console.log(`${from} doesn't own that seed`)
+              state.cs[`${json.block_num}:${from}`] = `${from} doesn't own that seed`
           }
         }
     });
@@ -789,10 +799,9 @@ d supply** once they are gone the only way to purchase them is on an exchange.
                 if(state.users[from].seeds.length)seed == state.users[from].seeds.splice(0, 1)[0]
             }catch (e) {}
         }
-        console.log(index,seed,from)
         if (index >= 0 && seed) {
             if (!state.land[json.addr]) {
-                console.log('planted on empty')
+                state.cs[`${json.block_num}:${from}`] = `planted on empty plot ${json.addr}`
                 const parcel = {
                     owner: from,
                     strain: seed.strain,
@@ -807,7 +816,7 @@ d supply** once they are gone the only way to purchase them is on an exchange.
                 }
                 state.land[json.addr] = parcel
             } else if (state.land[json.addr].stage < 0) {
-                console.log('planted on dead')
+                state.cs[`${json.block_num}:${from}`] = `planted on harvested plot ${json.addr} `
                 state.land[json.addr].strain = seed.strain
                 state.land[json.addr].xp = seed.xp
                 state.land[json.addr].care = []
@@ -819,25 +828,25 @@ d supply** once they are gone the only way to purchase them is on an exchange.
                 state.land[json.addr].terps = seed.terps || {}
             } else {
                 state.users[from].seeds.unshift(seed);
-                console.log(`${from} can't plant that.`)
+                state.cs[`${json.block_num}:${from}`] = `${from} can't plant that.`
             }
         } else if (seed) {
             state.users[from].seeds.unshift(seed);
-            console.log(`${from} doesn't own that land`)
+            state.cs[`${json.block_num}:${from}`] = `${from} doesn't own that land`
         } else {
-            console.log(`${from} did something unexpected with a plant!`)
+            state.cs[`${json.block_num}:${from}`] = `${from} did something unexpected with a plant!`
         }
     });
     processor.onOperation('transfer_to_vesting', function(json) {
         if (json.to == username && json.from == username) {
             const amount = parseInt(parseFloat(json.amount) * 1000)
-            console.log(amount, 'to vesting')
+            state.cs[`${json.block_num}:${json.from}`] = `${amount} to vesting`
             state.bal.b -= amount
             state.bal.p += amount
             for (var i = 0; i < state.refund.length; i++) {
                 if (state.refund[i][1] == json.to && state.refund[i][2] == amount) {
                     state.refund.splice(i, 1);
-                    console.log(`${json.to} powered up ${amount}`);
+                    state.cs[`${json.block_num}:${from}`] = `${json.to} powered up ${amount}`
                     break;
                 }
             }
@@ -875,7 +884,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
         break;
       }
     }
-      console.log(json.delegator, vests,record)
+      state.cs[`${json.block_num}:${from}`] = `${vests} vested` 
     if (!state.users[json.delegator] && json.delegatee == username) state.users[json.delegator] = {
       addrs: [],
       seeds: [],
@@ -938,7 +947,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                 if (state.stats.supply.land[want]) {
                     var allowed = false
                     if (amount == 500 && type == 'manage') {
-                        console.log(`${json.from} is managing`)
+                        state.cs[`${json.block_num}:${from}`] = `${json.from} is managing`
                         for (var i = 0; i < state.delegations.length; i++) {
                             if (json.from == state.delegations[i].delegator && state.delegations[i].availible) {
                                 state.delegations[i].availible--;
@@ -960,7 +969,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                         const num = state.stats.supply.land[sel]++
                         var addr = `${want}${num}`
                         state.users[json.from].addrs.push(addr)
-                        console.log(`${json.from} purchased ${addr}`)
+                        state.cs[`${json.block_num}:${from}`] = `${json.from} purchased ${addr}`
                     } else {
                         state.refund.push(['xfer', json.from, amount, 'Managing Land?...Maybe have your STEEM back'])
                     }
@@ -973,23 +982,20 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                         strain: type,
                         xp: xp
                     }
-                    console.log(seed)
                     state.users[json.from].seeds.push(seed)
                     const c = parseInt(amount * 0.025)
                     state.bal.c += c
                     state.bal.b += amount - c
-                    console.log(`${json.from} purchased ${seed.strain}`)
+                    state.cs[`${json.block_num}:${from}`] = `${json.from} purchased ${seed.strain}`
                 } else {
-                    console.log('refund fun')
                     state.bal.r += amount
                     state.refund.push(['xfer', json.from, amount, 'We don\'t know what you wanted... have your STEEM back'])
-                    console.log(`${json.from} sent a weird transfer...refund?`)
+                    state.cs[`${json.block_num}:${from}`] = `${json.from} sent a weird transfer...refund?`
                 }
             } else if (amount > 10) {
-                console.log('refund fun')
                 state.bal.r += amount
                 state.refund.push(['xfer', json.from, amount, 'Sorry, this account only accepts in game transactions.'])
-                console.log(`${json.from} sent a weird transfer...refund?`)
+                state.cs[`${json.block_num}:${from}`] = `${json.from} sent a weird transfer...refund?`
             }
                 } else {
                     if (state.blacklist[json.from]){
@@ -1001,7 +1007,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                         state.bal.r += amount
                         state.refund.push(['xfer', json.from, amount, 'This account is on the global blacklist. You may remove your delegation, any further transfers will be treated as donations.'])
                         state.blacklist[json.from] = true
-                        console.log(`${json.from} blacklisted`)
+                        state.cs[`${json.block_num}:${from}`] = `${json.from} blacklisted`
                     }
                 }
             })
@@ -1012,7 +1018,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                 if (state.refund[i][1] == json.to && state.refund[i][2] == amount) {
                     state.refund.splice(i, 1);
                     state.bal.r -= amount;
-                    console.log(`${json.to} refunded successfully`);
+                    state.cs[`${json.block_num}:${from}`] = `${json.to} refunded successfully`
                     break;
                 }
             }

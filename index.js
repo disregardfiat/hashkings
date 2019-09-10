@@ -1,6 +1,6 @@
 var steem = require('dsteem');
 var steemjs = require('steem');
-var steemState = require('steem-state');
+var steemState = require('./processor');
 var steemTransact = require('steem-transact');
 var fs = require('fs');
 const cors = require('cors');

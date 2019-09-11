@@ -97,6 +97,7 @@ var startingBlock = ENV.STARTINGBLOCK || 34159000; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 const sh = ENV.sh || ''
+const ago = ENV.ago || 0
 const prefix = ENV.PREFIX || 'qwoyn_';
 const clientURL = ENV.APIURL || 'https://api.steemit.com'
 var client = new steem.Client(clientURL);
@@ -126,6 +127,7 @@ function startWith(hash) {
             if (!err) {
                 var data = JSON.parse(file.toString())
                 startingBlock = data[0]
+                if (startingBlock < ago){startWith(sh)} 
                 state = JSON.parse(data[1]);
                 startApp();
             } else {

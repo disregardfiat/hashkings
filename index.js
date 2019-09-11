@@ -127,7 +127,7 @@ function startWith(hash) {
             if (!err) {
                 var data = JSON.parse(file.toString())
                 startingBlock = data[0]
-                if (startingBlock < ago){startWith(sh)} 
+                if (startingBlock == ago){startWith(sh)} 
                 state = JSON.parse(data[1]);
                 startApp();
             } else {

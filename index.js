@@ -947,7 +947,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                 if (state.stats.supply.land[want]) {
                     var allowed = false
                     if (amount == 500 && type == 'manage') {
-                        state.cs[`${json.block_num}:${from}`] = `${json.from} is managing`
+                        state.cs[`${json.block_num}:${json.from}`] = `${json.from} is managing`
                         for (var i = 0; i < state.delegations.length; i++) {
                             if (json.from == state.delegations[i].delegator && state.delegations[i].availible) {
                                 state.delegations[i].availible--;
@@ -969,7 +969,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                         const num = state.stats.supply.land[sel]++
                         var addr = `${want}${num}`
                         state.users[json.from].addrs.push(addr)
-                        state.cs[`${json.block_num}:${from}`] = `${json.from} purchased ${addr}`
+                        state.cs[`${json.block_num}:${json.from}`] = `${json.from} purchased ${addr}`
                     } else {
                         state.refund.push(['xfer', json.from, amount, 'Managing Land?...Maybe have your STEEM back'])
                     }
@@ -986,16 +986,16 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                     const c = parseInt(amount * 0.025)
                     state.bal.c += c
                     state.bal.b += amount - c
-                    state.cs[`${json.block_num}:${from}`] = `${json.from} purchased ${seed.strain}`
+                    state.cs[`${json.block_num}:${json.from}`] = `${json.from} purchased ${seed.strain}`
                 } else {
                     state.bal.r += amount
                     state.refund.push(['xfer', json.from, amount, 'We don\'t know what you wanted... have your STEEM back'])
-                    state.cs[`${json.block_num}:${from}`] = `${json.from} sent a weird transfer...refund?`
+                    state.cs[`${json.block_num}:${json.from}`] = `${json.from} sent a weird transfer...refund?`
                 }
             } else if (amount > 10) {
                 state.bal.r += amount
                 state.refund.push(['xfer', json.from, amount, 'Sorry, this account only accepts in game transactions.'])
-                state.cs[`${json.block_num}:${from}`] = `${json.from} sent a weird transfer...refund?`
+                state.cs[`${json.block_num}:${json.from}`] = `${json.from} sent a weird transfer...refund?`
             }
                 } else {
                     if (state.blacklist[json.from]){
@@ -1007,7 +1007,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                         state.bal.r += amount
                         state.refund.push(['xfer', json.from, amount, 'This account is on the global blacklist. You may remove your delegation, any further transfers will be treated as donations.'])
                         state.blacklist[json.from] = true
-                        state.cs[`${json.block_num}:${from}`] = `${json.from} blacklisted`
+                        state.cs[`${json.block_num}:${json.from}`] = `${json.from} blacklisted`
                     }
                 }
             })

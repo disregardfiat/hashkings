@@ -850,7 +850,6 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             for (var i = 0; i < state.refund.length; i++) {
                 if (state.refund[i][1] == json.to && state.refund[i][2] == amount) {
                     state.refund.splice(i, 1);
-                    state.cs[`${json.block_num}:${from}`] = `${json.to} powered up ${amount}`
                     break;
                 }
             }

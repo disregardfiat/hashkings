@@ -183,7 +183,11 @@ function startApp() {
                     state.refund.shift()
                 }
             }
-            state.refund.push(state.refund.shift())
+            if(state.refund[0][0] == 'power' && state.refund[0][2] < 1){
+                state.refund.shift()
+            } else {    
+                state.refund.push(state.refund.shift())
+            }
         }
         if (num % 100 === 0 && !processor.isStreaming()) {
             if(!state.news.e)state.news.e=[]

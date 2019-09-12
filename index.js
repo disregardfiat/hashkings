@@ -888,7 +888,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
         break;
       }
     }
-      state.cs[`${json.block_num}:${from}`] = `${vests} vested` 
+      state.cs[`${json.block_num}:${json.delegator}`] = `${vests} vested` 
     if (!state.users[json.delegator] && json.delegatee == username) state.users[json.delegator] = {
       addrs: [],
       seeds: [],
@@ -1022,7 +1022,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                 if (state.refund[i][1] == json.to && state.refund[i][2] == amount) {
                     state.refund.splice(i, 1);
                     state.bal.r -= amount;
-                    state.cs[`${json.block_num}:${from}`] = `${json.to} refunded successfully`
+                    state.cs[`${json.block_num}:${json.to}`] = `${json.to} refunded successfully`
                     break;
                 }
             }

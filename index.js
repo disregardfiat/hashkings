@@ -331,6 +331,7 @@ function startApp() {
             } else {
                 body = body + footer
             }
+            body = body + listBens(state.payday[0])
             state.refund.push(['ssign',[["comment",
                                  {"parent_author": "",
                                   "parent_permlink": 'hashkings',
@@ -480,6 +481,7 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             } else {
                 body = body + footer
             }
+            body = body + listBens(state.payday[0])
             state.refund.push(
                               ['ssign',
                                 [
@@ -633,6 +635,7 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             } else {
                 body = body + footer
             }
+            body = body + listBens(state.payday[0])
             state.refund.push(['ssign',[["comment",
                                  {"parent_author": "",
                                   "parent_permlink": 'hashkings',
@@ -1351,6 +1354,7 @@ function autoPoster (loc, num) {
     body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)}_C. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${parseFloat(state.stats.env[loc].weather.winds).toFixed(1)} M/s. `
     if (state.stats.env[loc].weather.precip){body = body + `Models predict ${parseFloat(state.stats.env[loc].weather.precip).toFixed(2)}mm of rain. `}
     body = body + `Relative humidity will be around ${state.stats.env[loc].weather.humidity}% and a low of ${parseFloat(state.stats.env[loc].weather.low - 272.15).toFixed(1)}_C overnight.\n` + footer
+    body = body + listBens(state.payday[0])
     var ops = [["comment",
                          {"parent_author": "",
                           "parent_permlink": 'hashkings',
@@ -1425,6 +1429,14 @@ function metWind(deg){
             return 'Northeast'
 
     }
+}
+
+function listBens (bens){
+    var text = `\n<h4>This post benifits:</h4>\n`
+    for(i=0;i<bens.length;i++){
+        text = text + `* @${bens[i].account} with ${parseFloat(bens[i].weight/100).toFixed(2)}%\n`
+    }
+    return text
 }
 
 function daily(addr) {

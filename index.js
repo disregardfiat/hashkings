@@ -935,14 +935,15 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
 });
     processor.onOperation('transfer', function(json) {
         if (json.to == username && json.amount.split(' ')[1] == 'STEEM') {
+            const amount = parseInt(parseFloat(json.amount) * 1000)
             fetch(`http://blacklist.usesteem.com/user/${json.from}`)
             .then(function(response) {
                 return response.json();
             })
             .then(function(myJson) {
-                if(myJson.blacklisted.length == 0){
+                if(myJson.blacklisted.length == 0 || json.from == 'news-today'){
                     if (!state.users[json.from]) state.users[json.from] = {
-                addrs: [],
+                addrs: [], 
                 seeds: [],
                 inv: [],
                 stats: [],
@@ -950,7 +951,6 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                 a: 0,
                 u: 0
             }
-            const amount = parseInt(parseFloat(json.amount) * 1000)
             var want = json.memo.split(" ")[0].toLowerCase() || json.memo.toLowerCase(),
                 type = json.memo.split(" ")[1] || ''
             if (state.stats.prices.listed[want] == amount || amount == 500 && type == 'manage' && state.stats.prices.listed[want] || want == 'rseed' && amount == state.stats.prices.listed.seeds.reg || want == 'mseed' && amount == state.stats.prices.listed.seeds.mid || want == 'tseed' && amount == state.stats.prices.listed.seeds.top) {

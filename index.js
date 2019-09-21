@@ -96,7 +96,7 @@ var state
 var startingBlock = ENV.STARTINGBLOCK || 34159000; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
-const hash = ENV.sh || ''
+const sh = ENV.sh || ''
 const ago = ENV.ago || 0
 const prefix = ENV.PREFIX || 'qwoyn_';
 const clientURL = ENV.APIURL || 'https://api.steemit.com'
@@ -108,7 +108,7 @@ const transactor = steemTransact(client, steem, prefix);
 steemjs.api.getAccountHistory(username, -1, 100, function(err, result) {
   if (err){
     console.log(err)
-    startWith(hash)
+    startWith(sh)
   } else {
     let ebus = result.filter( tx => tx[1].op[1].id === 'qwoyn_report' )
     for(i=ebus.length -1;i>=0;i--){
@@ -127,7 +127,7 @@ function startWith(hash) {
             if (!err) {
                 var data = JSON.parse(file.toString())
                 startingBlock = data[0]
-                if (startingBlock == ago){startWith(sh)}
+                if (startingBlock == ago){startWith(hash)}
                 else {
                 state = JSON.parse(data[1]);
                 startApp();

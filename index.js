@@ -727,7 +727,7 @@ d supply** once they are gone the only way to purchase them is on an exchange.
     });
 */
     processor.on('redeem', function(j, f) {
-        state.cs[`${json.block_num}:${f}`] = `Redeem Op:${f} -> ${j}`
+        state.cs[`${j.block_num}:${f}`] = `Redeem Op:${f} -> ${j}`
         if (state.users[f]){if (state.users[f].v && state.users[f].v > 0) {
             state.users[f].v--
             let type = j.type || ''

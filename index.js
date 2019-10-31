@@ -1436,7 +1436,7 @@ function metWind(deg){
 }
 
 function listBens (bens){
-    var text = `\n<h4>This post benifits:</h4>\n`
+    var text = `\n<h4>This post benefits:</h4>\n`
     for(i=0;i<bens.length;i++){
         text = text + `* @${bens[i].account} with ${parseFloat(bens[i].weight/100).toFixed(2)}%\n`
     }
@@ -1462,8 +1462,8 @@ function daily(addr) {
                     state.land[addr].substage = 0;
                     state.land[addr].stage++
                 }
-                if (state.land[addr].stage == 5 && state.land[addr].substage == 0) state.land[addr].sex = state.land.length % 1
-                if (state.land[addr].stage == 9 && state.land[addr].substage == 13) {
+                if (state.land[addr].stage == 2 && state.land[addr].substage == 0) state.land[addr].sex = state.land.length % 1
+                if (state.land[addr].stage == 5 && state.land[addr].substage == 13) {
                     state.land[addr].aff.push([processor.getCurrentBlockNumber(), 'over']);
                     state.land[addr].substage = 12
                 }
@@ -1473,7 +1473,7 @@ function daily(addr) {
                         break;
                     }}}
               if (state.land[addr].care[i][1] == 'harvested'){
-                if (!harvested && state.land[addr].stage > 7){
+                if (!harvested && state.land[addr].stage > 4){
                   harvested = true
                   kudo(state.land[addr].owner)
                   const seed = {
@@ -1481,8 +1481,7 @@ function daily(addr) {
                       xp: state.land[addr].xp,
                       traits: ['beta']
                   }
-
-const seed2 = {
+                  const seed2 = {
                       strain: state.land[addr].strain,
                       xp: state.land[addr].xp,
                       traits: ['beta']
@@ -1490,7 +1489,7 @@ const seed2 = {
 
                   state.users[state.land[addr].owner].seeds.push(seed)
 
-state.users[state.land[addr].owner].seeds.push(seed2)
+                  state.users[state.land[addr].owner].seeds.push(seed2)
 
                   const parcel = {
                       owner: state.land[addr].owner,

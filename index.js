@@ -1481,7 +1481,17 @@ function daily(addr) {
                       xp: state.land[addr].xp,
                       traits: ['beta']
                   }
+
+const seed2 = {
+                      strain: state.land[addr].strain,
+                      xp: state.land[addr].xp,
+                      traits: ['beta']
+                  }
+
                   state.users[state.land[addr].owner].seeds.push(seed)
+
+state.users[state.land[addr].owner].seeds.push(seed2)
+
                   const parcel = {
                       owner: state.land[addr].owner,
                       strain: '',

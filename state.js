@@ -3,223 +3,223 @@ module.exports = {
       {
          "delegator": "stephanus",
          "vests": 39974588563,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "inthenow",
          "vests": 39974577206,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "luegenbaron",
          "vests": 79937710499,
-         "availible": 1,
+         "available": 1,
          "used": 1
       },
       {
          "delegator": "buckydurddle",
          "vests": 39928672533,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "jrawsthorne",
          "vests": 79856690072,
-         "availible": 1,
+         "available": 1,
          "used": 1
       },
       {
          "delegator": "movingman",
          "vests": 199606471417,
-         "availible": 5,
+         "available": 5,
          "used": 0
       },
       {
          "delegator": "mulletwang",
          "vests": 798032035767,
-         "availible": 0,
+         "available": 0,
          "used": 20
       },
       {
          "delegator": "tygertyger",
          "vests": 39890651382,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "jonyoudyer",
          "vests": 159560538775,
-         "availible": 2,
+         "available": 2,
          "used": 2
       },
       {
          "delegator": "choosefreedom",
          "vests": 79780132574,
-         "availible": 1,
+         "available": 1,
          "used": 1
       },
       {
          "delegator": "ecoinstar",
          "vests": 239340396744,
-         "availible": 1,
+         "available": 1,
          "used": 5
       },
       {
          "delegator": "richardcrill",
          "vests": 39889849205,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "molovelly",
          "vests": 199444676737,
-         "availible": 2,
+         "available": 2,
          "used": 3
       },
       {
          "delegator": "mickvir",
          "vests": 39888208334,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "anarcist69",
          "vests": 79776276323,
-         "availible": 0,
+         "available": 0,
          "used": 2
       },
       {
          "delegator": "gamewatch",
          "vests": 39882850262,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "onthewayout",
          "vests": 39881464050,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "hotsauceislethal",
          "vests": 239275449002,
-         "availible": 0,
+         "available": 0,
          "used": 6
       },
       {
          "delegator": "aggamun",
          "vests": 79749662318,
-         "availible": 0,
+         "available": 0,
          "used": 2
       },
       {
          "delegator": "disregardfiat",
          "vests": 39869791916,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "faustofraser",
          "vests": 39868240021,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "romiferns",
          "vests": 79733439788,
-         "availible": 1,
+         "available": 1,
          "used": 1
       },
       {
          "delegator": "meowgan",
          "vests": 39862247400,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "yabapmatt",
          "vests": 199245210994,
-         "availible": 0,
+         "available": 0,
          "used": 5
       },
       {
          "delegator": "simgirl",
          "vests": 199241104833,
-         "availible": 0,
+         "available": 0,
          "used": 5
       },
       {
          "delegator": "a1-shroom-spores",
          "vests": 278937536650,
-         "availible": 0,
+         "available": 0,
          "used": 7
       },
       {
          "delegator": "patrickulrich",
          "vests": 0,
-         "availible": 0,
+         "available": 0,
          "used": 0
       },
       {
          "delegator": "abrockman",
          "vests": 1075611952122,
-         "availible": 0,
+         "available": 0,
          "used": 27
       },
       {
          "delegator": "guiltyparties",
          "vests": 199171829701,
-         "availible": 2,
+         "available": 2,
          "used": 3
       },
       {
          "delegator": "chronocrypto",
          "vests": 1275641000000,
-         "availible": 0,
+         "available": 0,
          "used": 32
       },
       {
          "delegator": "bauloewe",
          "vests": 79656273251,
-         "availible": 0,
+         "available": 0,
          "used": 2
       },
       {
          "delegator": "egamers",
          "vests": 79655249059,
-         "availible": 0,
+         "available": 0,
          "used": 2
       },
       {
          "delegator": "heremonium",
          "vests": 39821767806,
-         "availible": 0,
+         "available": 0,
          "used": 1
       },
       {
          "delegator": "qwoyn-fund",
          "vests": 0,
-         "availible": 0,
+         "available": 0,
          "used": 0
       },
       {
          "delegator": "qwoyn",
          "vests": 0,
-         "availible": 0,
+         "available": 0,
          "used": 0
       },
       {
          "delegator": "pugqueen",
          "vests": 0,
-         "availible": 0,
+         "available": 0,
          "used": 0
       },
       {
          "delegator": "mondoshawan",
          "vests": 119457651095,
-         "availible": 2,
+         "available": 2,
          "used": 1
       }
    ],

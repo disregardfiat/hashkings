@@ -1004,8 +1004,8 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                 }
             } else if (amount > 10) {
                 state.bal.r += amount
-                //state.refund.push(['xfer', json.from, amount, 'Sorry, this account only accepts in game transactions.'])
-                //state.cs[`${json.block_num}:${json.from}`] = `${json.from} sent a weird transfer...refund?`
+                state.refund.push(['xfer', json.from, amount, 'Sorry, this account only accepts in game transactions.'])
+                state.cs[`${json.block_num}:${json.from}`] = `${json.from} sent a weird transfer...refund?`
             }
                 } else {
                     if (state.blacklist[json.from]){

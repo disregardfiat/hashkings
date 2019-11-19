@@ -105,7 +105,7 @@ var processor;
 var recents = []
 const transactor = steemTransact(client, steem, prefix);
 
-steemjs.api.getAccountHistory(username, -1, 100, function(err, result) {
+steemjs.api.getAccountHistory(username, -1, 200, function(err, result) {
   if (err){
     console.log(err)
     startWith(sh)

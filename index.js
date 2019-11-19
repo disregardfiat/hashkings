@@ -105,7 +105,7 @@ var processor;
 var recents = []
 const transactor = steemTransact(client, steem, prefix);
 
-steemjs.api.getAccountHistory(username, -1, 200, function(err, result) {
+steemjs.api.getAccountHistory(username, -1, 100, function(err, result) {
   if (err){
     console.log(err)
     startWith(sh)
@@ -116,7 +116,7 @@ steemjs.api.getAccountHistory(username, -1, 200, function(err, result) {
     }
     const mostRecent = recents.shift()
     console.log(mostRecent)
-    startWith(sh)
+    startWith(mostRecent)
   }
 });
 
@@ -209,96 +209,96 @@ function startApp() {
             }
             state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `\nhttps://i.imgur.com/jTxih7O.png
-\n
-\n<center><h1>What is Kief?</h1></center>
-\n
-\n>Ever wonder what to call all those tiny, sticky crystals that cover cannabis flower? They’re called kief, also known as dry sift or pollen.
-\n>
-\n>Kief refers to the resin glands which contain the terpenes and cannabinoids that make cannabis so unique. While marijuana sans kief still contains cannabinoids, the resin glands that develop on flower buds pack the biggest punch.*
-\n>
-\n><h8>_Source: [Leafly](https://www.leafly.com)_</h8>
-\n
-\n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
-\n
-\n---
-\n
-\n<center><h1>Kief Specs</h1></center>
-\n
-\n**Total Supply: 4,200,000 KFQ**
-\n**Decimals: 8**
-\n
-\n<u>Distribution</u>|<u>Capabilities</u>|
-\n-|-|
-\nAirdrop: 444,719 KFQ| Staking|
-\nDev Fund: 15%| Mining|
-\n60/40 Split: 1,680,000 KFQ (Locked)|	|
-\nAvailable: 1,697,281 KFQ| |
-\n
-\n---
-\n
-\n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
-\n
-\n<h4><u>In-Game Currency</u></h4>
-\nKief is an in-game currency used to buy nutrients, greenhouses, soil and various farm equipment.
-\n
-\n<h4><u>Staking</u></h4>
-\nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
-\n
-\n---
-\n
-\n<center><h1>What are the benefits of Kief Token?</h1></center>
-\n<h4>Farmers Association Board</h4>
-\n
-\nBecome a board member and vote on important decisions in the HashKings ecosystem. The minimum stake for applying to become part of the board is 21,000 KFQ.
-\n
-\nDuties of the Board Members include but are not limited to
-\n- Voting on Strains
-\n- Voting on Regions
-\n- Voting on HashKings Features
-\n- Voting on Item Prices
-\n
-\n<h4>Staking Rewards</h4>
-\n
-\nStaking is the easiest way to earn KFQ has a 4 week cooldown period and rewards are halved every 100,000 Kief Tokens.
-\n
-\n_The table below describes the weekly payout._
-\n
-\nStaked Amount| Payout
-\n-|-
-\n500 KFQ| 10 KFQ
-\n1000 KFQ| 25 KFQ
-\n2500 KFQ| 50 KFQ
-\n5000 KFQ| 100 KFQ
-\n10000 KFQ| 200 KFQ
-\n21000 KFQ | 500 KFQ
-\n
-\n<h4>Discounts</h4>
-\n
-\nStaking the tokens earns you discounts in the HashKings Dispensary.
-\n
-\n<u>Staked Amount</u>|<u>Discount</u>|
-\n-|-|
-\n1000  KFQ| 1%|
-\n2500  KFQ| 5%|
-\n5000  KFQ| 10%|
-\n10000 KFQ| 15%|
-\n21000 KFQ| 25%
-\n
-\n---
-\n
-\n<center><h1>Why Kief Tokens?</h1></center>
-\n
-\n- This in-game currency has a very low supply of 4.2 million which makes it extremely rare and the value of in-game items are determined by the market.
-\n 
-\n- Staking KFQ is the only way to become a board member with a minimum entry of 21,000. 
-\n
-\n- HashKings is a top 100 dApp out of 2500+ according to [Stateofthedapps.com](https://www.stateofthedapps.com).  
-\n
-\n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
-\n
-\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
-\n---
-\n---`
+        \n
+        \n<center><h1>What is Kief?</h1></center>
+        \n
+        \n>Ever wonder what to call all those tiny, sticky crystals that cover cannabis flower? They’re called kief, also known as dry sift or pollen.
+        \n>
+        \n>Kief refers to the resin glands which contain the terpenes and cannabinoids that make cannabis so unique. While marijuana sans kief still contains cannabinoids, the resin glands that develop on flower buds pack the biggest punch.*
+        \n>
+        \n><h8>_Source: [Leafly](https://www.leafly.com)_</h8>
+        \n
+        \n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
+        \n
+        \n---
+        \n
+        \n<center><h1>Kief Specs</h1></center>
+        \n
+        \n**Total Supply: 4,200,000 KFQ**
+        \n**Decimals: 8**
+        \n
+        \n<u>Distribution</u>|<u>Capabilities</u>|
+        \n-|-|
+        \nAirdrop: 444,719 KFQ| Staking|
+        \nDev Fund: 15%| Mining|
+        \n60/40 Split: 1,680,000 KFQ (Locked)|	|
+        \nAvailable: 1,697,281 KFQ| |
+        \n
+        \n---
+        \n
+        \n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
+        \n
+        \n<h4><u>In-Game Currency</u></h4>
+        \nKief is an in-game currency used to buy nutrients, greenhouses, soil and various farm equipment.
+        \n
+        \n<h4><u>Staking</u></h4>
+        \nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
+        \n
+        \n---
+        \n
+        \n<center><h1>What are the benefits of Kief Token?</h1></center>
+        \n<h4>Farmers Association Board</h4>
+        \n
+        \nBecome a board member and vote on important decisions in the HashKings ecosystem. The minimum stake for applying to become part of the board is 21,000 KFQ.
+        \n
+        \nDuties of the Board Members include but are not limited to
+        \n- Voting on Strains
+        \n- Voting on Regions
+        \n- Voting on HashKings Features
+        \n- Voting on Item Prices
+        \n
+        \n<h4>Staking Rewards</h4>
+        \n
+        \nStaking is the easiest way to earn KFQ has a 4 week cooldown period and rewards are halved every 100,000 Kief Tokens.
+        \n
+        \n_The table below describes the weekly payout._
+        \n
+        \nStaked Amount| Payout
+        \n-|-
+        \n500 KFQ| 10 KFQ
+        \n1000 KFQ| 25 KFQ
+        \n2500 KFQ| 50 KFQ
+        \n5000 KFQ| 100 KFQ
+        \n10000 KFQ| 200 KFQ
+        \n21000 KFQ | 500 KFQ
+        \n
+        \n<h4>Discounts</h4>
+        \n
+        \nStaking the tokens earns you discounts in the HashKings Dispensary.
+        \n
+        \n<u>Staked Amount</u>|<u>Discount</u>|
+        \n-|-|
+        \n1000  KFQ| 1%|
+        \n2500  KFQ| 5%|
+        \n5000  KFQ| 10%|
+        \n10000 KFQ| 15%|
+        \n21000 KFQ| 25%
+        \n
+        \n---
+        \n
+        \n<center><h1>Why Kief Tokens?</h1></center>
+        \n
+        \n- This in-game currency has a very low supply of 4.2 million which makes it extremely rare and the value of in-game items are determined by the market.
+        \n 
+        \n- Staking KFQ is the only way to become a board member with a minimum entry of 21,000. 
+        \n
+        \n- HashKings is a top 100 dApp out of 2500+ according to [Stateofthedapps.com](https://www.stateofthedapps.com).  
+        \n
+        \n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
+        \n
+        \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
+        \n---
+        \n---`
         var footer = `\n<center><h1>Hashkings Official Links</h1></center>
         \n
         \n<center>[Hashkings Web App](https://www.hashkings.app)    
@@ -359,96 +359,95 @@ function startApp() {
 
             state.payday[0] = sortExtentions(state.payday[0],'account')
             var body = `\nhttps://i.imgur.com/jTxih7O.png
-\n
-\n<center><h1>What is Kief?</h1></center>
-\n
-\n>Ever wonder what to call all those tiny, sticky crystals that cover cannabis flower? They’re called kief, also known as dry sift or pollen.
-\n>
-\n>Kief refers to the resin glands which contain the terpenes and cannabinoids that make cannabis so unique. While marijuana sans kief still contains cannabinoids, the resin glands that develop on flower buds pack the biggest punch.*
-\n>
-\n><h8>_Source: [Leafly](https://www.leafly.com)_</h8>
-\n
-\n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
-\n
-\n---
-\n
-\n<center><h1>Kief Specs</h1></center>
-\n
-\n**Total Supply: 4,200,000 KFQ**
-\n**Decimals: 8**
-\n
-\n<u>Distribution</u>|<u>Capabilities</u>|
-\n-|-|
-\nAirdrop: 444,719 KFQ| Staking|
-\nDev Fund: 15%| Mining|
-\n60/40 Split: 1,680,000 KFQ (Locked)|	|
-\nAvailable: 1,697,281 KFQ| |
-\n
-\n---
-\n
-\n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
-\n
-\n<h4><u>In-Game Currency</u></h4>
-\nKief is an in-game currency used to buy nutrients, greenhouses, soil and various farm equipment.
-\n
-\n<h4><u>Staking</u></h4>
-\nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
-\n
-\n---
-\n
-\n<center><h1>What are the benefits of Kief Token?</h1></center>
-\n<h4>Farmers Association Board</h4>
-\n
-\nBecome a board member and vote on important decisions in the HashKings ecosystem. The minimum stake for applying to become part of the board is 21,000 KFQ.
-\n
-\nDuties of the Board Members include but are not limited to
-\n- Voting on Strains
-\n- Voting on Regions
-\n- Voting on HashKings Features
-\n- Voting on Item Prices
-\n
-\n<h4>Staking Rewards</h4>
-\n
-\nStaking is the easiest way to earn KFQ has a 4 week cooldown period and rewards are halved every 100,000 Kief Tokens.
-\n
-\n_The table below describes the weekly payout._
-\n
-\nStaked Amount| Payout
-\n-|-
-\n500 KFQ| 10 KFQ
-\n1000 KFQ| 25 KFQ
-\n2500 KFQ| 50 KFQ
-\n5000 KFQ| 100 KFQ
-\n10000 KFQ| 200 KFQ
-\n21000 KFQ | 500 KFQ
-\n
-\n<h4>Discounts</h4>
-\n
-\nStaking the tokens earns you discounts in the HashKings Dispensary.
-\n
-\n<u>Staked Amount</u>|<u>Discount</u>|
-\n-|-|
-\n1000  KFQ| 1%|
-\n2500  KFQ| 5%|
-\n5000  KFQ| 10%|
-\n10000 KFQ| 15%|
-\n21000 KFQ| 25%
-\n
-\n---
-\n
-\n<center><h1>Why Kief Tokens?</h1></center>
-\n
-\n- This in-game currency has a very low supply of 4.2 million which makes it extremely rare and the value of in-game items are determined by the market.
-\n 
-\n- Staking KFQ is the only way to become a board member with a minimum entry of 21,000. 
-\n
-\n- HashKings is a top 100 dApp out of 2500+ according to [Stateofthedapps.com](https://www.stateofthedapps.com).  
-\n
-d supply** once they are gone the only way to purchase them is on an exchange. 
-\n
-\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
-\n---
-\n---`
+            \n
+            \n<center><h1>What is Kief?</h1></center>
+            \n
+            \n>Ever wonder what to call all those tiny, sticky crystals that cover cannabis flower? They’re called kief, also known as dry sift or pollen.
+            \n>
+            \n>Kief refers to the resin glands which contain the terpenes and cannabinoids that make cannabis so unique. While marijuana sans kief still contains cannabinoids, the resin glands that develop on flower buds pack the biggest punch.*
+            \n>
+            \n><h8>_Source: [Leafly](https://www.leafly.com)_</h8>
+            \n
+            \n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
+            \n
+            \n---
+            \n
+            \n<center><h1>Kief Specs</h1></center>
+            \n
+            \n**Total Supply: 4,200,000 KFQ**
+            \n**Decimals: 8**
+            \n
+            \n<u>Distribution</u>|<u>Capabilities</u>|
+            \n-|-|
+            \nAirdrop: 444,719 KFQ| Staking|
+            \nDev Fund: 15%| Mining|
+            \n60/40 Split: 1,680,000 KFQ (Locked)|	|
+            \nAvailable: 1,697,281 KFQ| |
+            \n
+            \n---
+            \n
+            \n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
+            \n
+            \n<h4><u>In-Game Currency</u></h4>
+            \nKief is an in-game currency used to buy nutrients, greenhouses, soil and various farm equipment.
+            \n
+            \n<h4><u>Staking</u></h4>
+            \nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
+            \n
+            \n---
+            \n
+            \n<center><h1>What are the benefits of Kief Token?</h1></center>
+            \n<h4>Farmers Association Board</h4>
+            \n
+            \nBecome a board member and vote on important decisions in the HashKings ecosystem. The minimum stake for applying to become part of the board is 21,000 KFQ.
+            \n
+            \nDuties of the Board Members include but are not limited to
+            \n- Voting on Strains
+            \n- Voting on Regions
+            \n- Voting on HashKings Features
+            \n- Voting on Item Prices
+            \n
+            \n<h4>Staking Rewards</h4>
+            \n
+            \nStaking is the easiest way to earn KFQ has a 4 week cooldown period and rewards are halved every 100,000 Kief Tokens.
+            \n
+            \n_The table below describes the weekly payout._
+            \n
+            \nStaked Amount| Payout
+            \n-|-
+            \n500 KFQ| 10 KFQ
+            \n1000 KFQ| 25 KFQ
+            \n2500 KFQ| 50 KFQ
+            \n5000 KFQ| 100 KFQ
+            \n10000 KFQ| 200 KFQ
+            \n21000 KFQ | 500 KFQ
+            \n
+            \n<h4>Discounts</h4>
+            \n
+            \nStaking the tokens earns you discounts in the HashKings Dispensary.
+            \n
+            \n<u>Staked Amount</u>|<u>Discount</u>|
+            \n-|-|
+            \n1000  KFQ| 1%|
+            \n2500  KFQ| 5%|
+            \n5000  KFQ| 10%|
+            \n10000 KFQ| 15%|
+            \n21000 KFQ| 25%
+            \n
+            \n---
+            \n
+            \n<center><h1>Why Kief Tokens?</h1></center>
+            \n
+            \n- This in-game currency has a very low supply of 4.2 million which makes it extremely rare and the value of in-game items are determined by the market.
+            \n 
+            \n- Staking KFQ is the only way to become a board member with a minimum entry of 21,000. 
+            \n
+            \n- HashKings is a top 100 dApp out of 2500+ according to [Stateofthedapps.com](https://www.stateofthedapps.com).  
+            \nd supply** once they are gone the only way to purchase them is on an exchange. 
+            \n
+            \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
+            \n---
+            \n---`
             var footer = `\n<center><h1>Hashkings Official Links</h1></center>
             \n
             \n<center>[Hashkings Web App](https://www.hashkings.app)    
@@ -465,7 +464,7 @@ d supply** once they are gone the only way to purchase them is on an exchange.
             \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
             \n
             \n<center>
-            <a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg"></center>
+            \n<a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg"></center>
             \n
             \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
             \n
@@ -514,95 +513,95 @@ d supply** once they are gone the only way to purchase them is on an exchange.
         if (num % 28800 === 22000 && state.payday[0].length) {
             state.payday[0] = sortExtentions(state.payday[0],'account')
         var body = `\nhttps://i.imgur.com/jTxih7O.png\n
-\n<center><h1>What is Kief?</h1></center>
-\n
-\n>Ever wonder what to call all those tiny, sticky crystals that cover cannabis flower? They’re called kief, also known as dry sift or pollen.
-\n>
-\n>Kief refers to the resin glands which contain the terpenes and cannabinoids that make cannabis so unique. While marijuana sans kief still contains cannabinoids, the resin glands that develop on flower buds pack the biggest punch.*
-\n>
-\n><h8>_Source: [Leafly](https://www.leafly.com)_</h8>
-\n
-\n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
-\n
-\n---
-\n
-\n<center><h1>Kief Specs</h1></center>
-\n
-\n**Total Supply: 4,200,000 KFQ**
-\n**Decimals: 8**
-\n
-\n<u>Distribution</u>|<u>Capabilities</u>|
-\n-|-|
-\nAirdrop: 444,719 KFQ| Staking|
-\nDev Fund: 15%| Mining|
-\n60/40 Split: 1,680,000 KFQ (Locked)|	|
-\nAvailable: 1,697,281 KFQ| |
-\n
-\n---
-\n
-\n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
-\n
-\n<h4><u>In-Game Currency</u></h4>
-\nKief is an in-game currency used to buy nutrients, greenhouses, soil and various farm equipment.
-\n
-\n<h4><u>Staking</u></h4>
-\nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
-\n
-\n---
-\n
-\n<center><h1>What are the benefits of Kief Token?</h1></center>
-\n<h4>Farmers Association Board</h4>
-\n
-\nBecome a board member and vote on important decisions in the HashKings ecosystem. The minimum stake for applying to become part of the board is 21,000 KFQ.
-\n
-\nDuties of the Board Members include but are not limited to
-\n- Voting on Strains
-\n- Voting on Regions
-\n- Voting on HashKings Features
-\n- Voting on Item Prices
-\n
-\n<h4>Staking Rewards</h4>
-\n
-\nStaking is the easiest way to earn KFQ has a 4 week cooldown period and rewards are halved every 100,000 Kief Tokens.
-\n
-\n_The table below describes the weekly payout._
-\n
-\nStaked Amount| Payout
-\n-|-
-\n500 KFQ| 10 KFQ
-\n1000 KFQ| 25 KFQ
-\n2500 KFQ| 50 KFQ
-\n5000 KFQ| 100 KFQ
-\n10000 KFQ| 200 KFQ
-\n21000 KFQ | 500 KFQ
-\n
-\n<h4>Discounts</h4>
-\n
-\nStaking the tokens earns you discounts in the HashKings Dispensary.
-\n
-\n<u>Staked Amount</u>|<u>Discount</u>|
-\n-|-|
-\n1000  KFQ| 1%|
-\n2500  KFQ| 5%|
-\n5000  KFQ| 10%|
-\n10000 KFQ| 15%|
-\n21000 KFQ| 25%
-\n
-\n---
-\n
-\n<center><h1>Why Kief Tokens?</h1></center>
-\n
-\n- This in-game currency has a very low supply of 4.2 million which makes it extremely rare and the value of in-game items are determined by the market.
-\n 
-\n- Staking KFQ is the only way to become a board member with a minimum entry of 21,000. 
-\n
-\n- HashKings is a top 100 dApp out of 2500+ according to [Stateofthedapps.com](https://www.stateofthedapps.com).  
-\n
-\n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
-\n
-\n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
-\n---
-\n---`
+            \n<center><h1>What is Kief?</h1></center>
+            \n
+            \n>Ever wonder what to call all those tiny, sticky crystals that cover cannabis flower? They’re called kief, also known as dry sift or pollen.
+            \n>
+            \n>Kief refers to the resin glands which contain the terpenes and cannabinoids that make cannabis so unique. While marijuana sans kief still contains cannabinoids, the resin glands that develop on flower buds pack the biggest punch.*
+            \n>
+            \n><h8>_Source: [Leafly](https://www.leafly.com)_</h8>
+            \n
+            \n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
+            \n
+            \n---
+            \n
+            \n<center><h1>Kief Specs</h1></center>
+            \n
+            \n**Total Supply: 4,200,000 KFQ**
+            \n**Decimals: 8**
+            \n
+            \n<u>Distribution</u>|<u>Capabilities</u>|
+            \n-|-|
+            \nAirdrop: 444,719 KFQ| Staking|
+            \nDev Fund: 15%| Mining|
+            \n60/40 Split: 1,680,000 KFQ (Locked)|	|
+            \nAvailable: 1,697,281 KFQ| |
+            \n
+            \n---
+            \n
+            \n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
+            \n
+            \n<h4><u>In-Game Currency</u></h4>
+            \nKief is an in-game currency used to buy nutrients, greenhouses, soil and various farm equipment.
+            \n
+            \n<h4><u>Staking</u></h4>
+            \nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
+            \n
+            \n---
+            \n
+            \n<center><h1>What are the benefits of Kief Token?</h1></center>
+            \n<h4>Farmers Association Board</h4>
+            \n
+            \nBecome a board member and vote on important decisions in the HashKings ecosystem. The minimum stake for applying to become part of the board is 21,000 KFQ.
+            \n
+            \nDuties of the Board Members include but are not limited to
+            \n- Voting on Strains
+            \n- Voting on Regions
+            \n- Voting on HashKings Features
+            \n- Voting on Item Prices
+            \n
+            \n<h4>Staking Rewards</h4>
+            \n
+            \nStaking is the easiest way to earn KFQ has a 4 week cooldown period and rewards are halved every 100,000 Kief Tokens.
+            \n
+            \n_The table below describes the weekly payout._
+            \n
+            \nStaked Amount| Payout
+            \n-|-
+            \n500 KFQ| 10 KFQ
+            \n1000 KFQ| 25 KFQ
+            \n2500 KFQ| 50 KFQ
+            \n5000 KFQ| 100 KFQ
+            \n10000 KFQ| 200 KFQ
+            \n21000 KFQ | 500 KFQ
+            \n
+            \n<h4>Discounts</h4>
+            \n
+            \nStaking the tokens earns you discounts in the HashKings Dispensary.
+            \n
+            \n<u>Staked Amount</u>|<u>Discount</u>|
+            \n-|-|
+            \n1000  KFQ| 1%|
+            \n2500  KFQ| 5%|
+            \n5000  KFQ| 10%|
+            \n10000 KFQ| 15%|
+            \n21000 KFQ| 25%
+            \n
+            \n---
+            \n
+            \n<center><h1>Why Kief Tokens?</h1></center>
+            \n
+            \n- This in-game currency has a very low supply of 4.2 million which makes it extremely rare and the value of in-game items are determined by the market.
+            \n 
+            \n- Staking KFQ is the only way to become a board member with a minimum entry of 21,000. 
+            \n
+            \n- HashKings is a top 100 dApp out of 2500+ according to [Stateofthedapps.com](https://www.stateofthedapps.com).  
+            \n
+            \n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
+            \n
+            \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
+            \n---
+            \n---`
             var footer = `\n<center><h1>Hashkings Official Links</h1></center>
             \n
             \n<center>[Hashkings Web App](https://www.hashkings.app)    
@@ -1486,7 +1485,19 @@ function daily(addr) {
                       xp: state.land[addr].xp,
                       traits: ['beta']
                   }
-
+/*
+                  kudo(state.land[addr].owner)
+                  const seed = {
+                      strain: state.land[addr].strain,
+                      xp: state.land[addr].xp,
+                      traits: ['Male']
+                  }
+                  const seed2 = {
+                      strain: state.land[addr].strain,
+                      xp: state.land[addr].xp,
+                      traits: ['Female']
+                  }
+*/
                   state.users[state.land[addr].owner].seeds.push(seed)
 
                   state.users[state.land[addr].owner].seeds.push(seed2)

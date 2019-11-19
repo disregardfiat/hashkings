@@ -96,7 +96,7 @@ var state
 var startingBlock = ENV.STARTINGBLOCK || 34159000; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
-const sh = ENV.sh || 'QmfGcrwxM8VJF8No7hCiWPVNRVoVy2QroczdcEfhoaM1Ce'
+const sh = ENV.sh || ''
 const ago = ENV.ago || 0
 const prefix = ENV.PREFIX || 'qwoyn_';
 const clientURL = ENV.APIURL || 'https://api.steemit.com'
@@ -116,7 +116,7 @@ steemjs.api.getAccountHistory(username, -1, 200, function(err, result) {
     }
     const mostRecent = recents.shift()
     console.log(mostRecent)
-    startWith(mostRecent)
+    startWith(sh)
   }
 });
 

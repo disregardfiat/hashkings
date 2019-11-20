@@ -220,7 +220,6 @@ function startApp() {
         \n
         \n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
         \n
-        \n---
         \n
         \n<center><h1>Kief Specs</h1></center>
         \n
@@ -234,7 +233,6 @@ function startApp() {
         \n60/40 Split: 1,680,000 KFQ (Locked)|	|
         \nAvailable: 1,697,281 KFQ| |
         \n
-        \n---
         \n
         \n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
         \n
@@ -244,7 +242,6 @@ function startApp() {
         \n<h4><u>Staking</u></h4>
         \nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
         \n
-        \n---
         \n
         \n<center><h1>What are the benefits of Kief Token?</h1></center>
         \n<h4>Farmers Association Board</h4>
@@ -284,7 +281,6 @@ function startApp() {
         \n10000 KFQ| 15%|
         \n21000 KFQ| 25%
         \n
-        \n---
         \n
         \n<center><h1>Why Kief Tokens?</h1></center>
         \n
@@ -296,21 +292,18 @@ function startApp() {
         \n
         \n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
         \n
-        \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
-        \n---
-        \n---`
+        \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n`
         var footer = `\n<center><h1>Hashkings Official Links</h1></center>
         \n
         \n<center>[Hashkings Web App](https://www.hashkings.app)    
         \n[Hashkings Discord](https://discord.gg/QW6tWF9)      
-        \n[Hashkings STEEM Account](https://steempeak.com/@hashkings)</center>
+        \n[Hashkings Github Repository](https://github.com/dpdanpittman/Hashkings-2D-UI)</center>
         \n
         \n        
         \n<center>![divider.png](https://smoke.io/imageupload_data/ee12bc223b16e8b3b16671dc95795f597b986400)</center>
         \n        
         \n<center><h1>STEEM Community Showcase</h1></center>
         \n
-        \n---
         \n       
         \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
         \n
@@ -319,13 +312,9 @@ function startApp() {
         \n
         \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
         \n
-        \n---
-        \n---
         \n       
         \n### Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!
-        \n
-        \n---
-        \n---`
+        \n`
             if (state.news.h.length > 0){
                 body = body + state.news.h[0] + footer ;state.news.h.shift();
             } else {
@@ -370,7 +359,6 @@ function startApp() {
             \n
             \n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
             \n
-            \n---
             \n
             \n<center><h1>Kief Specs</h1></center>
             \n
@@ -384,7 +372,6 @@ function startApp() {
             \n60/40 Split: 1,680,000 KFQ (Locked)|	|
             \nAvailable: 1,697,281 KFQ| |
             \n
-            \n---
             \n
             \n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
             \n
@@ -394,7 +381,6 @@ function startApp() {
             \n<h4><u>Staking</u></h4>
             \nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
             \n
-            \n---
             \n
             \n<center><h1>What are the benefits of Kief Token?</h1></center>
             \n<h4>Farmers Association Board</h4>
@@ -434,7 +420,6 @@ function startApp() {
             \n10000 KFQ| 15%|
             \n21000 KFQ| 25%
             \n
-            \n---
             \n
             \n<center><h1>Why Kief Tokens?</h1></center>
             \n
@@ -445,21 +430,18 @@ function startApp() {
             \n- HashKings is a top 100 dApp out of 2500+ according to [Stateofthedapps.com](https://www.stateofthedapps.com).  
             \nd supply** once they are gone the only way to purchase them is on an exchange. 
             \n
-            \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
-            \n---
-            \n---`
+            \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n`
             var footer = `\n<center><h1>Hashkings Official Links</h1></center>
             \n
             \n<center>[Hashkings Web App](https://www.hashkings.app)    
             \n[Hashkings Discord](https://discord.gg/QW6tWF9)      
-            \n[Hashkings STEEM Account](https://steempeak.com/@hashkings)</center>
+            \n[Hashkings Github Repository](https://github.com/dpdanpittman/Hashkings-2D-UI)</center>
             \n
             \n        
             \n<center>![divider.png](https://smoke.io/imageupload_data/ee12bc223b16e8b3b16671dc95795f597b986400)</center>
             \n        
             \n<center><h1>STEEM Community Showcase</h1></center>
             \n
-            \n---
             \n       
             \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
             \n
@@ -468,13 +450,9 @@ function startApp() {
             \n
             \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
             \n
-            \n---
-            \n---
             \n       
             \n### Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!
-            \n
-            \n---
-            \n---`
+            \n`
             if (state.news.i.length > 0){
                 body = body + state.news.i[0] + footer ;state.news.i.shift();
             } else {
@@ -523,7 +501,6 @@ function startApp() {
             \n
             \n***The Kief(KFQ) in-game currency is just that, a sticky terpene filled resin gland loaded with cannabanoids aka, The Life Blood of HashKings.***
             \n
-            \n---
             \n
             \n<center><h1>Kief Specs</h1></center>
             \n
@@ -537,7 +514,6 @@ function startApp() {
             \n60/40 Split: 1,680,000 KFQ (Locked)|	|
             \nAvailable: 1,697,281 KFQ| |
             \n
-            \n---
             \n
             \n<center><h1>What is Kief Token(KFQ) used for?</h1></center>
             \n
@@ -547,7 +523,6 @@ function startApp() {
             \n<h4><u>Staking</u></h4>
             \nKief can also be used to help the HashKings Economy by becoming an active participant in the survival of the Game.  Stake your tokens to earn many of the benefits listed in the next section.
             \n
-            \n---
             \n
             \n<center><h1>What are the benefits of Kief Token?</h1></center>
             \n<h4>Farmers Association Board</h4>
@@ -587,7 +562,6 @@ function startApp() {
             \n10000 KFQ| 15%|
             \n21000 KFQ| 25%
             \n
-            \n---
             \n
             \n<center><h1>Why Kief Tokens?</h1></center>
             \n
@@ -599,21 +573,18 @@ function startApp() {
             \n
             \n- **Limited supply** once they are gone the only way to purchase them is on an exchange. 
             \n
-            \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n
-            \n---
-            \n---`
+            \n- We are partnered with the #1 Cannabis Curation Trail and Community on STEEM, Canna-Curate.\n`
             var footer = `\n<center><h1>Hashkings Official Links</h1></center>
             \n
             \n<center>[Hashkings Web App](https://www.hashkings.app)    
             \n[Hashkings Discord](https://discord.gg/QW6tWF9)      
-            \n[Hashkings STEEM Account](https://steempeak.com/@hashkings)</center>
+            \n[Hashkings Github Repository](https://github.com/dpdanpittman/Hashkings-2D-UI)</center>
             \n
             \n        
             \n<center>![divider.png](https://smoke.io/imageupload_data/ee12bc223b16e8b3b16671dc95795f597b986400)</center>
             \n        
             \n<center><h1>STEEM Community Showcase</h1></center>
             \n
-            \n---
             \n       
             \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
             \n
@@ -622,13 +593,9 @@ function startApp() {
             \n
             \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
             \n
-            \n---
-            \n---
             \n       
             \n### Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!
-            \n
-            \n---
-            \n---`
+            \n`
             if (state.news.t.length > 0){
                 body = body + state.news.t[0] + footer ;state.news.t.shift();
             } else {
@@ -1330,33 +1297,25 @@ function popWeather (loc){
 }
 
 function autoPoster (loc, num) {
-    var body = `# ${state.stats.env[loc].name} Growers Daily News\n`, bens = ''
+    var body = `\nhttps://source.unsplash.com/user/kimzy/1600x900# \n${state.stats.env[loc].name} Growers Daily News\n`, bens = ''
     var footer = `\n<center><h1>Hashkings Official Links</h1>
     \n[Hashkings Web App](https://www.hashkings.app)
     \n[Hashkings Discord](https://discord.gg/QW6tWF9)
-    \n[Hashkings STEEM Account](https://steempeak.com/@hashkings)
-    </center>
-
+    \n[Hashkings Github Repository](https://github.com/dpdanpittman/Hashkings-2D-UI)
+    \n</center>
+    \n
     \n<center>![divider.png](https://smoke.io/imageupload_data/ee12bc223b16e8b3b16671dc95795f597b986400)</center>
-
-    ---
     \n<center><h1>STEEM Community Showcase</h1></center>
-
-    ---
-    ---
     \nWe love community and the [Canna-Curate Server](https://discord.gg/DcsPHUG) has the most knowledgeable growers and smokers on the Blockchain.  Stop by and stay a while, spark up a bowl and chat with some of the members.
-
     \n<a href="https://discord.gg/DcsPHUG"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmV9PhMNu2JaR9BEJFhSdxjd4SA7nWj7yG131z9sRRYHJc/JPEG_20180729_131244.jpg">
     \n***canna-curate | The #1 Cannabis Curation Trail on STEEM***
-
-    \n---
     \n***Read what our farmers have to say [here](https://steempeak.com/hashkings/@chronocrypto/invest-in-the-game-and-get-beneficiary-rewards-hashkings) and please don't hesitate to reach out in the comments below!***`
     if (state.news[loc].length > 0){
         body = body + state.news[loc][0];state.news[loc].shift();
     }
-    body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)}_C. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${parseFloat(state.stats.env[loc].weather.winds).toFixed(1)} M/s. `
+    body = body + `\n## Todays Weather\nYou can expect ${cloudy(state.stats.env[loc].weather.clouds)} with a high of ${parseFloat(state.stats.env[loc].weather.high - 272.15).toFixed(1)} Celsius. Winds will be out of the ${metWind(state.stats.env[loc].weather.windd)} at ${parseFloat(state.stats.env[loc].weather.winds).toFixed(1)} M/s. `
     if (state.stats.env[loc].weather.precip){body = body + `Models predict ${parseFloat(state.stats.env[loc].weather.precip).toFixed(2)}mm of rain. `}
-    body = body + `Relative humidity will be around ${state.stats.env[loc].weather.humidity}% and a low of ${parseFloat(state.stats.env[loc].weather.low - 272.15).toFixed(1)}_C overnight.\n` + footer
+    body = body + `Relative humidity will be around ${state.stats.env[loc].weather.humidity}% and a low of ${parseFloat(state.stats.env[loc].weather.low - 272.15).toFixed(1)} Celsius overnight.\n` + footer
     body = body + listBens(state.payday[0])
     var ops = [["comment",
                          {"parent_author": "",
@@ -1435,7 +1394,10 @@ function metWind(deg){
 }
 
 function listBens (bens){
-    var text = `\n<h4>This post benefits:</h4>\n`
+    var text = `\n<h4>All Hashkings Rewards go directly to our users!</h4>
+                \n
+                \nThis post benefits:
+                \n`
     for(i=0;i<bens.length;i++){
         text = text + `* @${bens[i].account} with ${parseFloat(bens[i].weight/100).toFixed(2)}%\n`
     }

@@ -168,15 +168,12 @@ function startApp() {
         for (var i = 0; i < td.length; i++) {
             daily(td[i])
         }
+        if (num % 300 === 0 && num < 39073000 && state.bal.r == 299000){ //remove after block 39073000
+            state.bal.r = 0
+        }
         if (num % 125 === 0 && state.refund.length && processor.isStreaming() || processor.isStreaming() && state.refund.length > 60) {
             if (state.refund[0].length == 4) {
-                if(state.refund[0][0] == 'xfer' && state.refund[0][1] == 'ngc'){
-                    console.log(state.refund)
-                    state.refund.shift()
-                    console.log(state.refund)
-                } else {
-                    bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2], state.refund[0][3])
-                }
+                bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2], state.refund[0][3])
             } else if (state.refund[0].length == 3){
                 bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2])
             } else if (state.refund[0].length == 2) {

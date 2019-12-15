@@ -845,7 +845,7 @@ function startApp() {
     });
     processor.onOperation('vote', function(json) {
         for(var i = 0;i<state.refund.length;i++){
-            if(state.refund[i][0]=='sign'){
+            if(state.refund[i] && state.refund[i][0]=='sign'){
                 if(state.refund[i][1][0][0]=='vote'){
                     if (json.author == streamname && json.permlink == state.refund[i][1][0][1].permlink && state.refund[i][1][0][0] == 'vote') {
                         state.refund.splice(i,1)

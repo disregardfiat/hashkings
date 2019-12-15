@@ -172,6 +172,7 @@ function startApp() {
             if (state.refund[0].length == 4) {
                 if(state.refund[0][0] == 'xfer' && state.refund[0][1] == 'ngc'){
                     state.refund.shift()
+                    console.log('deleted')
                 } else {
                     bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2], state.refund[0][3])
                 }

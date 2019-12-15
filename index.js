@@ -187,7 +187,7 @@ function startApp() {
                     state.refund.shift()
                 }
             }
-            if(state.refund[0][0] == 'power' && state.refund[0][2] < 1){
+            if(state.refund[0] && state.refund[0][0] == 'power' && state.refund[0][2] < 1){
                 state.refund.shift()
             } else {    
                 state.refund.push(state.refund.shift())
@@ -1427,8 +1427,8 @@ function daily(addr) {
                     state.land[addr].substage = 0;
                     state.land[addr].stage++
                 }
-                if (state.land[addr].stage == 2 && state.land[addr].substage == 0) state.land[addr].sex = state.land.length % 1
-                if (state.land[addr].stage == 5 && state.land[addr].substage == 13) {
+                if (state.land[addr].stage == 5 && state.land[addr].substage == 0) state.land[addr].sex = state.land.length % 1
+                if (state.land[addr].stage == 9 && state.land[addr].substage == 13) {
                     state.land[addr].aff.push([processor.getCurrentBlockNumber(), 'over']);
                     state.land[addr].substage = 12
                 }
@@ -1438,7 +1438,7 @@ function daily(addr) {
                         break;
                     }}}
               if (state.land[addr].care[i][1] == 'harvested'){
-                if (!harvested && state.land[addr].stage > 4){
+                if (!harvested && state.land[addr].stage > 7){
                   harvested = true
                   kudo(state.land[addr].owner)
                   const seed = {

@@ -176,9 +176,9 @@ function startApp() {
                 stats: [],
                 v: 3
             }
-            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1)) // reallocate bandos
-            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1))
-            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1))
+            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1)[0]) // reallocate bandos
+            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1)[0])
+            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1)[0])
         }
         if (num % 125 === 0 && state.refund.length && processor.isStreaming() || processor.isStreaming() && state.refund.length > 60) {
             if (state.refund[0].length == 4) {

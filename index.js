@@ -168,18 +168,6 @@ function startApp() {
         for (var i = 0; i < td.length; i++) {
             daily(td[i])
         }
-        if (num % 300 === 0 && !state.users.fbmtek23){ //add fbmtek with three plots, remove if{} after fbmtek23 added to state
-            state.users.fbmtek23 = {
-                addrs: [],
-                seeds: [],
-                inv: [],
-                stats: [],
-                v: 3
-            }
-            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1)[0]) // reallocate bandos
-            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1)[0])
-            state.users.fbmtek23.addrs.unshift(state.lands.forSale.splice(1,1)[0])
-        }
         if (num % 125 === 0 && state.refund.length && processor.isStreaming() || processor.isStreaming() && state.refund.length > 60) {
             if (state.refund[0].length == 4) {
                 bot[state.refund[0][0]].call(this, state.refund[0][1], state.refund[0][2], state.refund[0][3])

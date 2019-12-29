@@ -102,7 +102,7 @@ const prefix = ENV.PREFIX || 'qwoyn_';
 const clientURL = ENV.APIURL || 'https://api.steemit.com'
 var client = new steem.Client(clientURL);
 var processor;
-var recents = []
+var recents = "39450000"    // []
 const transactor = steemTransact(client, steem, prefix);
 
 steemjs.api.getAccountHistory(username, -1, 100, function(err, result) {

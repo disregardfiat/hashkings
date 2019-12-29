@@ -135,7 +135,7 @@ function startWith(hash) {
             } else {
                 const mostRecent = recents.shift()
                 console.log('Attempting start from:'+mostRecent)
-                startWith(mostRecent)
+                startWith(hash)
             }
         });
     } else {

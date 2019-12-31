@@ -1,21 +1,9 @@
 module.exports = {
    "delegations": [
       {
-         "delegator": "stephanus",
-         "vests": 39974588563,
-         "availible": 0,
-         "used": 1
-      },
-      {
          "delegator": "inthenow",
          "vests": 39974577206,
          "availible": 0,
-         "used": 1
-      },
-      {
-         "delegator": "luegenbaron",
-         "vests": 79937710499,
-         "availible": 1,
          "used": 1
       },
       {
@@ -31,28 +19,10 @@ module.exports = {
          "used": 1
       },
       {
-         "delegator": "movingman",
-         "vests": 199606471417,
-         "availible": 5,
-         "used": 0
-      },
-      {
-         "delegator": "mulletwang",
-         "vests": 798032035767,
-         "availible": 0,
-         "used": 20
-      },
-      {
          "delegator": "tygertyger",
          "vests": 39890651382,
          "availible": 0,
          "used": 1
-      },
-      {
-         "delegator": "jonyoudyer",
-         "vests": 159560538775,
-         "availible": 2,
-         "used": 2
       },
       {
          "delegator": "choosefreedom",
@@ -103,18 +73,6 @@ module.exports = {
          "used": 1
       },
       {
-         "delegator": "hotsauceislethal",
-         "vests": 239275449002,
-         "availible": 0,
-         "used": 6
-      },
-      {
-         "delegator": "aggamun",
-         "vests": 79749662318,
-         "availible": 0,
-         "used": 2
-      },
-      {
          "delegator": "disregardfiat",
          "vests": 39869791916,
          "availible": 0,
@@ -139,22 +97,10 @@ module.exports = {
          "used": 1
       },
       {
-         "delegator": "yabapmatt",
-         "vests": 199245210994,
-         "availible": 0,
-         "used": 5
-      },
-      {
          "delegator": "simgirl",
          "vests": 199241104833,
          "availible": 0,
          "used": 5
-      },
-      {
-         "delegator": "a1-shroom-spores",
-         "vests": 278937536650,
-         "availible": 0,
-         "used": 7
       },
       {
          "delegator": "patrickulrich",
@@ -163,22 +109,10 @@ module.exports = {
          "used": 0
       },
       {
-         "delegator": "abrockman",
-         "vests": 1075611952122,
-         "availible": 0,
-         "used": 27
-      },
-      {
          "delegator": "guiltyparties",
          "vests": 199171829701,
          "availible": 2,
          "used": 3
-      },
-      {
-         "delegator": "chronocrypto",
-         "vests": 1275641000000,
-         "availible": 0,
-         "used": 32
       },
       {
          "delegator": "bauloewe",
@@ -193,19 +127,7 @@ module.exports = {
          "used": 2
       },
       {
-         "delegator": "heremonium",
-         "vests": 39821767806,
-         "availible": 0,
-         "used": 1
-      },
-      {
          "delegator": "qwoyn-fund",
-         "vests": 0,
-         "availible": 0,
-         "used": 0
-      },
-      {
-         "delegator": "qwoyn",
          "vests": 0,
          "availible": 0,
          "used": 0
@@ -219,11 +141,240 @@ module.exports = {
       {
          "delegator": "mondoshawan",
          "vests": 119457651095,
-         "availible": 2,
+         "availible": 0,
+         "used": 3
+      },
+      {
+         "delegator": "nutritree",
+         "vests": 119345558046,
+         "availible": 0,
+         "used": 3
+      },
+      {
+         "delegator": "mistakili",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "hotsauceislethal",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "road2nowhere",
+         "vests": 39732569044,
+         "availible": 0,
          "used": 1
+      },
+      {
+         "delegator": "russia-btc",
+         "vests": 397321072441,
+         "availible": 0,
+         "used": 10
+      },
+      {
+         "delegator": "a1-shroom-spores",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "stephanus",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "cgame",
+         "vests": 1986364090,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "nathen007",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "qwoyn",
+         "vests": 4900485891391,
+         "availible": 124,
+         "used": 1
+      },
+      {
+         "delegator": "ttg",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "gerber",
+         "vests": 39642541845,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "agr8buzz",
+         "vests": 39642413360,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "zonguin",
+         "vests": 39641291677,
+         "availible": 1,
+         "used": 0
+      },
+      {
+         "delegator": "sgt-dan",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "silverlining1",
+         "vests": 317019843670,
+         "availible": 0,
+         "used": 8
+      },
+      {
+         "delegator": "movingman",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "aggamun",
+         "vests": 198031649642,
+         "availible": 0,
+         "used": 5
+      },
+      {
+         "delegator": "news-today",
+         "vests": 79192310349,
+         "availible": 0,
+         "used": 2
+      },
+      {
+         "delegator": "heremonium",
+         "vests": 79188788760,
+         "availible": 1,
+         "used": 1
+      },
+      {
+         "delegator": "chronocrypto",
+         "vests": 1385634320228,
+         "availible": 0,
+         "used": 35
+      },
+      {
+         "delegator": "mulletwang",
+         "vests": 910517270664,
+         "availible": 0,
+         "used": 23
+      },
+      {
+         "delegator": "monsterbuster",
+         "vests": 39584089315,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "luegenbaron",
+         "vests": 158329200454,
+         "availible": 0,
+         "used": 4
+      },
+      {
+         "delegator": "abrockman",
+         "vests": 2374867232597,
+         "availible": 0,
+         "used": 60
+      },
+      {
+         "delegator": "chunkysoupsvc",
+         "vests": 39576166508,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "psyo",
+         "vests": 39573775822,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "theb0red1",
+         "vests": 118677192475,
+         "availible": 0,
+         "used": 3
+      },
+      {
+         "delegator": "rachaeldwatson",
+         "vests": 39556956094,
+         "availible": 0,
+         "used": 1
+      },
+      {
+         "delegator": "saboin",
+         "vests": 474633953073,
+         "availible": 1,
+         "used": 11
+      },
+      {
+         "delegator": "steem-hodler",
+         "vests": 494374810440,
+         "availible": 12,
+         "used": 0
+      },
+      {
+         "delegator": "ghosthunter1",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "jonyoudyer",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "yabapmatt",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "martie7",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
+      },
+      {
+         "delegator": "wdougwatson",
+         "vests": 0,
+         "availible": 0,
+         "used": 0
       }
    ],
-   "kudos": {},
+   "kudos": {
+      "bluntsmasha": 2,
+      "onthewayout": 2,
+      "abrockman": 21,
+      "chronocrypto": 5,
+      "nutritree": 1,
+      "mondoshawan": 1,
+      "saboin": 3,
+      "mulletwang": 3,
+      "theb0red1": 3,
+      "luegenbaron": 1,
+      "qwoyn": 2,
+      "gerber": 1
+   },
    "stats": {
       "vs": 1950,
       "dust": 25,
@@ -242,14 +393,14 @@ module.exports = {
             "lat": "31.5",
             "lon": "64.1",
             "weather": {
-               "high": 314.73,
-               "low": 299.8,
-               "avg": "306.5",
+               "high": 290.36,
+               "low": 281.62,
+               "avg": "285.0",
                "precip": 0,
-               "clouds": 0,
-               "humidity": 3,
-               "winds": 6.02,
-               "windd": 221.404
+               "clouds": 48,
+               "humidity": 33,
+               "winds": 5.59,
+               "windd": 263
             }
          },
          "b": {
@@ -257,14 +408,14 @@ module.exports = {
             "lat": "-3.2",
             "lon": "37.9",
             "weather": {
-               "high": 287.246,
-               "low": 282.094,
-               "avg": "285.0",
-               "precip": null,
-               "clouds": 58,
-               "humidity": 69,
-               "winds": 1.76,
-               "windd": 36.983
+               "high": 301.38,
+               "low": 291.93,
+               "avg": "296.5",
+               "precip": 0.94,
+               "clouds": 42,
+               "humidity": 53,
+               "winds": 5.27,
+               "windd": 41
             }
          },
          "c": {
@@ -272,14 +423,14 @@ module.exports = {
             "lat": "18.1",
             "lon": "92.93",
             "weather": {
-               "high": 302.92,
-               "low": 302.146,
-               "avg": "302.5",
-               "precip": 29.250000000000004,
-               "clouds": 91,
-               "humidity": 82,
-               "winds": 9.63,
-               "windd": 249.495
+               "high": 299.35,
+               "low": 298.87,
+               "avg": "299.1",
+               "precip": 0.31,
+               "clouds": 69,
+               "humidity": 72,
+               "winds": 3.63,
+               "windd": 338
             }
          },
          "d": {
@@ -287,14 +438,14 @@ module.exports = {
             "lat": "-22.9",
             "lon": "-43.2",
             "weather": {
-               "high": 299.97,
-               "low": 293.746,
-               "avg": "296.2",
+               "high": 299.56,
+               "low": 296.6,
+               "avg": "298.2",
                "precip": 0,
-               "clouds": 51,
-               "humidity": 93,
-               "winds": 0.87,
-               "windd": 310.861
+               "clouds": 0,
+               "humidity": 80,
+               "winds": 3.35,
+               "windd": 78
             }
          },
          "e": {
@@ -302,14 +453,14 @@ module.exports = {
             "lat": "18.1",
             "lon": "-76.7",
             "weather": {
-               "high": 305.9,
-               "low": 295.946,
-               "avg": "301.0",
-               "precip": 1.75,
-               "clouds": 99,
-               "humidity": 92,
-               "winds": 1.4,
-               "windd": 358.586
+               "high": 302.33,
+               "low": 292.47,
+               "avg": "296.5",
+               "precip": 1,
+               "clouds": 75,
+               "humidity": 89,
+               "winds": 1.07,
+               "windd": 348
             }
          },
          "f": {
@@ -317,14 +468,14 @@ module.exports = {
             "lat": "25.8",
             "lon": "-108.2",
             "weather": {
-               "high": 312.3,
-               "low": 293.49,
-               "avg": "302.6",
+               "high": 292.32,
+               "low": 281.88,
+               "avg": "286.9",
                "precip": 0,
-               "clouds": 0,
-               "humidity": 72,
-               "winds": 0.96,
-               "windd": 107.896
+               "clouds": 64,
+               "humidity": 70,
+               "winds": 1.03,
+               "windd": 65
             }
          }
       },
@@ -352,18 +503,18 @@ module.exports = {
       },
       "supply": {
          "land": {
-            "a": 4129,
-            "ac": 72,
-            "b": 4139,
-            "bc": 64,
-            "c": 4135,
-            "cc": 66,
-            "d": 4147,
-            "dc": 54,
-            "e": 4144,
-            "ec": 57,
-            "f": 4168,
-            "fc": 33,
+            "a": 4109,
+            "ac": 92,
+            "b": 4128,
+            "bc": 75,
+            "c": 4121,
+            "cc": 80,
+            "d": 4134,
+            "dc": 67,
+            "e": 4126,
+            "ec": 75,
+            "f": 4145,
+            "fc": 56,
             "g": 0,
             "gc": 0,
             "t": 420000,
@@ -389,27 +540,38 @@ module.exports = {
             "cht"
          ]
       },
-      "gardeners": 77
+      "gardeners": 103
    },
    "bal": {
-      "r": 0,
+      "r": 28226,
       "c": 0,
-      "b": 0,
-      "p": 559627
+      "b": 5850,
+      "p": 838245
    },
    "refund": [
-      [
-         "customJson",
-         "report",
-         {
-            "stateHash": "QmRGhkgH9XCUuUP8irFEpA9TSTvDVDbwKDqzEfkKc4CJjD",
-            "block": 34160000
-         }
-      ]
    ],
    "lands": {
       "forSale": [
          "e13",
+         "e57",
+         "a55",
+         "c49",
+         "e37",
+         "e40",
+         "f23",
+         "e41",
+         "e46",
+         "b39",
+         "c66",
+         "a76",
+         "c67",
+         "e59",
+         "c43",
+         "b57",
+         "f26",
+         "a63",
+         "d66",
+         "e74"
       ]
    },
    "land": {
@@ -419,86 +581,32 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33805907,
+               37692458,
                "watered",
                "c"
             ],
             [
-               33779396,
+               37611638,
                "watered",
                "c"
             ],
             [
-               33725870,
+               37468420,
                "watered",
                "c"
             ],
             [
-               33695133,
+               37243919,
                "watered",
                "c"
-            ],
-            [
-               33666440,
-               "watered",
-               "c"
-            ],
-            [
-               33612760,
-               "watered",
-               "c"
-            ],
-            [
-               33582517,
-               "watered",
-               "c"
-            ],
-            [
-               33555094,
-               "watered",
-               "c"
-            ],
-            [
-               33524163,
-               "watered",
-               "c"
-            ],
-            [
-               33490699,
-               "watered",
-               "c"
-            ],
-            [
-               33439788,
-               "watered",
-               "c"
-            ],
-            [
-               33382735,
-               "watered",
-               "c"
-            ],
-            [
-               33283784,
-               "watered",
-               "c"
-            ],
-            [
-               33240631,
-               "watered",
-               "c"
-            ],
-            [
-               33235959,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 31713776,
-         "stage": 5,
-         "substage": 2,
+         "stage": 7,
+         "substage": 1,
          "id": "a10",
-         "sex": null
+         "sex": 1
       },
       "a2": {
          "owner": "jonyoudyer",
@@ -506,27 +614,27 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34127970,
+               37496961,
                "watered",
                "c"
             ],
             [
-               33900153,
+               37413857,
                "watered",
                "c"
             ],
             [
-               33871254,
+               37324628,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31853281,
-         "stage": 5,
-         "substage": 3,
+         "stage": 7,
+         "substage": 6,
          "id": "a2",
-         "sex": null
+         "sex": 0
       },
       "b34": {
          "owner": "fracasgrimm",
@@ -566,33 +674,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34136075,
-               "watered",
-               "c",
-               "c"
+               36612829,
+               "harvested"
             ],
             [
-               34109471,
+               36612796,
                "watered",
                "c"
             ],
             [
-               34075366,
-               "watered",
-               "c"
-            ],
-            [
-               34047906,
+               36354751,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31887728,
-         "stage": 6,
-         "substage": 6,
+         "stage": -1,
+         "substage": 12,
          "id": "e14",
-         "sex": null
+         "sex": 1
       },
       "a43": {
          "owner": "gregorypatrick",
@@ -612,21 +713,6 @@ module.exports = {
                32986537,
                "watered",
                "c"
-            ],
-            [
-               32762603,
-               "watered",
-               "c"
-            ],
-            [
-               32676420,
-               "watered",
-               "c"
-            ],
-            [
-               32533655,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
@@ -641,142 +727,25 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33432524,
+               35503933,
                "watered",
                "c"
             ],
             [
-               33403494,
+               35481065,
                "watered",
                "c"
             ],
             [
-               33347559,
-               "watered",
-               "c"
-            ],
-            [
-               33316108,
-               "watered",
-               "c"
-            ],
-            [
-               33287390,
-               "watered",
-               "c"
-            ],
-            [
-               33254047,
-               "watered",
-               "c"
-            ],
-            [
-               33231226,
-               "watered",
-               "c"
-            ],
-            [
-               33198506,
-               "watered",
-               "c"
+               35481061,
+               "watered"
             ]
          ],
          "aff": [],
          "planted": 31903005,
          "stage": 4,
-         "substage": 5,
+         "substage": 13,
          "id": "a7"
-      },
-      "b39": {
-         "owner": "stephanus",
-         "strain": "swz",
-         "xp": 2250,
-         "care": [
-            [
-               32395975,
-               "watered",
-               "c"
-            ],
-            [
-               32332533,
-               "watered",
-               "c"
-            ],
-            [
-               32302259,
-               "watered",
-               "c"
-            ],
-            [
-               32274137,
-               "watered",
-               "c"
-            ],
-            [
-               32332533,
-               "watered",
-               "c"
-            ],
-            [
-               32302259,
-               "watered",
-               "c"
-            ],
-            [
-               32274136,
-               "watered",
-               "c"
-            ],
-            [
-               32218415,
-               "watered",
-               "c"
-            ],
-            [
-               32163946,
-               "watered",
-               "c"
-            ],
-            [
-               32130362,
-               "watered",
-               "c"
-            ],
-            [
-               32096472,
-               "watered",
-               "c"
-            ],
-            [
-               32045519,
-               "watered",
-               "c"
-            ],
-            [
-               32013561,
-               "watered",
-               "c"
-            ],
-            [
-               31967150,
-               "watered",
-               "c"
-            ],
-            [
-               31953686,
-               "watered",
-               "c"
-            ],
-            [
-               31905303,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 31905253,
-         "stage": 2,
-         "substage": 2
       },
       "a49": {
          "owner": "inthenow",
@@ -816,51 +785,32 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34006335,
+               37668740,
                "watered",
                "c"
             ],
             [
-               33932753,
+               37573231,
                "watered",
                "c"
             ],
             [
-               33888986,
+               37546851,
                "watered",
                "c"
             ],
             [
-               33710924,
-               "watered",
-               "c"
-            ],
-            [
-               33639266,
-               "watered",
-               "c"
-            ],
-            [
-               33532970,
-               "watered",
-               "c"
-            ],
-            [
-               33227288,
-               "watered",
-               "c"
-            ],
-            [
-               33125149,
+               37516971,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31905642,
-         "stage": 3,
-         "substage": 11,
-         "id": "a9"
+         "stage": 6,
+         "substage": 3,
+         "id": "a9",
+         "sex": 0
       },
       "a11": {
          "owner": "bluntsmasha",
@@ -868,95 +818,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34089820,
-               "watered",
-               "c"
-            ],
-            [
-               34039316,
-               "watered",
-               "c"
-            ],
-            [
-               33892177,
-               "watered",
-               "c"
-            ],
-            [
-               33837564,
-               "watered",
-               "c"
-            ],
-            [
-               33798200,
-               "watered",
-               "c"
-            ],
-            [
-               33751502,
-               "watered",
-               "c"
-            ],
-            [
-               33683464,
-               "watered",
-               "c"
-            ],
-            [
-               33620963,
-               "watered",
-               "c"
-            ],
-            [
-               33521041,
-               "watered",
-               "c"
-            ],
-            [
-               33402484,
-               "watered",
-               "c"
-            ],
-            [
-               33345362,
-               "watered",
-               "c"
-            ],
-            [
-               33291109,
-               "watered",
-               "c"
-            ],
-            [
-               33232071,
-               "watered",
-               "c"
-            ],
-            [
-               33173774,
-               "watered",
-               "c"
-            ],
-            [
-               33131233,
-               "watered",
-               "c"
-            ],
-            [
-               33086613,
-               "watered",
-               "c"
-            ],
-            [
-               33086604,
+               37710403,
                "watered"
+            ],
+            [
+               37681446,
+               "watered",
+               "c"
+            ],
+            [
+               37628903,
+               "watered",
+               "c"
             ]
          ],
          "aff": [],
          "planted": 31911522,
-         "stage": 3,
-         "substage": 3,
-         "id": "a11"
+         "stage": 6,
+         "substage": 11,
+         "id": "a11",
+         "sex": 1
       },
       "b2": {
          "owner": "bluntsmasha",
@@ -964,95 +845,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34089820,
-               "watered",
-               "c"
-            ],
-            [
-               34039316,
-               "watered",
-               "c"
-            ],
-            [
-               33892177,
-               "watered",
-               "c"
-            ],
-            [
-               33837564,
-               "watered",
-               "c"
-            ],
-            [
-               33798200,
-               "watered",
-               "c"
-            ],
-            [
-               33751502,
-               "watered",
-               "c"
-            ],
-            [
-               33683464,
-               "watered",
-               "c"
-            ],
-            [
-               33620963,
-               "watered",
-               "c"
-            ],
-            [
-               33521041,
-               "watered",
-               "c"
-            ],
-            [
-               33402484,
-               "watered",
-               "c"
-            ],
-            [
-               33345362,
-               "watered",
-               "c"
-            ],
-            [
-               33291109,
-               "watered",
-               "c"
-            ],
-            [
-               33232071,
-               "watered",
-               "c"
-            ],
-            [
-               33173774,
-               "watered",
-               "c"
-            ],
-            [
-               33131233,
-               "watered",
-               "c"
-            ],
-            [
-               33086613,
-               "watered",
-               "c"
-            ],
-            [
-               33086607,
+               37710403,
                "watered"
+            ],
+            [
+               37681446,
+               "watered",
+               "c"
+            ],
+            [
+               37628903,
+               "watered",
+               "c"
             ]
          ],
          "aff": [],
          "planted": 31911985,
-         "stage": 3,
-         "substage": 2,
-         "id": "b2"
+         "stage": 6,
+         "substage": 4,
+         "id": "b2",
+         "sex": 0
       },
       "c1": {
          "owner": "bluntsmasha",
@@ -1060,96 +872,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34089820,
+               37710403,
+               "watered"
+            ],
+            [
+               37681446,
                "watered",
                "c"
             ],
             [
-               34039316,
-               "watered",
-               "c"
-            ],
-            [
-               33892177,
-               "watered",
-               "c"
-            ],
-            [
-               33837564,
-               "watered",
-               "c"
-            ],
-            [
-               33798200,
-               "watered",
-               "c"
-            ],
-            [
-               33751502,
-               "watered",
-               "c"
-            ],
-            [
-               33683464,
-               "watered",
-               "c"
-            ],
-            [
-               33620963,
-               "watered",
-               "c"
-            ],
-            [
-               33521041,
-               "watered",
-               "c"
-            ],
-            [
-               33402484,
-               "watered",
-               "c"
-            ],
-            [
-               33345362,
-               "watered",
-               "c"
-            ],
-            [
-               33291109,
-               "watered",
-               "c"
-            ],
-            [
-               33232071,
-               "watered",
-               "c"
-            ],
-            [
-               33173774,
-               "watered",
-               "c"
-            ],
-            [
-               33131233,
-               "watered",
-               "c"
-            ],
-            [
-               33086613,
-               "watered",
-               "c"
-            ],
-            [
-               32857529,
+               37628903,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31911995,
-         "stage": 3,
-         "substage": 3,
-         "id": "c1"
+         "stage": 6,
+         "substage": 10,
+         "id": "c1",
+         "sex": 1
       },
       "f2": {
          "owner": "bluntsmasha",
@@ -1157,96 +899,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34089820,
+               37710403,
+               "watered"
+            ],
+            [
+               37681446,
                "watered",
                "c"
             ],
             [
-               34039316,
-               "watered",
-               "c"
-            ],
-            [
-               33892177,
-               "watered",
-               "c"
-            ],
-            [
-               33837564,
-               "watered",
-               "c"
-            ],
-            [
-               33798200,
-               "watered",
-               "c"
-            ],
-            [
-               33751502,
-               "watered",
-               "c"
-            ],
-            [
-               33683464,
-               "watered",
-               "c"
-            ],
-            [
-               33620963,
-               "watered",
-               "c"
-            ],
-            [
-               33521041,
-               "watered",
-               "c"
-            ],
-            [
-               33402484,
-               "watered",
-               "c"
-            ],
-            [
-               33345362,
-               "watered",
-               "c"
-            ],
-            [
-               33291109,
-               "watered",
-               "c"
-            ],
-            [
-               33232071,
-               "watered",
-               "c"
-            ],
-            [
-               33173774,
-               "watered",
-               "c"
-            ],
-            [
-               33131233,
-               "watered",
-               "c"
-            ],
-            [
-               33086613,
-               "watered",
-               "c"
-            ],
-            [
-               32805204,
+               37628903,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 31912004,
-         "stage": 3,
-         "substage": 2,
-         "id": "f2"
+         "stage": 6,
+         "substage": 10,
+         "id": "f2",
+         "sex": 0
       },
       "b32": {
          "owner": "sooflauschig",
@@ -1274,7 +946,7 @@ module.exports = {
          "stage": 5,
          "substage": 12,
          "id": "b32",
-         "sex": null
+         "sex": 1
       },
       "a48": {
          "owner": "californiacrypto",
@@ -1295,161 +967,6 @@ module.exports = {
                32604187,
                "watered",
                "c"
-            ],
-            [
-               32571316,
-               "watered",
-               "c"
-            ],
-            [
-               32542352,
-               "watered",
-               "c"
-            ],
-            [
-               32514808,
-               "watered",
-               "c"
-            ],
-            [
-               32451911,
-               "watered",
-               "c"
-            ],
-            [
-               32423855,
-               "watered",
-               "c"
-            ],
-            [
-               32392546,
-               "watered",
-               "c"
-            ],
-            [
-               32364694,
-               "watered",
-               "c"
-            ],
-            [
-               32337328,
-               "watered",
-               "c"
-            ],
-            [
-               32308249,
-               "watered",
-               "c"
-            ],
-            [
-               32276761,
-               "watered",
-               "c"
-            ],
-            [
-               32337328,
-               "watered"
-            ],
-            [
-               32308248,
-               "watered",
-               "c"
-            ],
-            [
-               32276761,
-               "watered",
-               "c"
-            ],
-            [
-               32247725,
-               "watered",
-               "c"
-            ],
-            [
-               32203077,
-               "watered",
-               "c"
-            ],
-            [
-               32167710,
-               "watered",
-               "c"
-            ],
-            [
-               32138436,
-               "watered",
-               "c"
-            ],
-            [
-               32113493,
-               "watered",
-               "c"
-            ],
-            [
-               32081902,
-               "watered",
-               "c"
-            ],
-            [
-               32052716,
-               "watered",
-               "c"
-            ],
-            [
-               32020754,
-               "watered",
-               "c"
-            ],
-            [
-               31990196,
-               "watered",
-               "c"
-            ],
-            [
-               31961958,
-               "watered",
-               "c"
-            ],
-            [
-               31961898,
-               "watered"
-            ],
-            [
-               31961872,
-               "watered"
-            ],
-            [
-               31961855,
-               "watered"
-            ],
-            [
-               31961834,
-               "watered"
-            ],
-            [
-               31961831,
-               "watered"
-            ],
-            [
-               31961823,
-               "watered"
-            ],
-            [
-               31961819,
-               "watered"
-            ],
-            [
-               31961816,
-               "watered"
-            ],
-            [
-               31961813,
-               "watered"
-            ],
-            [
-               31932962,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
@@ -1463,86 +980,28 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34112203,
+               37703082,
+               "watered"
+            ],
+            [
+               37673673,
                "watered",
                "c"
             ],
             [
-               34081135,
-               "watered",
-               "c"
-            ],
-            [
-               34035218,
-               "watered",
-               "c"
-            ],
-            [
-               33988048,
-               "watered",
-               "c"
-            ],
-            [
-               33965343,
-               "watered",
-               "c"
-            ],
-            [
-               33931732,
-               "watered",
-               "c"
-            ],
-            [
-               33902402,
-               "watered",
-               "c"
-            ],
-            [
-               33871807,
-               "watered",
-               "c"
-            ],
-            [
-               33844591,
-               "watered",
-               "c"
-            ],
-            [
-               33790055,
-               "watered",
-               "c"
-            ],
-            [
-               33741652,
-               "watered",
-               "c"
-            ],
-            [
-               33699123,
-               "watered",
-               "c"
-            ],
-            [
-               33656002,
-               "watered",
-               "c"
-            ],
-            [
-               33591245,
-               "watered",
-               "c"
-            ],
-            [
-               33566384,
+               37647121,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 31968004,
          "stage": 4,
-         "substage": 8,
-         "id": "b5"
+         "substage": 1,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36472002
       },
       "e8": {
          "owner": "disregardfiat",
@@ -1550,27 +1009,17 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33485303,
+               37094259,
                "watered",
                "c"
             ],
             [
-               33346053,
+               36944454,
                "watered",
                "c"
             ],
             [
-               33197680,
-               "watered",
-               "c"
-            ],
-            [
-               32574349,
-               "watered",
-               "c"
-            ],
-            [
-               32087481,
+               36377995,
                "watered",
                "c"
             ]
@@ -1578,7 +1027,7 @@ module.exports = {
          "aff": [],
          "planted": 31968022,
          "stage": 1,
-         "substage": 8,
+         "substage": 12,
          "id": "e8"
       },
       "a17": {
@@ -1586,6 +1035,11 @@ module.exports = {
          "strain": "hk",
          "xp": 2250,
          "care": [
+            [
+               34314814,
+               "watered",
+               "c"
+            ],
             [
                31968692,
                "watered",
@@ -1595,42 +1049,34 @@ module.exports = {
          "aff": [],
          "planted": 31968683,
          "stage": 1,
-         "substage": 1,
+         "substage": 2,
          "id": "a17"
       },
       "b41": {
          "owner": "mondoshawan",
-         "strain": "mis",
-         "xp": 750,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34136075,
-               "watered",
-               "c",
-               "c"
+               37707016,
+               "watered"
             ],
             [
-               34109471,
+               37685112,
                "watered",
                "c"
             ],
             [
-               34075366,
-               "watered",
-               "c"
-            ],
-            [
-               34047906,
+               37648850,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 31978223,
-         "stage": 6,
-         "substage": 3,
-         "id": "b41",
-         "sex": null
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "c37": {
          "owner": "luegenbaron",
@@ -1638,86 +1084,28 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34112203,
+               37703082,
+               "watered"
+            ],
+            [
+               37673673,
                "watered",
                "c"
             ],
             [
-               34081135,
-               "watered",
-               "c"
-            ],
-            [
-               34035218,
-               "watered",
-               "c"
-            ],
-            [
-               33988048,
-               "watered",
-               "c"
-            ],
-            [
-               33965343,
-               "watered",
-               "c"
-            ],
-            [
-               33931732,
-               "watered",
-               "c"
-            ],
-            [
-               33902402,
-               "watered",
-               "c"
-            ],
-            [
-               33871807,
-               "watered",
-               "c"
-            ],
-            [
-               33844591,
-               "watered",
-               "c"
-            ],
-            [
-               33790055,
-               "watered",
-               "c"
-            ],
-            [
-               33741652,
-               "watered",
-               "c"
-            ],
-            [
-               33699123,
-               "watered",
-               "c"
-            ],
-            [
-               33656002,
-               "watered",
-               "c"
-            ],
-            [
-               33591245,
-               "watered",
-               "c"
-            ],
-            [
-               33566384,
+               37647121,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 31985840,
          "stage": 4,
-         "substage": 13,
-         "id": "c37"
+         "substage": 1,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36471996
       },
       "e16": {
          "owner": "luegenbaron",
@@ -1725,86 +1113,28 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34112203,
+               37703082,
+               "watered"
+            ],
+            [
+               37673673,
                "watered",
                "c"
             ],
             [
-               34081135,
-               "watered",
-               "c"
-            ],
-            [
-               34035218,
-               "watered",
-               "c"
-            ],
-            [
-               33988048,
-               "watered",
-               "c"
-            ],
-            [
-               33965343,
-               "watered",
-               "c"
-            ],
-            [
-               33931732,
-               "watered",
-               "c"
-            ],
-            [
-               33902402,
-               "watered",
-               "c"
-            ],
-            [
-               33871807,
-               "watered",
-               "c"
-            ],
-            [
-               33844591,
-               "watered",
-               "c"
-            ],
-            [
-               33790055,
-               "watered",
-               "c"
-            ],
-            [
-               33741652,
-               "watered",
-               "c"
-            ],
-            [
-               33699123,
-               "watered",
-               "c"
-            ],
-            [
-               33656002,
-               "watered",
-               "c"
-            ],
-            [
-               33591245,
-               "watered",
-               "c"
-            ],
-            [
-               33566384,
+               37647121,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 31985846,
          "stage": 4,
-         "substage": 8,
-         "id": "e16"
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36471974
       },
       "e11": {
          "owner": "jonyoudyer",
@@ -1812,61 +1142,54 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34127970,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               33900153,
+               37496961,
                "watered",
                "c"
             ],
             [
-               33871254,
+               37413857,
+               "watered",
+               "c"
+            ],
+            [
+               37324628,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32020193,
-         "stage": 5,
-         "substage": 0,
+         "stage": 7,
+         "substage": 4,
          "id": "e11",
-         "sex": null
+         "sex": 1
       },
       "e15": {
          "owner": "mondoshawan",
-         "strain": "afg",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34136075,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34109471,
+               36612796,
                "watered",
                "c"
             ],
             [
-               34075366,
+               36354751,
                "watered",
                "c"
             ],
             [
-               34047906,
+               36325910,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 32275386,
-         "stage": 4,
-         "substage": 12,
-         "id": "e15"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "e17": {
          "owner": "buckydurddle",
@@ -1874,19 +1197,24 @@ module.exports = {
          "xp": 1,
          "care": [
             [
-               32501527,
+               34825335,
                "watered",
                "c"
             ],
             [
-               32481368,
+               34311395,
+               "watered",
+               "c"
+            ],
+            [
+               34311068,
                "watered"
             ]
          ],
          "aff": [],
          "planted": 32481352,
          "stage": 1,
-         "substage": 1
+         "substage": 3
       },
       "b42": {
          "owner": "jonyoudyer",
@@ -1894,27 +1222,27 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34127970,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               33900153,
+               37496961,
                "watered",
                "c"
             ],
             [
-               33871254,
+               37413857,
+               "watered",
+               "c"
+            ],
+            [
+               37324628,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32547991,
-         "stage": 3,
-         "substage": 12,
-         "id": "b42"
+         "stage": 6,
+         "substage": 2,
+         "id": "b42",
+         "sex": 0
       },
       "a3": {
          "owner": "jonyoudyer",
@@ -1922,26 +1250,27 @@ module.exports = {
          "xp": 750,
          "care": [
             [
-               34127970,
+               37496961,
                "watered",
                "c"
             ],
             [
-               33900153,
+               37413857,
                "watered",
                "c"
             ],
             [
-               33871254,
+               37324628,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32547995,
-         "stage": 3,
-         "substage": 2,
-         "id": "a3"
+         "stage": 5,
+         "substage": 5,
+         "id": "a3",
+         "sex": 1
       },
       "f9": {
          "owner": "jonyoudyer",
@@ -1949,26 +1278,27 @@ module.exports = {
          "xp": 1,
          "care": [
             [
-               34127970,
+               37496961,
                "watered",
                "c"
             ],
             [
-               33900153,
+               37413857,
                "watered",
                "c"
             ],
             [
-               33871254,
+               37324628,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32547999,
-         "stage": 3,
-         "substage": 11,
-         "id": "f9"
+         "stage": 6,
+         "substage": 0,
+         "id": "f9",
+         "sex": 0
       },
       "f1": {
          "owner": "prettynicevideo",
@@ -1976,50 +1306,24 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33432524,
+               35503933,
                "watered",
                "c"
             ],
             [
-               33403494,
+               35481065,
                "watered",
                "c"
             ],
             [
-               33347559,
-               "watered",
-               "c"
-            ],
-            [
-               33316108,
-               "watered",
-               "c"
-            ],
-            [
-               33287390,
-               "watered",
-               "c"
-            ],
-            [
-               33254047,
-               "watered",
-               "c"
-            ],
-            [
-               33231226,
-               "watered",
-               "c"
-            ],
-            [
-               33198506,
-               "watered",
-               "c"
+               35481061,
+               "watered"
             ]
          ],
          "aff": [],
          "planted": 32550195,
-         "stage": 2,
-         "substage": 12,
+         "stage": 3,
+         "substage": 2,
          "id": "f1"
       },
       "a46": {
@@ -2028,17 +1332,17 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33126791,
+               36278895,
                "watered",
                "c"
             ],
             [
-               32620730,
+               35813039,
                "watered",
                "c"
             ],
             [
-               32566110,
+               35374061,
                "watered",
                "c"
             ]
@@ -2046,7 +1350,7 @@ module.exports = {
          "aff": [],
          "planted": 32565834,
          "stage": 1,
-         "substage": 3,
+         "substage": 9,
          "id": "a46"
       },
       "a15": {
@@ -2116,32 +1420,28 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34136075,
-               "watered",
-               "c",
-               "c"
+               37707016,
+               "watered"
             ],
             [
-               34109471,
+               37685112,
                "watered",
                "c"
             ],
             [
-               34075366,
-               "watered",
-               "c"
-            ],
-            [
-               34047906,
+               37648850,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 32679733,
-         "stage": 4,
-         "substage": 7,
-         "id": "c38"
+         "stage": 2,
+         "substage": 8,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36469105
       },
       "d32": {
          "owner": "ecoinstar",
@@ -2149,512 +1449,141 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34146014,
-               "watered"
-            ],
-            [
-               34146013,
+               37407289,
                "watered",
                "c"
             ],
             [
-               34126642,
+               37372345,
                "watered",
                "c"
             ],
             [
-               34093148,
-               "watered",
-               "c"
-            ],
-            [
-               34053123,
-               "watered",
-               "c"
-            ],
-            [
-               34008904,
+               37361618,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32745119,
-         "stage": 3,
-         "substage": 9,
-         "id": "d32"
+         "stage": 8,
+         "substage": 10,
+         "id": "d32",
+         "sex": 1
       },
       "a50": {
-         "owner": "abrockman",
-         "strain": "afg",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 32776720,
-         "stage": 4,
-         "substage": 3,
-         "id": "a50"
-      },
-      "c39": {
          "owner": "abrockman",
          "strain": "hk",
          "xp": 2250,
          "care": [
             [
-               34145168,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34145168,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34118321,
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 32794139,
          "stage": 4,
          "substage": 1,
-         "id": "c39"
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404482
       },
-      "d33": {
+      "c39": {
          "owner": "abrockman",
-         "strain": "dp",
+         "strain": "kbr",
          "xp": 2250,
          "care": [
             [
-               34145168,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34145168,
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ],
-            [
-               33599203,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 32794152,
-         "stage": 3,
-         "substage": 8,
-         "id": "d33"
+         "stage": 4,
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404562
       },
-      "b43": {
+      "d33": {
          "owner": "abrockman",
          "strain": "lb",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
+               37691874,
                "watered"
             ],
             [
-               34004359,
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 32794161,
          "stage": 3,
-         "substage": 6,
-         "id": "b43"
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631313
+      },
+      "b43": {
+         "owner": "abrockman",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 2,
+         "substage": 13,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631309
       },
       "c40": {
          "owner": "romiferns",
@@ -2662,335 +1591,124 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34118753,
+               37674765,
                "watered",
                "c"
             ],
             [
-               34093392,
+               37603267,
                "watered",
                "c"
             ],
             [
-               34064157,
-               "watered",
-               "c"
+               37589522,
+               "watered"
             ]
          ],
          "aff": [],
-         "planted": 32800914,
-         "stage": 3,
-         "substage": 12,
-         "id": "c40"
+         "stage": 1,
+         "substage": 10,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37215168
       },
       "a51": {
          "owner": "mulletwang",
-         "strain": "afg",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered"
-            ],
-            [
-               34010020,
-               "watered",
-               "c"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37073413,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 32806810,
-         "stage": 3,
-         "substage": 7,
-         "id": "a51"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "b44": {
          "owner": "mulletwang",
-         "strain": "dp",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37114211,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 32816915,
-         "stage": 3,
-         "substage": 10,
-         "id": "b44"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "e18": {
          "owner": "mulletwang",
-         "strain": "lb",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               36997804,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 32817079,
-         "stage": 3,
-         "substage": 12,
-         "id": "e18"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "c41": {
          "owner": "mulletwang",
-         "strain": "cht",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered",
-               "c"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered"
+               37092610,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 32817085,
-         "stage": 3,
-         "substage": 8,
-         "id": "c41"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "d34": {
          "owner": "mulletwang",
-         "strain": "aca",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered"
-            ],
-            [
-               34010020,
-               "watered",
-               "c"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               36996608,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 32817096,
-         "stage": 3,
-         "substage": 12,
-         "id": "d34"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "f10": {
          "owner": "mulletwang",
-         "strain": "ach",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered"
-            ],
-            [
-               34010020,
-               "watered",
-               "c"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37099802,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 32817164,
-         "stage": 3,
-         "substage": 7,
-         "id": "f10"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "a1": {
          "owner": "a1-shroom-spores",
@@ -3011,39 +1729,6 @@ module.exports = {
                33466254,
                "watered",
                "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33267051,
-               "watered",
-               "c"
-            ],
-            [
-               33266649,
-               "watered"
             ]
          ],
          "aff": [],
@@ -3054,793 +1739,248 @@ module.exports = {
       },
       "f11": {
          "owner": "choosefreedom",
-         "strain": "lb",
-         "xp": 750,
+         "strain": "hk",
+         "xp": 50,
          "care": [
             [
-               34155149,
-               "watered"
-            ],
-            [
-               34155147,
-               "watered"
-            ],
-            [
-               34123230,
+               37122572,
                "watered",
                "c"
             ],
             [
-               34096710,
+               37066500,
                "watered",
                "c"
             ],
             [
-               34066184,
+               36921111,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 32829855,
-         "stage": 4,
-         "substage": 2,
-         "id": "f11"
+         "stage": 1,
+         "substage": 12,
+         "traits": [],
+         "terps": {},
+         "planted": 36367479
       },
       "e19": {
          "owner": "mulletwang",
-         "strain": "hk",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37084204,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 32849320,
-         "stage": 3,
-         "substage": 10,
-         "id": "e19"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "e20": {
          "owner": "mulletwang",
-         "strain": "pam",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084204,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e21": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084205,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e22": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084205,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e23": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084205,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e24": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084205,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e25": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084207,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e26": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084207,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e27": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084207,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e28": {
+         "owner": "mulletwang",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37084207,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e29": {
+         "owner": "abrockman",
+         "strain": "lb",
          "xp": 2250,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
+               37691874,
                "watered"
             ],
             [
-               33982021,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 32849363,
          "stage": 3,
-         "substage": 10,
-         "id": "e20"
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631346
       },
-      "e21": {
-         "owner": "mulletwang",
+      "f12": {
+         "owner": "abrockman",
          "strain": "swz",
          "xp": 2250,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34044807,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 32849393,
-         "stage": 3,
-         "substage": 10,
-         "id": "e21"
-      },
-      "e22": {
-         "owner": "mulletwang",
-         "strain": "tha",
-         "xp": 2250,
-         "care": [
-            [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
-            ]
+         "stage": 4,
+         "substage": 1,
+         "traits": [
+            "beta"
          ],
-         "aff": [],
-         "planted": 32849501,
-         "stage": 3,
-         "substage": 10,
-         "id": "e22"
-      },
-      "e23": {
-         "owner": "mulletwang",
-         "strain": "pam",
-         "xp": 2250,
-         "care": [
-            [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32849545,
-         "stage": 3,
-         "substage": 10,
-         "id": "e23"
-      },
-      "e24": {
-         "owner": "mulletwang",
-         "strain": "tha",
-         "xp": 2250,
-         "care": [
-            [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32849739,
-         "stage": 3,
-         "substage": 10,
-         "id": "e24"
-      },
-      "e25": {
-         "owner": "mulletwang",
-         "strain": "kmj",
-         "xp": 2250,
-         "care": [
-            [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32850514,
-         "stage": 3,
-         "substage": 10,
-         "id": "e25"
-      },
-      "e26": {
-         "owner": "mulletwang",
-         "strain": "pam",
-         "xp": 2250,
-         "care": [
-            [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32850522,
-         "stage": 3,
-         "substage": 10,
-         "id": "e26"
-      },
-      "e27": {
-         "owner": "mulletwang",
-         "strain": "pam",
-         "xp": 2250,
-         "care": [
-            [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32850680,
-         "stage": 3,
-         "substage": 10,
-         "id": "e27"
-      },
-      "e28": {
-         "owner": "mulletwang",
-         "strain": "tha",
-         "xp": 2250,
-         "care": [
-            [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32850688,
-         "stage": 3,
-         "substage": 10,
-         "id": "e28"
-      },
-      "e29": {
-         "owner": "abrockman",
-         "strain": "cht",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ],
-            [
-               33599203,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32884641,
-         "stage": 3,
-         "substage": 4,
-         "id": "e29"
-      },
-      "f12": {
-         "owner": "abrockman",
-         "strain": "ach",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 32890932,
-         "stage": 3,
-         "substage": 13,
-         "id": "f12"
+         "terps": {},
+         "planted": 36404555
       },
       "e30": {
          "owner": "thehermitmonk",
@@ -3848,53 +1988,15 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33485702,
+               35816120,
                "watered",
                "c"
-            ],
-            [
-               33418634,
-               "watered",
-               "c"
-            ],
-            [
-               33350300,
-               "watered",
-               "c"
-            ],
-            [
-               33304021,
-               "watered",
-               "c"
-            ],
-            [
-               33284923,
-               "watered"
-            ],
-            [
-               33253782,
-               "watered",
-               "c"
-            ],
-            [
-               33220570,
-               "watered",
-               "c"
-            ],
-            [
-               33172920,
-               "watered",
-               "c"
-            ],
-            [
-               33168106,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 32917993,
-         "stage": 1,
-         "substage": 13,
+         "stage": 2,
+         "substage": 4,
          "id": "e30"
       },
       "b45": {
@@ -3903,54 +2005,15 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33485702,
-               "watered",
-               "c"
-            ],
-            [
-               33418634,
-               "watered",
-               "c"
-            ],
-            [
-               33350300,
-               "watered",
-               "c"
-            ],
-            [
-               33304021,
-               "watered",
-               "c"
-            ],
-            [
-               33284923,
-               "watered"
-            ],
-            [
-               33253782,
-               "watered",
-               "c"
-            ],
-            [
-               33220570,
-               "watered",
-               "c"
-            ],
-            [
-               33172920,
-               "watered",
-               "c"
-            ],
-            [
-               33168106,
+               35816120,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32918003,
-         "stage": 1,
-         "substage": 13,
+         "stage": 2,
+         "substage": 4,
          "id": "b45"
       },
       "b46": {
@@ -3959,54 +2022,15 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33485702,
-               "watered",
-               "c"
-            ],
-            [
-               33418634,
-               "watered",
-               "c"
-            ],
-            [
-               33350300,
-               "watered",
-               "c"
-            ],
-            [
-               33304021,
-               "watered",
-               "c"
-            ],
-            [
-               33284923,
-               "watered"
-            ],
-            [
-               33253782,
-               "watered",
-               "c"
-            ],
-            [
-               33220570,
-               "watered",
-               "c"
-            ],
-            [
-               33172920,
-               "watered",
-               "c"
-            ],
-            [
-               33168106,
+               35816120,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32918020,
-         "stage": 1,
-         "substage": 13,
+         "stage": 2,
+         "substage": 4,
          "id": "b46"
       },
       "e31": {
@@ -4015,31 +2039,22 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34136502,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34078911,
+               37074391,
                "watered",
                "c"
             ],
             [
-               34066357,
-               "watered"
-            ],
-            [
-               34021315,
+               37021382,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32938707,
-         "stage": 3,
+         "stage": 7,
          "substage": 7,
-         "id": "e31"
+         "id": "e31",
+         "sex": 1
       },
       "f13": {
          "owner": "simgirl",
@@ -4047,30 +2062,27 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34136502,
-               "watered"
-            ],
-            [
-               34078911,
+               37074391,
                "watered",
                "c"
             ],
             [
-               34066357,
+               37021382,
                "watered",
                "c"
             ],
             [
-               34021315,
+               36992879,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32938794,
-         "stage": 3,
-         "substage": 10,
-         "id": "f13"
+         "stage": 7,
+         "substage": 13,
+         "id": "f13",
+         "sex": 0
       },
       "b47": {
          "owner": "simgirl",
@@ -4078,31 +2090,22 @@ module.exports = {
          "xp": 750,
          "care": [
             [
-               34136502,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34078911,
+               37074391,
                "watered",
                "c"
             ],
             [
-               34066357,
-               "watered"
-            ],
-            [
-               34021315,
+               37021382,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32938928,
-         "stage": 3,
-         "substage": 6,
-         "id": "b47"
+         "stage": 7,
+         "substage": 7,
+         "id": "b47",
+         "sex": 1
       },
       "d35": {
          "owner": "simgirl",
@@ -4110,31 +2113,22 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34136502,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34078911,
+               37074391,
                "watered",
                "c"
             ],
             [
-               34066357,
-               "watered"
-            ],
-            [
-               34021315,
+               37021382,
                "watered",
                "c"
-            ]
+            ],
          ],
          "aff": [],
          "planted": 32939019,
-         "stage": 3,
-         "substage": 7,
-         "id": "d35"
+         "stage": 7,
+         "substage": 6,
+         "id": "d35",
+         "sex": 0
       },
       "c42": {
          "owner": "tygertyger",
@@ -4157,61 +2151,33 @@ module.exports = {
          "stage": 1,
          "substage": 2
       },
-      "c43": {
-         "owner": "jonyoudyer",
-         "strain": "kmj",
-         "xp": 750,
-         "care": [
-            [
-               34127970,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               33900153,
-               "watered",
-               "c"
-            ],
-            [
-               33871254,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 32946892,
-         "stage": 2,
-         "substage": 13,
-         "id": "c43"
-      },
       "d36": {
          "owner": "jonyoudyer",
          "strain": "cht",
          "xp": 750,
          "care": [
             [
-               34127970,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               33900153,
+               37496961,
                "watered",
                "c"
             ],
             [
-               33871254,
+               37413857,
+               "watered",
+               "c"
+            ],
+            [
+               37324628,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32946899,
-         "stage": 2,
-         "substage": 13,
-         "id": "d36"
+         "stage": 5,
+         "substage": 3,
+         "id": "d36",
+         "sex": 1
       },
       "e33": {
          "owner": "richardcrill",
@@ -4232,60 +2198,6 @@ module.exports = {
                33768971,
                "watered",
                "c"
-            ],
-            [
-               33686204,
-               "watered",
-               "c"
-            ],
-            [
-               33625810,
-               "watered",
-               "c"
-            ],
-            [
-               33566481,
-               "watered",
-               "c"
-            ],
-            [
-               33539512,
-               "watered",
-               "c"
-            ],
-            [
-               33480607,
-               "watered",
-               "c"
-            ],
-            [
-               33391310,
-               "watered",
-               "c"
-            ],
-            [
-               33364007,
-               "watered",
-               "c"
-            ],
-            [
-               33337645,
-               "watered",
-               "c"
-            ],
-            [
-               33324381,
-               "watered"
-            ],
-            [
-               33288274,
-               "watered",
-               "c"
-            ],
-            [
-               33246343,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
@@ -4300,84 +2212,25 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34079469,
+               37332763,
                "watered",
                "c"
             ],
             [
-               34055586,
+               37247043,
                "watered",
                "c"
             ],
             [
-               33896895,
-               "watered",
-               "c"
-            ],
-            [
-               33853973,
-               "watered",
-               "c"
-            ],
-            [
-               33822447,
-               "watered",
-               "c"
-            ],
-            [
-               33766383,
-               "watered",
-               "c"
-            ],
-            [
-               33573859,
-               "watered",
-               "c"
-            ],
-            [
-               33520673,
-               "watered",
-               "c"
-            ],
-            [
-               33481735,
-               "watered",
-               "c"
-            ],
-            [
-               33427490,
-               "watered",
-               "c"
-            ],
-            [
-               33383200,
-               "watered",
-               "c"
-            ],
-            [
-               33339193,
-               "watered",
-               "c"
-            ],
-            [
-               33313581,
-               "watered"
-            ],
-            [
-               33281168,
-               "watered",
-               "c"
-            ],
-            [
-               33252107,
+               37191521,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32961543,
-         "stage": 2,
-         "substage": 8,
+         "stage": 4,
+         "substage": 1,
          "id": "e34"
       },
       "c45": {
@@ -4399,25 +2252,6 @@ module.exports = {
                33669869,
                "watered",
                "c"
-            ],
-            [
-               33645022,
-               "watered",
-               "c"
-            ],
-            [
-               33572925,
-               "watered",
-               "c"
-            ],
-            [
-               33546866,
-               "watered",
-               "c"
-            ],
-            [
-               33546855,
-               "watered"
             ]
          ],
          "aff": [],
@@ -4432,35 +2266,27 @@ module.exports = {
          "xp": 1,
          "care": [
             [
-               34155149,
-               "watered"
-            ],
-            [
-               34155147,
+               37122572,
                "watered",
                "c"
             ],
             [
-               34123230,
+               37066500,
                "watered",
                "c"
             ],
             [
-               34096710,
-               "watered",
-               "c"
-            ],
-            [
-               34066184,
+               36921111,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32971170,
-         "stage": 3,
-         "substage": 11,
-         "id": "e35"
+         "stage": 8,
+         "substage": 5,
+         "id": "e35",
+         "sex": 0
       },
       "e36": {
          "owner": "anarcist69",
@@ -4468,35 +2294,19 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34040507,
-               "watered",
-               "c"
+               37201264,
+               "harvested"
             ],
             [
-               33804309,
-               "watered",
-               "c"
-            ],
-            [
-               33644146,
-               "watered",
-               "c"
-            ],
-            [
-               33589208,
-               "watered",
-               "c"
-            ],
-            [
-               33521776,
+               37201258,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32971383,
-         "stage": 2,
-         "substage": 3,
+         "stage": 3,
+         "substage": 2,
          "id": "e36"
       },
       "a53": {
@@ -4505,35 +2315,19 @@ module.exports = {
          "xp": 750,
          "care": [
             [
-               34040507,
-               "watered",
-               "c"
+               37201264,
+               "harvested"
             ],
             [
-               33804309,
-               "watered",
-               "c"
-            ],
-            [
-               33644146,
-               "watered",
-               "c"
-            ],
-            [
-               33589208,
-               "watered",
-               "c"
-            ],
-            [
-               33521776,
+               37201258,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32971433,
-         "stage": 2,
-         "substage": 3,
+         "stage": 3,
+         "substage": 2,
          "id": "a53"
       },
       "c44": {
@@ -4542,40 +2336,22 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34146014,
+               37407289,
                "watered",
                "c"
             ],
             [
-               34146013,
-               "watered",
-               "c"
-            ],
-            [
-               34126642,
-               "watered"
-            ],
-            [
-               34093148,
-               "watered",
-               "c"
-            ],
-            [
-               34053123,
-               "watered",
-               "c"
-            ],
-            [
-               34008904,
+               37372345,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 32971815,
-         "stage": 2,
-         "substage": 13,
-         "id": "c44"
+         "stage": 7,
+         "substage": 10,
+         "id": "c44",
+         "sex": 1
       },
       "c46": {
          "owner": "qwoyn",
@@ -4583,84 +2359,20 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33805907,
+               37692458,
                "watered",
                "c"
             ],
             [
-               33779396,
+               37611638,
                "watered",
                "c"
-            ],
-            [
-               33725870,
-               "watered",
-               "c"
-            ],
-            [
-               33695133,
-               "watered",
-               "c"
-            ],
-            [
-               33666440,
-               "watered",
-               "c"
-            ],
-            [
-               33612760,
-               "watered",
-               "c"
-            ],
-            [
-               33582517,
-               "watered",
-               "c"
-            ],
-            [
-               33555094,
-               "watered",
-               "c"
-            ],
-            [
-               33524163,
-               "watered",
-               "c"
-            ],
-            [
-               33490699,
-               "watered",
-               "c"
-            ],
-            [
-               33439788,
-               "watered",
-               "c"
-            ],
-            [
-               33382735,
-               "watered",
-               "c"
-            ],
-            [
-               33283784,
-               "watered",
-               "c"
-            ],
-            [
-               33240631,
-               "watered",
-               "c"
-            ],
-            [
-               33235959,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 33012618,
-         "stage": 2,
-         "substage": 5,
+         "stage": 4,
+         "substage": 4,
          "id": "c46"
       },
       "c47": {
@@ -4669,85 +2381,20 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34079469,
+               37332763,
                "watered",
                "c"
             ],
             [
-               34055586,
-               "watered",
-               "c"
-            ],
-            [
-               33896895,
-               "watered",
-               "c"
-            ],
-            [
-               33853973,
-               "watered",
-               "c"
-            ],
-            [
-               33822447,
-               "watered",
-               "c"
-            ],
-            [
-               33766383,
-               "watered",
-               "c"
-            ],
-            [
-               33573859,
-               "watered",
-               "c"
-            ],
-            [
-               33520673,
-               "watered",
-               "c"
-            ],
-            [
-               33481735,
-               "watered",
-               "c"
-            ],
-            [
-               33427490,
-               "watered",
-               "c"
-            ],
-            [
-               33383200,
-               "watered",
-               "c"
-            ],
-            [
-               33339193,
-               "watered",
-               "c"
-            ],
-            [
-               33313581,
-               "watered",
-               "c"
-            ],
-            [
-               33281168,
-               "watered",
-               "c"
-            ],
-            [
-               33252107,
+               37247043,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33024825,
-         "stage": 2,
-         "substage": 8,
+         "stage": 4,
+         "substage": 2,
          "id": "c47"
       },
       "c48": {
@@ -4756,125 +2403,44 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34157464,
-               "watered"
-            ],
-            [
-               34157462,
+               37592145,
                "watered",
                "c"
             ],
             [
-               34128400,
+               37561728,
                "watered",
                "c"
-            ],
-            [
-               34095300,
-               "watered",
-               "c"
-            ],
-            [
-               34080908,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 33038041,
-         "stage": 3,
-         "substage": 3,
-         "id": "c48"
+         "stage": 8,
+         "substage": 10,
+         "id": "c48",
+         "sex": 0
       },
       "f6": {
          "owner": "onthewayout",
-         "strain": "cg",
+         "strain": "hk",
          "xp": 1,
          "care": [
             [
-               34140495,
+               37709933,
                "watered"
             ],
             [
-               34109659,
-               "watered",
-               "c"
-            ],
-            [
-               34081866,
-               "watered",
-               "c"
-            ],
-            [
-               34054620,
+               37682951,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33053650,
-         "stage": 3,
-         "substage": 9,
-         "id": "f6"
-      },
-      "a55": {
-         "owner": "hotsauceislethal",
-         "strain": "afg",
-         "xp": 2250,
-         "care": [
-            [
-               34155174,
-               "watered"
-            ],
-            [
-               34155173,
-               "watered"
-            ],
-            [
-               34093078,
-               "watered",
-               "c"
-            ],
-            [
-               34082800,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33081400,
-         "stage": 3,
-         "substage": 6,
-         "id": "a55"
-      },
-      "e37": {
-         "owner": "hotsauceislethal",
-         "strain": "lb",
-         "xp": 2250,
-         "care": [
-            [
-               34155174,
-               "watered"
-            ],
-            [
-               34155173,
-               "watered",
-               "c"
-            ],
-            [
-               34093078,
-               "watered",
-               "c"
-            ],
-            [
-               34082800,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33081420,
-         "stage": 3,
-         "substage": 2,
-         "id": "e37"
+         "stage": 4,
+         "substage": 1,
+         "traits": [],
+         "terps": {},
+         "planted": 36388412
       },
       "b49": {
          "owner": "hotsauceislethal",
@@ -4882,29 +2448,20 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34155174,
-               "watered"
-            ],
-            [
-               34155173,
+               34691280,
                "watered",
                "c"
             ],
             [
-               34093078,
-               "watered",
-               "c"
-            ],
-            [
-               34082800,
+               34652224,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33081456,
-         "stage": 3,
-         "substage": 4,
+         "stage": 4,
+         "substage": 5,
          "id": "b49"
       },
       "f16": {
@@ -4913,27 +2470,20 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34155174,
-               "watered"
-            ],
-            [
-               34155173,
-               "watered"
-            ],
-            [
-               34093078,
+               34691280,
                "watered",
                "c"
             ],
             [
-               34082800,
-               "watered"
+               34652224,
+               "watered",
+               "c"
             ]
          ],
          "aff": [],
          "planted": 33081480,
-         "stage": 3,
-         "substage": 6,
+         "stage": 4,
+         "substage": 10,
          "id": "f16"
       },
       "d37": {
@@ -4942,179 +2492,45 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34155174,
-               "watered"
-            ],
-            [
-               34155173,
+               34691280,
                "watered",
                "c"
             ],
             [
-               34093078,
-               "watered",
-               "c"
-            ],
-            [
-               34082800,
+               34652224,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33081510,
-         "stage": 3,
+         "stage": 4,
          "substage": 2,
          "id": "d37"
       },
-      "c49": {
-         "owner": "hotsauceislethal",
-         "strain": "cht",
-         "xp": 2250,
-         "care": [
-            [
-               34155174,
-               "watered"
-            ],
-            [
-               34155173,
-               "watered",
-               "c"
-            ],
-            [
-               34093078,
-               "watered",
-               "c"
-            ],
-            [
-               34082800,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33081531,
-         "stage": 3,
-         "substage": 7,
-         "id": "c49"
-      },
       "a56": {
          "owner": "abrockman",
-         "strain": "mal",
+         "strain": "ach",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
+               37691871,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33113800,
-         "stage": 3,
-         "substage": 7,
-         "id": "a56"
+         "stage": 4,
+         "substage": 1,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404618
       },
       "b50": {
          "owner": "abrockman",
@@ -5122,237 +2538,46 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
+               37691874,
                "watered"
             ],
             [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
+               37691871,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33113805,
          "stage": 2,
-         "substage": 13,
-         "id": "b50"
+         "substage": 8,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36831265
       },
       "c50": {
          "owner": "abrockman",
-         "strain": "swz",
+         "strain": "kbr",
          "xp": 2250,
          "care": [
             [
-               34145168,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
+               37691871,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33113814,
-         "stage": 3,
-         "substage": 8,
-         "id": "c50"
+         "stage": 4,
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404622
       },
       "d38": {
          "owner": "aggamun",
@@ -5360,30 +2585,24 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34142088,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34129979,
-               "watered"
-            ],
-            [
-               34112636,
+               37102474,
                "watered",
                "c"
             ],
             [
-               34103335,
-               "watered"
+               37078909,
+               "watered",
+               "c"
             ]
          ],
          "aff": [],
-         "planted": 33135669,
-         "stage": 3,
-         "substage": 8,
-         "id": "d38"
+         "stage": 2,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36380242
       },
       "c51": {
          "owner": "aggamun",
@@ -5391,30 +2610,24 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34142088,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34129979,
-               "watered"
-            ],
-            [
-               34112636,
+               37102474,
                "watered",
                "c"
             ],
             [
-               34103335,
-               "watered"
+               37078909,
+               "watered",
+               "c"
             ]
          ],
          "aff": [],
-         "planted": 33135674,
-         "stage": 3,
-         "substage": 8,
-         "id": "c51"
+         "stage": 2,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36380237
       },
       "a57": {
          "owner": "guiltyparties",
@@ -5422,24 +2635,20 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34141978,
-               "watered"
-            ],
-            [
-               34012717,
+               35305174,
                "watered",
                "c"
             ],
             [
-               33983593,
+               35194029,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33193480,
-         "stage": 2,
-         "substage": 6,
+         "stage": 3,
+         "substage": 10,
          "id": "a57"
       },
       "d40": {
@@ -5448,1175 +2657,264 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
+               37691874,
                "watered"
             ],
             [
-               34086286,
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ],
-            [
-               33599203,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 33195341,
          "stage": 2,
-         "substage": 12,
-         "id": "d40"
+         "substage": 5,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36910542
       },
       "e38": {
          "owner": "abrockman",
-         "strain": "dp",
+         "strain": "aca",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
+               37691874,
                "watered"
             ],
             [
-               34086286,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ],
-            [
-               33599203,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33195346,
          "stage": 2,
-         "substage": 11,
-         "id": "e38"
+         "substage": 8,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36854165
       },
       "f17": {
+         "owner": "abrockman",
+         "strain": "mal",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 4,
+         "substage": 1,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404565
+      },
+      "a58": {
          "owner": "abrockman",
          "strain": "lb",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34086286,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34056194,
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 33195357,
-         "stage": 3,
-         "substage": 4,
-         "id": "f17"
-      },
-      "a58": {
-         "owner": "abrockman",
-         "strain": "aca",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
-            ]
+         "stage": 4,
+         "substage": 1,
+         "traits": [
+            "beta"
          ],
-         "aff": [],
-         "planted": 33195363,
-         "stage": 3,
-         "substage": 4,
-         "id": "a58"
+         "terps": {},
+         "planted": 36404662
       },
       "f18": {
-         "owner": "abrockman",
-         "strain": "kbr",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33195379,
-         "stage": 3,
-         "substage": 4,
-         "id": "f18"
-      },
-      "b51": {
-         "owner": "abrockman",
-         "strain": "mis",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33195408,
-         "stage": 2,
-         "substage": 12,
-         "id": "b51"
-      },
-      "c52": {
-         "owner": "abrockman",
-         "strain": "kbr",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33195420,
-         "stage": 3,
-         "substage": 5,
-         "id": "c52"
-      },
-      "e39": {
-         "owner": "abrockman",
-         "strain": "aca",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ],
-            [
-               33599203,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33195425,
-         "stage": 2,
-         "substage": 11,
-         "id": "e39"
-      },
-      "a59": {
          "owner": "abrockman",
          "strain": "swz",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34086286,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34056194,
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ],
-            [
-               33599203,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 33195470,
-         "stage": 3,
-         "substage": 4,
-         "id": "a59"
+         "stage": 4,
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404675
+      },
+      "b51": {
+         "owner": "abrockman",
+         "strain": "mis",
+         "xp": 1,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 2,
+         "substage": 7,
+         "traits": [],
+         "terps": {},
+         "planted": 36884208
+      },
+      "c52": {
+         "owner": "abrockman",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "stage": 4,
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404666
+      },
+      "e39": {
+         "owner": "abrockman",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 2,
+         "substage": 8,
+         "traits": [],
+         "terps": {},
+         "planted": 36854171
+      },
+      "a59": {
+         "owner": "abrockman",
+         "strain": "aca",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 4,
+         "substage": 0,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36404678
       },
       "d41": {
          "owner": "abrockman",
          "strain": "kmj",
-         "xp": 2250,
+         "xp": 50,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
+               37691874,
                "watered"
             ],
             [
-               34086286,
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ],
-            [
-               33599203,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 33195475,
          "stage": 2,
-         "substage": 12,
-         "id": "d41"
+         "substage": 5,
+         "traits": [],
+         "terps": {},
+         "planted": 36910556
       },
       "f19": {
          "owner": "disregardfiat",
@@ -6624,17 +2922,12 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               33485303,
+               37094259,
                "watered",
                "c"
             ],
             [
-               33346053,
-               "watered",
-               "c"
-            ],
-            [
-               33197785,
+               36944454,
                "watered",
                "c"
             ]
@@ -6642,7 +2935,7 @@ module.exports = {
          "aff": [],
          "planted": 33197746,
          "stage": 1,
-         "substage": 3,
+         "substage": 7,
          "id": "f19"
       },
       "d39": {
@@ -6651,26 +2944,25 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34141978,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34012717,
+               35305174,
                "watered",
                "c"
             ],
             [
-               33983593,
+               35194029,
+               "watered",
+               "c"
+            ],
+            [
+               35106912,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33202294,
-         "stage": 2,
-         "substage": 8,
+         "stage": 3,
+         "substage": 10,
          "id": "d39"
       },
       "a52": {
@@ -6679,39 +2971,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34146014,
+               37407289,
+               "watered",
+               "c"
+            ],
+            [
+               37372345,
+               "watered",
+               "c"
+            ],
+            [
+               37361618,
                "watered"
-            ],
-            [
-               34146013,
-               "watered"
-            ],
-            [
-               34126642,
-               "watered",
-               "c"
-            ],
-            [
-               34093148,
-               "watered",
-               "c"
-            ],
-            [
-               34053123,
-               "watered",
-               "c"
-            ],
-            [
-               34008904,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
          "planted": 33218941,
-         "stage": 2,
+         "stage": 7,
          "substage": 6,
-         "id": "a52"
+         "id": "a52",
+         "sex": 1
       },
       "f20": {
          "owner": "a1-shroom-spores",
@@ -6727,44 +3006,6 @@ module.exports = {
                33514142,
                "watered",
                "c"
-            ],
-            [
-               33466254,
-               "watered",
-               "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33267051,
-               "watered",
-               "c"
-            ],
-            [
-               33266649,
-               "watered"
             ]
          ],
          "aff": [],
@@ -6792,40 +3033,6 @@ module.exports = {
                33466254,
                "watered",
                "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered",
-               "c"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33267051,
-               "watered",
-               "c"
-            ],
-            [
-               33266649,
-               "watered"
             ]
          ],
          "aff": [],
@@ -6834,273 +3041,69 @@ module.exports = {
          "substage": 10,
          "id": "c53"
       },
-      "e40": {
-         "owner": "a1-shroom-spores",
-         "strain": "kbr",
-         "xp": 2250,
-         "care": [
-            [
-               33606365,
-               "watered",
-               "c"
-            ],
-            [
-               33514142,
-               "watered",
-               "c"
-            ],
-            [
-               33466254,
-               "watered",
-               "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33267051,
-               "watered",
-               "c"
-            ],
-            [
-               33266649,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33235513,
-         "stage": 1,
-         "substage": 9,
-         "id": "e40"
-      },
       "b52": {
          "owner": "mulletwang",
-         "strain": "dp",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37690212,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33241146,
-         "stage": 2,
-         "substage": 12,
-         "id": "b52"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "b53": {
          "owner": "mulletwang",
-         "strain": "dp",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37690214,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33241157,
-         "stage": 2,
-         "substage": 12,
-         "id": "b53"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "b54": {
          "owner": "mulletwang",
-         "strain": "dp",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37690214,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33241165,
-         "stage": 2,
-         "substage": 12,
-         "id": "b54"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "b55": {
          "owner": "mulletwang",
-         "strain": "dp",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34124007,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34091448,
-               "watered",
-               "c"
-            ],
-            [
-               34044807,
-               "watered",
-               "c"
-            ],
-            [
-               34030355,
-               "watered",
-               "c"
-            ],
-            [
-               34010020,
-               "watered"
-            ],
-            [
-               33982021,
-               "watered",
-               "c"
-            ],
-            [
-               33953075,
-               "watered",
-               "c"
-            ],
-            [
-               33925578,
-               "watered",
-               "c"
+               37690214,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33241213,
-         "stage": 2,
-         "substage": 12,
-         "id": "b55"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "a6": {
          "owner": "besancia",
@@ -7108,77 +3111,16 @@ module.exports = {
          "xp": 1,
          "care": [
             [
+               34373200,
+               "watered",
+               "c"
+            ],
+            [
+               34373135,
+               "watered"
+            ],
+            [
                34071081,
-               "watered",
-               "c"
-            ],
-            [
-               33974021,
-               "watered",
-               "c"
-            ],
-            [
-               33882482,
-               "watered",
-               "c"
-            ],
-            [
-               33854412,
-               "watered",
-               "c"
-            ],
-            [
-               33799029,
-               "watered",
-               "c"
-            ],
-            [
-               33595405,
-               "watered",
-               "c"
-            ],
-            [
-               33553281,
-               "watered",
-               "c"
-            ],
-            [
-               33494387,
-               "watered",
-               "c"
-            ],
-            [
-               33456093,
-               "watered",
-               "c"
-            ],
-            [
-               33410968,
-               "watered",
-               "c"
-            ],
-            [
-               33369122,
-               "watered",
-               "c"
-            ],
-            [
-               33340697,
-               "watered",
-               "c"
-            ],
-            [
-               33311307,
-               "watered",
-               "c"
-            ],
-            [
-               33282365,
-               "watered",
-               "c"
-            ],
-            [
-               33249802,
                "watered",
                "c"
             ]
@@ -7186,7 +3128,7 @@ module.exports = {
          "aff": [],
          "planted": 33249781,
          "stage": 2,
-         "substage": 1,
+         "substage": 2,
          "id": "a6"
       },
       "f22": {
@@ -7203,44 +3145,6 @@ module.exports = {
                33514142,
                "watered",
                "c"
-            ],
-            [
-               33466254,
-               "watered",
-               "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33267051,
-               "watered",
-               "c"
-            ],
-            [
-               33266649,
-               "watered"
             ]
          ],
          "aff": [],
@@ -7248,62 +3152,6 @@ module.exports = {
          "stage": 1,
          "substage": 8,
          "id": "f22"
-      },
-      "f23": {
-         "owner": "a1-shroom-spores",
-         "strain": "cg",
-         "xp": 1,
-         "care": [
-            [
-               33606365,
-               "watered",
-               "c"
-            ],
-            [
-               33514142,
-               "watered",
-               "c"
-            ],
-            [
-               33466254,
-               "watered",
-               "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33267051,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33266644,
-         "stage": 1,
-         "substage": 8,
-         "id": "f23"
       },
       "f24": {
          "owner": "a1-shroom-spores",
@@ -7324,35 +3172,6 @@ module.exports = {
                33466254,
                "watered",
                "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33267051,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
@@ -7361,102 +3180,32 @@ module.exports = {
          "substage": 8,
          "id": "f24"
       },
-      "e41": {
-         "owner": "a1-shroom-spores",
-         "strain": "lb",
-         "xp": 2250,
-         "care": [
-            [
-               33606365,
-               "watered",
-               "c"
-            ],
-            [
-               33514142,
-               "watered",
-               "c"
-            ],
-            [
-               33466254,
-               "watered",
-               "c"
-            ],
-            [
-               33436343,
-               "watered",
-               "c"
-            ],
-            [
-               33427643,
-               "watered"
-            ],
-            [
-               33404103,
-               "watered",
-               "c"
-            ],
-            [
-               33354597,
-               "watered",
-               "c"
-            ],
-            [
-               33317140,
-               "watered",
-               "c"
-            ],
-            [
-               33272533,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33272506,
-         "stage": 1,
-         "substage": 8,
-         "id": "e41"
-      },
       "b48": {
          "owner": "ecoinstar",
          "strain": "afg",
          "xp": 2250,
          "care": [
             [
-               34146014,
+               37407289,
                "watered",
                "c"
             ],
             [
-               34146013,
+               37372345,
                "watered",
                "c"
             ],
             [
-               34126642,
+               37361618,
                "watered"
-            ],
-            [
-               34093148,
-               "watered",
-               "c"
-            ],
-            [
-               34053123,
-               "watered",
-               "c"
-            ],
-            [
-               34008904,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
          "planted": 33274967,
-         "stage": 2,
-         "substage": 8,
-         "id": "b48"
+         "stage": 7,
+         "substage": 6,
+         "id": "b48",
+         "sex": 0
       },
       "f8": {
          "owner": "jrawsthorne",
@@ -7464,24 +3213,20 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34133305,
+               35574584,
                "watered",
                "c"
             ],
             [
-               34105965,
-               "watered"
-            ],
-            [
-               34051238,
+               35379544,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33284534,
-         "stage": 2,
-         "substage": 9,
+         "stage": 3,
+         "substage": 11,
          "id": "f8"
       },
       "a60": {
@@ -7496,31 +3241,6 @@ module.exports = {
             ],
             [
                33779390,
-               "watered",
-               "c"
-            ],
-            [
-               33725876,
-               "watered",
-               "c"
-            ],
-            [
-               33666431,
-               "watered",
-               "c"
-            ],
-            [
-               33582508,
-               "watered",
-               "c"
-            ],
-            [
-               33555111,
-               "watered",
-               "c"
-            ],
-            [
-               33524156,
                "watered",
                "c"
             ]
@@ -7545,16 +3265,6 @@ module.exports = {
                33348548,
                "watered",
                "c"
-            ],
-            [
-               33315278,
-               "watered",
-               "c"
-            ],
-            [
-               33286048,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
@@ -7576,16 +3286,6 @@ module.exports = {
                33348548,
                "watered",
                "c"
-            ],
-            [
-               33315278,
-               "watered",
-               "c"
-            ],
-            [
-               33286048,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
@@ -7599,154 +3299,82 @@ module.exports = {
          "xp": 750,
          "care": [
             [
-               34108636,
+               35558437,
                "watered",
                "c"
             ],
             [
-               33909844,
-               "watered",
-               "c"
-            ],
-            [
-               33853303,
-               "watered",
-               "c"
-            ],
-            [
-               33824175,
-               "watered",
-               "c"
-            ],
-            [
-               33800377,
+               35558422,
                "watered"
             ],
             [
-               33769522,
+               35388864,
                "watered",
                "c"
-            ],
-            [
-               33737463,
-               "watered",
-               "c"
-            ],
-            [
-               33708590,
-               "watered",
-               "c"
-            ],
-            [
-               33676199,
-               "watered",
-               "c"
-            ],
-            [
-               33651848,
-               "watered",
-               "c"
-            ],
-            [
-               33622293,
-               "watered",
-               "c"
-            ],
-            [
-               33595700,
-               "watered",
-               "c"
-            ],
-            [
-               33574522,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 33291386,
          "stage": 2,
-         "substage": 5,
+         "substage": 13,
          "id": "d42"
       },
       "a61": {
          "owner": "chronocrypto",
-         "strain": "afg",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered"
+               36592475,
+               "harvested"
             ],
             [
-               34111945,
+               36592472,
                "watered",
                "c"
             ],
             [
-               34098566,
-               "watered",
-               "c"
+               36583816,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33320463,
-         "stage": 2,
-         "substage": 7,
-         "id": "a61"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "c54": {
          "owner": "chronocrypto",
-         "strain": "hk",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered"
+               36516614,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33320587,
-         "stage": 2,
-         "substage": 7,
-         "id": "c54"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "e42": {
          "owner": "chronocrypto",
-         "strain": "lb",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered"
+               36508210,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33323220,
-         "stage": 2,
-         "substage": 9,
-         "id": "e42"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "d43": {
          "owner": "faustofraser",
@@ -7754,174 +3382,104 @@ module.exports = {
          "xp": 750,
          "care": [
             [
-               34097201,
+               36397472,
                "watered",
                "c"
             ],
             [
-               33882416,
-               "watered",
-               "c"
+               36393522,
+               "watered"
             ],
             [
-               33819391,
-               "watered",
-               "c"
-            ],
-            [
-               33789132,
-               "watered",
-               "c"
-            ],
-            [
-               33592566,
-               "watered",
-               "c"
-            ],
-            [
-               33361403,
-               "watered",
-               "c"
+               36371280,
+               "harvested"
             ]
          ],
          "aff": [],
          "planted": 33324513,
          "stage": 1,
-         "substage": 6,
+         "substage": 11,
          "id": "d43"
       },
       "b56": {
          "owner": "chronocrypto",
-         "strain": "dp",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered"
+               36595814,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33376575,
-         "stage": 2,
-         "substage": 7,
-         "id": "b56"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "c55": {
          "owner": "chronocrypto",
-         "strain": "tha",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered"
+               36545413,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33376589,
-         "stage": 2,
-         "substage": 6,
-         "id": "c55"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "d44": {
          "owner": "chronocrypto",
-         "strain": "cg",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered"
+               36737411,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33376607,
-         "stage": 2,
-         "substage": 7,
-         "id": "d44"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "f25": {
          "owner": "chronocrypto",
-         "strain": "aca",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered",
-               "c"
+               36639006,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33376617,
-         "stage": 2,
-         "substage": 5,
-         "id": "f25"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "a62": {
          "owner": "chronocrypto",
-         "strain": "lkg",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered",
-               "c"
+               36641416,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33376625,
-         "stage": 2,
-         "substage": 5,
-         "id": "a62"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "a47": {
          "owner": "napoleon2702",
@@ -7937,20 +3495,6 @@ module.exports = {
                33520901,
                "watered",
                "c"
-            ],
-            [
-               33476658,
-               "watered",
-               "c"
-            ],
-            [
-               33456729,
-               "watered",
-               "c"
-            ],
-            [
-               33455860,
-               "watered"
             ]
          ],
          "aff": [],
@@ -7965,21 +3509,6 @@ module.exports = {
          "care": [
             [
                34027564,
-               "watered",
-               "c"
-            ],
-            [
-               33520901,
-               "watered",
-               "c"
-            ],
-            [
-               33476658,
-               "watered",
-               "c"
-            ],
-            [
-               33455892,
                "watered",
                "c"
             ]
@@ -8003,16 +3532,6 @@ module.exports = {
                33520901,
                "watered",
                "c"
-            ],
-            [
-               33476658,
-               "watered",
-               "c"
-            ],
-            [
-               33455957,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
@@ -8029,46 +3548,12 @@ module.exports = {
                34027564,
                "watered",
                "c"
-            ],
-            [
-               33520901,
-               "watered",
-               "c"
-            ],
-            [
-               33476658,
-               "watered",
-               "c"
-            ],
-            [
-               33456046,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 33456016,
          "stage": 1,
          "substage": 3
-      },
-      "b57": {
-         "owner": "yabapmatt",
-         "strain": "mal",
-         "xp": 2250,
-         "care": [
-            [
-               33456249,
-               "watered",
-               "c"
-            ],
-            [
-               33456153,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33456118,
-         "stage": 1,
-         "substage": 1
       },
       "d45": {
          "owner": "yabapmatt",
@@ -8086,38 +3571,6 @@ module.exports = {
          "stage": 1,
          "substage": 1
       },
-      "f26": {
-         "owner": "yabapmatt",
-         "strain": "dp",
-         "xp": 2250,
-         "care": [
-            [
-               33456249,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33456216,
-         "stage": 1,
-         "substage": 1
-      },
-      "a63": {
-         "owner": "yabapmatt",
-         "strain": "lkg",
-         "xp": 2250,
-         "care": [
-            [
-               33456249,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33456221,
-         "stage": 1,
-         "substage": 1
-      },
       "c56": {
          "owner": "yabapmatt",
          "strain": "lb",
@@ -8130,30 +3583,19 @@ module.exports = {
       },
       "e43": {
          "owner": "chronocrypto",
-         "strain": "pam",
-         "xp": 2250,
+         "strain": "",
+         "xp": 0,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
-               "watered"
+               36738610,
+               ""
             ]
          ],
          "aff": [],
-         "planted": 33467052,
-         "stage": 2,
-         "substage": 4,
-         "id": "e43"
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "e45": {
          "owner": "simgirl",
@@ -8161,31 +3603,27 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34136502,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34078911,
+               37074391,
                "watered",
                "c"
             ],
             [
-               34066357,
-               "watered"
+               37021382,
+               "watered",
+               "c"
             ],
             [
-               34021315,
+               36992879,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33537639,
-         "stage": 2,
+         "stage": 6,
          "substage": 2,
-         "id": "e45"
+         "id": "e45",
+         "sex": 1
       },
       "a64": {
          "owner": "molovelly",
@@ -8193,968 +3631,252 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34079469,
+               37332763,
                "watered",
                "c"
             ],
             [
-               34055586,
+               37247043,
                "watered",
                "c"
             ],
             [
-               33896895,
+               37191521,
                "watered",
                "c"
-            ],
-            [
-               33853973,
-               "watered",
-               "c"
-            ],
-            [
-               33822447,
-               "watered",
-               "c"
-            ],
-            [
-               33766383,
-               "watered",
-               "c"
-            ],
-            [
-               33573859,
-               "watered",
-               "c"
-            ],
-            [
-               33548425,
-               "watered",
-               "c"
-            ],
-            [
-               33542157,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 33540883,
-         "stage": 1,
-         "substage": 8
+         "stage": 3,
+         "substage": 0
       },
       "c57": {
          "owner": "abrockman",
-         "strain": "hk",
+         "strain": "swz",
          "xp": 2250,
          "care": [
             [
-               34145168,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34145168,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599594,
-         "stage": 2,
-         "substage": 7,
-         "id": "c57"
+         "stage": 3,
+         "substage": 3,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36793177
       },
       "f28": {
          "owner": "abrockman",
-         "strain": "lb",
+         "strain": "cht",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34086286,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599599,
-         "stage": 2,
-         "substage": 5,
-         "id": "f28"
+         "stage": 3,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631321
       },
       "b58": {
          "owner": "abrockman",
-         "strain": "kbr",
+         "strain": "mal",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
+               37691874,
                "watered"
             ],
             [
-               34004359,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599605,
-         "stage": 2,
-         "substage": 3,
-         "id": "b58"
+         "stage": 1,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37255379
       },
       "a65": {
-         "owner": "abrockman",
-         "strain": "pam",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599614,
-         "stage": 2,
-         "substage": 5,
-         "id": "a65"
-      },
-      "e47": {
-         "owner": "abrockman",
-         "strain": "afg",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599627,
-         "stage": 2,
-         "substage": 1,
-         "id": "e47"
-      },
-      "d46": {
-         "owner": "abrockman",
-         "strain": "aca",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599642,
-         "stage": 2,
-         "substage": 1,
-         "id": "d46"
-      },
-      "f29": {
          "owner": "abrockman",
          "strain": "kmj",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34086286,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599654,
-         "stage": 2,
-         "substage": 5,
-         "id": "f29"
+         "stage": 3,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631338
       },
-      "c58": {
+      "e47": {
          "owner": "abrockman",
-         "strain": "aca",
+         "strain": "cht",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
+               37691874,
+               "watered"
             ],
             [
-               34145168,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599659,
-         "stage": 2,
-         "substage": 7,
-         "id": "c58"
+         "stage": 1,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37255391
+      },
+      "d46": {
+         "owner": "abrockman",
+         "strain": "lkg",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 1,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37308640
+      },
+      "f29": {
+         "owner": "abrockman",
+         "strain": "ach",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 3,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631358
+      },
+      "c58": {
+         "owner": "abrockman",
+         "strain": "hk",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 3,
+         "substage": 3,
+         "traits": [],
+         "terps": {},
+         "planted": 36793411
       },
       "a66": {
          "owner": "abrockman",
@@ -9162,1048 +3884,277 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34086286,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599668,
-         "stage": 2,
-         "substage": 5,
-         "id": "a66"
+         "stage": 3,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631363
       },
       "b59": {
          "owner": "abrockman",
-         "strain": "cg",
-         "xp": 2250,
+         "strain": "afg",
+         "xp": 50,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
+               37691874,
                "watered"
             ],
             [
-               34004359,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599680,
-         "stage": 2,
-         "substage": 3,
-         "id": "b59"
+         "stage": 1,
+         "substage": 12,
+         "traits": [],
+         "terps": {},
+         "planted": 37255409
       },
       "d47": {
          "owner": "abrockman",
-         "strain": "dp",
+         "strain": "aca",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
+               37691874,
                "watered"
             ],
             [
-               34086286,
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
                "watered",
                "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
             ]
          ],
          "aff": [],
-         "planted": 33599696,
-         "stage": 2,
-         "substage": 1,
-         "id": "d47"
+         "stage": 1,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37308672
       },
       "e48": {
-         "owner": "abrockman",
-         "strain": "mal",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599700,
-         "stage": 2,
-         "substage": 1,
-         "id": "e48"
-      },
-      "b60": {
          "owner": "abrockman",
          "strain": "tha",
          "xp": 2250,
          "care": [
             [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
+               37691874,
                "watered"
             ],
             [
-               34004359,
-               "watered",
-               "c"
+               37691871,
+               "harvested"
             ],
             [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33599733,
-         "stage": 2,
-         "substage": 3,
-         "id": "b60"
+         "stage": 1,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37255399
+      },
+      "b60": {
+         "owner": "abrockman",
+         "strain": "kbr",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 1,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37255421
       },
       "c59": {
          "owner": "abrockman",
-         "strain": "swz",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599749,
-         "stage": 2,
-         "substage": 7,
-         "id": "c59"
-      },
-      "a67": {
-         "owner": "abrockman",
-         "strain": "ach",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34145168,
-               "watered"
-            ],
-            [
-               34118321,
-               "watered",
-               "c"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered",
-               "c"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered",
-               "c"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered",
-               "c"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered",
-               "c"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599753,
-         "stage": 2,
-         "substage": 5,
-         "id": "a67"
-      },
-      "e49": {
-         "owner": "abrockman",
-         "strain": "cht",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered",
-               "c"
-            ],
-            [
-               33890835,
-               "watered"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599784,
-         "stage": 2,
-         "substage": 1,
-         "id": "e49"
-      },
-      "d48": {
-         "owner": "abrockman",
-         "strain": "lkg",
-         "xp": 2250,
-         "care": [
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34145168,
-               "watered",
-               "c"
-            ],
-            [
-               34118321,
-               "watered"
-            ],
-            [
-               34086286,
-               "watered",
-               "c"
-            ],
-            [
-               34056194,
-               "watered",
-               "c"
-            ],
-            [
-               34036395,
-               "watered"
-            ],
-            [
-               34004359,
-               "watered",
-               "c"
-            ],
-            [
-               33976473,
-               "watered",
-               "c"
-            ],
-            [
-               33941571,
-               "watered",
-               "c"
-            ],
-            [
-               33915313,
-               "watered"
-            ],
-            [
-               33890835,
-               "watered",
-               "c"
-            ],
-            [
-               33856553,
-               "watered",
-               "c"
-            ],
-            [
-               33831613,
-               "watered"
-            ],
-            [
-               33802324,
-               "watered",
-               "c"
-            ],
-            [
-               33773429,
-               "watered",
-               "c"
-            ],
-            [
-               33743862,
-               "watered",
-               "c"
-            ],
-            [
-               33709199,
-               "watered",
-               "c"
-            ],
-            [
-               33690213,
-               "watered"
-            ],
-            [
-               33657218,
-               "watered",
-               "c"
-            ],
-            [
-               33624933,
-               "watered",
-               "c"
-            ],
-            [
-               33599806,
-               "watered"
-            ]
-         ],
-         "aff": [],
-         "planted": 33599788,
-         "stage": 2,
-         "substage": 1,
-         "id": "d48"
-      },
-      "f30": {
-         "owner": "chronocrypto",
          "strain": "aca",
          "xp": 2250,
          "care": [
             [
-               34141325,
-               "watered"
-            ],
-            [
-               34111945,
+               37691874,
                "watered",
                "c"
             ],
             [
-               34098566,
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33668321,
+         "stage": 3,
+         "substage": 3,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36793420
+      },
+      "a67": {
+         "owner": "abrockman",
+         "strain": "pam",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 3,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 36631375
+      },
+      "e49": {
+         "owner": "abrockman",
+         "strain": "cg",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
          "stage": 1,
          "substage": 12,
-         "id": "f30"
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37255412
+      },
+      "d48": {
+         "owner": "abrockman",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 1,
+         "substage": 9,
+         "traits": [],
+         "terps": {},
+         "planted": 37308680
+      },
+      "f30": {
+         "owner": "chronocrypto",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               36898208,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
       },
       "c61": {
          "owner": "bauloewe",
          "strain": "swz",
          "xp": 2250,
          "care": [
+            [
+               34168570,
+               "watered",
+               "c"
+            ],
             [
                34156227,
                "watered"
@@ -10212,25 +4163,12 @@ module.exports = {
                34145412,
                "watered",
                "c"
-            ],
-            [
-               34156226,
-               "watered"
-            ],
-            [
-               34145413,
-               "watered",
-               "c"
-            ],
-            [
-               34140598,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 33715931,
          "stage": 2,
-         "substage": 3,
+         "substage": 4,
          "id": "c61"
       },
       "c62": {
@@ -10239,6 +4177,11 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
+               34168570,
+               "watered",
+               "c"
+            ],
+            [
                34156227,
                "watered"
             ],
@@ -10246,25 +4189,12 @@ module.exports = {
                34145412,
                "watered",
                "c"
-            ],
-            [
-               34156226,
-               "watered"
-            ],
-            [
-               34145413,
-               "watered",
-               "c"
-            ],
-            [
-               34140598,
-               "watered"
             ]
          ],
          "aff": [],
          "planted": 33716139,
          "stage": 2,
-         "substage": 3,
+         "substage": 4,
          "id": "c62"
       },
       "e50": {
@@ -10286,19 +4216,6 @@ module.exports = {
                33763284,
                "watered",
                "c"
-            ],
-            [
-               33746492,
-               "watered"
-            ],
-            [
-               33730525,
-               "watered",
-               "c"
-            ],
-            [
-               33721874,
-               "watered"
             ]
          ],
          "aff": [],
@@ -10325,19 +4242,6 @@ module.exports = {
                33763284,
                "watered",
                "c"
-            ],
-            [
-               33746492,
-               "watered"
-            ],
-            [
-               33730525,
-               "watered",
-               "c"
-            ],
-            [
-               33722087,
-               "watered"
             ]
          ],
          "aff": [],
@@ -10351,26 +4255,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34118753,
+               37674765,
                "watered",
                "c"
             ],
             [
-               34093392,
+               37603267,
                "watered",
                "c"
             ],
             [
-               34064157,
-               "watered",
-               "c"
+               37589522,
+               "watered"
             ]
          ],
          "aff": [],
          "planted": 33723480,
-         "stage": 2,
-         "substage": 0,
-         "id": "f21"
+         "stage": 8,
+         "substage": 11,
+         "id": "f21",
+         "sex": 0
       },
       "f14": {
          "owner": "ecoinstar",
@@ -10378,39 +4282,26 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34146014,
+               37407289,
+               "watered",
+               "c"
+            ],
+            [
+               37372345,
+               "watered",
+               "c"
+            ],
+            [
+               37361618,
                "watered"
-            ],
-            [
-               34146013,
-               "watered"
-            ],
-            [
-               34126642,
-               "watered",
-               "c"
-            ],
-            [
-               34093148,
-               "watered",
-               "c"
-            ],
-            [
-               34053123,
-               "watered",
-               "c"
-            ],
-            [
-               34008904,
-               "watered",
-               "c"
             ]
          ],
          "aff": [],
          "planted": 33747730,
-         "stage": 1,
-         "substage": 8,
-         "id": "f14"
+         "stage": 6,
+         "substage": 5,
+         "id": "f14",
+         "sex": 1
       },
       "e32": {
          "owner": "ecoinstar",
@@ -10418,40 +4309,27 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34146014,
+               37407289,
                "watered",
                "c"
             ],
             [
-               34146013,
+               37372345,
                "watered",
                "c"
             ],
             [
-               34126642,
-               "watered"
-            ],
-            [
-               34093148,
-               "watered",
-               "c"
-            ],
-            [
-               34053123,
-               "watered",
-               "c"
-            ],
-            [
-               34008904,
+               37361618,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33747743,
-         "stage": 1,
-         "substage": 10,
-         "id": "e32"
+         "stage": 6,
+         "substage": 9,
+         "id": "e32",
+         "sex": 0
       },
       "e51": {
          "owner": "heremonium",
@@ -10459,30 +4337,24 @@ module.exports = {
          "xp": 1,
          "care": [
             [
-               34158816,
-               "watered"
-            ],
-            [
-               34130678,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               34101390,
+               37592312,
                "watered",
                "c"
             ],
             [
-               34074749,
+               36928996,
                "watered",
                "c"
+            ],
+            [
+               36875503,
+               "harvested"
             ]
          ],
          "aff": [],
          "planted": 33795208,
-         "stage": 1,
-         "substage": 9,
+         "stage": 2,
+         "substage": 12,
          "id": "e51"
       },
       "e52": {
@@ -10491,26 +4363,25 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34141978,
-               "watered",
-               "c",
-               "c"
-            ],
-            [
-               33925880,
+               35305174,
                "watered",
                "c"
             ],
             [
-               33897532,
+               35194029,
+               "watered",
+               "c"
+            ],
+            [
+               35106912,
                "watered",
                "c"
             ]
          ],
          "aff": [],
          "planted": 33868363,
-         "stage": 1,
-         "substage": 5,
+         "stage": 2,
+         "substage": 7,
          "id": "e52"
       },
       "e7": {
@@ -10519,25 +4390,24 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34006335,
+               37668740,
                "watered",
                "c"
             ],
             [
-               33932753,
+               37573231,
                "watered",
                "c"
             ],
             [
-               33889102,
-               "watered",
-               "c"
+               37546851,
+               "watered"
             ]
          ],
          "aff": [],
          "planted": 33889017,
-         "stage": 1,
-         "substage": 3
+         "stage": 3,
+         "substage": 6
       },
       "b1": {
          "owner": "ghosthunter1",
@@ -10545,159 +4415,2779 @@ module.exports = {
          "xp": 2250,
          "care": [
             [
-               34006335,
+               37668740,
                "watered",
                "c"
             ],
             [
-               33932753,
+               37573231,
                "watered",
                "c"
             ],
             [
-               33889102,
+               37546851,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 33889021,
+         "stage": 3,
+         "substage": 5
+      },
+      "c60": {
+         "owner": "chronocrypto",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37092615,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "a68": {
+         "owner": "chronocrypto",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37131017,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "d49": {
+         "owner": "chronocrypto",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37255813,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "e44": {
+         "owner": "chronocrypto",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37170610,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "d50": {
+         "owner": "chronocrypto",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37255813,
+               ""
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "a18": {
+         "owner": "ngc",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               34314814,
                "watered",
                "c"
             ]
          ],
          "aff": [],
-         "planted": 33889021,
+         "planted": 34290212,
+         "stage": 1,
+         "substage": 1
+      },
+      "d4": {
+         "owner": "ngc",
+         "strain": "cg",
+         "xp": 2250,
+         "care": [
+            [
+               34314814,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34290219,
+         "stage": 1,
+         "substage": 1
+      },
+      "c8": {
+         "owner": "ngc",
+         "strain": "kbr",
+         "xp": 2250,
+         "care": [
+            [
+               34314814,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34290229,
+         "stage": 1,
+         "substage": 1
+      },
+      "e58": {
+         "owner": "nutritree",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37679866,
+               "watered",
+               "c"
+            ],
+            [
+               37653364,
+               "watered",
+               "c"
+            ],
+            [
+               37625779,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "f33": {
+         "owner": "nutritree",
+         "strain": "cg",
+         "xp": 50,
+         "care": [
+            [
+               37679866,
+               "watered",
+               "c"
+            ],
+            [
+               37653364,
+               "watered",
+               "c"
+            ],
+            [
+               37625779,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": 1,
+         "substage": 8,
+         "traits": [
+            "beta"
+         ],
+         "terps": {},
+         "planted": 37462681
+      },
+      "d54": {
+         "owner": "nutritree",
+         "strain": "",
+         "xp": 0,
+         "care": [
+            [
+               37679866,
+               "watered",
+               "c"
+            ],
+            [
+               37653364,
+               "watered",
+               "c"
+            ],
+            [
+               37625779,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "stage": -1,
+         "substage": 0,
+         "traits": [],
+         "terps": []
+      },
+      "a8": {
+         "owner": "prettynicevideo",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               35503933,
+               "watered",
+               "c"
+            ],
+            [
+               35481065,
+               "watered",
+               "c"
+            ],
+            [
+               35481061,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 34352651,
+         "stage": 1,
+         "substage": 5
+      },
+      "f34": {
+         "owner": "abrockman",
+         "strain": "hk",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34838074,
+         "stage": 7,
+         "substage": 9,
+         "id": "f34",
+         "sex": 1
+      },
+      "b64": {
+         "owner": "abrockman",
+         "strain": "pam",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34838082,
+         "stage": 6,
+         "substage": 4,
+         "id": "b64",
+         "sex": 0
+      },
+      "f35": {
+         "owner": "abrockman",
+         "strain": "cht",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34838108,
+         "stage": 7,
+         "substage": 9,
+         "id": "f35",
+         "sex": 1
+      },
+      "c68": {
+         "owner": "abrockman",
+         "strain": "lb",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34838112,
+         "stage": 7,
+         "substage": 6,
+         "id": "c68",
+         "sex": 0
+      },
+      "d55": {
+         "owner": "abrockman",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34838132,
+         "stage": 6,
+         "substage": 3,
+         "id": "d55",
+         "sex": 1
+      },
+      "e60": {
+         "owner": "abrockman",
+         "strain": "mis",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34838135,
+         "stage": 6,
+         "substage": 4,
+         "id": "e60",
+         "sex": 0
+      },
+      "e61": {
+         "owner": "silverlining1",
+         "strain": "kbr",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34863376,
+         "stage": 5,
+         "substage": 5,
+         "sex": 1
+      },
+      "a72": {
+         "owner": "silverlining1",
+         "strain": "afg",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34863416,
+         "stage": 5,
+         "substage": 4,
+         "sex": 0
+      },
+      "e62": {
+         "owner": "road2nowhere",
+         "strain": "dp",
+         "xp": 10,
+         "care": [
+            [
+               37696427,
+               "watered"
+            ],
+            [
+               37637343,
+               "watered",
+               "c"
+            ],
+            [
+               37620774,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 34888425,
+         "stage": 5,
+         "substage": 9,
+         "sex": 1
+      },
+      "a73": {
+         "owner": "russia-btc",
+         "strain": "afg",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34918457,
+         "stage": 3,
+         "substage": 5
+      },
+      "b65": {
+         "owner": "russia-btc",
+         "strain": "kmj",
+         "xp": 10,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34918467,
+         "stage": 3,
+         "substage": 6
+      },
+      "c69": {
+         "owner": "russia-btc",
+         "strain": "hk",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34918478,
+         "stage": 3,
+         "substage": 6
+      },
+      "c70": {
+         "owner": "russia-btc",
+         "strain": "cht",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34923377,
+         "stage": 3,
+         "substage": 6
+      },
+      "d56": {
+         "owner": "russia-btc",
+         "strain": "pam",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34923464,
+         "stage": 3,
+         "substage": 6
+      },
+      "e63": {
+         "owner": "russia-btc",
+         "strain": "aca",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34923468,
+         "stage": 3,
+         "substage": 6
+      },
+      "a74": {
+         "owner": "russia-btc",
+         "strain": "mis",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34923473,
+         "stage": 3,
+         "substage": 5
+      },
+      "f36": {
+         "owner": "russia-btc",
+         "strain": "ach",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34923479,
+         "stage": 3,
+         "substage": 5
+      },
+      "b66": {
+         "owner": "russia-btc",
+         "strain": "kbr",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34923496,
+         "stage": 3,
+         "substage": 6
+      },
+      "a75": {
+         "owner": "russia-btc",
+         "strain": "lb",
+         "xp": 50,
+         "care": [
+            [
+               37455202,
+               "watered",
+               "c"
+            ],
+            [
+               37314997,
+               "watered",
+               "c"
+            ],
+            [
+               37254698,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 34947481,
+         "stage": 3,
+         "substage": 5
+      },
+      "a77": {
+         "owner": "qwoyn",
+         "strain": "mis",
+         "xp": 1,
+         "care": [
+            [
+               37692458,
+               "watered",
+               "c"
+            ],
+            [
+               37611638,
+               "watered",
+               "c"
+            ],
+            [
+               37468420,
+               "watered",
+               "c"
+            ],
+            [
+               37243919,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35387927,
+         "stage": 2,
+         "substage": 11,
+         "id": "a77"
+      },
+      "f38": {
+         "owner": "abrockman",
+         "strain": "cg",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35559089,
+         "stage": 6,
+         "substage": 1,
+         "id": "f38",
+         "sex": 0
+      },
+      "c71": {
+         "owner": "abrockman",
+         "strain": "pam",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35559096,
+         "stage": 5,
+         "substage": 12,
+         "id": "c71",
+         "sex": 1
+      },
+      "e64": {
+         "owner": "abrockman",
+         "strain": "mal",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35559109,
+         "stage": 5,
+         "substage": 1,
+         "id": "e64",
+         "sex": 0
+      },
+      "b67": {
+         "owner": "abrockman",
+         "strain": "swz",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35559114,
+         "stage": 5,
+         "substage": 1,
+         "id": "b67",
+         "sex": 1
+      },
+      "d58": {
+         "owner": "abrockman",
+         "strain": "kbr",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35559124,
+         "stage": 5,
+         "substage": 0,
+         "id": "d58",
+         "sex": 0
+      },
+      "a78": {
+         "owner": "abrockman",
+         "strain": "cht",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35559142,
+         "stage": 6,
+         "substage": 1,
+         "id": "a78",
+         "sex": 1
+      },
+      "a79": {
+         "owner": "abrockman",
+         "strain": "hk",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875023,
+         "stage": 5,
+         "substage": 4,
+         "sex": 0
+      },
+      "b68": {
+         "owner": "abrockman",
+         "strain": "lkg",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875043,
+         "stage": 4,
+         "substage": 5
+      },
+      "a80": {
+         "owner": "abrockman",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875053,
+         "stage": 5,
+         "substage": 4,
+         "sex": 1
+      },
+      "b69": {
+         "owner": "abrockman",
+         "strain": "lb",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875061,
+         "stage": 4,
+         "substage": 5
+      },
+      "f39": {
+         "owner": "abrockman",
+         "strain": "aca",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875068,
+         "stage": 5,
+         "substage": 4,
+         "sex": 0
+      },
+      "c72": {
+         "owner": "abrockman",
+         "strain": "afg",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875076,
+         "stage": 5,
+         "substage": 1,
+         "sex": 1
+      },
+      "d59": {
+         "owner": "abrockman",
+         "strain": "mis",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875082,
+         "stage": 4,
+         "substage": 4
+      },
+      "f40": {
+         "owner": "abrockman",
+         "strain": "kmj",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875085,
+         "stage": 5,
+         "substage": 4,
+         "sex": 0
+      },
+      "c73": {
+         "owner": "abrockman",
+         "strain": "kbr",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875093,
+         "stage": 5,
+         "substage": 1,
+         "sex": 0
+      },
+      "d60": {
+         "owner": "abrockman",
+         "strain": "swz",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875095,
+         "stage": 4,
+         "substage": 4
+      },
+      "e65": {
+         "owner": "abrockman",
+         "strain": "pam",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875102,
+         "stage": 4,
+         "substage": 5
+      },
+      "e66": {
+         "owner": "abrockman",
+         "strain": "mal",
+         "xp": 50,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35875108,
+         "stage": 4,
+         "substage": 5
+      },
+      "a81": {
+         "owner": "gerber",
+         "strain": "afg",
+         "xp": 50,
+         "care": [
+            [
+               37683402,
+               "watered",
+               "c"
+            ],
+            [
+               37661552,
+               "watered",
+               "c"
+            ],
+            [
+               37621737,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35953032,
+         "stage": 4,
+         "substage": 11
+      },
+      "e67": {
+         "owner": "agr8buzz",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37601927,
+               "watered",
+               "c"
+            ],
+            [
+               37564680,
+               "watered",
+               "c"
+            ],
+            [
+               37432652,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35954422,
+         "stage": 3,
+         "substage": 7
+      },
+      "c74": {
+         "owner": "silverlining1",
+         "strain": "cht",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35956167,
+         "stage": 3,
+         "substage": 5
+      },
+      "f41": {
+         "owner": "silverlining1",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 35956172,
+         "stage": 3,
+         "substage": 5
+      },
+      "c75": {
+         "owner": "saboin",
+         "strain": "cht",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36013655,
+         "stage": 4,
+         "substage": 11
+      },
+      "d61": {
+         "owner": "saboin",
+         "strain": "hk",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36014068,
+         "stage": 4,
+         "substage": 8
+      },
+      "f42": {
+         "owner": "silverlining1",
+         "strain": "aca",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36043400,
+         "stage": 3,
+         "substage": 2
+      },
+      "a82": {
+         "owner": "silverlining1",
+         "strain": "ach",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36043479,
+         "stage": 3,
+         "substage": 1
+      },
+      "b70": {
+         "owner": "silverlining1",
+         "strain": "kmj",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36043550,
+         "stage": 2,
+         "substage": 13
+      },
+      "f43": {
+         "owner": "silverlining1",
+         "strain": "aca",
+         "xp": 50,
+         "care": [
+            [
+               37573635,
+               "watered",
+               "c"
+            ],
+            [
+               37519119,
+               "watered",
+               "c"
+            ],
+            [
+               37399518,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36130536,
+         "stage": 2,
+         "substage": 13
+      },
+      "f44": {
+         "owner": "saboin",
+         "strain": "cg",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36223846,
+         "stage": 4,
+         "substage": 6
+      },
+      "f37": {
+         "owner": "mondoshawan",
+         "strain": "mis",
+         "xp": 750,
+         "care": [
+            [
+               37707016,
+               "watered"
+            ],
+            [
+               37685112,
+               "watered",
+               "c"
+            ],
+            [
+               37648850,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36240027,
+         "stage": 2,
+         "substage": 13,
+         "traits": [
+            "beta"
+         ]
+      },
+      "f15": {
+         "owner": "onthewayout",
+         "strain": "cg",
+         "xp": 1,
+         "care": [
+            [
+               37709933,
+               "watered"
+            ],
+            [
+               37682951,
+               "watered",
+               "c"
+            ],
+            [
+               37655306,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36244453,
+         "stage": 4,
+         "substage": 4,
+         "traits": [
+            "beta"
+         ]
+      },
+      "d57": {
+         "owner": "mondoshawan",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               37707016,
+               "watered"
+            ],
+            [
+               37685112,
+               "watered",
+               "c"
+            ],
+            [
+               37648850,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36249210,
+         "stage": 2,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ]
+      },
+      "b71": {
+         "owner": "saboin",
+         "strain": "mal",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36340722,
+         "stage": 3,
+         "substage": 13
+      },
+      "a83": {
+         "owner": "saboin",
+         "strain": "afg",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36340731,
+         "stage": 4,
+         "substage": 3
+      },
+      "c76": {
+         "owner": "aggamun",
+         "strain": "mal",
+         "xp": 50,
+         "care": [
+            [
+               37102474,
+               "watered",
+               "c"
+            ],
+            [
+               37078909,
+               "watered",
+               "c"
+            ],
+            [
+               37067629,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 36380669,
+         "stage": 2,
+         "substage": 11
+      },
+      "f45": {
+         "owner": "aggamun",
+         "strain": "swz",
+         "xp": 50,
+         "care": [
+            [
+               37102474,
+               "watered",
+               "c"
+            ],
+            [
+               37078909,
+               "watered",
+               "c"
+            ],
+            [
+               37067629,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36380711,
+         "stage": 2,
+         "substage": 12
+      },
+      "f46": {
+         "owner": "theb0red1",
+         "strain": "cg",
+         "xp": 50,
+         "care": [
+            [
+               37696918,
+               "watered",
+               "c"
+            ],
+            [
+               37671448,
+               "watered",
+               "c"
+            ],
+            [
+               37522063,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36489332,
+         "stage": 2,
+         "substage": 11
+      },
+      "a84": {
+         "owner": "news-today",
+         "strain": "mis",
+         "xp": 50,
+         "care": [
+            [
+               36593501,
+               "watered",
+               "c"
+            ],
+            [
+               36568000,
+               "watered",
+               "c"
+            ],
+            [
+               36514407,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36514377,
          "stage": 1,
          "substage": 3
       },
-      "c60": {
+      "c77": {
+         "owner": "saboin",
+         "strain": "ach",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36550308,
+         "stage": 3,
+         "substage": 10
+      },
+      "d62": {
+         "owner": "saboin",
+         "strain": "tha",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36550315,
+         "stage": 3,
+         "substage": 7
+      },
+      "f47": {
+         "owner": "mulletwang",
+         "strain": "tha",
+         "xp": 50,
+         "care": [
+            [
+               37696403,
+               "watered",
+               "c"
+            ],
+            [
+               37666270,
+               "watered",
+               "c"
+            ],
+            [
+               37630250,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36624260,
+         "stage": 2,
+         "substage": 10
+      },
+      "d63": {
+         "owner": "monsterbuster",
+         "strain": "cg",
+         "xp": 10,
+         "care": [
+            [
+               37702527,
+               "watered"
+            ],
+            [
+               37673215,
+               "watered",
+               "c"
+            ],
+            [
+               37647028,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36646019,
+         "stage": 3,
+         "substage": 4
+      },
+      "b72": {
+         "owner": "abrockman",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36654743,
+         "stage": 2,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ]
+      },
+      "c78": {
+         "owner": "abrockman",
+         "strain": "dp",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36654746,
+         "stage": 3,
+         "substage": 8,
+         "traits": [
+            "beta"
+         ]
+      },
+      "d64": {
+         "owner": "abrockman",
+         "strain": "lb",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36654755,
+         "stage": 2,
+         "substage": 13,
+         "traits": [
+            "beta"
+         ]
+      },
+      "e71": {
+         "owner": "abrockman",
+         "strain": "kbr",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36654758,
+         "stage": 2,
+         "substage": 13,
+         "traits": [
+            "beta"
+         ]
+      },
+      "c79": {
+         "owner": "abrockman",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36654768,
+         "stage": 3,
+         "substage": 8,
+         "traits": [
+            "beta"
+         ]
+      },
+      "f50": {
+         "owner": "abrockman",
+         "strain": "kmj",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered",
+               "c"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36654773,
+         "stage": 3,
+         "substage": 8,
+         "traits": [
+            "beta"
+         ]
+      },
+      "f51": {
+         "owner": "luegenbaron",
+         "strain": "kmj",
+         "xp": 50,
+         "care": [
+            [
+               37703082,
+               "watered",
+               "c"
+            ],
+            [
+               37673673,
+               "watered",
+               "c"
+            ],
+            [
+               37647121,
+               "watered"
+            ]
+         ],
+         "aff": [],
+         "planted": 36666775,
+         "stage": 3,
+         "substage": 4
+      },
+      "d65": {
+         "owner": "luegenbaron",
+         "strain": "swz",
+         "xp": 50,
+         "care": [
+            [
+               37703082,
+               "watered"
+            ],
+            [
+               37673673,
+               "watered",
+               "c"
+            ],
+            [
+               37647121,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36666802,
+         "stage": 3,
+         "substage": 8
+      },
+      "b73": {
+         "owner": "abrockman",
+         "strain": "mis",
+         "xp": 2250,
+         "care": [
+            [
+               37691874,
+               "watered"
+            ],
+            [
+               37691871,
+               "harvested"
+            ],
+            [
+               37658333,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36680905,
+         "stage": 2,
+         "substage": 12,
+         "traits": [
+            "beta"
+         ]
+      },
+      "e72": {
+         "owner": "psyo",
+         "strain": "aca",
+         "xp": 50,
+         "care": [
+            [
+               37690705,
+               "watered"
+            ],
+            [
+               37629839,
+               "watered",
+               "c"
+            ],
+            [
+               37568460,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36788935,
+         "stage": 2,
+         "substage": 9
+      },
+      "e70": {
+         "owner": "saboin",
+         "strain": "kbr",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36793676,
+         "stage": 3,
+         "substage": 0
+      },
+      "f52": {
+         "owner": "chunkysoupsvc",
+         "strain": "hk",
+         "xp": 10,
+         "care": [
+            [
+               37640413,
+               "watered",
+               "c"
+            ],
+            [
+               37579201,
+               "watered",
+               "c"
+            ],
+            [
+               37514018,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36808759,
+         "stage": 2,
+         "substage": 5
+      },
+      "f48": {
+         "owner": "mulletwang",
+         "strain": "tha",
+         "xp": 50,
+         "care": [
+            [
+               37696403,
+               "watered",
+               "c"
+            ],
+            [
+               37666270,
+               "watered",
+               "c"
+            ],
+            [
+               37630250,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36942849,
+         "stage": 2,
+         "substage": 2
+      },
+      "f49": {
+         "owner": "mulletwang",
+         "strain": "tha",
+         "xp": 50,
+         "care": [
+            [
+               37696403,
+               "watered",
+               "c"
+            ],
+            [
+               37666270,
+               "watered",
+               "c"
+            ],
+            [
+               37630250,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36942869,
+         "stage": 2,
+         "substage": 2
+      },
+      "f53": {
+         "owner": "theb0red1",
+         "strain": "cg",
+         "xp": 50,
+         "care": [
+            [
+               37696918,
+               "watered",
+               "c"
+            ],
+            [
+               37671448,
+               "watered",
+               "c"
+            ],
+            [
+               37522063,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36946523,
+         "stage": 1,
+         "substage": 13
+      },
+      "f54": {
+         "owner": "theb0red1",
+         "strain": "cg",
+         "xp": 50,
+         "care": [
+            [
+               37696918,
+               "watered",
+               "c"
+            ],
+            [
+               37671448,
+               "watered",
+               "c"
+            ],
+            [
+               37522063,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 36946537,
+         "stage": 1,
+         "substage": 13
+      },
+      "f55": {
+         "owner": "saboin",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 37021811,
+         "stage": 2,
+         "substage": 10
+      },
+      "b74": {
+         "owner": "saboin",
+         "strain": "kmj",
+         "xp": 50,
+         "care": [
+            [
+               37708792,
+               "watered"
+            ],
+            [
+               37680321,
+               "watered",
+               "c"
+            ],
+            [
+               37656706,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 37021825,
+         "stage": 2,
+         "substage": 7
+      },
+      "e73": {
+         "owner": "rachaeldwatson",
+         "strain": "hk",
+         "xp": 1,
+         "care": [
+            [
+               37706610,
+               "watered"
+            ],
+            [
+               37676482,
+               "watered",
+               "c"
+            ],
+            [
+               37648584,
+               "watered",
+               "c"
+            ]
+         ],
+         "aff": [],
+         "planted": 37078322,
+         "stage": 2,
+         "substage": 8
+      },
+      "a69": {
+         "owner": "chronocrypto",
+         "strain": "afg",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered",
+               "c"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37460554,
+         "stage": 1,
+         "substage": 9
+      },
+      "a70": {
+         "owner": "chronocrypto",
+         "strain": "kbr",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered",
+               "c"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37460593,
+         "stage": 1,
+         "substage": 9
+      },
+      "b61": {
          "owner": "chronocrypto",
          "strain": "hk",
          "xp": 2250,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
+               37696035,
+               "harvested"
             ],
             [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
+               37696033,
                "watered"
+            ],
+            [
+               37669099,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33952507,
+         "planted": 37460894,
          "stage": 1,
-         "substage": 7,
-         "id": "c60"
+         "substage": 7
       },
-      "a68": {
+      "b62": {
+         "owner": "chronocrypto",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37460915,
+         "stage": 1,
+         "substage": 7
+      },
+      "c63": {
          "owner": "chronocrypto",
          "strain": "dp",
          "xp": 2250,
          "care": [
             [
-               34141325,
-               "watered"
+               37696035,
+               "harvested"
             ],
             [
-               34111945,
+               37696033,
                "watered",
                "c"
             ],
             [
-               34098566,
-               "watered",
-               "c"
+               37669099,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33952511,
+         "planted": 37460922,
          "stage": 1,
-         "substage": 6,
-         "id": "a68"
+         "substage": 8
       },
-      "d49": {
+      "c64": {
          "owner": "chronocrypto",
-         "strain": "lkg",
+         "strain": "dp",
          "xp": 2250,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
+               37696035,
+               "harvested"
             ],
             [
-               34111945,
+               37696033,
                "watered",
                "c"
             ],
             [
-               34098566,
-               "watered"
+               37669099,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33952516,
+         "planted": 37460930,
          "stage": 1,
-         "substage": 7,
-         "id": "d49"
+         "substage": 8
       },
-      "e44": {
+      "d52": {
          "owner": "chronocrypto",
          "strain": "lb",
          "xp": 2250,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
+               37696035,
+               "harvested"
             ],
             [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
+               37696033,
                "watered"
+            ],
+            [
+               37669099,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33952525,
+         "planted": 37460937,
          "stage": 1,
-         "substage": 7,
-         "id": "e44"
+         "substage": 7
       },
-      "d50": {
+      "d53": {
          "owner": "chronocrypto",
-         "strain": "cht",
+         "strain": "lb",
          "xp": 2250,
          "care": [
             [
-               34141325,
-               "watered",
-               "c",
-               "c"
+               37696035,
+               "harvested"
             ],
             [
-               34111945,
-               "watered",
-               "c"
-            ],
-            [
-               34098566,
+               37696033,
                "watered"
+            ],
+            [
+               37669099,
+               "harvested"
             ]
          ],
          "aff": [],
-         "planted": 33952529,
+         "planted": 37460967,
+         "stage": 1,
+         "substage": 7
+      },
+      "e53": {
+         "owner": "chronocrypto",
+         "strain": "lb",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37460985,
          "stage": 1,
          "substage": 7,
-         "id": "d50"
+         "traits": [
+            "beta"
+         ]
+      },
+      "e54": {
+         "owner": "chronocrypto",
+         "strain": "lb",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37461000,
+         "stage": 1,
+         "substage": 7,
+         "traits": [
+            "beta"
+         ]
+      },
+      "c65": {
+         "owner": "chronocrypto",
+         "strain": "cht",
+         "xp": 50,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered",
+               "c"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37461238,
+         "stage": 1,
+         "substage": 8
+      },
+      "a71": {
+         "owner": "chronocrypto",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered",
+               "c"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37461245,
+         "stage": 1,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ]
+      },
+      "f31": {
+         "owner": "chronocrypto",
+         "strain": "tha",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered",
+               "c"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37461388,
+         "stage": 1,
+         "substage": 9,
+         "traits": [
+            "beta"
+         ]
+      },
+      "f32": {
+         "owner": "chronocrypto",
+         "strain": "dp",
+         "xp": 50,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered",
+               "c"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37461854,
+         "stage": 1,
+         "substage": 9
+      },
+      "b63": {
+         "owner": "chronocrypto",
+         "strain": "lkg",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37461884,
+         "stage": 1,
+         "substage": 7,
+         "traits": [
+            "beta"
+         ]
+      },
+      "e55": {
+         "owner": "chronocrypto",
+         "strain": "lkg",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37461937,
+         "stage": 1,
+         "substage": 7,
+         "traits": [
+            "beta"
+         ]
+      },
+      "e56": {
+         "owner": "chronocrypto",
+         "strain": "hk",
+         "xp": 2250,
+         "care": [
+            [
+               37696035,
+               "harvested"
+            ],
+            [
+               37696033,
+               "watered"
+            ],
+            [
+               37669099,
+               "harvested"
+            ]
+         ],
+         "aff": [],
+         "planted": 37462033,
+         "stage": 1,
+         "substage": 7,
+         "traits": [
+            "beta"
+         ]
       }
    },
    "users": {
@@ -10706,13 +7196,9 @@ module.exports = {
             "a1",
             "f20",
             "c53",
-            "e40",
             "f22",
-            "f23",
             "f24",
-            "e41",
-            "f27",
-            "e46"
+            "f27"
          ],
          "seeds": [],
          "inv": [],
@@ -10735,7 +7221,6 @@ module.exports = {
             "e11",
             "f9",
             "b42",
-            "c43",
             "d36"
          ],
          "seeds": [],
@@ -10780,7 +7265,12 @@ module.exports = {
          "addrs": [
             "a6"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "tha",
+               "xp": 10
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 1
@@ -10793,10 +7283,6 @@ module.exports = {
             "f1"
          ],
          "seeds": [
-            {
-               "strain": "afg",
-               "xp": 2250
-            },
             {
                "strain": "cg",
                "xp": 2250
@@ -10828,12 +7314,18 @@ module.exports = {
       "qwoyn": {
          "addrs": [
             "a10",
-            "c46"
+            "c46",
+            "a77"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "swz",
+               "xp": 50
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 1
+         "v": 0
       },
       "disregardfiat": {
          "addrs": [
@@ -10948,9 +7440,38 @@ module.exports = {
          "addrs": [
             "b5",
             "c37",
-            "e16"
+            "e16",
+            "a89",
+            "f51",
+            "d65"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "dp",
+               "xp": 50
+            },
+            {
+               "strain": "kbr",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 0,
@@ -11066,15 +7587,7 @@ module.exports = {
          ],
          "seeds": [
             {
-               "strain": "afg",
-               "xp": 2250
-            },
-            {
                "strain": "lkg",
-               "xp": 2250
-            },
-            {
-               "strain": "cg",
                "xp": 2250
             },
             {
@@ -11083,10 +7596,6 @@ module.exports = {
             },
             {
                "strain": "lb",
-               "xp": 2250
-            },
-            {
-               "strain": "kbr",
                "xp": 2250
             },
             {
@@ -11287,10 +7796,18 @@ module.exports = {
             "f6",
             "f15"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "cg",
+               "xp": 1,
+               "traits": [
+                  "beta"
+               ]
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 0,
+         "v": 1,
          "a": 0,
          "u": 0
       },
@@ -11366,9 +7883,30 @@ module.exports = {
             "e14",
             "e15",
             "b41",
-            "c38"
+            "c38",
+            "f37",
+            "d57"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "kmj",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "swz",
+               "xp": 50
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 0,
@@ -11376,9 +7914,7 @@ module.exports = {
          "u": 0
       },
       "stephanus": {
-         "addrs": [
-            "b39"
-         ],
+         "addrs": [],
          "seeds": [],
          "inv": [],
          "stats": [],
@@ -11448,7 +7984,34 @@ module.exports = {
             "f11",
             "e35"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "afg",
+               "xp": 50
+            },
+            {
+               "strain": "mis",
+               "xp": 50
+            },
+            {
+               "strain": "lb",
+               "xp": 750,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lb",
+               "xp": 750,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lb",
+               "xp": 50
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 0
@@ -11490,9 +8053,300 @@ module.exports = {
             "b60",
             "c59",
             "d48",
-            "e49"
+            "e49",
+            "f34",
+            "f35",
+            "b64",
+            "c68",
+            "d55",
+            "e60",
+            "a78",
+            "b67",
+            "c71",
+            "d58",
+            "e64",
+            "f38",
+            "a79",
+            "a80",
+            "b68",
+            "b69",
+            "c72",
+            "c73",
+            "d59",
+            "d60",
+            "e65",
+            "e66",
+            "f39",
+            "f40",
+            "a88",
+            "b72",
+            "c78",
+            "c79",
+            "d64",
+            "f50",
+            "e71",
+            "a90",
+            "b73"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "swz",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lb",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lb",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "ach",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "ach",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cht",
+               "xp": 50
+            },
+            {
+               "strain": "lb",
+               "xp": 50
+            },
+            {
+               "strain": "kbr",
+               "xp": 50
+            },
+            {
+               "strain": "swz",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "swz",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "mis",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "mis",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "kmj",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "kmj",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cht",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cht",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "mal",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "mal",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "tha",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "kbr",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "kbr",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lkg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 0
@@ -11502,7 +8356,15 @@ module.exports = {
             "c40",
             "f21"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 0
@@ -11528,9 +8390,309 @@ module.exports = {
             "b52",
             "b53",
             "b54",
-            "b55"
+            "b55",
+            "f47",
+            "f48",
+            "f49"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "tha",
+               "xp": 50
+            },
+            {
+               "strain": "tha",
+               "xp": 50
+            },
+            {
+               "strain": "tha",
+               "xp": 50
+            },
+            {
+               "strain": "kbr",
+               "xp": 50
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lb",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lb",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "tha",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "tha",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "tha",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "tha",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "swz",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "swz",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "tha",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "tha",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "kmj",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "kmj",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cht",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cht",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "ach",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "ach",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 0
@@ -11626,11 +8788,8 @@ module.exports = {
       },
       "hotsauceislethal": {
          "addrs": [
-            "a55",
             "b49",
-            "c49",
             "d37",
-            "e37",
             "f16"
          ],
          "seeds": [],
@@ -11641,12 +8800,34 @@ module.exports = {
       "aggamun": {
          "addrs": [
             "c51",
-            "d38"
+            "d38",
+            "e68",
+            "f45",
+            "c76"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "cg",
+               "xp": 50
+            },
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cht",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            }
+         ],
          "inv": [],
          "stats": [],
-         "v": 0
+         "v": 1
       },
       "steembeem": {
          "addrs": [],
@@ -11733,44 +8914,180 @@ module.exports = {
             "b63",
             "c65",
             "e55",
-            "e56"
+            "e56",
+            "a85",
+            "a86",
+            "a87"
          ],
          "seeds": [
             {
-               "strain": "afg",
-               "xp": 2250
+               "strain": "lkg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
             },
             {
-               "strain": "kbr",
-               "xp": 2250
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lb",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "afg",
+               "xp": 50
             },
             {
                "strain": "tha",
-               "xp": 2250
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
             },
             {
-               "strain": "hk",
-               "xp": 2250
+               "strain": "swz",
+               "xp": 50
             },
             {
-               "strain": "hk",
-               "xp": 2250
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "afg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
             },
             {
                "strain": "dp",
-               "xp": 2250
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "pam",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "aca",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
             },
             {
                "strain": "dp",
-               "xp": 2250
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
             },
             {
                "strain": "lb",
-               "xp": 2250
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
             },
             {
-               "strain": "lb",
-               "xp": 2250
+               "strain": "cht",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "cht",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "lkg",
+               "xp": 2250,
+               "traits": [
+                  "beta"
+               ]
             }
          ],
          "inv": [],
@@ -11804,11 +9121,8 @@ module.exports = {
       },
       "yabapmatt": {
          "addrs": [
-            "b57",
             "d45",
-            "f26",
-            "c56",
-            "a63"
+            "c56"
          ],
          "seeds": [],
          "inv": [],
@@ -11850,7 +9164,12 @@ module.exports = {
          "addrs": [
             "e51"
          ],
-         "seeds": [],
+         "seeds": [
+            {
+               "strain": "hk",
+               "xp": 50
+            }
+         ],
          "inv": [],
          "stats": [],
          "v": 0
@@ -11860,6 +9179,10 @@ module.exports = {
          "seeds": [
             {
                "strain": "mis",
+               "xp": 1
+            },
+            {
+               "strain": "afg",
                "xp": 1
             }
          ],
@@ -11877,6 +9200,328 @@ module.exports = {
          "v": 0,
          "a": 0,
          "u": 0
+      },
+      "mistakili": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "nutritree": {
+         "addrs": [
+            "d54",
+            "e58",
+            "f33"
+         ],
+         "seeds": [
+            {
+               "strain": "cg",
+               "xp": 50,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 1,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "dp",
+               "xp": 1,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 50,
+               "traits": [
+                  "beta"
+               ]
+            },
+            {
+               "strain": "hk",
+               "xp": 50,
+               "traits": [
+                  "beta"
+               ]
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "cgame": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "sgt-dan": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "silverlining1": {
+         "addrs": [
+            "e61",
+            "a72",
+            "c74",
+            "f41",
+            "f42",
+            "a82",
+            "b70",
+            "f43"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "road2nowhere": {
+         "addrs": [
+            "e62"
+         ],
+         "seeds": [
+            {
+               "strain": "lb",
+               "xp": 10
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "russia-btc": {
+         "addrs": [
+            "a73",
+            "e63",
+            "b65",
+            "c69",
+            "a74",
+            "c70",
+            "f36",
+            "d56",
+            "b66",
+            "a75"
+         ],
+         "seeds": [
+            {
+               "strain": "afg",
+               "xp": 10
+            },
+            {
+               "strain": "lkg",
+               "xp": 1
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "ttg": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "nathen007": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "stmpay": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "gerber": {
+         "addrs": [
+            "a81"
+         ],
+         "seeds": [
+            {
+               "strain": "dp",
+               "xp": 50
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "agr8buzz": {
+         "addrs": [
+            "e67"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "zonguin": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "saboin": {
+         "addrs": [
+            "c75",
+            "d61",
+            "f44",
+            "a83",
+            "b71",
+            "c77",
+            "d62",
+            "e70",
+            "a91",
+            "f55",
+            "b74"
+         ],
+         "seeds": [
+            {
+               "strain": "lkg",
+               "xp": 50
+            },
+            {
+               "strain": "pam",
+               "xp": 50
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "dtube": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "steem-hodler": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "theb0red1": {
+         "addrs": [
+            "f46",
+            "f53",
+            "f54"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "news-today": {
+         "addrs": [
+            "e69",
+            "a84"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "ginabot": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "monsterbuster": {
+         "addrs": [
+            "d63"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "chunkysoupsvc": {
+         "addrs": [
+            "f52"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "martie7": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0,
+         "a": 0,
+         "u": 0
+      },
+      "psyo": {
+         "addrs": [
+            "e72"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "rachaeldwatson": {
+         "addrs": [
+            "e73"
+         ],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "fucksteak": {
+         "addrs": [],
+         "seeds": [
+            {
+               "strain": "kbr",
+               "xp": 50
+            }
+         ],
+         "inv": [],
+         "stats": [],
+         "v": 0
+      },
+      "wdougwatson": {
+         "addrs": [],
+         "seeds": [],
+         "inv": [],
+         "stats": [],
+         "v": 0
       }
    },
    "news": {
@@ -11894,39 +9539,102 @@ module.exports = {
    "payday": [
       [
          {
-            "account": "ecoinstar",
+            "account": "ghosthunter1",
+            "weight": 9999
+         }
+      ],
+      [
+         {
+            "account": "luegenbaron",
             "weight": 10000
          }
       ],
       [
          {
-            "account": "bauloewe",
-            "weight": 10000
+            "account": "theb0red1",
+            "weight": 9999
          }
       ],
       [
          {
-            "account": "choosefreedom",
-            "weight": 10000
+            "account": "mulletwang",
+            "weight": 9996
          }
       ],
       [
          {
-            "account": "heremonium",
-            "weight": 10000
+            "account": "mondoshawan",
+            "weight": 9999
          }
       ],
       [
          {
-            "account": "gamewatch",
-            "weight": 10000
+            "account": "onthewayout",
+            "weight": 6666
+         },
+         {
+            "account": "qwoyn",
+            "weight": 3333
          }
       ],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+         {
+            "account": "nutritree",
+            "weight": 5000
+         },
+         {
+            "account": "rachaeldwatson",
+            "weight": 5000
+         }
+      ],
+      [
+         {
+            "account": "gerber",
+            "weight": 5000
+         },
+         {
+            "account": "monsterbuster",
+            "weight": 5000
+         }
+      ]
    ],
-   "blacklist": {}
+   "blacklist": {
+      "zonguin": true
+   },
+   "cs": {
+      "37666269:mulletwang": "mulletwang watered b52 b53 b54 b55 f47 f48 f49 ",
+      "37666280:mulletwang": "mulletwang harvested b55 b54 b53 b52 ",
+      "37668739:ghosthunter1": "ghosthunter1 watered a9 b1 e7 ",
+      "37669094:chronocrypto": "chronocrypto watered a69 a70 b61 b62 c63 c64 d52 d53 e53 e54 f31 f32 a71 b63 c65 e55 e56 ",
+      "37669098:chronocrypto": "chronocrypto harvested a69 a70 b61 b62 c63 c64 d52 d53 e53 e54 f31 f32 a71 b63 c65 e55 e56 ",
+      "37671446:theb0red1": "theb0red1 watered f46 f54 f53 ",
+      "37673213:monsterbuster": "monsterbuster watered d63 ",
+      "37673672:luegenbaron": "luegenbaron watered b5 c37 e16 f51 d65 ",
+      "37674764:romiferns": "romiferns watered c40 f21 ",
+      "37675646:wdougwatson": "wdougwatson watered e74 ",
+      "37676481:rachaeldwatson": "rachaeldwatson watered e73 ",
+      "37679175:wdougwatson": "0 vested",
+      "37679864:nutritree": "nutritree watered d54 e58 f33 ",
+      "37680319:saboin": "saboin watered c75 d61 f44 a83 b71 c77 d62 e70 f55 b74 ",
+      "37681445:bluntsmasha": "bluntsmasha watered a11 b2 c1 f2 ",
+      "37682950:onthewayout": "onthewayout watered f6 f15 ",
+      "37683400:gerber": "gerber watered a81 ",
+      "37685111:mondoshawan": "mondoshawan watered b41 c38 d57 f37 ",
+      "37690704:psyo": "psyo watered e72 ",
+      "37691869:abrockman": "abrockman harvested a50 b43 c39 d33 e29 f12 a56 b50 c50 d40 e38 f17 a58 b51 c52 d41 e39 f18 a59 b58 c57 d46 e47 f28 a65 b59 c58 d47 e48 f29 a66 a67 b60 c59 d48 e49 f34 f35 b64 c68 d55 e60 a78 b67 c71 d58 e64 f38 a79 a80 b68 b69 c72 c73 d59 d60 e65 e66 f39 f40 b72 c78 c79 d64 f50 e71 b73 ",
+      "37691872:abrockman": "abrockman watered a50 b43 c39 d33 e29 f12 a56 b50 c50 d40 e38 f17 a58 b51 c52 d41 e39 f18 a59 b58 c57 d46 e47 f28 a65 b59 c58 d47 e48 f29 a66 a67 b60 c59 d48 e49 f34 f35 b64 c68 d55 e60 a78 b67 c71 d58 e64 f38 a79 a80 b68 b69 c72 c73 d59 d60 e65 e66 f39 f40 b72 c78 c79 d64 f50 e71 b73 ",
+      "37692456:qwoyn": "qwoyn watered a10 c46 a77 ",
+      "37696031:chronocrypto": "chronocrypto watered a69 a70 b61 b62 c63 c64 d52 d53 e53 e54 f31 f32 a71 b63 c65 e55 e56 ",
+      "37696034:chronocrypto": "chronocrypto harvested a69 a70 b61 b62 c63 c64 d52 d53 e53 e54 f31 f32 a71 b63 c65 e55 e56 ",
+      "37696402:mulletwang": "mulletwang watered f47 f48 f49 ",
+      "37696426:road2nowhere": "road2nowhere watered e62 ",
+      "37696916:theb0red1": "theb0red1 watered f53 f46 f54 ",
+      "37702526:monsterbuster": "monsterbuster watered d63 ",
+      "37703080:luegenbaron": "luegenbaron watered b5 c37 e16 f51 d65 ",
+      "37706609:rachaeldwatson": "rachaeldwatson watered e73 ",
+      "37707015:mondoshawan": "mondoshawan watered b41 c38 d57 f37 ",
+      "37708791:saboin": "saboin watered c75 d61 f44 a83 b71 c77 d62 e70 f55 b74 ",
+      "37709932:onthewayout": "onthewayout watered f6 f15 ",
+      "37710402:bluntsmasha": "bluntsmasha watered a11 b2 c1 f2 "
+   }
 }

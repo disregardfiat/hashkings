@@ -632,7 +632,7 @@ function startApp() {
                 state.refund.push(['xfer', 'qwoyn', d, 'Producer Cut'])
                 state.bal.c -= d * 4
                 d = parseInt(state.bal.c / 5) * 2
-                state.refund.push(['xfer', 'qwoyn-chest', state.bal.c, 'Warchest'])
+                //state.refund.push(['xfer', 'qwoyn-chest', state.bal.c, 'Warchest'])
                 state.bal.c = 0
                 state.refund.push(['power', username, state.bal.b, 'Power to the people!'])
             }

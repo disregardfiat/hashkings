@@ -1402,7 +1402,7 @@ function daily(addr) {
     if (state.land[addr]) {
         for (var i = 0; i < state.land[addr].care.length; i++) {
             if (state.land[addr].care[i][0] <= processor.getCurrentBlockNumber() - 28800) {
-                state.care.splice(i,1)
+                state.land[addr].care.splice(i,1)
             } else if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {
                 if(!grown)state.land[addr].care[i].push('c')
                 if (state.land[addr].substage < 14 && state.land[addr].stage > 0 && !grown) {

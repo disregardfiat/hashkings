@@ -93,7 +93,7 @@ app.get('/delegation/:user', (req, res, next) => {
 
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state
-var startingBlock = ENV.STARTINGBLOCK || 37710403; //GENESIS BLOCK
+var startingBlock = ENV.STARTINGBLOCK || 39541798; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 const sh = ENV.sh || ''
@@ -1401,7 +1401,9 @@ function daily(addr) {
     var grown = false, harvested = false
     if (state.land[addr]) {
         for (var i = 0; i < state.land[addr].care.length; i++) {
-            if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {
+            if (state.land[addr].care[i][0] <= processor.getCurrentBlockNumber() - 28800) {
+                state.care.splice(i,1)
+            } else if (state.land[addr].care[i][0] > processor.getCurrentBlockNumber() - 28800 && state.land[addr].care[i][1] == 'watered') {
                 if(!grown)state.land[addr].care[i].push('c')
                 if (state.land[addr].substage < 14 && state.land[addr].stage > 0 && !grown) {
                     if(!grown){

@@ -7,13 +7,48 @@ const cors = require('cors');
 const express = require('express')
 const ENV = process.env;
 const maxEx = process.max_extentions || 8
-const IPFS = require('ipfs-api');
+const IPFS = require('ipfs-http-client');
 const ipfs = new IPFS({
     host: 'ipfs.infura.io',
     port: 5001,
     protocol: 'https'
 });
+
+/*  const init holds the initial state of a user in the form of a json 
+    as shown in the example.
+
+        const init: {
+            "delegations": {
+                "delegator": string;
+                "vests": number;
+                "available": number;
+                "used": number;
+            }[];
+            "kudos": {};
+            "stats": {
+                "vs": number;
+                "dust": number;
+                "time": number;
+                "offsets": {
+                    "a": number;
+                    "b": number;
+                    "c": number;
+                    "d": number;
+                    "e": number;
+                    "f": number;
+                };
+                ... 5 more ...;
+                "gardeners": number;
+            };
+            ... 8 more ...;
+            "cs": {
+                 ...;
+            };
+        }
+
+*/
 const init = require('./state');
+
 const app = express()
 const port = ENV.PORT || 3000;
 const wkey = ENV.wkey
@@ -21,15 +56,132 @@ const skey = steem.PrivateKey.from(ENV.skey)
 const streamname = ENV.streamname
 
 app.use(cors())
+
+/*plot info from state.js by plot number
+            {
+            "owner": "qwoyn",
+            "strain": "",
+            "xp": 0,
+            "care": [
+                [
+                    39562272,
+                    "watered"
+                ],
+                [
+                    39533519,
+                    "watered"
+                ],
+                [
+                    39504770,
+                    "watered",
+                    "c"
+                ]
+            ],
+            "aff": [],
+            "stage": -1,
+            "substage": 0,
+            "traits": [],
+            "terps": [],
+            "id": "a10"
+            }
+*/
 app.get('/p/:addr', (req, res, next) => {
     let addr = req.params.addr
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(state.land[addr], null, 3))
 });
+
+//shows a log stream at current block
 app.get('/logs', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(state.cs, null, 3))
 });
+
+/*detailed list of seeds a user owns from state.js by username\
+        [
+        {
+            "owner": "qwoyn",
+            "strain": "",
+            "xp": 0,
+            "care": [
+                [
+                    39562272,
+                    "watered"
+                ],
+                [
+                    39533519,
+                    "watered"
+                ],
+                [
+                    39504770,
+                    "watered",
+                    "c"
+                ]
+            ],
+            "aff": [],
+            "stage": -1,
+            "substage": 0,
+            "traits": [],
+            "terps": [],
+            "id": "a10"
+        },
+        {
+            "owner": "qwoyn",
+            "strain": "hk",
+            "xp": 2250,
+            "care": [
+                [
+                    39562272,
+                    "watered"
+                ],
+                [
+                    39533519,
+                    "watered",
+                    "c"
+                ],
+                [
+                    39504770,
+                    "watered",
+                    "c"
+                ]
+            ],
+            "aff": [],
+            "planted": 33012618,
+            "stage": 5,
+            "substage": 3,
+            "id": "c46",
+            "sex": null
+        },
+        {
+            "owner": "qwoyn",
+            "strain": "mis",
+            "xp": 1,
+            "care": [
+                [
+                    39562272,
+                    "watered"
+                ],
+                [
+                    39533519,
+                    "watered",
+                    "c"
+                ],
+                [
+                    39445948,
+                    "watered",
+                    "c"
+                ]
+            ],
+            "aff": [],
+            "planted": 35387927,
+            "stage": 5,
+            "substage": 1,
+            "id": "a77",
+            "sex": null
+        },
+        "a100"
+        ]
+*/
 app.get('/a/:user', (req, res, next) => {
     let user = req.params.user, arr = []
     res.setHeader('Content-Type', 'application/json');
@@ -51,6 +203,8 @@ app.get('/a/:user', (req, res, next) => {
     res.send(JSON.stringify(arr, null, 3))
 });
 
+//overal game stats i.e. number of gardeners, number of plots available, seed prices, land price, weather info
+//at each location such as mexico or jamaica etc.
 app.get('/stats', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json');
     Object.keys(state.users).length
@@ -59,11 +213,13 @@ app.get('/stats', (req, res, next) => {
     res.send(JSON.stringify(ret, null, 3))
 });
 
+//entire state.json output
 app.get('/', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(state, null, 3))
 });
 
+//post payouts in que
 app.get('/refunds', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({
@@ -72,12 +228,53 @@ app.get('/refunds', (req, res, next) => {
     }, null, 3))
 });
 
+/*plot and seed information by user
+        {
+        "addrs": [
+            "a10",
+            "c46",
+            "a77",
+            "a100"
+        ],
+        "seeds": [
+            {
+                "strain": "kbr",
+                "xp": 2250,
+                "traits": [
+                    "beta"
+                ]
+            },
+            {
+                "strain": "kbr",
+                "xp": 2250,
+                "traits": [
+                    "beta"
+                ]
+            },
+            {
+                "xp": 50
+            }
+        ],
+        "inv": [],
+        "stats": [],
+        "v": 0
+        }
+
+*/
 app.get('/u/:user', (req, res, next) => {
     let user = req.params.user
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(state.users[user], null, 3))
 });
 
+/*delegation information by user
+{
+   "delegator": "qwoyn",
+   "vests": 4900485891391,
+   "available": 123,
+   "used": 2
+}
+*/
 app.get('/delegation/:user', (req, res, next) => {
     let user = req.params.user
     var op = {}
@@ -93,18 +290,21 @@ app.get('/delegation/:user', (req, res, next) => {
 
 app.listen(port, () => console.log(`HASHKINGS token API listening on port ${port}!`))
 var state
-var startingBlock = ENV.STARTINGBLOCK || 39541798; //GENESIS BLOCK
+var startingBlock = ENV.STARTINGBLOCK || 40794466; //GENESIS BLOCK
 const username = ENV.ACCOUNT || 'hashkings'; //account with all the SP
 const key = steem.PrivateKey.from(ENV.KEY); //active key for account
 const sh = ENV.sh || ''
-const ago = ENV.ago || 0
-const prefix = ENV.PREFIX || 'qwoyn_';
-const clientURL = ENV.APIURL || 'https://api.steemit.com'
+const ago = ENV.ago || 40794466
+const prefix = ENV.PREFIX || 'qwoyn_'; // part of custom json visible on the blockchain during watering etc..
+const clientURL = ENV.APIURL || 'https://api.steemit.com' // can be changed to another node
 var client = new steem.Client(clientURL);
 var processor;
 var recents = []
 const transactor = steemTransact(client, steem, prefix);
 
+/****ISSUE****/
+//I think this is where the app can get the hash from qwoyn_report that is saved in state.js and use it
+//to start the app.  this should prevent the app having to start from GENESIS BLOCK
 steemjs.api.getAccountHistory(username, -1, 100, function(err, result) {
   if (err){
     console.log(err)
@@ -113,13 +313,17 @@ steemjs.api.getAccountHistory(username, -1, 100, function(err, result) {
     let ebus = result.filter( tx => tx[1].op[1].id === 'qwoyn_report' )
     for(i=ebus.length -1;i>=0;i--){
       if(JSON.parse(ebus[i][1].op[1].json).stateHash !== null)recents.push(JSON.parse(ebus[i][1].op[1].json).stateHash)
+      console.log('made report')
     }
     const mostRecent = recents.shift()
+    console.log('starting properly')
+    console.log(sh)
     console.log(mostRecent)
     startWith(mostRecent)
   }
 });
 
+/****ISSUE****/
 function startWith(hash) {
     if (hash) {
         console.log(`Attempting to start from IPFS save state ${hash}`);
@@ -159,7 +363,7 @@ function startApp() {
                 td.push(`${o}${((sun-state.stats.offsets[o])*4)}`, `${o}${((sun-state.stats.offsets[o])*4)-1}`, `${o}${((sun-state.stats.offsets[o])*4)-2}`, `${o}${((sun-state.stats.offsets[o])*4)-3}`);
             }
             if (sun - state.stats.offsets[o] == 1200) {
-               popWeather(o).then((r)=>{console.log(r);autoPoster(r,num)}).catch((e)=>{console.log(e)})
+               popWeather(o).then((received)=>{console.log(received);autoPoster(received,num)}).catch((e)=>{console.log(e)})
             }
             if (sun - state.stats.offsets[o] == 1500) {
                state.refund.push(['sign',[["vote",{"author":streamname,"permlink":`h${num-300}`,"voter":username,"weight":10000}]]])
@@ -198,7 +402,7 @@ function startApp() {
 
         if (num % 28800 === 20000 && state.payday.length) {
             for (var item in state.cs){
-              if(item.split(':')[0] < num - 28800 || item.split(':')[0] == 'undefined'){
+              if(item.split(':')[0] < num - 28800 || item.split(':')[0] == 'undefined i406'){
                 delete state.cs[item]
               }
             }
@@ -625,9 +829,9 @@ function startApp() {
         }
         if (num % 28800 === 0) {
             var d = parseInt(state.bal.c / 4)
-            state.bal.r += state.bal.c
+            state.bal.received += state.bal.c
             if (d) {
-                state.refund.push(['xfer', 'disregardfiat', d, 'Dev Cut'])
+                state.refund.push(['xfer', 'qwoyn-dev', d, 'Dev Cut'])
                 state.refund.push(['xfer', 'qwoyn-fund', parseInt(2 * d), 'Funds'])
                 state.refund.push(['xfer', 'qwoyn', d, 'Producer Cut'])
                 state.bal.c -= d * 4
@@ -861,25 +1065,25 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
       stats: [],
       v: 0
     }
-    var availible = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
+    var available = parseInt(vests / (state.stats.prices.listed.a * (state.stats.vs) * 1000)),
     used = 0;
     if (record) {
       const use = record.used || 0
       if (record.vests < vests) {
-        availible = parseInt(availible) - parseInt(use);
+        available = parseInt(available) - parseInt(use);
         used = parseInt(use)
       } else {
-        if (use > availible) {
-          var j = parseInt(use) - parseInt(availible);
+        if (use > available) {
+          var j = parseInt(use) - parseInt(available);
           for (var i = state.users[json.delegator].addrs.length - j; i < state.users[json.delegator].addrs.length; i++) {
             delete state.land[state.users[json.delegator].addrs[i]];
             state.lands.forSale.push(state.users[json.delegator].addrs[i])
             state.users[json.delegator].addrs.splice(i,1)
           }
-          used = parseInt(availible)
-          availible = 0
+          used = parseInt(available)
+          available = 0
         } else {
-          availible = parseInt(availible) - parseInt(use)
+          available = parseInt(available) - parseInt(use)
           used = parseInt(use)
         }
       }
@@ -887,7 +1091,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
       state.delegations.push({
         delegator: json.delegator,
         vests,
-        availible,
+        available,
         used
       })
   }
@@ -918,8 +1122,8 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                     if (amount == 500 && type == 'manage') {
                         state.cs[`${json.block_num}:${json.from}`] = `${json.from} is managing`
                         for (var i = 0; i < state.delegations.length; i++) {
-                            if (json.from == state.delegations[i].delegator && state.delegations[i].availible) {
-                                state.delegations[i].availible--;
+                            if (json.from == state.delegations[i].delegator && state.delegations[i].available) {
+                                state.delegations[i].available--;
                                 state.delegations[i].used++;
                                 state.bal.c += amount;
                                 allowed = true
@@ -940,7 +1144,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                         state.users[json.from].addrs.push(addr)
                         state.cs[`${json.block_num}:${json.from}`] = `${json.from} purchased ${addr}`
                     } else {
-                        state.refund.push(['xfer', json.from, amount, 'Managing Land?...Maybe have your STEEM back'])
+                        state.refund.push(['xfer', json.from, amount, 'Managing Land?...You may need to delegate more SP'])
                     }
                 } else if (want == 'rseed' && amount == state.stats.prices.listed.seeds.reg || want == 'mseed' && amount == state.stats.prices.listed.seeds.mid || want == 'tseed' && amount == state.stats.prices.listed.seeds.top) {
                     if (state.stats.supply.strains.indexOf(type) < 0){ type = state.stats.supply.strains[state.users.length % (state.stats.supply.strains.length -1)]}
@@ -957,12 +1161,12 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                     state.bal.b += amount - c
                     state.cs[`${json.block_num}:${json.from}`] = `${json.from} purchased ${seed.strain}`
                 } else {
-                    state.bal.r += amount
+                    state.bal.received += amount
                     state.refund.push(['xfer', json.from, amount, 'We don\'t know what you wanted... have your STEEM back'])
                     state.cs[`${json.block_num}:${json.from}`] = `${json.from} sent a weird transfer...refund?`
                 }
             } else if (amount > 10) {
-                state.bal.r += amount
+                state.bal.received += amount
                 state.refund.push(['xfer', json.from, amount, 'Sorry, this account only accepts in game transactions.'])
                 state.cs[`${json.block_num}:${json.from}`] = `${json.from} sent a weird transfer...refund?`
             }
@@ -973,7 +1177,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
                         state.balance.b += users
                         state.bal.c += ops
                     } else {
-                        state.bal.r += amount
+                        state.bal.received += amount
                         state.refund.push(['xfer', json.from, amount, 'This account is on the global blacklist. You may remove your delegation, any further transfers will be treated as donations.'])
                         state.blacklist[json.from] = true
                         state.cs[`${json.block_num}:${json.from}`] = `${json.from} blacklisted`
@@ -986,7 +1190,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
             for (var i = 0; i < state.refund.length; i++) {
                 if (state.refund[i][1] == json.to && state.refund[i][2] == amount) {
                     state.refund.splice(i, 1);
-                    state.bal.r -= amount;
+                    state.bal.received -= amount;
                     state.cs[`${json.block_num}:${json.to}`] = `${json.to} refunded successfully`
                     break;
                 }
@@ -1005,7 +1209,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
         var index = state.users[from].addrs.indexOf(json.addr)
         if (index >= 0) {
             state.lands.forSale.push(state.users[from].addrs.splice(i, 1))
-            state.bal.r += state.stats.prices.purchase.land
+            state.bal.received += state.stats.prices.purchase.land
             if (state.bal.b - state.stats.prices.purchase.land > 0) {
                 state.bal.b -= state.stats.prices.purchase.land
             } else {
@@ -1021,7 +1225,7 @@ processor.onOperation('delegate_vesting_shares', function(json, from) { //grab p
         processor.stop(function() {
             saveState(function() {
                 process.exit();
-                console.log('Process exited.');
+                //console.log('Process exited.');
             });
         });
     }
@@ -1151,7 +1355,7 @@ function whotopay() {
         b = 0, // counter
         c = 0, // counter
         h = 1, // top value
-        r = {j:0,i:0,h:0,g:0,f:0,e:0,d:0,c:0,b:0,a:0}
+        received = {j:0,i:0,h:0,g:0,f:0,e:0,d:0,c:0,b:0,a:0}
         o = [] // temp array
     for (d in state.kudos) {
         c = parseInt(c) + parseInt(state.kudos[d]) // total kudos
@@ -1197,7 +1401,7 @@ function whotopay() {
             if(!b)break;
         }
         if(b){
-            for (var fr in r) {
+            for (var fr in received) {
                 a[fr].push(o.pop());
                 b--
                 if(!b)break;
@@ -1208,15 +1412,15 @@ function whotopay() {
         for (var i = 0; i < o.length; i++) {
             state.kudos[o[i].account] = parseInt(o[i].weight)
         }
-    for (var r in a) { //weight the 8 accounts in 10000
+    for (var received in a) { //weight the 8 accounts in 10000
         var u = 0,
             q = 0
-        for (var i = 0; i < a[r].length; i++) {
-            u = parseInt(u) + parseInt(a[r][i].weight)
+        for (var i = 0; i < a[received].length; i++) {
+            u = parseInt(u) + parseInt(a[received][i].weight)
         }
         q = parseInt(10000/u)
-        for (var i = 0; i < a[r].length; i++) {
-            a[r][i].weight = parseInt(parseInt(a[r][i].weight) * q)
+        for (var i = 0; i < a[received].length; i++) {
+            a[received][i].weight = parseInt(parseInt(a[received][i].weight) * q)
         }
     }
     o = []
@@ -1257,18 +1461,18 @@ function popWeather (loc){
         .then(function(response) {
             return response.json();
         })
-        .then(function(r) {
-            var tmin=400,tmax=0,tave=0,precip=0,h=0,p=[],c=[],w={s:0,d:0},s=[],d=r.list[0].wind.deg
+        .then(function(received) {
+            var tmin=400,tmax=0,tave=0,precip=0,h=0,p=[],c=[],w={s:0,d:0},s=[],d=received.list[0].wind.deg
             for(i=0;i<8;i++){
-                tave += parseInt(parseFloat(r.list[i].main.temp)*100)
-                if(r.list[i].main.temp > tmax){tmax = r.list[i].main.temp}
-                if(r.list[i].main.temp < tmin){tmin = r.list[i].main.temp}
-                h = r.list[i].main.humidity
-                c = parseInt(c + parseInt(r.list[i].clouds.all))
-                if(r.list[i].rain){
-                    precip = parseFloat(precip) + parseFloat(r.list[i].rain['3h'])
+                tave += parseInt(parseFloat(received.list[i].main.temp)*100)
+                if(received.list[i].main.temp > tmax){tmax = received.list[i].main.temp}
+                if(received.list[i].main.temp < tmin){tmin = received.list[i].main.temp}
+                h = received.list[i].main.humidity
+                c = parseInt(c + parseInt(received.list[i].clouds.all))
+                if(received.list[i].rain){
+                    precip = parseFloat(precip) + parseFloat(received.list[i].rain['3h'])
                 }
-                s = r.list[i].wind.speed
+                s = received.list[i].wind.speed
             }
             tave = parseFloat(tave/800).toFixed(1)
             c = parseInt(c/8)
@@ -1317,7 +1521,7 @@ function autoPoster (loc, num) {
                           "permlink": 'h'+num,
                           "title": `Hashkings Almanac for ${state.stats.env[loc].name} | ${num}`,
                           "body": body,
-                          "json_metadata": JSON.stringify({tags:["hashkings"]})}]]
+                          "json_metadata": JSON.stringify({tags:["hk-stream"]})}]]
     if(state.payday.length){
         state.payday[0] = sortExtentions(state.payday[0],'account')
         bens = ["comment_options",
